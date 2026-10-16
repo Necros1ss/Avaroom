@@ -1,0 +1,1189 @@
+[
+  {
+    "screenName": "Đăng nhập - Avaroom (Warm Cream)",
+    "screenId": "57:5625",
+    "buttonName": "Button",
+    "buttonId": "57:5697",
+    "targetScreenName": "Form nhập email lấy lại mật khẩu",
+    "targetScreenId": "135:278",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng nhập - Avaroom (Warm Cream)",
+    "screenId": "57:5625",
+    "buttonName": "Button - Primary Action CTA",
+    "buttonId": "57:5700",
+    "targetScreenName": "Trang chủ - Tìm trọ sinh viên",
+    "targetScreenId": "251:634",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng nhập - Avaroom (Warm Cream)",
+    "screenId": "57:5625",
+    "buttonName": "Button",
+    "buttonId": "57:5737",
+    "targetScreenName": "Đăng ký - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5774",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng ký - Avaroom (Warm Cream)",
+    "screenId": "57:5774",
+    "buttonName": "Button - Role: Landlord",
+    "buttonId": "57:5821",
+    "targetScreenName": "Đăng ký - Chủ trọ (Warm Cream)",
+    "targetScreenId": "57:5962",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng ký - Avaroom (Warm Cream)",
+    "screenId": "57:5774",
+    "buttonName": "Primary CTA Button → Button",
+    "buttonId": "57:5904",
+    "targetScreenName": "Xác thực OTP - Avaroom (Warm Cream)",
+    "targetScreenId": "151:2",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng ký - Avaroom (Warm Cream)",
+    "screenId": "57:5774",
+    "buttonName": "Đăng nhập",
+    "buttonId": "57:5948",
+    "targetScreenName": "Đăng nhập - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5625",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng ký - Avaroom (Warm Cream)",
+    "screenId": "57:5774",
+    "buttonName": "Button - Go back:margin",
+    "buttonId": "220:15",
+    "targetScreenName": "Đăng nhập - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5625",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng ký - Chủ trọ (Warm Cream)",
+    "screenId": "57:5962",
+    "buttonName": "Button - Role: Student (Active Default)",
+    "buttonId": "116:256",
+    "targetScreenName": "Đăng ký - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5774",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng ký - Chủ trọ (Warm Cream)",
+    "screenId": "57:5962",
+    "buttonName": "Main Submit CTA Button → Button",
+    "buttonId": "57:6122",
+    "targetScreenName": "Xác thực CCCD 2 mặt - Avaroom",
+    "targetScreenId": "151:176",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng ký - Chủ trọ (Warm Cream)",
+    "screenId": "57:5962",
+    "buttonName": "Button - Go back:margin",
+    "buttonId": "152:483",
+    "targetScreenName": "Đăng nhập - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5625",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Xác thực CCCD 2 mặt - Avaroom",
+    "screenId": "151:176",
+    "buttonName": "Button - Chụp mặt sau căn cước",
+    "buttonId": "152:488",
+    "targetScreenName": "Chụp CCCD Mặt trước & Hướng dẫn",
+    "targetScreenId": "151:65",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Xác thực CCCD 2 mặt - Avaroom",
+    "screenId": "151:176",
+    "buttonName": "Button - Chụp mặt sau căn cước",
+    "buttonId": "151:243",
+    "targetScreenName": "Chụp CCCD Mặt sau & Hướng dẫn",
+    "targetScreenId": "231:40",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Xác thực CCCD 2 mặt - Avaroom",
+    "screenId": "151:176",
+    "buttonName": "Button - Main Continue / Capture Next Side:shadow",
+    "buttonId": "151:294",
+    "targetScreenName": "Kiểm tra thông tin CCCD - Avaroom (Warm Cream)",
+    "targetScreenId": "151:310",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Xác thực CCCD 2 mặt - Avaroom",
+    "screenId": "261:3597",
+    "buttonName": "Button - Main Continue / Capture Next Side",
+    "buttonId": "261:3678",
+    "targetScreenName": "Trang chủ - Tìm trọ sinh viên",
+    "targetScreenId": "251:634",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Xác thực CCCD 2 mặt - Avaroom",
+    "screenId": "261:3597",
+    "buttonName": "Button - Go back:margin",
+    "buttonId": "261:3686",
+    "targetScreenName": "Xác thực OTP - Avaroom (Warm Cream)",
+    "targetScreenId": "151:2",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Onboarding 2 - Minh bạch giá & Ảnh thật (Warm Cream)",
+    "screenId": "56:5299",
+    "buttonName": "Button",
+    "buttonId": "56:5385",
+    "targetScreenName": "Onboarding 3 - Đăng nhập & Đăng ký (Warm Cream)",
+    "targetScreenId": "56:5392",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Onboarding 3 - Đăng nhập & Đăng ký (Warm Cream)",
+    "screenId": "56:5392",
+    "buttonName": "Button - Primary CTA: Register:shadow",
+    "buttonId": "56:5488",
+    "targetScreenName": "Đăng ký - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5774",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Onboarding 3 - Đăng nhập & Đăng ký (Warm Cream)",
+    "screenId": "56:5392",
+    "buttonName": "Button - Secondary CTA: Sign In",
+    "buttonId": "56:5494",
+    "targetScreenName": "Đăng nhập - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5625",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Onboarding 1 - Tìm trọ gần trường (Warm Cream)",
+    "screenId": "56:5505",
+    "buttonName": "Onboarding 1 - Tìm trọ gần trường (Warm Cream)",
+    "buttonId": "56:5505",
+    "targetScreenName": "Onboarding 2 - Minh bạch giá & Ảnh thật (Warm Cream)",
+    "targetScreenId": "56:5299",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Onboarding 1 - Tìm trọ gần trường (Warm Cream)",
+    "screenId": "56:5505",
+    "buttonName": "Button",
+    "buttonId": "56:5619",
+    "targetScreenName": "Onboarding 2 - Minh bạch giá & Ảnh thật (Warm Cream)",
+    "targetScreenId": "56:5299",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Form nhập email lấy lại mật khẩu",
+    "screenId": "135:278",
+    "buttonName": "Button:shadow",
+    "buttonId": "135:351",
+    "targetScreenName": "Xác thực OTP - Avaroom (Warm Cream)",
+    "targetScreenId": "135:385",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Form nhập email lấy lại mật khẩu",
+    "screenId": "135:278",
+    "buttonName": "Button",
+    "buttonId": "220:28",
+    "targetScreenName": "Đăng nhập - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5625",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Form nhập email lấy lại mật khẩu",
+    "screenId": "135:278",
+    "buttonName": "Button - Go back",
+    "buttonId": "135:657",
+    "targetScreenName": "Đăng nhập - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5625",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Xác thực OTP - Avaroom (Warm Cream)",
+    "screenId": "135:385",
+    "buttonName": "Primary Confirmation Action:margin",
+    "buttonId": "135:449",
+    "targetScreenName": "Đặt mật khẩu mới - Avaroom (Warm Cream)",
+    "targetScreenId": "135:515",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Xác thực OTP - Avaroom (Warm Cream)",
+    "screenId": "135:385",
+    "buttonName": "Button - Go back:margin",
+    "buttonId": "135:506",
+    "targetScreenName": "Form nhập email lấy lại mật khẩu",
+    "targetScreenId": "135:278",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đặt mật khẩu mới - Avaroom (Warm Cream)",
+    "screenId": "135:515",
+    "buttonName": "Button",
+    "buttonId": "135:621",
+    "targetScreenName": "Trang chủ - Tìm trọ sinh viên",
+    "targetScreenId": "251:634",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đặt mật khẩu mới - Avaroom (Warm Cream)",
+    "screenId": "135:515",
+    "buttonName": "Button - Go back:margin",
+    "buttonId": "299:10",
+    "targetScreenName": "Xác thực OTP - Avaroom (Warm Cream)",
+    "targetScreenId": "135:385",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Xác thực OTP - Avaroom (Warm Cream)",
+    "screenId": "151:2",
+    "buttonName": "Button:shadow",
+    "buttonId": "151:48",
+    "targetScreenName": "Xác thực CCCD 2 mặt - Avaroom",
+    "targetScreenId": "261:3597",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Xác thực OTP - Avaroom (Warm Cream)",
+    "screenId": "151:2",
+    "buttonName": "Button - Go back:margin",
+    "buttonId": "151:59",
+    "targetScreenName": "Đăng ký - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5774",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chụp CCCD Mặt trước & Hướng dẫn",
+    "screenId": "151:65",
+    "buttonName": "Button - Go back:margin",
+    "buttonId": "261:3709",
+    "targetScreenName": "Xác thực CCCD 2 mặt - Avaroom",
+    "targetScreenId": "151:176",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chụp CCCD Mặt sau & Hướng dẫn",
+    "screenId": "231:40",
+    "buttonName": "Button - Go back:margin",
+    "buttonId": "261:3716",
+    "targetScreenName": "Xác thực CCCD 2 mặt - Avaroom",
+    "targetScreenId": "151:176",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Kiểm tra thông tin CCCD - Avaroom (Warm Cream)",
+    "screenId": "151:310",
+    "buttonName": "Actions Section",
+    "buttonId": "151:448",
+    "targetScreenName": "Quản lý tin đăng - Chủ trọ",
+    "targetScreenId": "261:7",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Kiểm tra thông tin CCCD - Avaroom (Warm Cream)",
+    "screenId": "151:310",
+    "buttonName": "Button - Go back:margin",
+    "buttonId": "231:109",
+    "targetScreenName": "Xác thực CCCD 2 mặt - Avaroom",
+    "targetScreenId": "151:176",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "251:634",
+    "buttonName": "Button - Bộ lọc nâng cao",
+    "buttonId": "251:646",
+    "targetScreenName": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+    "targetScreenId": "251:2257",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "251:634",
+    "buttonName": "Button:margin",
+    "buttonId": "251:753",
+    "targetScreenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "targetScreenId": "251:1741",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "251:634",
+    "buttonName": "Button - Thông báo",
+    "buttonId": "251:817",
+    "targetScreenName": "Trung tâm Thông báo - Chủ trọ",
+    "targetScreenId": "303:261",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "251:634",
+    "buttonName": "Link",
+    "buttonId": "251:832",
+    "targetScreenName": "Tìm trọ lân cận - Bản đồ",
+    "targetScreenId": "251:1181",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "251:634",
+    "buttonName": "Link",
+    "buttonId": "251:837",
+    "targetScreenName": "Tin nhắn",
+    "targetScreenId": "251:1552",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "251:634",
+    "buttonName": "Link",
+    "buttonId": "251:845",
+    "targetScreenName": "Tài khoản & Cài đặt sinh viên",
+    "targetScreenId": "251:850",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "251:850",
+    "buttonName": "Tài khoản & Cài đặt sinh viên",
+    "buttonId": "251:850",
+    "transitionType": "NAVIGATE"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "251:850",
+    "buttonName": "Background+Border+Shadow",
+    "buttonId": "251:853",
+    "targetScreenName": "Phòng đã lưu - Avaroom Sinh viên",
+    "targetScreenId": "251:4044",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "251:850",
+    "buttonName": "Background+Border+Shadow",
+    "buttonId": "251:862",
+    "targetScreenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "targetScreenId": "251:3306",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "251:850",
+    "buttonName": "Link - eKYC Item",
+    "buttonId": "251:886",
+    "targetScreenName": "Hồ sơ sinh viên & eKYC (Cọc 0đ)",
+    "targetScreenId": "251:3039",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "251:850",
+    "buttonName": "Button",
+    "buttonId": "251:911",
+    "targetScreenName": "Đăng nhập - Avaroom (Warm Cream)",
+    "targetScreenId": "57:5625",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "251:850",
+    "buttonName": "Link - Change Password",
+    "buttonId": "251:939",
+    "targetScreenName": "Đổi mật khẩu tài khoản - Avaroom",
+    "targetScreenId": "251:2857",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "251:850",
+    "buttonName": "Link",
+    "buttonId": "303:233",
+    "targetScreenName": "Trang chủ - Tìm trọ sinh viên",
+    "targetScreenId": "251:634",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "251:850",
+    "buttonName": "Link",
+    "buttonId": "303:238",
+    "targetScreenName": "Tìm trọ lân cận - Bản đồ",
+    "targetScreenId": "251:1181",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "251:850",
+    "buttonName": "Link",
+    "buttonId": "303:243",
+    "targetScreenName": "Tin nhắn",
+    "targetScreenId": "251:1552",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tin nhắn & Chat với chủ trọ",
+    "screenId": "251:1006",
+    "buttonName": "Button - Quay lại",
+    "buttonId": "261:3571",
+    "targetScreenName": "Tin nhắn",
+    "targetScreenId": "251:1552",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tìm trọ lân cận - Bản đồ",
+    "screenId": "251:1181",
+    "buttonName": "Tìm trọ lân cận - Bản đồ",
+    "buttonId": "251:1181",
+    "transitionType": "NAVIGATE"
+  },
+  {
+    "screenName": "Tìm trọ lân cận - Bản đồ",
+    "screenId": "251:1181",
+    "buttonName": "BottomContentSection",
+    "buttonId": "251:1449",
+    "transitionType": "NAVIGATE"
+  },
+  {
+    "screenName": "Tìm trọ lân cận - Bản đồ",
+    "screenId": "251:1181",
+    "buttonName": "Article - Frosted Floating Apartment Card matching reference \"VERTICE\" popup",
+    "buttonId": "251:1456",
+    "targetScreenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "targetScreenId": "251:1741",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tìm trọ lân cận - Bản đồ",
+    "screenId": "251:1181",
+    "buttonName": "Button",
+    "buttonId": "251:1497",
+    "targetScreenName": "Đánh giá",
+    "targetScreenId": "251:2484",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tìm trọ lân cận - Bản đồ",
+    "screenId": "251:1181",
+    "buttonName": "Link",
+    "buttonId": "299:77",
+    "targetScreenName": "Trang chủ - Tìm trọ sinh viên",
+    "targetScreenId": "251:634",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tìm trọ lân cận - Bản đồ",
+    "screenId": "251:1181",
+    "buttonName": "Link",
+    "buttonId": "299:82",
+    "targetScreenName": null,
+    "targetScreenId": null,
+    "transitionType": "NAVIGATE"
+  },
+  {
+    "screenName": "Tìm trọ lân cận - Bản đồ",
+    "screenId": "251:1181",
+    "buttonName": "Link",
+    "buttonId": "299:87",
+    "targetScreenName": "Tin nhắn",
+    "targetScreenId": "251:1552",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tìm trọ lân cận - Bản đồ",
+    "screenId": "251:1181",
+    "buttonName": "Link",
+    "buttonId": "299:95",
+    "targetScreenName": "Tài khoản & Cài đặt sinh viên",
+    "targetScreenId": "251:850",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tin nhắn",
+    "screenId": "251:1552",
+    "buttonName": "Item 1: Cô Hoàng Thị Ánh Tuyết",
+    "buttonId": "251:1578",
+    "targetScreenName": "Tin nhắn & Chat với chủ trọ",
+    "targetScreenId": "251:1006",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tin nhắn",
+    "screenId": "251:1552",
+    "buttonName": "Link",
+    "buttonId": "303:140",
+    "targetScreenName": "Trang chủ - Tìm trọ sinh viên",
+    "targetScreenId": "251:634",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tin nhắn",
+    "screenId": "251:1552",
+    "buttonName": "Link",
+    "buttonId": "303:145",
+    "targetScreenName": "Tìm trọ lân cận - Bản đồ",
+    "targetScreenId": "251:1181",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tin nhắn",
+    "screenId": "251:1552",
+    "buttonName": "Link",
+    "buttonId": "303:158",
+    "targetScreenName": "Tài khoản & Cài đặt sinh viên",
+    "targetScreenId": "251:850",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "screenId": "251:1741",
+    "buttonName": "Left: Chat with Host Button",
+    "buttonId": "251:2037",
+    "targetScreenName": "Tin nhắn & Chat với chủ trọ",
+    "targetScreenId": "251:1006",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "screenId": "251:1741",
+    "buttonName": "Button - Right: Book Viewing Schedule Appointment",
+    "buttonId": "251:2042",
+    "targetScreenName": "Đặt lịch xem phòng - Avaroom Sinh viên",
+    "targetScreenId": "251:2068",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "screenId": "251:1741",
+    "buttonName": "Button - Quay lại:margin",
+    "buttonId": "251:2051",
+    "targetScreenName": "Trang chủ - Tìm trọ sinh viên",
+    "targetScreenId": "251:634",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đặt lịch xem phòng - Avaroom Sinh viên",
+    "screenId": "251:2068",
+    "buttonName": "Sticky / Bottom Floating Action Bar",
+    "buttonId": "251:2230",
+    "transitionType": "NAVIGATE"
+  },
+  {
+    "screenName": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+    "screenId": "251:2257",
+    "buttonName": "Container",
+    "buttonId": "251:2466",
+    "targetScreenName": "Search Result",
+    "targetScreenId": "251:4305",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đánh giá",
+    "screenId": "251:2484",
+    "buttonName": "Button - Quay lại",
+    "buttonId": "251:2841",
+    "targetScreenName": "Tìm trọ lân cận - Bản đồ",
+    "targetScreenId": "251:1181",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đánh giá",
+    "screenId": "251:2484",
+    "buttonName": "Button - Book Tour / Deposit Action",
+    "buttonId": "251:2832",
+    "targetScreenName": "Đặt lịch xem phòng - Avaroom Sinh viên",
+    "targetScreenId": "251:2068",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đổi mật khẩu tài khoản - Avaroom",
+    "screenId": "251:2857",
+    "buttonName": "Button - Go back",
+    "buttonId": "251:3026",
+    "targetScreenName": "Tài khoản & Cài đặt sinh viên",
+    "targetScreenId": "251:850",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "screenId": "251:3306",
+    "buttonName": "Button - Quay lại tài khoản",
+    "buttonId": "251:3311",
+    "targetScreenName": "Tài khoản & Cài đặt sinh viên",
+    "targetScreenId": "251:850",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "screenId": "251:3306",
+    "buttonName": "Button",
+    "buttonId": "251:3333",
+    "targetScreenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "targetScreenId": "251:3798",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "screenId": "251:3306",
+    "buttonName": "Button",
+    "buttonId": "251:3338",
+    "targetScreenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "targetScreenId": "251:3552",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "screenId": "251:3552",
+    "buttonName": "Button - Quay lại tài khoản",
+    "buttonId": "251:3557",
+    "targetScreenName": "Tài khoản & Cài đặt sinh viên",
+    "targetScreenId": "251:850",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "screenId": "251:3798",
+    "buttonName": "Button - Quay lại tài khoản",
+    "buttonId": "251:3803",
+    "targetScreenName": "Tài khoản & Cài đặt sinh viên",
+    "targetScreenId": "251:850",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Phòng đã lưu - Avaroom Sinh viên",
+    "screenId": "251:4044",
+    "buttonName": "Button - Bộ lọc nâng cao",
+    "buttonId": "251:4054",
+    "targetScreenName": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+    "targetScreenId": "251:2257",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Phòng đã lưu - Avaroom Sinh viên",
+    "screenId": "251:4044",
+    "buttonName": "Article - Card 1: Studio Ban Công - Tạ Quang Bửu",
+    "buttonId": "251:4094",
+    "targetScreenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "targetScreenId": "251:1741",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Phòng đã lưu - Avaroom Sinh viên",
+    "screenId": "251:4044",
+    "buttonName": "Button - Quay lại tài khoản",
+    "buttonId": "251:4265",
+    "targetScreenName": "Tài khoản & Cài đặt sinh viên",
+    "targetScreenId": "251:850",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Search Result",
+    "screenId": "251:4305",
+    "buttonName": "Container",
+    "buttonId": "251:4428",
+    "targetScreenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "targetScreenId": "251:1741",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Search Result",
+    "screenId": "251:4305",
+    "buttonName": "Container",
+    "buttonId": "251:4596",
+    "targetScreenName": "Trang chủ - Tìm trọ sinh viên",
+    "targetScreenId": "251:634",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Search Result",
+    "screenId": "251:4305",
+    "buttonName": "Button - Filter search",
+    "buttonId": "251:4603",
+    "targetScreenName": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+    "targetScreenId": "251:2257",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Quản lý tin đăng - Chủ trọ",
+    "screenId": "261:7",
+    "buttonName": "Button",
+    "buttonId": "261:16",
+    "targetScreenName": "Đăng tin phòng trọ mới - Avaroom",
+    "targetScreenId": "261:936",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Quản lý tin đăng - Chủ trọ",
+    "screenId": "261:7",
+    "buttonName": "Quick Action Buttons",
+    "buttonId": "261:119",
+    "targetScreenName": null,
+    "targetScreenId": null,
+    "transitionType": "NAVIGATE"
+  },
+  {
+    "screenName": "Quản lý tin đăng - Chủ trọ",
+    "screenId": "261:7",
+    "buttonName": "Button",
+    "buttonId": "261:120",
+    "targetScreenName": "Chi tiết tin đăng [DEMO]",
+    "targetScreenId": "280:324",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Quản lý tin đăng - Chủ trọ",
+    "screenId": "261:7",
+    "buttonName": "Link",
+    "buttonId": "261:222",
+    "targetScreenName": "Lịch hẹn xem phòng & Khảo sát",
+    "targetScreenId": "261:240",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Quản lý tin đăng - Chủ trọ",
+    "screenId": "261:7",
+    "buttonName": "Link",
+    "buttonId": "261:227",
+    "targetScreenName": "Tin nhắn",
+    "targetScreenId": "261:3093",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Quản lý tin đăng - Chủ trọ",
+    "screenId": "261:7",
+    "buttonName": "Link",
+    "buttonId": "261:235",
+    "targetScreenName": "Hồ sơ chủ trọ & Cài đặt",
+    "targetScreenId": "261:715",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Lịch hẹn xem phòng & Khảo sát",
+    "screenId": "261:240",
+    "buttonName": "Link",
+    "buttonId": "261:465",
+    "targetScreenName": "Quản lý tin đăng - Chủ trọ",
+    "targetScreenId": "261:7",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Lịch hẹn xem phòng & Khảo sát",
+    "screenId": "261:240",
+    "buttonName": "Link",
+    "buttonId": "261:475",
+    "targetScreenName": "Tin nhắn",
+    "targetScreenId": "261:3093",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Lịch hẹn xem phòng & Khảo sát",
+    "screenId": "261:240",
+    "buttonName": "Link",
+    "buttonId": "261:483",
+    "targetScreenName": "Hồ sơ chủ trọ & Cài đặt",
+    "targetScreenId": "261:715",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tin nhắn & Tương tác khách thuê",
+    "screenId": "261:488",
+    "buttonName": "Button - Quay lại",
+    "buttonId": "280:781",
+    "targetScreenName": "Tin nhắn",
+    "targetScreenId": "261:3093",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Hồ sơ chủ trọ & Cài đặt",
+    "screenId": "261:715",
+    "buttonName": "Link",
+    "buttonId": "261:913",
+    "targetScreenName": "Quản lý tin đăng - Chủ trọ",
+    "targetScreenId": "261:7",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Hồ sơ chủ trọ & Cài đặt",
+    "screenId": "261:715",
+    "buttonName": "Link",
+    "buttonId": "261:918",
+    "targetScreenName": "Lịch hẹn xem phòng & Khảo sát",
+    "targetScreenId": "261:240",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Hồ sơ chủ trọ & Cài đặt",
+    "screenId": "261:715",
+    "buttonName": "Link",
+    "buttonId": "261:923",
+    "targetScreenName": "Tin nhắn",
+    "targetScreenId": "261:3093",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng tin phòng trọ mới - Avaroom",
+    "screenId": "261:936",
+    "buttonName": "Container",
+    "buttonId": "261:1201",
+    "targetScreenName": "Đăng tin - Bước 2: Tiện ích & Nội thất",
+    "targetScreenId": "261:2480",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng tin phòng trọ mới - Avaroom",
+    "screenId": "261:936",
+    "buttonName": "Button - Quay lại",
+    "buttonId": "261:1216",
+    "targetScreenName": "Quản lý tin đăng - Chủ trọ",
+    "targetScreenId": "261:7",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chi tiết lịch hẹn xem phòng - Góc nhìn Chủ trọ",
+    "screenId": "261:1231",
+    "buttonName": "Button",
+    "buttonId": "261:1310",
+    "targetScreenName": "Tin nhắn & Tương tác khách thuê",
+    "targetScreenId": "261:488",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Quản lý & Phản hồi Đánh giá - Chủ trọ",
+    "screenId": "261:1551",
+    "buttonName": "Button - Quay lại:margin",
+    "buttonId": "261:1780",
+    "targetScreenName": "Chi tiết tin đăng [DEMO]",
+    "targetScreenId": "280:324",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chỉnh sửa Hồ sơ Chủ trọ & Cài đặt",
+    "screenId": "261:2119",
+    "buttonName": "Button - Quay lại",
+    "buttonId": "261:2276",
+    "targetScreenName": "Hồ sơ chủ trọ & Cài đặt",
+    "targetScreenId": "261:715",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng tin - Bước 3: Ảnh 360° & Timestamp",
+    "screenId": "261:2291",
+    "buttonName": "Button",
+    "buttonId": "261:2829",
+    "targetScreenName": "Đăng tin - Bước 4 - Hoàn tất",
+    "targetScreenId": "261:2835",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng tin - Bước 3: Ảnh 360° & Timestamp",
+    "screenId": "261:2291",
+    "buttonName": "Button - Quay lại",
+    "buttonId": "280:752",
+    "targetScreenName": "Đăng tin - Bước 2: Tiện ích & Nội thất",
+    "targetScreenId": "261:2480",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng tin - Bước 2: Tiện ích & Nội thất",
+    "screenId": "261:2480",
+    "buttonName": "Container",
+    "buttonId": "261:2792",
+    "targetScreenName": "Đăng tin - Bước 3: Ảnh 360° & Timestamp",
+    "targetScreenId": "261:2291",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng tin - Bước 2: Tiện ích & Nội thất",
+    "screenId": "261:2480",
+    "buttonName": "Button",
+    "buttonId": "261:2798",
+    "targetScreenName": "Đăng tin - Bước 3: Ảnh 360° & Timestamp",
+    "targetScreenId": "261:2291",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng tin - Bước 2: Tiện ích & Nội thất",
+    "screenId": "261:2480",
+    "buttonName": "Button - Quay lại",
+    "buttonId": "280:732",
+    "targetScreenName": "Đăng tin phòng trọ mới - Avaroom",
+    "targetScreenId": "261:936",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đăng tin - Bước 4 - Hoàn tất",
+    "screenId": "261:2835",
+    "buttonName": "Button - Quay lại",
+    "buttonId": "261:2840",
+    "targetScreenName": "Đăng tin - Bước 3: Ảnh 360° & Timestamp",
+    "targetScreenId": "261:2291",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tin nhắn",
+    "screenId": "261:3093",
+    "buttonName": "Link",
+    "buttonId": "261:3246",
+    "targetScreenName": "Quản lý tin đăng - Chủ trọ",
+    "targetScreenId": "261:7",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tin nhắn",
+    "screenId": "261:3093",
+    "buttonName": "Link",
+    "buttonId": "261:3251",
+    "targetScreenName": "Lịch hẹn xem phòng & Khảo sát",
+    "targetScreenId": "261:240",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tin nhắn",
+    "screenId": "261:3093",
+    "buttonName": "Link",
+    "buttonId": "261:3264",
+    "targetScreenName": "Hồ sơ chủ trọ & Cài đặt",
+    "targetScreenId": "261:715",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chi tiết tin đăng",
+    "screenId": "261:3269",
+    "buttonName": "Frame 2",
+    "buttonId": "280:314",
+    "targetScreenName": "Quản lý & Phản hồi Đánh giá - Chủ trọ",
+    "targetScreenId": "261:1551",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chi tiết tin đăng [DEMO]",
+    "screenId": "280:324",
+    "buttonName": "Frame 2",
+    "buttonId": "280:625",
+    "targetScreenName": "Quản lý & Phản hồi Đánh giá - Chủ trọ",
+    "targetScreenId": "261:1551",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chi tiết tin đăng [DEMO]",
+    "screenId": "280:324",
+    "buttonName": "Button - Quay lại danh sách",
+    "buttonId": "280:328",
+    "targetScreenName": "Quản lý tin đăng - Chủ trọ",
+    "targetScreenId": "261:7",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trung tâm Thông báo - Chủ trọ",
+    "screenId": "303:261",
+    "buttonName": "Button - Quay lại:margin",
+    "buttonId": "303:441",
+    "targetScreenName": "Trang chủ - Tìm trọ sinh viên",
+    "targetScreenId": "251:634",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "74:1978",
+    "buttonName": "Button - Bộ lọc nâng cao",
+    "buttonId": "74:2009",
+    "targetScreenName": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+    "targetScreenId": "169:1062",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "74:1978",
+    "buttonName": "Button:margin",
+    "buttonId": "74:2181",
+    "targetScreenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "targetScreenId": "169:453",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "74:1978",
+    "buttonName": "Link",
+    "buttonId": "74:2332",
+    "targetScreenName": "Tìm trọ lân cận - Bản đồ",
+    "targetScreenId": "74:2813",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "74:1978",
+    "buttonName": "Link",
+    "buttonId": "74:2337",
+    "targetScreenName": "Tin nhắn",
+    "targetScreenId": "168:224",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Trang chủ - Tìm trọ sinh viên",
+    "screenId": "74:1978",
+    "buttonName": "Link",
+    "buttonId": "74:2345",
+    "targetScreenName": "Tài khoản & Cài đặt sinh viên",
+    "targetScreenId": "74:2350",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "74:2350",
+    "buttonName": "Background+Border+Shadow",
+    "buttonId": "74:2354",
+    "targetScreenName": "Phòng đã lưu - Avaroom Sinh viên",
+    "targetScreenId": "180:663",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "74:2350",
+    "buttonName": "Background+Border+Shadow",
+    "buttonId": "74:2363",
+    "targetScreenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "targetScreenId": "180:400",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "74:2350",
+    "buttonName": "Link - eKYC Item",
+    "buttonId": "74:2389",
+    "targetScreenName": "Hồ sơ sinh viên & eKYC (Cọc 0đ)",
+    "targetScreenId": "169:1912",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tài khoản & Cài đặt sinh viên",
+    "screenId": "74:2350",
+    "buttonName": "Link - Change Password",
+    "buttonId": "74:2534",
+    "targetScreenName": "Đổi mật khẩu tài khoản - Avaroom",
+    "targetScreenId": "169:1730",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tìm trọ lân cận - Bản đồ",
+    "screenId": "74:2813",
+    "buttonName": "Article - Frosted Floating Apartment Card matching reference \"VERTICE\" popup",
+    "buttonId": "74:2936",
+    "targetScreenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "targetScreenId": "169:453",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tìm trọ lân cận - Bản đồ",
+    "screenId": "74:2813",
+    "buttonName": "Button",
+    "buttonId": "74:2977",
+    "targetScreenName": "Đánh giá",
+    "targetScreenId": "169:1353",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Tin nhắn",
+    "screenId": "168:224",
+    "buttonName": "Item 1: Cô Hoàng Thị Ánh Tuyết",
+    "buttonId": "168:282",
+    "targetScreenName": "Tin nhắn & Chat với chủ trọ",
+    "targetScreenId": "74:2601",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "screenId": "169:453",
+    "buttonName": "Left: Chat with Host Button",
+    "buttonId": "169:770",
+    "targetScreenName": "Tin nhắn & Chat với chủ trọ",
+    "targetScreenId": "74:2601",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "screenId": "169:453",
+    "buttonName": "Button - Right: Book Viewing Schedule Appointment",
+    "buttonId": "169:775",
+    "targetScreenName": "Đặt lịch xem phòng - Avaroom Sinh viên",
+    "targetScreenId": "169:801",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Đặt lịch xem phòng - Avaroom Sinh viên",
+    "screenId": "169:801",
+    "buttonName": "Sticky / Bottom Floating Action Bar",
+    "buttonId": "169:1033",
+    "transitionType": "NAVIGATE"
+  },
+  {
+    "screenName": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+    "screenId": "169:1062",
+    "buttonName": "Container",
+    "buttonId": "169:1323",
+    "targetScreenName": "Search Result",
+    "targetScreenId": "182:1002",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "screenId": "180:400",
+    "buttonName": "Button",
+    "buttonId": "180:426",
+    "targetScreenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "targetScreenId": "236:746",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "screenId": "180:400",
+    "buttonName": "Button",
+    "buttonId": "180:431",
+    "targetScreenName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "targetScreenId": "236:993",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Phòng đã lưu - Avaroom Sinh viên",
+    "screenId": "180:663",
+    "buttonName": "Button - Bộ lọc nâng cao",
+    "buttonId": "233:729",
+    "targetScreenName": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+    "targetScreenId": "169:1062",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Phòng đã lưu - Avaroom Sinh viên",
+    "screenId": "180:663",
+    "buttonName": "Article - Card 1: Studio Ban Công - Tạ Quang Bửu",
+    "buttonId": "180:729",
+    "targetScreenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "targetScreenId": "169:453",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Search Result",
+    "screenId": "182:1002",
+    "buttonName": "Container",
+    "buttonId": "182:1142",
+    "targetScreenName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "targetScreenId": "169:453",
+    "transitionType": "TRANSITION"
+  },
+  {
+    "screenName": "Search Result",
+    "screenId": "182:1002",
+    "buttonName": "Container",
+    "buttonId": "182:1324",
+    "targetScreenName": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+    "targetScreenId": "169:1062",
+    "transitionType": "TRANSITION"
+  }
+]

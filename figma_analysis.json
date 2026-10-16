@@ -1,0 +1,1678 @@
+{
+  "frames": [
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "57:5625",
+      "name": "Đăng nhập - Avaroom (Warm Cream)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "57:5774",
+      "name": "Đăng ký - Avaroom (Warm Cream)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "57:5962",
+      "name": "Đăng ký - Chủ trọ (Warm Cream)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "151:176",
+      "name": "Xác thực CCCD 2 mặt - Avaroom"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:3597",
+      "name": "Xác thực CCCD 2 mặt - Avaroom"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "56:5299",
+      "name": "Onboarding 2 - Minh bạch giá & Ảnh thật (Warm Cream)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "56:5392",
+      "name": "Onboarding 3 - Đăng nhập & Đăng ký (Warm Cream)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "56:5505",
+      "name": "Onboarding 1 - Tìm trọ gần trường (Warm Cream)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "54:1287",
+      "name": "Admin Web Portal - Thống kê & Quản trị hệ thống"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "68:732",
+      "name": "Quản lý tài khoản"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "156:497",
+      "name": "Quản lý tin đăng"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "135:278",
+      "name": "Form nhập email lấy lại mật khẩu"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "135:385",
+      "name": "Xác thực OTP - Avaroom (Warm Cream)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "135:515",
+      "name": "Đặt mật khẩu mới - Avaroom (Warm Cream)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "151:2",
+      "name": "Xác thực OTP - Avaroom (Warm Cream)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "151:65",
+      "name": "Chụp CCCD Mặt trước & Hướng dẫn"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "231:40",
+      "name": "Chụp CCCD Mặt sau & Hướng dẫn"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "151:310",
+      "name": "Kiểm tra thông tin CCCD - Avaroom (Warm Cream)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:634",
+      "name": "Trang chủ - Tìm trọ sinh viên"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:850",
+      "name": "Tài khoản & Cài đặt sinh viên"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:1006",
+      "name": "Tin nhắn & Chat với chủ trọ"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:1181",
+      "name": "Tìm trọ lân cận - Bản đồ"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:1297",
+      "name": "Section - The user requested the exact calendar widget from the reference image overlaid or toggled"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:1504",
+      "name": "Article - Card 1: Studio Ban Công"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:1552",
+      "name": "Tin nhắn"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:1741",
+      "name": "Chi tiết phòng trọ - Avaroom Sinh viên"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:2068",
+      "name": "Đặt lịch xem phòng - Avaroom Sinh viên"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:2257",
+      "name": "Bộ lọc tìm kiếm nâng cao - Avaroom"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:2484",
+      "name": "Đánh giá"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:2857",
+      "name": "Đổi mật khẩu tài khoản - Avaroom"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:3039",
+      "name": "Hồ sơ sinh viên & eKYC (Cọc 0đ)"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:3191",
+      "name": "Section - The user requested the exact calendar widget from the reference image overlaid or toggled"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:3306",
+      "name": "Lịch hẹn xem phòng - Avaroom Sinh viên"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:3552",
+      "name": "Lịch hẹn xem phòng - Avaroom Sinh viên"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:3798",
+      "name": "Lịch hẹn xem phòng - Avaroom Sinh viên"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:4044",
+      "name": "Phòng đã lưu - Avaroom Sinh viên"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:4305",
+      "name": "Search Result"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "251:4606",
+      "name": "Background+Border"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:7",
+      "name": "Quản lý tin đăng - Chủ trọ"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:240",
+      "name": "Lịch hẹn xem phòng & Khảo sát"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:488",
+      "name": "Tin nhắn & Tương tác khách thuê"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:715",
+      "name": "Hồ sơ chủ trọ & Cài đặt"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:936",
+      "name": "Đăng tin phòng trọ mới - Avaroom"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:1231",
+      "name": "Chi tiết lịch hẹn xem phòng - Góc nhìn Chủ trọ"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:1358",
+      "name": "Trung tâm Thông báo - Chủ trọ"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:1551",
+      "name": "Quản lý & Phản hồi Đánh giá - Chủ trọ"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:1793",
+      "name": "Thống kê & Báo cáo Tăng trưởng - Chủ trọ"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:2119",
+      "name": "Chỉnh sửa Hồ sơ Chủ trọ & Cài đặt"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:2291",
+      "name": "Đăng tin - Bước 3: Ảnh 360° & Timestamp"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:2480",
+      "name": "Đăng tin - Bước 2: Tiện ích & Nội thất"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:2835",
+      "name": "Đăng tin - Bước 4 - Hoàn tất"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:3093",
+      "name": "Tin nhắn"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "261:3269",
+      "name": "Chi tiết tin đăng"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "280:324",
+      "name": "Chi tiết tin đăng [DEMO]"
+    },
+    {
+      "page": "Landing Page & Web Admin",
+      "id": "303:261",
+      "name": "Trung tâm Thông báo - Chủ trọ"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "79:224",
+      "name": "Quản lý tin đăng - Chủ trọ"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "79:484",
+      "name": "Lịch hẹn xem phòng & Khảo sát"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "79:743",
+      "name": "Tin nhắn & Tương tác khách thuê"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "79:979",
+      "name": "Hồ sơ chủ trọ & Cài đặt"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "184:1375",
+      "name": "Đăng tin phòng trọ mới - Avaroom"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "184:1715",
+      "name": "Chi tiết lịch hẹn xem phòng - Góc nhìn Chủ trọ"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "184:1901",
+      "name": "Quản lý Hợp đồng & Tiền cọc Escrow - Chủ trọ"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "184:2077",
+      "name": "Chốt điện nước & Hóa đơn tháng - Chủ trọ"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "187:2",
+      "name": "Trung tâm Thông báo - Chủ trọ"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "187:195",
+      "name": "Quản lý & Phản hồi Đánh giá - Chủ trọ"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "187:437",
+      "name": "Thống kê & Báo cáo Tăng trưởng - Chủ trọ"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "187:763",
+      "name": "Chỉnh sửa Hồ sơ Chủ trọ & Cài đặt"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "188:1012",
+      "name": "Đăng tin - Bước 3: Ảnh 360° & Timestamp"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "188:1277",
+      "name": "Đăng tin - Bước 2: Tiện ích & Nội thất"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "188:1761",
+      "name": "Xem trước Hóa đơn PDF & VietQR"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "188:2041",
+      "name": "Biên bản bàn giao tài sản 360°"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "244:1286",
+      "name": "Header"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "244:1365",
+      "name": "Sticky Bottom Navigation Dock"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "249:1379",
+      "name": "Html → Body"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "250:2",
+      "name": "Tin nhắn"
+    },
+    {
+      "page": "Chủ trọ",
+      "id": "251:275",
+      "name": "Chi tiết tin đăng"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "74:1978",
+      "name": "Trang chủ - Tìm trọ sinh viên"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "74:2350",
+      "name": "Tài khoản & Cài đặt sinh viên"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "74:2601",
+      "name": "Tin nhắn & Chat với chủ trọ"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "74:2813",
+      "name": "Tìm trọ lân cận - Bản đồ"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "74:3235",
+      "name": "Article - Card 1: Studio Ban Công"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "168:224",
+      "name": "Tin nhắn"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "169:453",
+      "name": "Chi tiết phòng trọ - Avaroom Sinh viên"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "169:801",
+      "name": "Đặt lịch xem phòng - Avaroom Sinh viên"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "169:1062",
+      "name": "Bộ lọc tìm kiếm nâng cao - Avaroom"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "169:1353",
+      "name": "Đánh giá"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "169:1730",
+      "name": "Đổi mật khẩu tài khoản - Avaroom"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "169:1912",
+      "name": "Hồ sơ sinh viên & eKYC (Cọc 0đ)"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "179:264",
+      "name": "Section - The user requested the exact calendar widget from the reference image overlaid or toggled"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "180:400",
+      "name": "Lịch hẹn xem phòng - Avaroom Sinh viên"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "236:993",
+      "name": "Lịch hẹn xem phòng - Avaroom Sinh viên"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "236:746",
+      "name": "Lịch hẹn xem phòng - Avaroom Sinh viên"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "180:663",
+      "name": "Phòng đã lưu - Avaroom Sinh viên"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "182:1002",
+      "name": "Search Result"
+    },
+    {
+      "page": "Sinh viên",
+      "id": "233:634",
+      "name": "Background+Border"
+    }
+  ],
+  "interactions": [
+    {
+      "frameName": "Đăng nhập - Avaroom (Warm Cream)",
+      "frameId": "57:5625",
+      "sourceName": "Button",
+      "sourceId": "57:5697",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng nhập - Avaroom (Warm Cream)",
+      "frameId": "57:5625",
+      "sourceName": "Button - Primary Action CTA",
+      "sourceId": "57:5700",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng nhập - Avaroom (Warm Cream)",
+      "frameId": "57:5625",
+      "sourceName": "Button",
+      "sourceId": "57:5737",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng ký - Avaroom (Warm Cream)",
+      "frameId": "57:5774",
+      "sourceName": "Button - Role: Landlord",
+      "sourceId": "57:5821",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng ký - Avaroom (Warm Cream)",
+      "frameId": "57:5774",
+      "sourceName": "Primary CTA Button → Button",
+      "sourceId": "57:5904",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng ký - Avaroom (Warm Cream)",
+      "frameId": "57:5774",
+      "sourceName": "Đăng nhập",
+      "sourceId": "57:5948",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng ký - Avaroom (Warm Cream)",
+      "frameId": "57:5774",
+      "sourceName": "Button - Go back:margin",
+      "sourceId": "220:15",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng ký - Chủ trọ (Warm Cream)",
+      "frameId": "57:5962",
+      "sourceName": "Button - Role: Student (Active Default)",
+      "sourceId": "116:256",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng ký - Chủ trọ (Warm Cream)",
+      "frameId": "57:5962",
+      "sourceName": "Main Submit CTA Button → Button",
+      "sourceId": "57:6122",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng ký - Chủ trọ (Warm Cream)",
+      "frameId": "57:5962",
+      "sourceName": "Button - Go back:margin",
+      "sourceId": "152:483",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Xác thực CCCD 2 mặt - Avaroom",
+      "frameId": "151:176",
+      "sourceName": "Button - Chụp mặt sau căn cước",
+      "sourceId": "152:488",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Xác thực CCCD 2 mặt - Avaroom",
+      "frameId": "151:176",
+      "sourceName": "Button - Chụp mặt sau căn cước",
+      "sourceId": "151:243",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Xác thực CCCD 2 mặt - Avaroom",
+      "frameId": "151:176",
+      "sourceName": "Button - Main Continue / Capture Next Side:shadow",
+      "sourceId": "151:294",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Xác thực CCCD 2 mặt - Avaroom",
+      "frameId": "261:3597",
+      "sourceName": "Button - Main Continue / Capture Next Side",
+      "sourceId": "261:3678",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Xác thực CCCD 2 mặt - Avaroom",
+      "frameId": "261:3597",
+      "sourceName": "Button - Go back:margin",
+      "sourceId": "261:3686",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Onboarding 2 - Minh bạch giá & Ảnh thật (Warm Cream)",
+      "frameId": "56:5299",
+      "sourceName": "Button",
+      "sourceId": "56:5385",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Onboarding 3 - Đăng nhập & Đăng ký (Warm Cream)",
+      "frameId": "56:5392",
+      "sourceName": "Button - Primary CTA: Register:shadow",
+      "sourceId": "56:5488",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Onboarding 3 - Đăng nhập & Đăng ký (Warm Cream)",
+      "frameId": "56:5392",
+      "sourceName": "Button - Secondary CTA: Sign In",
+      "sourceId": "56:5494",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Onboarding 1 - Tìm trọ gần trường (Warm Cream)",
+      "frameId": "56:5505",
+      "sourceName": "Onboarding 1 - Tìm trọ gần trường (Warm Cream)",
+      "sourceId": "56:5505",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Onboarding 1 - Tìm trọ gần trường (Warm Cream)",
+      "frameId": "56:5505",
+      "sourceName": "Button",
+      "sourceId": "56:5619",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Form nhập email lấy lại mật khẩu",
+      "frameId": "135:278",
+      "sourceName": "Button:shadow",
+      "sourceId": "135:351",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Form nhập email lấy lại mật khẩu",
+      "frameId": "135:278",
+      "sourceName": "Button",
+      "sourceId": "220:28",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Form nhập email lấy lại mật khẩu",
+      "frameId": "135:278",
+      "sourceName": "Button - Go back",
+      "sourceId": "135:657",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Xác thực OTP - Avaroom (Warm Cream)",
+      "frameId": "135:385",
+      "sourceName": "Primary Confirmation Action:margin",
+      "sourceId": "135:449",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Xác thực OTP - Avaroom (Warm Cream)",
+      "frameId": "135:385",
+      "sourceName": "Button - Go back:margin",
+      "sourceId": "135:506",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đặt mật khẩu mới - Avaroom (Warm Cream)",
+      "frameId": "135:515",
+      "sourceName": "Button",
+      "sourceId": "135:621",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đặt mật khẩu mới - Avaroom (Warm Cream)",
+      "frameId": "135:515",
+      "sourceName": "Button - Go back:margin",
+      "sourceId": "299:10",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Xác thực OTP - Avaroom (Warm Cream)",
+      "frameId": "151:2",
+      "sourceName": "Button:shadow",
+      "sourceId": "151:48",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Xác thực OTP - Avaroom (Warm Cream)",
+      "frameId": "151:2",
+      "sourceName": "Button - Go back:margin",
+      "sourceId": "151:59",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chụp CCCD Mặt trước & Hướng dẫn",
+      "frameId": "151:65",
+      "sourceName": "Button - Go back:margin",
+      "sourceId": "261:3709",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chụp CCCD Mặt sau & Hướng dẫn",
+      "frameId": "231:40",
+      "sourceName": "Button - Go back:margin",
+      "sourceId": "261:3716",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Kiểm tra thông tin CCCD - Avaroom (Warm Cream)",
+      "frameId": "151:310",
+      "sourceName": "Actions Section",
+      "sourceId": "151:448",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Kiểm tra thông tin CCCD - Avaroom (Warm Cream)",
+      "frameId": "151:310",
+      "sourceName": "Button - Go back:margin",
+      "sourceId": "231:109",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "251:634",
+      "sourceName": "Button - Bộ lọc nâng cao",
+      "sourceId": "251:646",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "251:634",
+      "sourceName": "Button:margin",
+      "sourceId": "251:753",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "251:634",
+      "sourceName": "Button - Thông báo",
+      "sourceId": "251:817",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "251:634",
+      "sourceName": "Link",
+      "sourceId": "251:832",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "251:634",
+      "sourceName": "Link",
+      "sourceId": "251:837",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "251:634",
+      "sourceName": "Link",
+      "sourceId": "251:845",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "251:850",
+      "sourceName": "Tài khoản & Cài đặt sinh viên",
+      "sourceId": "251:850",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "251:850",
+      "sourceName": "Background+Border+Shadow",
+      "sourceId": "251:853",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "251:850",
+      "sourceName": "Background+Border+Shadow",
+      "sourceId": "251:862",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "251:850",
+      "sourceName": "Link - eKYC Item",
+      "sourceId": "251:886",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "251:850",
+      "sourceName": "Button",
+      "sourceId": "251:911",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "251:850",
+      "sourceName": "Link - Change Password",
+      "sourceId": "251:939",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "251:850",
+      "sourceName": "Link",
+      "sourceId": "303:233",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "251:850",
+      "sourceName": "Link",
+      "sourceId": "303:238",
+      "trigger": {
+        "type": "DRAG"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "251:850",
+      "sourceName": "Link",
+      "sourceId": "303:243",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tin nhắn & Chat với chủ trọ",
+      "frameId": "251:1006",
+      "sourceName": "Button - Quay lại",
+      "sourceId": "261:3571",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tìm trọ lân cận - Bản đồ",
+      "frameId": "251:1181",
+      "sourceName": "Tìm trọ lân cận - Bản đồ",
+      "sourceId": "251:1181",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tìm trọ lân cận - Bản đồ",
+      "frameId": "251:1181",
+      "sourceName": "BottomContentSection",
+      "sourceId": "251:1449",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tìm trọ lân cận - Bản đồ",
+      "frameId": "251:1181",
+      "sourceName": "Article - Frosted Floating Apartment Card matching reference \"VERTICE\" popup",
+      "sourceId": "251:1456",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tìm trọ lân cận - Bản đồ",
+      "frameId": "251:1181",
+      "sourceName": "Button",
+      "sourceId": "251:1497",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tìm trọ lân cận - Bản đồ",
+      "frameId": "251:1181",
+      "sourceName": "Link",
+      "sourceId": "299:77",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tìm trọ lân cận - Bản đồ",
+      "frameId": "251:1181",
+      "sourceName": "Link",
+      "sourceId": "299:82",
+      "trigger": {
+        "type": "DRAG"
+      }
+    },
+    {
+      "frameName": "Tìm trọ lân cận - Bản đồ",
+      "frameId": "251:1181",
+      "sourceName": "Link",
+      "sourceId": "299:87",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tìm trọ lân cận - Bản đồ",
+      "frameId": "251:1181",
+      "sourceName": "Link",
+      "sourceId": "299:95",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tin nhắn",
+      "frameId": "251:1552",
+      "sourceName": "Item 1: Cô Hoàng Thị Ánh Tuyết",
+      "sourceId": "251:1578",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tin nhắn",
+      "frameId": "251:1552",
+      "sourceName": "Link",
+      "sourceId": "303:140",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tin nhắn",
+      "frameId": "251:1552",
+      "sourceName": "Link",
+      "sourceId": "303:145",
+      "trigger": {
+        "type": "DRAG"
+      }
+    },
+    {
+      "frameName": "Tin nhắn",
+      "frameId": "251:1552",
+      "sourceName": "Link",
+      "sourceId": "303:158",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+      "frameId": "251:1741",
+      "sourceName": "Left: Chat with Host Button",
+      "sourceId": "251:2037",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+      "frameId": "251:1741",
+      "sourceName": "Button - Right: Book Viewing Schedule Appointment",
+      "sourceId": "251:2042",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+      "frameId": "251:1741",
+      "sourceName": "Button - Quay lại:margin",
+      "sourceId": "251:2051",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đặt lịch xem phòng - Avaroom Sinh viên",
+      "frameId": "251:2068",
+      "sourceName": "Sticky / Bottom Floating Action Bar",
+      "sourceId": "251:2230",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+      "frameId": "251:2257",
+      "sourceName": "Container",
+      "sourceId": "251:2466",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đánh giá",
+      "frameId": "251:2484",
+      "sourceName": "Button - Quay lại",
+      "sourceId": "251:2841",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đánh giá",
+      "frameId": "251:2484",
+      "sourceName": "Button - Book Tour / Deposit Action",
+      "sourceId": "251:2832",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đổi mật khẩu tài khoản - Avaroom",
+      "frameId": "251:2857",
+      "sourceName": "Button - Go back",
+      "sourceId": "251:3026",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+      "frameId": "251:3306",
+      "sourceName": "Button - Quay lại tài khoản",
+      "sourceId": "251:3311",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+      "frameId": "251:3306",
+      "sourceName": "Button",
+      "sourceId": "251:3333",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+      "frameId": "251:3306",
+      "sourceName": "Button",
+      "sourceId": "251:3338",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+      "frameId": "251:3552",
+      "sourceName": "Button - Quay lại tài khoản",
+      "sourceId": "251:3557",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+      "frameId": "251:3798",
+      "sourceName": "Button - Quay lại tài khoản",
+      "sourceId": "251:3803",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Phòng đã lưu - Avaroom Sinh viên",
+      "frameId": "251:4044",
+      "sourceName": "Button - Bộ lọc nâng cao",
+      "sourceId": "251:4054",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Phòng đã lưu - Avaroom Sinh viên",
+      "frameId": "251:4044",
+      "sourceName": "Article - Card 1: Studio Ban Công - Tạ Quang Bửu",
+      "sourceId": "251:4094",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Phòng đã lưu - Avaroom Sinh viên",
+      "frameId": "251:4044",
+      "sourceName": "Button - Quay lại tài khoản",
+      "sourceId": "251:4265",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Search Result",
+      "frameId": "251:4305",
+      "sourceName": "Container",
+      "sourceId": "251:4428",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Search Result",
+      "frameId": "251:4305",
+      "sourceName": "Container",
+      "sourceId": "251:4596",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Search Result",
+      "frameId": "251:4305",
+      "sourceName": "Button - Filter search",
+      "sourceId": "251:4603",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Quản lý tin đăng - Chủ trọ",
+      "frameId": "261:7",
+      "sourceName": "Button",
+      "sourceId": "261:16",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Quản lý tin đăng - Chủ trọ",
+      "frameId": "261:7",
+      "sourceName": "Quick Action Buttons",
+      "sourceId": "261:119",
+      "trigger": {
+        "type": "DRAG"
+      }
+    },
+    {
+      "frameName": "Quản lý tin đăng - Chủ trọ",
+      "frameId": "261:7",
+      "sourceName": "Button",
+      "sourceId": "261:120",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Quản lý tin đăng - Chủ trọ",
+      "frameId": "261:7",
+      "sourceName": "Link",
+      "sourceId": "261:222",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Quản lý tin đăng - Chủ trọ",
+      "frameId": "261:7",
+      "sourceName": "Link",
+      "sourceId": "261:227",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Quản lý tin đăng - Chủ trọ",
+      "frameId": "261:7",
+      "sourceName": "Link",
+      "sourceId": "261:235",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Lịch hẹn xem phòng & Khảo sát",
+      "frameId": "261:240",
+      "sourceName": "Link",
+      "sourceId": "261:465",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Lịch hẹn xem phòng & Khảo sát",
+      "frameId": "261:240",
+      "sourceName": "Link",
+      "sourceId": "261:475",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Lịch hẹn xem phòng & Khảo sát",
+      "frameId": "261:240",
+      "sourceName": "Link",
+      "sourceId": "261:483",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tin nhắn & Tương tác khách thuê",
+      "frameId": "261:488",
+      "sourceName": "Button - Quay lại",
+      "sourceId": "280:781",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Hồ sơ chủ trọ & Cài đặt",
+      "frameId": "261:715",
+      "sourceName": "Link",
+      "sourceId": "261:913",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Hồ sơ chủ trọ & Cài đặt",
+      "frameId": "261:715",
+      "sourceName": "Link",
+      "sourceId": "261:918",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Hồ sơ chủ trọ & Cài đặt",
+      "frameId": "261:715",
+      "sourceName": "Link",
+      "sourceId": "261:923",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng tin phòng trọ mới - Avaroom",
+      "frameId": "261:936",
+      "sourceName": "Container",
+      "sourceId": "261:1201",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng tin phòng trọ mới - Avaroom",
+      "frameId": "261:936",
+      "sourceName": "Button - Quay lại",
+      "sourceId": "261:1216",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chi tiết lịch hẹn xem phòng - Góc nhìn Chủ trọ",
+      "frameId": "261:1231",
+      "sourceName": "Button",
+      "sourceId": "261:1310",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Quản lý & Phản hồi Đánh giá - Chủ trọ",
+      "frameId": "261:1551",
+      "sourceName": "Button - Quay lại:margin",
+      "sourceId": "261:1780",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chỉnh sửa Hồ sơ Chủ trọ & Cài đặt",
+      "frameId": "261:2119",
+      "sourceName": "Button - Quay lại",
+      "sourceId": "261:2276",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng tin - Bước 3: Ảnh 360° & Timestamp",
+      "frameId": "261:2291",
+      "sourceName": "Button",
+      "sourceId": "261:2829",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng tin - Bước 3: Ảnh 360° & Timestamp",
+      "frameId": "261:2291",
+      "sourceName": "Button - Quay lại",
+      "sourceId": "280:752",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng tin - Bước 2: Tiện ích & Nội thất",
+      "frameId": "261:2480",
+      "sourceName": "Container",
+      "sourceId": "261:2792",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng tin - Bước 2: Tiện ích & Nội thất",
+      "frameId": "261:2480",
+      "sourceName": "Button",
+      "sourceId": "261:2798",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng tin - Bước 2: Tiện ích & Nội thất",
+      "frameId": "261:2480",
+      "sourceName": "Button - Quay lại",
+      "sourceId": "280:732",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đăng tin - Bước 4 - Hoàn tất",
+      "frameId": "261:2835",
+      "sourceName": "Button - Quay lại",
+      "sourceId": "261:2840",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tin nhắn",
+      "frameId": "261:3093",
+      "sourceName": "Link",
+      "sourceId": "261:3246",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tin nhắn",
+      "frameId": "261:3093",
+      "sourceName": "Link",
+      "sourceId": "261:3251",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tin nhắn",
+      "frameId": "261:3093",
+      "sourceName": "Link",
+      "sourceId": "261:3264",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chi tiết tin đăng",
+      "frameId": "261:3269",
+      "sourceName": "Frame 2",
+      "sourceId": "280:314",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chi tiết tin đăng [DEMO]",
+      "frameId": "280:324",
+      "sourceName": "Frame 2",
+      "sourceId": "280:625",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chi tiết tin đăng [DEMO]",
+      "frameId": "280:324",
+      "sourceName": "Button - Quay lại danh sách",
+      "sourceId": "280:328",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trung tâm Thông báo - Chủ trọ",
+      "frameId": "303:261",
+      "sourceName": "Button - Quay lại:margin",
+      "sourceId": "303:441",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "74:1978",
+      "sourceName": "Button - Bộ lọc nâng cao",
+      "sourceId": "74:2009",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "74:1978",
+      "sourceName": "Button:margin",
+      "sourceId": "74:2181",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "74:1978",
+      "sourceName": "Link",
+      "sourceId": "74:2332",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "74:1978",
+      "sourceName": "Link",
+      "sourceId": "74:2337",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Trang chủ - Tìm trọ sinh viên",
+      "frameId": "74:1978",
+      "sourceName": "Link",
+      "sourceId": "74:2345",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "74:2350",
+      "sourceName": "Background+Border+Shadow",
+      "sourceId": "74:2354",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "74:2350",
+      "sourceName": "Background+Border+Shadow",
+      "sourceId": "74:2363",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "74:2350",
+      "sourceName": "Link - eKYC Item",
+      "sourceId": "74:2389",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tài khoản & Cài đặt sinh viên",
+      "frameId": "74:2350",
+      "sourceName": "Link - Change Password",
+      "sourceId": "74:2534",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tìm trọ lân cận - Bản đồ",
+      "frameId": "74:2813",
+      "sourceName": "Article - Frosted Floating Apartment Card matching reference \"VERTICE\" popup",
+      "sourceId": "74:2936",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tìm trọ lân cận - Bản đồ",
+      "frameId": "74:2813",
+      "sourceName": "Button",
+      "sourceId": "74:2977",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Tin nhắn",
+      "frameId": "168:224",
+      "sourceName": "Item 1: Cô Hoàng Thị Ánh Tuyết",
+      "sourceId": "168:282",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+      "frameId": "169:453",
+      "sourceName": "Left: Chat with Host Button",
+      "sourceId": "169:770",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Chi tiết phòng trọ - Avaroom Sinh viên",
+      "frameId": "169:453",
+      "sourceName": "Button - Right: Book Viewing Schedule Appointment",
+      "sourceId": "169:775",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Đặt lịch xem phòng - Avaroom Sinh viên",
+      "frameId": "169:801",
+      "sourceName": "Sticky / Bottom Floating Action Bar",
+      "sourceId": "169:1033",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+      "frameId": "169:1062",
+      "sourceName": "Container",
+      "sourceId": "169:1323",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+      "frameId": "180:400",
+      "sourceName": "Button",
+      "sourceId": "180:426",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+      "frameId": "180:400",
+      "sourceName": "Button",
+      "sourceId": "180:431",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Phòng đã lưu - Avaroom Sinh viên",
+      "frameId": "180:663",
+      "sourceName": "Button - Bộ lọc nâng cao",
+      "sourceId": "233:729",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Phòng đã lưu - Avaroom Sinh viên",
+      "frameId": "180:663",
+      "sourceName": "Article - Card 1: Studio Ban Công - Tạ Quang Bửu",
+      "sourceId": "180:729",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Search Result",
+      "frameId": "182:1002",
+      "sourceName": "Container",
+      "sourceId": "182:1142",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    },
+    {
+      "frameName": "Search Result",
+      "frameId": "182:1002",
+      "sourceName": "Container",
+      "sourceId": "182:1324",
+      "trigger": {
+        "type": "ON_CLICK"
+      }
+    }
+  ]
+}

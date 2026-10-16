@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warm Cream Theme Palette from Figma -->
+    <color name="bg_warm_cream">#FDF9F2</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_gray_light">#F7FAFC</color>
+    <color name="bg_card">#FFFFFF</color>
+
+    <!-- Primary & Accent Colors -->
+    <color name="primary_dark">#040505</color>
+    <color name="primary_black">#1A202C</color>
+    <color name="primary_blue">#0D1C2E</color>
+    <color name="accent_red">#E53E3E</color>
+    <color name="accent_red_light">#FFDAD7</color>
+    <color name="accent_yellow">#FBBF24</color>
+
+    <!-- Neutral & Text Colors -->
+    <color name="text_primary">#1A202C</color>
+    <color name="text_secondary">#718096</color>
+    <color name="text_muted">#A0AEC0</color>
+    <color name="border_light">#EDF2F7</color>
+    <color name="border_subtle">#E2E8F0</color>
+    
+    <!-- Role Switcher -->
+    <color name="role_active_bg">#040505</color>
+    <color name="role_active_text">#FFFFFF</color>
+    <color name="role_inactive_bg">#EDF2F7</color>
+    <color name="role_inactive_text">#718096</color>
+</resources>

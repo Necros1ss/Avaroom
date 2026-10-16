@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_landlord"
+    app:startDestination="@id/landlordDashboardFragment">
+
+    <!-- Quản lý tin đăng - Chủ trọ -->
+    <fragment
+        android:id="@+id/landlordDashboardFragment"
+        android:name="com.avaroom.app.ui.landlord.LandlordDashboardFragment"
+        android:label="Quản lý tin đăng">
+        <action android:id="@+id/action_dashboard_to_createPost" app:destination="@id/createPostStep1Fragment" />
+        <action android:id="@+id/action_dashboard_to_postDetail" app:destination="@id/postDetailFragment" />
+        <action android:id="@+id/action_dashboard_to_appointments" app:destination="@id/landlordAppointmentsFragment" />
+        <action android:id="@+id/action_dashboard_to_chat" app:destination="@id/landlordChatListFragment" />
+        <action android:id="@+id/action_dashboard_to_profile" app:destination="@id/landlordProfileFragment" />
+    </fragment>
+
+    <!-- Đăng tin - Bước 1: Thông tin cơ bản -->
+    <fragment
+        android:id="@+id/createPostStep1Fragment"
+        android:name="com.avaroom.app.ui.landlord.CreatePostStep1Fragment"
+        android:label="Đăng tin - Bước 1">
+        <action android:id="@+id/action_step1_to_step2" app:destination="@id/createPostStep2Fragment" />
+    </fragment>
+
+    <!-- Đăng tin - Bước 2: Tiện ích & Nội thất -->
+    <fragment
+        android:id="@+id/createPostStep2Fragment"
+        android:name="com.avaroom.app.ui.landlord.CreatePostStep2Fragment"
+        android:label="Đăng tin - Bước 2">
+        <action android:id="@+id/action_step2_to_step3" app:destination="@id/createPostStep3Fragment" />
+    </fragment>
+
+    <!-- Đăng tin - Bước 3: Ảnh 360° & Timestamp -->
+    <fragment
+        android:id="@+id/createPostStep3Fragment"
+        android:name="com.avaroom.app.ui.landlord.CreatePostStep3Fragment"
+        android:label="Đăng tin - Bước 3">
+        <action android:id="@+id/action_step3_to_step4" app:destination="@id/createPostStep4Fragment" />
+    </fragment>
+
+    <!-- Đăng tin - Bước 4: Hoàn tất -->
+    <fragment
+        android:id="@+id/createPostStep4Fragment"
+        android:name="com.avaroom.app.ui.landlord.CreatePostStep4Fragment"
+        android:label="Đăng tin - Bước 4" />
+
+    <!-- Chi tiết tin đăng -->
+    <fragment
+        android:id="@+id/postDetailFragment"
+        android:name="com.avaroom.app.ui.landlord.PostDetailFragment"
+        android:label="Chi tiết tin đăng">
+        <action android:id="@+id/action_postDetail_to_reviews" app:destination="@id/landlordReviewsFragment" />
+    </fragment>
+
+    <!-- Lịch hẹn xem phòng & Khảo sát -->
+    <fragment
+        android:id="@+id/landlordAppointmentsFragment"
+        android:name="com.avaroom.app.ui.landlord.LandlordAppointmentsFragment"
+        android:label="Lịch hẹn">
+        <action android:id="@+id/action_appointments_to_detail" app:destination="@id/appointmentDetailFragment" />
+    </fragment>
+
+    <!-- Chi tiết lịch hẹn -->
+    <fragment
+        android:id="@+id/appointmentDetailFragment"
+        android:name="com.avaroom.app.ui.landlord.AppointmentDetailFragment"
+        android:label="Chi tiết lịch hẹn">
+        <action android:id="@+id/action_appointmentDetail_to_chat" app:destination="@id/landlordChatFragment" />
+    </fragment>
+
+    <!-- Tin nhắn danh sách -->
+    <fragment
+        android:id="@+id/landlordChatListFragment"
+        android:name="com.avaroom.app.ui.landlord.LandlordChatListFragment"
+        android:label="Tin nhắn">
+        <action android:id="@+id/action_chatList_to_chat" app:destination="@id/landlordChatFragment" />
+    </fragment>
+
+    <!-- Chat chi tiết -->
+    <fragment
+        android:id="@+id/landlordChatFragment"
+        android:name="com.avaroom.app.ui.landlord.LandlordChatFragment"
+        android:label="Chat" />
+
+    <!-- Hồ sơ chủ trọ & Cài đặt -->
+    <fragment
+        android:id="@+id/landlordProfileFragment"
+        android:name="com.avaroom.app.ui.landlord.LandlordProfileFragment"
+        android:label="Hồ sơ chủ trọ">
+        <action android:id="@+id/action_profile_to_editProfile" app:destination="@id/editProfileFragment" />
+        <action android:id="@+id/action_profile_to_stats" app:destination="@id/statsFragment" />
+        <action android:id="@+id/action_profile_to_notifications" app:destination="@id/landlordNotificationsFragment" />
+    </fragment>
+
+    <!-- Chỉnh sửa Hồ sơ -->
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.avaroom.app.ui.landlord.EditProfileFragment"
+        android:label="Chỉnh sửa hồ sơ" />
+
+    <!-- Thống kê & Báo cáo -->
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.avaroom.app.ui.landlord.StatsFragment"
+        android:label="Thống kê" />
+
+    <!-- Quản lý & Phản hồi Đánh giá -->
+    <fragment
+        android:id="@+id/landlordReviewsFragment"
+        android:name="com.avaroom.app.ui.landlord.LandlordReviewsFragment"
+        android:label="Đánh giá" />
+
+    <!-- Thông báo -->
+    <fragment
+        android:id="@+id/landlordNotificationsFragment"
+        android:name="com.avaroom.app.ui.landlord.LandlordNotificationsFragment"
+        android:label="Thông báo" />
+
+</navigation>

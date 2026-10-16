@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_student"
+    app:startDestination="@id/studentHomeFragment">
+
+    <!-- Trang chủ - Tìm trọ sinh viên -->
+    <fragment
+        android:id="@+id/studentHomeFragment"
+        android:name="com.avaroom.app.ui.student.StudentHomeFragment"
+        android:label="Trang chủ">
+        <action android:id="@+id/action_home_to_roomDetail" app:destination="@id/roomDetailFragment" />
+        <action android:id="@+id/action_home_to_filter" app:destination="@id/filterFragment" />
+        <action android:id="@+id/action_home_to_map" app:destination="@id/mapFragment" />
+        <action android:id="@+id/action_home_to_chat" app:destination="@id/chatListFragment" />
+        <action android:id="@+id/action_home_to_account" app:destination="@id/studentAccountFragment" />
+        <action android:id="@+id/action_home_to_notifications" app:destination="@id/notificationsFragment" />
+        <action android:id="@+id/action_home_to_search" app:destination="@id/searchResultFragment" />
+    </fragment>
+
+    <!-- Chi tiết phòng trọ -->
+    <fragment
+        android:id="@+id/roomDetailFragment"
+        android:name="com.avaroom.app.ui.student.RoomDetailFragment"
+        android:label="Chi tiết phòng trọ">
+        <action android:id="@+id/action_roomDetail_to_booking" app:destination="@id/bookingFragment" />
+        <action android:id="@+id/action_roomDetail_to_chat" app:destination="@id/chatFragment" />
+        <action android:id="@+id/action_roomDetail_to_reviews" app:destination="@id/reviewsFragment" />
+    </fragment>
+
+    <!-- Đặt lịch xem phòng -->
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.avaroom.app.ui.student.BookingFragment"
+        android:label="Đặt lịch xem phòng" />
+
+    <!-- Bộ lọc tìm kiếm nâng cao -->
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.avaroom.app.ui.student.FilterFragment"
+        android:label="Bộ lọc nâng cao">
+        <action android:id="@+id/action_filter_to_searchResult" app:destination="@id/searchResultFragment" />
+    </fragment>
+
+    <!-- Kết quả tìm kiếm -->
+    <fragment
+        android:id="@+id/searchResultFragment"
+        android:name="com.avaroom.app.ui.student.SearchResultFragment"
+        android:label="Kết quả tìm kiếm">
+        <action android:id="@+id/action_search_to_roomDetail" app:destination="@id/roomDetailFragment" />
+    </fragment>
+
+    <!-- Tìm trọ lân cận - Bản đồ -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.avaroom.app.ui.student.MapFragment"
+        android:label="Bản đồ" />
+
+    <!-- Tin nhắn danh sách -->
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="com.avaroom.app.ui.student.ChatListFragment"
+        android:label="Tin nhắn">
+        <action android:id="@+id/action_chatList_to_chat" app:destination="@id/chatFragment" />
+    </fragment>
+
+    <!-- Chat chi tiết -->
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.avaroom.app.ui.student.ChatFragment"
+        android:label="Chat" />
+
+    <!-- Tài khoản & Cài đặt sinh viên -->
+    <fragment
+        android:id="@+id/studentAccountFragment"
+        android:name="com.avaroom.app.ui.student.StudentAccountFragment"
+        android:label="Tài khoản">
+        <action android:id="@+id/action_account_to_savedRooms" app:destination="@id/savedRoomsFragment" />
+        <action android:id="@+id/action_account_to_appointments" app:destination="@id/appointmentsFragment" />
+        <action android:id="@+id/action_account_to_ekyc" app:destination="@id/studentEkycFragment" />
+        <action android:id="@+id/action_account_to_changePassword" app:destination="@id/changePasswordFragment" />
+    </fragment>
+
+    <!-- Phòng đã lưu -->
+    <fragment
+        android:id="@+id/savedRoomsFragment"
+        android:name="com.avaroom.app.ui.student.SavedRoomsFragment"
+        android:label="Phòng đã lưu">
+        <action android:id="@+id/action_saved_to_roomDetail" app:destination="@id/roomDetailFragment" />
+    </fragment>
+
+    <!-- Lịch hẹn xem phòng -->
+    <fragment
+        android:id="@+id/appointmentsFragment"
+        android:name="com.avaroom.app.ui.student.AppointmentsFragment"
+        android:label="Lịch hẹn xem phòng" />
+
+    <!-- Hồ sơ sinh viên & eKYC -->
+    <fragment
+        android:id="@+id/studentEkycFragment"
+        android:name="com.avaroom.app.ui.student.StudentEkycFragment"
+        android:label="Hồ sơ eKYC" />
+
+    <!-- Đổi mật khẩu -->
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.avaroom.app.ui.student.ChangePasswordFragment"
+        android:label="Đổi mật khẩu" />
+
+    <!-- Đánh giá -->
+    <fragment
+        android:id="@+id/reviewsFragment"
+        android:name="com.avaroom.app.ui.student.ReviewsFragment"
+        android:label="Đánh giá" />
+
+    <!-- Thông báo -->
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.avaroom.app.ui.student.NotificationsFragment"
+        android:label="Thông báo" />
+
+</navigation>
