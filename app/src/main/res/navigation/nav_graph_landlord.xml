@@ -92,6 +92,7 @@
         <action android:id="@+id/action_profile_to_editProfile" app:destination="@id/editProfileFragment" />
         <action android:id="@+id/action_profile_to_stats" app:destination="@id/statsFragment" />
         <action android:id="@+id/action_profile_to_notifications" app:destination="@id/landlordNotificationsFragment" />
+        <action android:id="@+id/action_profile_to_reviews" app:destination="@id/landlordReviewsFragment" />
     </fragment>
 
     <!-- Chỉnh sửa Hồ sơ -->
@@ -117,5 +118,33 @@
         android:id="@+id/landlordNotificationsFragment"
         android:name="com.avaroom.app.ui.landlord.LandlordNotificationsFragment"
         android:label="Thông báo" />
+
+    <!-- Quản lý Hợp đồng & Tiền cọc Escrow -->
+    <fragment
+        android:id="@+id/escrowContractFragment"
+        android:name="com.avaroom.app.ui.landlord.EscrowContractFragment"
+        android:label="Hợp đồng &amp; Escrow">
+        <action android:id="@+id/action_escrow_to_handover" app:destination="@id/assetHandoverFragment" />
+    </fragment>
+
+    <!-- Chốt điện nước & Hóa đơn tháng -->
+    <fragment
+        android:id="@+id/utilityBillingFragment"
+        android:name="com.avaroom.app.ui.landlord.UtilityBillingFragment"
+        android:label="Chốt điện nước">
+        <action android:id="@+id/action_billing_to_invoice" app:destination="@id/invoicePreviewFragment" />
+    </fragment>
+
+    <!-- Xem trước Hóa đơn PDF & VietQR -->
+    <fragment
+        android:id="@+id/invoicePreviewFragment"
+        android:name="com.avaroom.app.ui.landlord.InvoicePreviewFragment"
+        android:label="Xem trước Hóa đơn" />
+
+    <!-- Biên bản bàn giao tài sản 360° -->
+    <fragment
+        android:id="@+id/assetHandoverFragment"
+        android:name="com.avaroom.app.ui.landlord.AssetHandoverFragment"
+        android:label="Biên bản bàn giao 360°" />
 
 </navigation>

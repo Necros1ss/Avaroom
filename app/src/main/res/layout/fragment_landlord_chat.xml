@@ -4,16 +4,235 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_white">
-    <TextView
-        android:layout_width="wrap_content"
+    android:background="@color/bg_warm_cream">
+
+    <!-- Top App Bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bg_white"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/btn_back_landlord_chat"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="←"
+            android:textColor="@color/primary_black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_back_landlord_chat"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Thanh Tùng"
+                android:textColor="@color/primary_black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sinh viên ĐH Bách Khoa • Cọc 0đ Escrow"
+                android:textColor="@color/accent_green"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Escrow Protection Banner from Figma -->
+    <LinearLayout
+        android:id="@+id/layout_escrow_banner"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Chat"
-        android:textColor="@color/text_primary"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:background="#FEF3C7"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛡️ Bảo chứng Quỹ Avaroom Escrow"
+            android:textColor="#92400E"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Tiền cọc của khách sẽ được giữ an toàn tại Quỹ Avaroom Escrow và chuyển về tài khoản của bạn ngay khi bàn giao chìa khóa."
+            android:textColor="#78350F"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom_input"
+        app:layout_constraintTop_toBottomOf="@id/layout_escrow_banner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp">
+
+            <!-- Message 1: Student -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="top|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/bg_chip_pill"
+                    android:gravity="center"
+                    android:text="🎓"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nguyễn Thanh Tùng • 14:28"
+                        android:textColor="@color/text_muted"
+                        android:textSize="10sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        app:cardBackgroundColor="@color/bg_white"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="260dp"
+                            android:paddingHorizontal="14dp"
+                            android:paddingVertical="10dp"
+                            android:text="Dạ cháu chào cô, tiền điện nước tính thế nào ạ? Cháu có thể qua xem phòng chiều mai lúc 16h được không cô?"
+                            android:textColor="@color/text_primary"
+                            android:textSize="13sp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Message 2: Landlord Reply -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="top|end"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bạn (Chủ trọ) • 14:30"
+                        android:textColor="@color/text_muted"
+                        android:textSize="10sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        app:cardBackgroundColor="@color/primary_black"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="1dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="260dp"
+                            android:paddingHorizontal="14dp"
+                            android:paddingVertical="10dp"
+                            android:text="Điện 3.5k/số, nước 100k/người. Chiều mai 16h cháu cứ qua số 15 gọi cô nhé. Cháu đặt lịch hẹn trên app để cô giữ lịch nha."
+                            android:textColor="@color/bg_white"
+                            android:textSize="13sp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/bg_chip_pill"
+                    android:gravity="center"
+                    android:text="👩‍💼"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Input -->
+    <LinearLayout
+        android:id="@+id/layout_bottom_input"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/et_landlord_msg"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_field"
+            android:hint="Nhập tin nhắn phản hồi..."
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/btn_send_landlord_chat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_button_primary"
+            android:gravity="center"
+            android:text="➔"
+            android:textColor="@color/bg_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

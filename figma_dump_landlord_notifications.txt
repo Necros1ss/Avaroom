@@ -1,0 +1,193 @@
+FRAME: Trung tâm Thông báo - Chủ trọ
+  FRAME: Main
+    FRAME: Container
+      FRAME: Sub-header / Functional Actions Bar
+        FRAME: Container
+          FRAME: Container
+            TEXT: "Hộp thư hệ thống" (size: 20)
+          RECTANGLE: Background
+        FRAME: Container
+          FRAME: Button
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Đã đọc tất cả" (size: 11)
+          FRAME: Button - Cài đặt thông báo
+            FRAME: Container
+              VECTOR: Icon
+      FRAME: Scrollable Pill Category Tabs
+        FRAME: Button
+          FRAME: Container
+            TEXT: "Tất cả" (size: 11)
+          FRAME: Overlay
+            TEXT: "18" (size: 10)
+        FRAME: Button
+          RECTANGLE: Background
+          FRAME: Container
+            TEXT: "Lịch hẹn" (size: 11)
+          FRAME: Container
+            TEXT: "(4)" (size: 11)
+        FRAME: Button
+          FRAME: Container
+            TEXT: "Hóa đơn & Tiền cọc" (size: 11)
+          FRAME: Container
+            TEXT: "(6)" (size: 11)
+        FRAME: Button
+          FRAME: Container
+            TEXT: "Tin nhắn & Phản hồi" (size: 11)
+          FRAME: Container
+            TEXT: "(5)" (size: 11)
+        FRAME: Button
+          FRAME: Container
+            TEXT: "Hệ thống & Kiểm duyệt" (size: 11)
+          FRAME: Container
+            TEXT: "(3)" (size: 11)
+      FRAME: Notification Feed List
+        FRAME: Card 1: Lịch hẹn mới (Unread / Urgent Action)
+          FRAME: Container
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "LỊCH HẸN MỚI" (size: 13)
+                  RECTANGLE: Background
+                FRAME: Container
+                  TEXT: "15 phút trước" (size: 10)
+              FRAME: Container
+                TEXT: "Khách hẹn xem Studio 402" (size: 18)
+              FRAME: Container
+                TEXT: "Nguyễn Thanh Tùng đặt lịch xem Studio 402\nlúc 16:30 ngày 13/10. Vui lòng xác nhận trước\n2 giờ để giữ phòng." (size: 12)
+              FRAME: Quick Action Tray
+                FRAME: Button
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "Xác nhận\nngay" (size: 13)
+                FRAME: Button
+                  TEXT: "Xem chi tiết" (size: 13)
+                FRAME: Button - Tùy chọn thông báo
+                  FRAME: Container
+                    VECTOR: Icon
+          RECTANGLE: Background
+        FRAME: Card 2: Tiền cọc Escrow (BIDV Safeguard)
+          FRAME: Container
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "KÝ QUỸ AN TOÀN" (size: 13)
+                FRAME: Container
+                  TEXT: "2 giờ trước" (size: 10)
+              FRAME: Container
+                TEXT: "BIDV Escrow đã phong tỏa cọc" (size: 18)
+              FRAME: Container
+                TEXT: "Quỹ BIDV Escrow đã phong tỏa an toàn\n3.500.000 VNĐ tiền cọc cho hợp đồng điện\ntử " (size: 12)
+                FRAME: Background
+                  TEXT: "#HD-2024-AVR90412" (size: 11)
+                TEXT: "." (size: 12)
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                  TEXT: "Bảo chứng hợp đồng" (size: 11)
+        FRAME: Card 3: Hóa đơn đã thanh toán (VietQR Auto Reconciliation)
+          FRAME: Container
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "HÓA ĐƠN ĐIỆN TỬ" (size: 13)
+                  FRAME: Background
+                    TEXT: "VietQR" (size: 10)
+                FRAME: Container
+                  TEXT: "Hôm qua" (size: 10)
+              FRAME: Container
+                TEXT: "Phòng 301 đã thanh toán tiền" (size: 18)
+              FRAME: Container
+                TEXT: "Phòng 301 (Lê Hoàng Nam) đã chuyển khoản\nthanh toán 4.650.000đ. Hệ thống Avaroom\nđã tự động gạch nợ kỳ tháng 10." (size: 12)
+        FRAME: Card 4: Cảnh báo kiểm duyệt Admin (PCCC Audit)
+          FRAME: Container
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "TIÊU CHUẨN KIỂM DUYỆT" (size: 13)
+                FRAME: Container
+                  TEXT: "2 ngày trước" (size: 10)
+              FRAME: Container
+                TEXT: "Bổ sung tem PCCC cho Studio" (size: 18)
+              FRAME: Container
+                TEXT: "Tin đăng Studio 501 cần bổ sung ảnh tem\nkiểm định bình chữa cháy PCCC còn hạn để\nhoàn tất quy trình cấp Tích Xanh thẩm định." (size: 12)
+              FRAME: Button
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Cập nhật giấy tờ" (size: 13)
+        FRAME: Card 5: Đánh giá mới từ Khách thu
+          FRAME: Container
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "ĐÁNH GIÁ LƯU TRÚ" (size: 13)
+                FRAME: Container
+                  TEXT: "3 ngày trước" (size: 10)
+              FRAME: Container
+                TEXT: "Đánh giá 4 sao mới - Studio…" (size: 18)
+              FRAME: Container
+                TEXT: "Khách thuê Trần Tuấn Anh vừa chia sẻ cảm\nnhận: “Căn hộ cách âm rất ổn, ban công\nnhiều ánh sáng tự nhiên…”" (size: 12)
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Margin
+                  TEXT: "4.0 / 5.0" (size: 10)
+      FRAME: Footer Quick Filter / Action Bar
+        FRAME: Background+Shadow
+          FRAME: Container
+            FRAME: Background+Shadow
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                TEXT: "Lọc ưu tiên khẩn cấp" (size: 13)
+              FRAME: Container
+                TEXT: "Chỉ hiển thị lịch hẹn và tiền cọc" (size: 10)
+          FRAME: Label
+            RECTANGLE: Background
+            RECTANGLE: Background
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Button - Quay lại:margin
+          FRAME: Button - Quay lại
+            FRAME: Container
+              VECTOR: Icon
+        FRAME: Heading 1
+          TEXT: "Thông báo" (size: 18)
+      FRAME: Container
+        FRAME: Button - Tác vụ nhanh
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Background+Shadow
+          FRAME: Container
+            VECTOR: Icon

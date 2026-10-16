@@ -1,0 +1,236 @@
+FRAME: Phòng đã lưu - Avaroom Sinh viên
+  FRAME: Main
+    FRAME: Search Bar with Pill Filter:margin
+      FRAME: Search Bar with Pill Filter
+        FRAME: Background+Border+Shadow
+          FRAME: Margin
+            VECTOR: Icon
+          FRAME: Input
+            FRAME: Container
+              TEXT: "Tìm phòng trọ, căn hộ..." (size: 13)
+          FRAME: Button - Bộ lọc nâng cao
+            FRAME: Container
+              VECTOR: Icon
+    FRAME: Container
+      FRAME: Scrollable Filter Chips Rail:margin
+        FRAME: Scrollable Filter Chips Rail
+          FRAME: Container
+            FRAME: Button
+              TEXT: "Tất cả (4)" (size: 11)
+            FRAME: Button
+              TEXT: "Gần Bách Khoa (2)" (size: 11)
+            FRAME: Button
+              TEXT: "Dưới 3.5tr (2)" (size: 11)
+            FRAME: Button
+              TEXT: "Có gác lửng (3)" (size: 11)
+            FRAME: Button
+              TEXT: "Cọc 0đ / Escrow (4)" (size: 11)
+      FRAME: Smart Insight Pill Card:margin
+        FRAME: Smart Insight Pill Card
+          FRAME: Container
+            FRAME: Background+Shadow
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                RECTANGLE: Background
+                FRAME: Container
+                  TEXT: "04 phòng đang theo dõi" (size: 13)
+              FRAME: Container
+                TEXT: "01 phòng sắp hết hạn giữ chỗ hôm nay" (size: 12)
+          FRAME: Button
+            TEXT: "Chi tiết" (size: 11)
+      FRAME: Utility Toolbar (Compare & Sort):margin
+        FRAME: Utility Toolbar (Compare & Sort)
+          FRAME: Container
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Mới lưu gần đây" (size: 11)
+      FRAME: Properties List
+        FRAME: Article - Card 1: Studio Ban Công - Tạ Quang Bửu
+          FRAME: Container
+            FRAME: AB6AXuBZoBOoUP2WCwz6kWO_CnLnHULDyNd5nWjQEFXpgIRa0k9cbpQGDJxSUkOqKO8SQ6C7Sih6h1AseBtGQFGgt4DEuySuxH05OoNzqI1xJQEmArZg1utfgZMM1juw-k95neOKk_4HDVVDfr2-6o8aIpdsV667WMV0p_1lFrStal-_MORJ2Elf2mfoOonFmzxDHp9Sn2SjxKNr_H47sSk_JxMkqCF4vaTXrSD0UFHf_7T84mC1-2X6ExU
+            FRAME: Container
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Còn 1 phòng duy nhất" (size: 11)
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Cọc: cần xác nhận" (size: 11)
+            FRAME: Button - Bỏ lưu phòng
+              RECTANGLE: Button - Bỏ lưu phòng:shadow
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Overlay+OverlayBlur
+              TEXT: "AVR-90412 • Mẫu" (size: 10)
+          FRAME: Container
+            FRAME: Container
+              FRAME: Paragraph
+                TEXT: "4.200.000đ" (size: 24)
+                TEXT: "/tháng" (size: 12)
+              FRAME: Background
+                TEXT: "28m² • Gác lửng\ncao" (size: 11)
+            FRAME: Heading 2
+              TEXT: "Studio ban công Tạ Quang Bửu" (size: 18)
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "42 Ngõ 187 Tạ Quang Bửu • ĐHBK 250m" (size: 12)
+            FRAME: Personal Student Sticky Note:margin
+              FRAME: Personal Student Sticky Note
+                FRAME: Margin
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "\"Gần cổng Parabol, hợp với Tùng đi bộ sang\ngiảng đường D3.\"" (size: 12)
+            FRAME: Landlord & Credibility Micro Bar
+              FRAME: Container
+                FRAME: Background
+                  TEXT: "AT" (size: 11)
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Cô Hoàng Thị Ánh Tuyết" (size: 13)
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "4.9" (size: 11)
+                FRAME: Container
+                  TEXT: "(CCCD OK)" (size: 11)
+        FRAME: Article - Card 2: Studio Gác Lửng - Trần Đại Nghĩa
+          FRAME: Container
+            FRAME: AB6AXuDJQd5772uOX_Z5sSLMYvcogg_69trqQ_OlPxDEcVXi2j9cucmk7m-73mGJSVV6dzFfxtRceYOG5vmypfXsrQfC6H8aMsbosbSoxa-1IbsXRSR0AYsmxqAA3MKjp9PPoDQfV6oroccdA4VhgshLha4DDadWhMY6SAA41WT_xhA2pFjn5O1cOj-CcbI9MMVb4LvD68KF2scZT5jDOoRQbq3LcQ15HLzzfdUMS_A-QIFvmOpJNi4P4b0
+            FRAME: Container
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Vừa giảm 200k" (size: 11)
+              FRAME: Background+Shadow
+                TEXT: "Tự do 24/7" (size: 11)
+            FRAME: Button - Bỏ lưu phòng
+              RECTANGLE: Button - Bỏ lưu phòng:shadow
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Overlay+OverlayBlur
+              TEXT: "#AVR-88310" (size: 10)
+          FRAME: Container
+            FRAME: Container
+              FRAME: Paragraph
+                TEXT: "3.200.000đ" (size: 24)
+                TEXT: "/tháng" (size: 12)
+              FRAME: Background
+                TEXT: "22m² • Khép kín" (size: 11)
+            FRAME: Heading 2
+              TEXT: "Phòng Studio gác lửng ban công -…" (size: 18)
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Ngõ 30 Trần Đại Nghĩa (Cách ĐHBK 600m)" (size: 12)
+            FRAME: Landlord & Status
+              FRAME: Container
+                FRAME: Background
+                  TEXT: "BT" (size: 11)
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Bác Thành" (size: 13)
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "eKYC Đã duyệt" (size: 11)
+        FRAME: Article - Card 3: Căn hộ Mini - Lê Thanh Ngh
+          FRAME: Container
+            FRAME: AB6AXuBi8wUbjLe-nsB7IAtTd-twc0eLn2ih8Yeq1Y6Knw34gp4DMnYhPuh8EDe4fJSJVLCZr1DMi9ew_Og323_v2E7PnJWGm-iBrTP0w7mCxf5KLoZvmwEKSaJP74aHw6zGfSnb_icBZzq5URGdewOrt-ZFxMZdN8Fy5WeM6gWY-BlNZiACFGo0I7eLkI5yjMIGoT5vJcryZsh5jGD7moCwUg0qFj2lOriAqHuBAQaA5YCtp1HNMeQLxYM
+            FRAME: Container
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Có sạc xe điện PCCC" (size: 11)
+            FRAME: Button - Bỏ lưu phòng
+              RECTANGLE: Button - Bỏ lưu phòng:shadow
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Overlay+OverlayBlur
+              TEXT: "#AVR-75204" (size: 10)
+          FRAME: Container
+            FRAME: Container
+              FRAME: Paragraph
+                TEXT: "3.600.000đ" (size: 24)
+                TEXT: "/tháng" (size: 12)
+              FRAME: Background
+                TEXT: "25m² • Có thang\nmáy" (size: 11)
+            FRAME: Heading 2
+              TEXT: "Căn hộ mini khép kín có sạc xe điện" (size: 18)
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "55 Lê Thanh Nghị (Cách ĐHBK 450m)" (size: 12)
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "4.8" (size: 11)
+                FRAME: Container
+                  TEXT: "(18 đánh giá sinh viên)" (size: 11)
+              FRAME: Container
+                TEXT: "An ninh vân tay" (size: 11)
+        FRAME: Article - Card 4: KTX Cao Cấp Homestay - K10 Bách Khoa
+          FRAME: Container
+            FRAME: AB6AXuAiRCO4znpGdO1CbnK58cPZiUAgUhHBBs4sI-mPg-NCFpVrGOSUgINxE5DBMoscseGjwM9-dkVYcvOkkXiE9etfs3wt6Y4kdrUgSc7Y8Y0MsjgFago6hVpqsuZ2NeNV2IHli0jE0bBnoWtHysE8u54U_A2Cjh9IP-AsAsza8vNSYFhNVZ0SF-ZlskJa2gyaD8j5qsArAmx02dGNRcAK_wRkTZ6aL9OO4Nj_ajThXaHorGcgXiBnnAE
+            FRAME: Container
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Homestay 2 người" (size: 11)
+            FRAME: Button - Bỏ lưu phòng
+              RECTANGLE: Button - Bỏ lưu phòng:shadow
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Overlay+OverlayBlur
+              TEXT: "#AVR-61092" (size: 10)
+          FRAME: Container
+            FRAME: Container
+              FRAME: Paragraph
+                TEXT: "2.100.000đ" (size: 24)
+                TEXT: "/người" (size: 12)
+              FRAME: Background
+                TEXT: "Bao trọn dịch vụ" (size: 11)
+            FRAME: Heading 2
+              TEXT: "Phòng KTX cao cấp Homestay 2…" (size: 18)
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Ký túc xá Bách Khoa K10 (Ngay trong khuôn viên)" (size: 12)
+            FRAME: Container
+              TEXT: "Đầy đủ máy giặt, bếp từ, tủ lạnh inverter riêng từng…" (size: 12)
+      FRAME: Delightful End-of-List Touch
+        FRAME: Background
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Container
+            TEXT: "Tất cả phòng lưu trữ đều được Avaroom bảo vệ theo cơ\nchế Escrow sinh viên" (size: 10)
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Button - Quay lại tài khoản
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Container
+          FRAME: Container
+            FRAME: Container
+              TEXT: "Phòng đã lưu" (size: 18)
+      FRAME: Container
+        FRAME: Button - Notifications
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Margin
+          FRAME: Background
+            FRAME: Container
+              VECTOR: Icon

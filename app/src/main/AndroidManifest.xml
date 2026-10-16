@@ -22,12 +22,13 @@
         <!-- Student Flow Main Activity -->
         <activity
             android:name=".ui.student.StudentMainActivity"
-            android:exported="false" />
+            android:exported="true" />
 
         <!-- Landlord Flow Main Activity -->
         <activity
             android:name=".ui.landlord.LandlordMainActivity"
-            android:exported="false" />
+            android:exported="true" />
+
 
     </application>
 

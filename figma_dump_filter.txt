@@ -1,0 +1,227 @@
+FRAME: Bộ lọc tìm kiếm nâng cao - Avaroom
+  FRAME: Main
+    FRAME: Container
+      FRAME: In-Page Filter Subheader Bar (Interactive Header for Sheet/Page Modal context)
+        FRAME: Container
+          FRAME: Button - Đóng bộ lọc
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Container
+            FRAME: Heading 2
+              TEXT: "Bộ lọc tìm kiếm" (size: 18)
+            FRAME: Container
+              TEXT: "Tối ưu cho lối sống sinh viên" (size: 10)
+        FRAME: Button
+          TEXT: "Đặt lại" (size: 13)
+      FRAME: Margin
+        FRAME: Container
+          FRAME: Cụm Trường Đại Học
+            FRAME: Container
+              FRAME: Label
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Trường Đại học mục tiêu" (size: 13)
+              FRAME: Container
+                TEXT: "TRỌNG TÂM VỊ TRÍ" (size: 10)
+            FRAME: Container
+              FRAME: Options
+                FRAME: Container
+                  TEXT: "ĐH Bách Khoa Hà Nội (Hai Bà Trưng)" (size: 14)
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+          FRAME: Bán kính trường học
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Bán kính đến trường" (size: 13)
+              FRAME: Background+Shadow
+                TEXT: "1.5 km" (size: 11)
+            FRAME: Quick chips
+              FRAME: Button
+                FRAME: Container
+                  TEXT: "< 500m (Đi bộ)" (size: 12)
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Button
+                FRAME: Container
+                  TEXT: "< 1km (Xe đạp)" (size: 12)
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Button
+                FRAME: Container
+                  TEXT: "< 2km (5-7 phút)" (size: 12)
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Button
+                FRAME: Container
+                  TEXT: "< 3km (Tối đa)" (size: 12)
+                FRAME: Container
+                  VECTOR: Icon
+            FRAME: Slider điều chỉnh mượt m
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "300m" (size: 10)
+                FRAME: Container
+                  TEXT: "Bán kính tùy chỉnh linh hoạt" (size: 10)
+                FRAME: Container
+                  TEXT: "5km" (size: 10)
+              FRAME: Input
+                FRAME: Container
+                  FRAME: Container
+          FRAME: Khoảng giá thu
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Khoảng ngân sách /\ntháng" (size: 13)
+              FRAME: Background
+                TEXT: "Bao gồm phụ phí cơ\nbản" (size: 11)
+            FRAME: Current range display display
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Thấp nhất" (size: 10)
+                FRAME: Container
+                  TEXT: "2.000.000đ" (size: 18)
+              RECTANGLE: Horizontal Divider
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Cao nhất" (size: 10)
+                FRAME: Container
+                  TEXT: "4.200.000đ" (size: 18)
+            FRAME: Slider input visual
+              FRAME: Input
+                FRAME: Container
+                  FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "1.5 Tr" (size: 10)
+                FRAME: Container
+                  TEXT: "Phổ thông SV: 2.5 - 3.8 Tr" (size: 10)
+                FRAME: Container
+                  TEXT: "8.0 Tr+" (size: 10)
+            FRAME: Quick price chips
+              FRAME: Button
+                TEXT: "Dưới 2.5 triệu" (size: 12)
+              FRAME: Button
+                TEXT: "2.5 - 4 triệu 🔥" (size: 12)
+              FRAME: Button
+                TEXT: "Trên 4 triệu" (size: 12)
+          FRAME: Loại phòng & Không gian
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Loại hình phòng ở" (size: 13)
+              FRAME: Container
+                TEXT: "Chọn nhiều loại" (size: 10)
+            FRAME: Container
+              FRAME: Button
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  RECTANGLE: Background
+                FRAME: Container
+                  TEXT: "Phòng khép kín" (size: 13)
+              FRAME: Button
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Background
+                    FRAME: Container
+                      VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Chung cư mini" (size: 13)
+              FRAME: Button
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  RECTANGLE: Background
+                FRAME: Container
+                  TEXT: "KTX Tư nhân" (size: 13)
+              FRAME: Button
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  RECTANGLE: Background
+                FRAME: Container
+                  TEXT: "Căn hộ mini " (size: 13)
+              FRAME: Button
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      TEXT: "Phòng ghép " (size: 13)
+                  RECTANGLE: Background
+                FRAME: Container
+                  TEXT: "Phù hợp tân sinh viên muốn tiết kiệm sinh hoạt phí" (size: 10)
+          FRAME: Tiện ích sinh viên then chốt
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Tiện ích sinh viên quan trọng" (size: 13)
+              FRAME: Container
+                TEXT: "Nhấn để chọn" (size: 10)
+            FRAME: Container
+              FRAME: Button - Amenity Item 1
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Giờ giấc tự do 24/7 (Vân tay)" (size: 12)
+              FRAME: Button - Amenity Item 2
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Không chung chủ" (size: 12)
+              FRAME: Button - Amenity Item 3
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Sạc xe điện an toàn (PCCC)" (size: 12)
+              FRAME: Button - Amenity Item 4
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Nấu ăn thoải mái" (size: 12)
+              FRAME: Button - Amenity Item 5
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Tủ lạnh & Máy giặt sẵn" (size: 12)
+              FRAME: Button - Amenity Item 6
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Ban công / Cửa sổ thoáng" (size: 12)
+              FRAME: Button - Amenity Item 7
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Wifi tốc độ cao học online" (size: 12)
+  FRAME: Sticky Floating Footer CTA Action (Bottom Sheet Floating Dock)
+    FRAME: Container
+      FRAME: Button
+        RECTANGLE: Button:shadow
+        FRAME: Container
+          TEXT: "Áp dụng bộ lọc" (size: 18)
+        FRAME: Background
+          TEXT: "48 phòng" (size: 12)
+        FRAME: Container
+          VECTOR: Icon
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Button - Quay lại:margin
+          FRAME: Button - Quay lại
+            FRAME: Container
+              VECTOR: Icon
+        FRAME: Heading 1
+          TEXT: "Search Filters" (size: 18)

@@ -16,4 +16,19 @@ public class LandlordChatListFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_landlord_chat_list, container, false);
     }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        
+        View btnBack = view.findViewById(R.id.btn_back_landlord_chat_list);
+        if (btnBack != null) {
+            btnBack.setOnClickListener(v -> androidx.navigation.Navigation.findNavController(v).navigateUp());
+        }
+
+        View cardChat = view.findViewById(R.id.card_landlord_chat_1);
+        if (cardChat != null) {
+            cardChat.setOnClickListener(v -> androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_chatList_to_chat));
+        }
+    }
 }

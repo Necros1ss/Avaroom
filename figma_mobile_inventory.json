@@ -1,0 +1,608 @@
+[
+  {
+    "id": "57:5625",
+    "name": "Đăng nhập - Avaroom (Warm Cream)",
+    "width": 390,
+    "height": 840
+  },
+  {
+    "id": "57:5626",
+    "name": "Main",
+    "width": 390,
+    "height": 840
+  },
+  {
+    "id": "57:5627",
+    "name": "Container",
+    "width": 390,
+    "height": 677
+  },
+  {
+    "id": "57:5774",
+    "name": "Đăng ký - Avaroom (Warm Cream)",
+    "width": 390,
+    "height": 1145
+  },
+  {
+    "id": "57:5962",
+    "name": "Đăng ký - Chủ trọ (Warm Cream)",
+    "width": 393,
+    "height": 1197
+  },
+  {
+    "id": "57:6020",
+    "name": "Registration Form",
+    "width": 393,
+    "height": 840
+  },
+  {
+    "id": "151:176",
+    "name": "Xác thực CCCD 2 mặt - Avaroom",
+    "width": 390,
+    "height": 983
+  },
+  {
+    "id": "56:5299",
+    "name": "Onboarding 2 - Minh bạch giá & Ảnh thật (Warm Cream)",
+    "width": 390,
+    "height": 841
+  },
+  {
+    "id": "56:5392",
+    "name": "Onboarding 3 - Đăng nhập & Đăng ký (Warm Cream)",
+    "width": 390,
+    "height": 840
+  },
+  {
+    "id": "56:5505",
+    "name": "Onboarding 1 - Tìm trọ gần trường (Warm Cream)",
+    "width": 390,
+    "height": 842
+  },
+  {
+    "id": "135:278",
+    "name": "Form nhập email lấy lại mật khẩu",
+    "width": 390,
+    "height": 840
+  },
+  {
+    "id": "135:279",
+    "name": "Main - Container cố định theo chuẩn thiết kế Mobile iOS 390px",
+    "width": 390,
+    "height": 884
+  },
+  {
+    "id": "135:385",
+    "name": "Xác thực OTP - Avaroom (Warm Cream)",
+    "width": 390,
+    "height": 840
+  },
+  {
+    "id": "135:515",
+    "name": "Đặt mật khẩu mới - Avaroom (Warm Cream)",
+    "width": 390,
+    "height": 840
+  },
+  {
+    "id": "151:65",
+    "name": "Chụp CCCD Mặt trước & Hướng dẫn",
+    "width": 390,
+    "height": 851
+  },
+  {
+    "id": "151:67",
+    "name": "CAMERA PREVIEW ENVIRONMENT",
+    "width": 390,
+    "height": 854
+  },
+  {
+    "id": "151:68",
+    "name": "Real-time Camera Background simulation layer",
+    "width": 400,
+    "height": 886
+  },
+  {
+    "id": "151:78",
+    "name": "VIEWFINDER SCANNING TARGET BOX:margin",
+    "width": 390,
+    "height": 854
+  },
+  {
+    "id": "151:120",
+    "name": "INSTRUCTION MODAL POPUP (Warm Cream Scandinavian Minimalist)",
+    "width": 390,
+    "height": 602
+  },
+  {
+    "id": "231:40",
+    "name": "Chụp CCCD Mặt sau & Hướng dẫn",
+    "width": 390,
+    "height": 851
+  },
+  {
+    "id": "151:310",
+    "name": "Kiểm tra thông tin CCCD - Avaroom (Warm Cream)",
+    "width": 390,
+    "height": 1146
+  },
+  {
+    "id": "251:634",
+    "name": "Trang chủ - Tìm trọ sinh viên",
+    "width": 390,
+    "height": 1162
+  },
+  {
+    "id": "251:707",
+    "name": "Section - Room Card List (VERTICE Mockup Card Style)",
+    "width": 390,
+    "height": 777
+  },
+  {
+    "id": "251:850",
+    "name": "Tài khoản & Cài đặt sinh viên",
+    "width": 390,
+    "height": 1132
+  },
+  {
+    "id": "251:851",
+    "name": "Main Content Area",
+    "width": 390,
+    "height": 1132
+  },
+  {
+    "id": "251:1006",
+    "name": "Tin nhắn & Chat với chủ trọ",
+    "width": 390,
+    "height": 1052
+  },
+  {
+    "id": "251:1009",
+    "name": "Main Active Conversation Pane:margin",
+    "width": 358,
+    "height": 972
+  },
+  {
+    "id": "251:1010",
+    "name": "Main Active Conversation Pane",
+    "width": 358,
+    "height": 958
+  },
+  {
+    "id": "251:1055",
+    "name": "Message Bubble Stream",
+    "width": 358,
+    "height": 678
+  },
+  {
+    "id": "251:1181",
+    "name": "Tìm trọ lân cận - Bản đồ",
+    "width": 390,
+    "height": 884
+  },
+  {
+    "id": "251:1182",
+    "name": "VectorMapLayer",
+    "width": 388,
+    "height": 882
+  },
+  {
+    "id": "251:1183",
+    "name": "Water Rivers & Bays:mask-group",
+    "width": 388,
+    "height": 882
+  },
+  {
+    "id": "251:1184",
+    "name": "Water Rivers & Bays:mask",
+    "width": 388,
+    "height": 882
+  },
+  {
+    "id": "251:1187",
+    "name": "Mask Group",
+    "width": 388,
+    "height": 882
+  },
+  {
+    "id": "251:1188",
+    "name": "Mask",
+    "width": 388,
+    "height": 882
+  },
+  {
+    "id": "251:1191",
+    "name": "Highway & Main Arteries SVG",
+    "width": 388,
+    "height": 882
+  },
+  {
+    "id": "251:1552",
+    "name": "Tin nhắn",
+    "width": 390,
+    "height": 1046
+  },
+  {
+    "id": "303:135",
+    "name": "Frame 3",
+    "width": 390,
+    "height": 870
+  },
+  {
+    "id": "251:1577",
+    "name": "Conversations Container",
+    "width": 390,
+    "height": 667
+  },
+  {
+    "id": "251:1741",
+    "name": "Chi tiết phòng trọ - Avaroom Sinh viên",
+    "width": 390,
+    "height": 2470
+  },
+  {
+    "id": "251:1776",
+    "name": "Main Details Content:margin",
+    "width": 390,
+    "height": 1914
+  },
+  {
+    "id": "251:1777",
+    "name": "Main Details Content",
+    "width": 390,
+    "height": 1898
+  },
+  {
+    "id": "251:2068",
+    "name": "Đặt lịch xem phòng - Avaroom Sinh viên",
+    "width": 390,
+    "height": 992
+  },
+  {
+    "id": "251:2070",
+    "name": "Backdrop Layer Ambient Tint (Inside Content Slot)",
+    "width": 390,
+    "height": 928
+  },
+  {
+    "id": "251:2257",
+    "name": "Bộ lọc tìm kiếm nâng cao - Avaroom",
+    "width": 390,
+    "height": 1336
+  },
+  {
+    "id": "251:2272",
+    "name": "Margin",
+    "width": 390,
+    "height": 1080
+  },
+  {
+    "id": "251:2484",
+    "name": "Đánh giá",
+    "width": 390,
+    "height": 2290
+  },
+  {
+    "id": "251:2515",
+    "name": "Overall Score & Rating Breakdown",
+    "width": 390,
+    "height": 646
+  },
+  {
+    "id": "251:2516",
+    "name": "Background+Shadow",
+    "width": 350,
+    "height": 630
+  },
+  {
+    "id": "251:2667",
+    "name": "Student Reviews List",
+    "width": 390,
+    "height": 1181
+  },
+  {
+    "id": "251:2857",
+    "name": "Đổi mật khẩu tài khoản - Avaroom",
+    "width": 390,
+    "height": 1166
+  },
+  {
+    "id": "251:2859",
+    "name": "Content Container with fluid mobile spacing",
+    "width": 390,
+    "height": 1070
+  },
+  {
+    "id": "251:3039",
+    "name": "Hồ sơ sinh viên & eKYC (Cọc 0đ)",
+    "width": 390,
+    "height": 977
+  },
+  {
+    "id": "251:3306",
+    "name": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "width": 390,
+    "height": 1224
+  },
+  {
+    "id": "251:4044",
+    "name": "Phòng đã lưu - Avaroom Sinh viên",
+    "width": 390,
+    "height": 1897
+  },
+  {
+    "id": "251:4093",
+    "name": "Properties List",
+    "width": 390,
+    "height": 1569
+  },
+  {
+    "id": "251:4305",
+    "name": "Search Result",
+    "width": 390,
+    "height": 1129
+  },
+  {
+    "id": "251:4381",
+    "name": "Section - 2-Column Grid Listings:margin",
+    "width": 350,
+    "height": 848
+  },
+  {
+    "id": "251:4382",
+    "name": "Section - 2-Column Grid Listings",
+    "width": 350,
+    "height": 840
+  },
+  {
+    "id": "261:7",
+    "name": "Quản lý tin đăng - Chủ trọ",
+    "width": 390,
+    "height": 844
+  },
+  {
+    "id": "261:81",
+    "name": "Listings List",
+    "width": 390,
+    "height": 715
+  },
+  {
+    "id": "261:240",
+    "name": "Lịch hẹn xem phòng & Khảo sát",
+    "width": 390,
+    "height": 1153
+  },
+  {
+    "id": "261:324",
+    "name": "Section - Appointments List",
+    "width": 390,
+    "height": 630
+  },
+  {
+    "id": "261:488",
+    "name": "Tin nhắn & Tương tác khách thuê",
+    "width": 390,
+    "height": 1318
+  },
+  {
+    "id": "261:500",
+    "name": "Messages Stream",
+    "width": 390,
+    "height": 899
+  },
+  {
+    "id": "261:715",
+    "name": "Hồ sơ chủ trọ & Cài đặt",
+    "width": 390,
+    "height": 1348
+  },
+  {
+    "id": "261:717",
+    "name": "Top Ambient Glow",
+    "width": 350,
+    "height": 1156
+  },
+  {
+    "id": "261:936",
+    "name": "Đăng tin phòng trọ mới - Avaroom",
+    "width": 390,
+    "height": 1876
+  },
+  {
+    "id": "261:961",
+    "name": "Section - General Listing Information",
+    "width": 350,
+    "height": 622
+  },
+  {
+    "id": "261:1231",
+    "name": "Chi tiết lịch hẹn xem phòng - Góc nhìn Chủ trọ",
+    "width": 390,
+    "height": 1026
+  },
+  {
+    "id": "261:1358",
+    "name": "Trung tâm Thông báo - Chủ trọ",
+    "width": 390,
+    "height": 1196
+  },
+  {
+    "id": "261:1402",
+    "name": "Notification Feed List",
+    "width": 390,
+    "height": 922
+  },
+  {
+    "id": "261:1551",
+    "name": "Quản lý & Phản hồi Đánh giá - Chủ trọ",
+    "width": 390,
+    "height": 1305
+  },
+  {
+    "id": "261:1621",
+    "name": "Section - Reviews Feed:margin",
+    "width": 390,
+    "height": 1033
+  },
+  {
+    "id": "261:1622",
+    "name": "Section - Reviews Feed",
+    "width": 390,
+    "height": 1017
+  },
+  {
+    "id": "261:1793",
+    "name": "Thống kê & Báo cáo Tăng trưởng - Chủ trọ",
+    "width": 390,
+    "height": 1921
+  },
+  {
+    "id": "261:2119",
+    "name": "Chỉnh sửa Hồ sơ Chủ trọ & Cài đặt",
+    "width": 390,
+    "height": 1439
+  },
+  {
+    "id": "261:2122",
+    "name": "Main Scrollable Form Body:margin",
+    "width": 390,
+    "height": 1348
+  },
+  {
+    "id": "261:2123",
+    "name": "Main Scrollable Form Body",
+    "width": 390,
+    "height": 1326
+  },
+  {
+    "id": "261:2291",
+    "name": "Đăng tin - Bước 3: Ảnh 360° & Timestamp",
+    "width": 390,
+    "height": 1333
+  },
+  {
+    "id": "261:2480",
+    "name": "Đăng tin - Bước 2: Tiện ích & Nội thất",
+    "width": 390,
+    "height": 2064
+  },
+  {
+    "id": "261:2530",
+    "name": "Section 1: In-room Amenities:margin",
+    "width": 390,
+    "height": 752
+  },
+  {
+    "id": "261:2531",
+    "name": "Section 1: In-room Amenities",
+    "width": 390,
+    "height": 728
+  },
+  {
+    "id": "261:2540",
+    "name": "Cards Grid",
+    "width": 350,
+    "height": 680
+  },
+  {
+    "id": "261:2643",
+    "name": "Section 2: Building Amenities & Security:margin",
+    "width": 390,
+    "height": 762
+  },
+  {
+    "id": "261:2644",
+    "name": "Section 2: Building Amenities & Security",
+    "width": 390,
+    "height": 612
+  },
+  {
+    "id": "261:2835",
+    "name": "Đăng tin - Bước 4 - Hoàn tất",
+    "width": 390,
+    "height": 1684
+  },
+  {
+    "id": "261:2856",
+    "name": "Main Scrollable Content Container:margin",
+    "width": 390,
+    "height": 1365
+  },
+  {
+    "id": "261:2857",
+    "name": "Main Scrollable Content Container",
+    "width": 390,
+    "height": 1325
+  },
+  {
+    "id": "261:3269",
+    "name": "Chi tiết tin đăng",
+    "width": 390,
+    "height": 844
+  },
+  {
+    "id": "279:109",
+    "name": "Section - Review:margin",
+    "width": 390,
+    "height": 808
+  },
+  {
+    "id": "279:2",
+    "name": "Section - Detailed Room Specs & Amenities",
+    "width": 350,
+    "height": 681
+  },
+  {
+    "id": "280:324",
+    "name": "Chi tiết tin đăng [DEMO]",
+    "width": 402,
+    "height": 844
+  },
+  {
+    "id": "184:1901",
+    "name": "Quản lý Hợp đồng & Tiền cọc Escrow - Chủ trọ",
+    "width": 390,
+    "height": 1128
+  },
+  {
+    "id": "184:2077",
+    "name": "Chốt điện nước & Hóa đơn tháng - Chủ trọ",
+    "width": 390,
+    "height": 1341
+  },
+  {
+    "id": "188:1761",
+    "name": "Xem trước Hóa đơn PDF & VietQR",
+    "width": 390,
+    "height": 1986
+  },
+  {
+    "id": "188:1783",
+    "name": "Architectural Invoice Paper Card",
+    "width": 350,
+    "height": 806
+  },
+  {
+    "id": "188:1896",
+    "name": "VietQR Napas247 Integrated Payment Card",
+    "width": 350,
+    "height": 790
+  },
+  {
+    "id": "188:2041",
+    "name": "Biên bản bàn giao tài sản 360°",
+    "width": 390,
+    "height": 1918
+  },
+  {
+    "id": "249:1379",
+    "name": "Html → Body",
+    "width": 390,
+    "height": 1684
+  },
+  {
+    "id": "169:801",
+    "name": "��ặt lịch xem phòng - Avaroom Sinh viên",
+    "width": 390,
+    "height": 1022
+  }
+]

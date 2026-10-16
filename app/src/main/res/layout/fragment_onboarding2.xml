@@ -7,12 +7,13 @@
     android:background="@color/bg_warm_cream"
     android:padding="24dp">
 
+    <!-- Card Minh bạch giá & Ảnh thật -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_preview2"
+        android:id="@+id/card_preview_ob2"
         android:layout_width="0dp"
-        android:layout_height="320dp"
-        android:layout_marginTop="24dp"
-        app:cardCornerRadius="20dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="24dp"
         app:cardElevation="2dp"
         app:cardBackgroundColor="@color/bg_white"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,96 +25,147 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="24dp">
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:letterSpacing="0.08"
                 android:text="GIÁ THUÊ NIÊM YẾT"
-                android:textColor="@color/text_secondary"
-                android:textSize="12sp"
+                android:textColor="@color/text_muted"
+                android:textSize="11sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:text="3.200.000 đ/tháng"
-                android:textColor="@color/primary_dark"
-                android:textSize="28sp"
+                android:textColor="@color/accent_red"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="⚡ Điện: 3.5k/kWh  •  💧 Nước: 50k/người"
-                android:textColor="@color/text_secondary"
-                android:textSize="14sp" />
+            <View
+                android:layout_width="160dp"
+                android:layout_height="1dp"
+                android:layout_marginVertical="12dp"
+                android:background="@color/divider_color" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_input_field"
-                    android:paddingHorizontal="12dp"
-                    android:paddingVertical="6dp"
-                    android:text="📷 100% Ảnh chụp thực tế"
+                    android:background="@drawable/bg_chip_pill"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:text="⚡ Điện: 3.5k/kWh"
                     android:textColor="@color/text_primary"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:background="@drawable/bg_input_field"
-                    android:paddingHorizontal="12dp"
-                    android:paddingVertical="6dp"
-                    android:text="✨ Không phí ẩn"
+                    android:background="@drawable/bg_chip_pill"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:text="💧 Nước: 50k/người"
                     android:textColor="@color/text_primary"
-                    android:textSize="12sp" />
+                    android:textSize="11sp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <!-- Tag Minh bạch tuyệt đối from Figma -->
     <TextView
-        android:id="@+id/tv_title2"
+        android:id="@+id/tag_badge_ob2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:letterSpacing="0.08"
+        android:text="• MINH BẠCH TUYỆT ĐỐI"
+        android:textColor="@color/text_secondary"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/card_preview_ob2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_ob2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Phòng chuẩn giá tốt, không lo bị “hớ”"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="4dp"
+        android:text="Phòng chuẩn giá tốt,\nkhông lo bị “hớ”"
         android:textColor="@color/text_primary"
-        android:textSize="26sp"
+        android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/card_preview2"
+        app:layout_constraintTop_toBottomOf="@id/tag_badge_ob2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/tv_desc2"
+        android:id="@+id/tv_desc_ob2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:text="Hình ảnh thực tế được đội ngũ Avaroom thẩm định tại chỗ kèm minh bạch chi tiết tiền cọc, điện, nước và dịch vụ đi kèm."
         android:textColor="@color/text_secondary"
-        android:textSize="14sp"
+        android:textSize="13sp"
         android:lineSpacingExtra="3dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_title2"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_ob2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 4 Step Pagination Dots from Figma -->
+    <LinearLayout
+        android:id="@+id/layout_dots_ob2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/btn_next_onboarding2"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="4dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_chip_pill"
+            android:backgroundTint="@color/border_subtle" />
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="4dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_chip_pill"
+            android:backgroundTint="@color/primary_black" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="4dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_chip_pill"
+            android:backgroundTint="@color/border_subtle" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="4dp"
+            android:background="@drawable/bg_chip_pill"
+            android:backgroundTint="@color/border_subtle" />
+    </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_next_onboarding2"
         android:layout_width="0dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/bg_button_primary"
-        android:text="Tiếp tục"
+        android:text="Tiếp tục →"
         android:textAllCaps="false"
         android:textColor="@color/bg_white"
         android:textSize="16sp"

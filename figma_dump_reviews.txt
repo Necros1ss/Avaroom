@@ -1,0 +1,373 @@
+FRAME: Đánh giá
+  FRAME: Main
+    FRAME: Container
+      FRAME: Top Property Overview Card
+        FRAME: Background+Shadow
+          FRAME: Container
+            FRAME: Overlay+Shadow
+              FRAME: AB6AXuAvAnBa0HCoc_lpdv7zB3Zzl1NCJvxk1fZHBnUYSpreUHmFV9sz-fExUVs8nbQvU_kJeGHmjS12waMrWRA1RQcRt6OK4_CITtBBZ8ffVHZ0UdnIbQUEb9QVppQbSUIEmUAEE_zFkPYlIdjGHWaery41OL5sUinIQ4tA7dYfMz4AitiHAGCHktLipyEJdiFU_H_LBVuHXagiqOhaRRF58U3K3NZKFxh8AXnx5-YtgQ
+              FRAME: Overlay+OverlayBlur
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "8" (size: 11)
+            FRAME: Container
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                  TEXT: "Chính chủ" (size: 11)
+              FRAME: Heading 2:margin
+                FRAME: Heading 2
+                  TEXT: "Studio ban công Tạ Quang Bửu" (size: 18)
+              FRAME: Margin
+                FRAME: Paragraph
+                  TEXT: "4.200.000đ" (size: 18)
+                  TEXT: "/tháng" (size: 12)
+              FRAME: Margin
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "AVR-90412 • Mẫu • ĐH Bách Khoa 250m" (size: 12)
+      FRAME: Overall Score & Rating Breakdown
+        FRAME: Background+Shadow
+          FRAME: Container
+            FRAME: Container
+              TEXT: "ĐIỂM HÀI LÒNG SINH VIÊN" (size: 12)
+              FRAME: Container
+                TEXT: "4.8" (size: 32)
+                TEXT: "/5" (size: 18)
+                FRAME: Margin
+                  FRAME: Container
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      VECTOR: Icon
+            FRAME: Background
+              FRAME: Container
+                TEXT: "42" (size: 18)
+              FRAME: Container
+                TEXT: "Sinh viên xác\nthực" (size: 11)
+          FRAME: Star distribution bars
+            FRAME: Container
+              FRAME: Container
+                TEXT: "5 sao" (size: 12)
+              FRAME: Background
+                RECTANGLE: Background
+              FRAME: Container
+                TEXT: "85%\n(36)" (size: 12)
+            FRAME: Container
+              FRAME: Container
+                TEXT: "4 sao" (size: 12)
+              FRAME: Background
+                RECTANGLE: Background
+              FRAME: Paragraph
+                TEXT: "12% " (size: 12)
+                TEXT: "(5)" (size: 10)
+            FRAME: Container
+              FRAME: Container
+                TEXT: "3 sao" (size: 12)
+              FRAME: Background
+                RECTANGLE: Background
+              FRAME: Paragraph
+                TEXT: "3% " (size: 12)
+                TEXT: "(1)" (size: 10)
+            FRAME: Container
+              FRAME: Container
+                TEXT: "2 sao" (size: 12)
+              FRAME: Background
+              FRAME: Container
+                TEXT: "0%" (size: 12)
+            FRAME: Container
+              FRAME: Container
+                TEXT: "1 sao" (size: 12)
+              FRAME: Background
+              FRAME: Container
+                TEXT: "0%" (size: 12)
+          FRAME: Specific Criteria Grid
+            FRAME: Heading 3
+              FRAME: Container
+                VECTOR: Icon
+              TEXT: "Tiêu chí giám định độc lập Avaroom" (size: 12)
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "An ninh & PCCC chuẩn hóa" (size: 13)
+                    FRAME: Container
+                      TEXT: "Cửa vân tay, camera hành lang,\nthang thoát hiểm" (size: 11)
+                FRAME: Margin
+                  TEXT: "4.9 ★" (size: 15)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Vệ sinh & Không gian sống" (size: 13)
+                    FRAME: Container
+                      TEXT: "Phòng mới, ban công thoáng khí,\nphơi đồ riêng" (size: 11)
+                FRAME: Margin
+                  TEXT: "4.8 ★" (size: 15)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Thái độ & Hỗ trợ từ chủ trọ" (size: 13)
+                    FRAME: Container
+                      TEXT: "Nhiệt tình, khắc phục sự cố điện\nnước 24/7" (size: 11)
+                FRAME: Margin
+                  TEXT: "4.9 ★" (size: 15)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Minh bạch điện nước & Chi phí" (size: 13)
+                    FRAME: Container
+                      TEXT: "Công tơ điện tử riêng từng phòng,\nkhông phí ẩn" (size: 11)
+                FRAME: Margin
+                  TEXT: "4.7 ★" (size: 15)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Tốc độ mạng Mesh Wi-Fi 6" (size: 13)
+                    FRAME: Container
+                      TEXT: "Băng thông cao, ổn định lúc thi\nonline & làm đồ án" (size: 11)
+                FRAME: Margin
+                  TEXT: "4.8 ★" (size: 15)
+      FRAME: Trust Protocol Notice
+        FRAME: Overlay
+          FRAME: Margin
+            VECTOR: Icon
+          FRAME: Container
+            FRAME: Container
+              TEXT: "100% Đánh giá từ người thuê thực tế" (size: 12)
+            FRAME: Container
+              TEXT: "Chỉ tài khoản sinh viên đã xác minh eKYC và có\nhợp đồng thuê phòng hoàn tất trên ứng dụng\nAvaroom mới có thể gửi đánh giá. Cam kết không\nđánh giá ảo." (size: 12)
+      FRAME: Horizontal Filter Chips
+        FRAME: Container
+          FRAME: Container
+            TEXT: "Lọc theo nhóm sinh viên" (size: 18)
+          FRAME: Container
+            TEXT: "42 phản hồi" (size: 12)
+        FRAME: Container
+          FRAME: Button
+            TEXT: "Tất cả (42)" (size: 12)
+          FRAME: Button
+            FRAME: Container
+              VECTOR: Icon
+            TEXT: "Có ảnh/video (28)" (size: 12)
+          FRAME: Button
+            TEXT: "Bách Khoa K65-K68 (18)" (size: 12)
+          FRAME: Button
+            TEXT: "Xây Dựng & NEU (15)" (size: 12)
+          FRAME: Button
+            TEXT: "Đã thuê > 6 tháng (24)" (size: 12)
+          FRAME: Button
+            TEXT: "Khen an ninh & PCCC (19)" (size: 12)
+      FRAME: Student Reviews List
+        FRAME: Review 1
+          FRAME: Container
+            FRAME: Container
+              FRAME: Background
+                TEXT: "LQ" (size: 15)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Heading 4
+                    TEXT: "Lê Minh Quân" (size: 15)
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  TEXT: "K66 Viện CNTT • ĐH Bách Khoa HN" (size: 11)
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+              TEXT: "2 tuần trước" (size: 11)
+          FRAME: Container
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+              TEXT: "Đã thuê 1 năm" (size: 11)
+            FRAME: Background
+              TEXT: "Phòng 402 Ban công gió" (size: 11)
+          FRAME: Container
+            TEXT: "Phòng cực kỳ ưng ý! Đi bộ ra cổng Parabol trường\nBách Khoa mất đúng 4 phút. Bác chủ nhiệt tình,\nbóng đèn hỏng báo cái là trưa chú qua thay liền.\nTiền điện nước thu đúng niêm yết trên app\nAvaroom, không bị độn giá như mấy phòng trọ\nngoài ngõ Tạ Quang Bửu trước mình từng ở." (size: 13)
+          FRAME: Attached Photos Grid
+            FRAME: Container
+              FRAME: AB6AXuDby-XHm86kD2RRpyRDRvqxOEoRHxJETCe_IHzzeNVi9m3xnKGKGnTGBonsxENGThsCSTpcCw1SmcmHkLREVRAvTGBgUN4x246b_oRWS6sspIj7MyhjrQmYmC1mjHsJI4y1UwfuarENBsWpYr5g5Z9j4TQabbGnJZSUfKnZFMi5IubPXS0GVtzorhPes-TaApkfjC6C5cJm2F0BnjJcSgMMDus4NilkXtIPsb9xJw
+            FRAME: Container
+              FRAME: AB6AXuAa4BzaRrFRZGQ-7MOVyC0UnnlGsQdC9ZqyTQMdtEH1M8fdPo0SZz4o4npzwcmtA14ZWbRaUreOQHftDDknFUW0_AWHnVwGF_uLMvZWpX470aOAr4tr3RUyzzhiaoWKEXRPkFeZFwyvSRymaMcGQ-33_EKojDlG4zTfr5UFbmmK2PdCZHurH4mfeBxq0a6hyu4_K632Bkf6PEQOiLyQqLLSCFrmIdIINB80FlUcgQ
+            FRAME: Container
+              FRAME: AB6AXuBco4PFmTU2g_oqEF2Kjnt4STuv_vXbUUfIhazXJm1TT6GHzTK419k85SsBjittnV1kIj6G8S6q8LBLnqu2Fslg8lsOa1kDHt1FiyeqoNpYqvVF4S8geuSWIqDNEsFaW_pHMsGlKmuHyNhHepDvdgc95wSBGVIE9PW7tMuDpHFVG1AcYf5d6BCXaedEmGg81MGfuvOm2iyuKitOKwdoFaFFbTU7tIy5IRdO_Ttn2g
+          FRAME: Landlord Response Bubble
+            FRAME: Background
+              TEXT: "Chủ" (size: 11)
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "VERTICE Host (Chú Thành)" (size: 12)
+                FRAME: Container
+                  TEXT: "12 ngày trước" (size: 11)
+              FRAME: Container
+                TEXT: "Cảm ơn Quân nhé! Chúc em kỳ này đồ án\ntốt nghiệp bảo vệ đạt điểm A tuyệt đối.\nCần thêm bàn học rộng hơn cứ nhắn chú hỗ\ntrợ chuyển lên nhé." (size: 12)
+          FRAME: Action & Helpful count
+            FRAME: Button
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Hữu ích (24)" (size: 12)
+            FRAME: Button
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Bình luận" (size: 12)
+        FRAME: Review 2
+          FRAME: Container
+            FRAME: Container
+              FRAME: Background
+                TEXT: "TV" (size: 15)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Heading 4
+                    TEXT: "Nguyễn Hoàng Thảo Vy" (size: 15)
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  TEXT: "K67 Marketing • ĐH Kinh Tế Quốc Dân (NEU)" (size: 11)
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+              TEXT: "1 tháng trước" (size: 11)
+          FRAME: Container
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+              TEXT: "Đã ở 4 tháng" (size: 11)
+            FRAME: Background
+              TEXT: "Phòng tầng 3 ban công" (size: 11)
+          FRAME: Container
+            TEXT: "An ninh rất tốt vì có khóa vân tay 2 lớp và camera\n24/7 ở nhà để xe. Xe điện sạc có ổ cắm riêng\ntrang bị ngắt tự động an toàn PCCC nên bố mẹ\nmình dưới quê cực kỳ yên tâm. Wifi học Zoom hay\nlàm bài thi trắc nghiệm đều mượt, không hề bị rớt\nmạng giờ cao điểm." (size: 13)
+          FRAME: Container
+            FRAME: Button
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Hữu ích (15)" (size: 12)
+            FRAME: Button
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Bình luận" (size: 12)
+        FRAME: Review 3
+          FRAME: Container
+            FRAME: Container
+              FRAME: Background
+                TEXT: "ĐT" (size: 15)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Heading 4
+                    TEXT: "Trần Đức Trọng" (size: 15)
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  TEXT: "K65 Kiến Trúc • ĐH Xây Dựng Hà Nội (HUCE)" (size: 11)
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  VECTOR: Icon
+              TEXT: "2 tháng trước" (size: 11)
+          FRAME: Container
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+              TEXT: "Đã thuê 8 tháng" (size: 11)
+            FRAME: Background
+              TEXT: "Căn gác lửng thông minh" (size: 11)
+          FRAME: Container
+            TEXT: "Gác lửng cao ráo, chiều cao 1m85 như mình đứng\nthẳng lưng không sợ cộc đầu. Khu vực gần Tạ\nQuang Bửu nên nhiều quán cơm sinh viên bình dân.\nTrừ 0.5 sao vì ngõ hơi hẹp chút lúc tan tầm sinh\nviên tan học, còn lại dịch vụ, phòng ốc và bác\nquản lý đều chấm 10/10." (size: 13)
+          FRAME: Container
+            FRAME: Button
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Hữu ích (9)" (size: 12)
+            FRAME: Button
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Bình luận" (size: 12)
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Button - Quay lại
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Heading 1
+          TEXT: "Đánh Giá " (size: 18)
+      FRAME: Container
+        FRAME: Button - Chia sẻ
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Button - Lưu đánh giá
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Margin
+          FRAME: Background
+            FRAME: Container
+              VECTOR: Icon
+  FRAME: Sticky Bottom Floating Action Bar
+    RECTANGLE: Sticky Bottom Floating Action Bar:shadow
+    FRAME: Container
+      FRAME: Write Review Button
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Container
+          TEXT: "Viết đánh giá" (size: 12)
+      FRAME: Button - Book Tour / Deposit Action
+        RECTANGLE: Button - Book Tour / Deposit Action:shadow
+        FRAME: Container
+          TEXT: "Đặt lịch xem phòng" (size: 12)
+        FRAME: Container
+          VECTOR: Icon

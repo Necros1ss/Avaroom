@@ -1,25 +1,4 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    id 'java'
-    id 'application'
-}
-
-group = 'com.avaroom'
-version = '1.0.0'
-
-repositories {
-    mavenCentral()
-}
-
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
-    }
-}
-
-application {
-    mainClass = 'com.avaroom.Main'
-}
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+    id 'com.android.application' version '8.5.2' apply false
 }

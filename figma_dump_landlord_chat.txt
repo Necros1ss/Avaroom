@@ -1,0 +1,176 @@
+FRAME: Tin nhắn
+  FRAME: Main Content Area
+    FRAME: Container
+      FRAME: Search Bar Section
+        FRAME: Container
+          FRAME: Input
+            FRAME: Container
+              TEXT: "Tìm kiếm tin nhắn..." (size: 13)
+          VECTOR: Icon
+      FRAME: Conversation List Header
+        FRAME: Container
+          TEXT: "HỘI THOẠI GẦN ĐÂY" (size: 16)
+      FRAME: Conversations Container
+        FRAME: Item 1: Cô Hoàng Thị Ánh Tuyết
+          FRAME: Container
+            FRAME: Container
+              FRAME: AB6AXuBfUS8cOfH4U2wmsEbQ0H9qZEjCrgtEPqoKE0s70aSPfX9kV_KZC3mg8XhIKvQ3nbdU_M9jHFns9Dh9UTibARASwc-wmNOTA3MC1rvEzrhRbflLKHzeG8-YKbd8R0cCyf6dV8THWADgRbBqIZun09Xi2JPbj51zJ6cqb6Eds3458wiMsl7pI9T9wG17oXiro1G1il_Og9MvR-EiAwf6sB4qiyHpEnY23RKqm-lQvw
+              FRAME: Background
+                RECTANGLE: Background
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Cô Ánh Tuyết" (size: 14)
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  TEXT: "14:20" (size: 11)
+              FRAME: Container
+                FRAME: Background
+                  TEXT: "#AVR-90412 • ĐH Bách Khoa" (size: 11)
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                  TEXT: "16:30 • 14/10/2026" (size: 11)
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Đã xác nhận lịch: 16:30; ngày 14/10/2026" (size: 12)
+                RECTANGLE: Background
+        FRAME: Item 2: Chú Nguyễn Văn Hùng
+          FRAME: Container
+            FRAME: Container
+              FRAME: AB6AXuByyEYQ875Q1kQK05oQ5HOqIbY_uqrvPFW6aoSwbFETGfGG0aCexZ0Q4JBI9oBre-BjhVIk_W1iCtp0XDn3QavT2AaNJ5LhQpJ82FMROPtEFJrzC4erfBFdgPeuQM1FmJ_KIxvj-s383rzZfYoHT8h8YNIlE9ss_CoyfW-3CzXz9bg7GjkrUdPhrOSaqa2vzyTEBTY0WxiHrijRojY6k8Wm9Bmd7yviqgkLz7I02A
+              FRAME: Background
+                RECTANGLE: Background
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Chú Nguyễn Hùng" (size: 14)
+                  FRAME: Container
+                    TEXT: "(KTX Khu A)" (size: 11)
+                FRAME: Container
+                  TEXT: "11:05" (size: 11)
+              FRAME: Container
+                FRAME: Background
+                  TEXT: "Gác lửng Linh Trung • 2.1tr/th" (size: 11)
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                  TEXT: "Giữ cọc Escrow" (size: 11)
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Hợp đồng điện tử đã được ký duyệt, mã cọc #ESC-89210 sẵn sàng..." (size: 12)
+                FRAME: Background
+                  TEXT: "2" (size: 10)
+        FRAME: Item 3: Anh Trần Quốc Bảo
+          FRAME: Container
+            FRAME: Container
+              FRAME: AB6AXuCm_cZ1xAZjSkwIPbVCJlUYwgaR6xmA67EydxFt9YHrF4QpTMafG0r3eYXbCwHGphDrx2SuPE_xOVVOwWXFYkwG8e-ui2Cf8y19RO2hSaLUz89D3Up98Qbs3Z8F7gJNVUf0OwIz59FkJ5psx3GvgAbiIS-UzxcSp6Go8eeQHafrAl4QSQBLVLp1g56429xw2rXcsMrBUmMu5DDta3qrVqpJHOR7BbRbW6NPIzDBZQ
+              FRAME: Background
+                RECTANGLE: Background
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Anh Quốc Bảo" (size: 14)
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Hôm qua" (size: 11)
+              FRAME: Container
+                FRAME: Background
+                  TEXT: "Studio Full đồ • 4.5tr/th" (size: 11)
+                FRAME: Background
+                  TEXT: "Cầu Giấy" (size: 11)
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Bạn: Dạ em vừa gửi yêu cầu khảo sát phòng qua app rồi ạ" (size: 12)
+                FRAME: Container
+                  VECTOR: Icon
+        FRAME: Item 4: Cô Đặng Thị Mai
+          FRAME: Container
+            FRAME: AB6AXuCUyKpOO9pxXrBqwpjbCPsqPgjHvD5borMwDZ1l_KVjMagAjkk6WdF5V8r5HbLBMp8sh-2fLfnfGPLdbQrbr3YoeWehW3OqBB5I_d7lUh50aG0I4MPPWNZdLK3sIA_VvUDEsMP5UcdxqxQnbokZ2PDNFbvN-sOyZOl85t_PARecQmTyjPu7FjkBWtsKDCeptmZdoCGfYOAWAx3P64yA8fz-odXs-ph3nU1J4mxVVQ
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Cô Đặng Mai" (size: 14)
+                FRAME: Container
+                  TEXT: "Thứ Ba" (size: 11)
+              FRAME: Container
+                FRAME: Background
+                  TEXT: "Phòng ghép 2 người • 1.5tr/th" (size: 11)
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                  TEXT: "Đề xuất ghép" (size: 11)
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Cô vừa nhận thêm 1 bạn sinh viên Ngoại Thương, cháu có muốn ghép cùng không?" (size: 12)
+        FRAME: Item 5: Avaroom Escrow Bot
+          FRAME: Container
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+              RECTANGLE: Background+Border
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Avaroom Escrow Bot" (size: 14)
+                  FRAME: Background
+                    TEXT: "HỆ THỐNG" (size: 9)
+                FRAME: Container
+                  TEXT: "Thứ Hai" (size: 11)
+              FRAME: Container
+                FRAME: Background
+                  TEXT: "Thông báo cọc tự động" (size: 11)
+                FRAME: Background
+                  TEXT: "Đã bảo đảm 100%" (size: 11)
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Ví dụ lịch sử cọc của phòng AVR-81726. Số tiền và chính sách cần xác nhận." (size: 12)
+  FRAME: Top Navigation Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Background+Shadow
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Container
+          FRAME: Container
+            TEXT: "AVAROOM" (size: 11)
+          FRAME: Container
+            TEXT: "Tin Nhắn" (size: 16)
+      FRAME: Container
+        FRAME: Button - Thông báo
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Background
+          FRAME: Container
+            VECTOR: Icon
+  FRAME: Nav
+    FRAME: Container
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Container
+          TEXT: "Tin đăng" (size: 10)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Container
+          TEXT: "Khảo sát" (size: 10)
+      FRAME: Link
+        FRAME: Container
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Background
+            TEXT: "3" (size: 10)
+        FRAME: Container
+          TEXT: "Tin nhắn" (size: 10)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Container
+          TEXT: "Hồ sơ" (size: 10)

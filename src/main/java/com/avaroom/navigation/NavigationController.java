@@ -31,12 +31,16 @@ public class NavigationController {
         this.listener = listener;
     }
 
+    private String norm(String id) {
+        return id != null ? id.trim().toLowerCase() : "";
+    }
+
     public void registerScreen(String screenId, JPanel screenPanel) {
-        screens.put(screenId, screenPanel);
+        screens.put(norm(screenId), screenPanel);
     }
 
     public JPanel getScreen(String screenId) {
-        return screens.get(screenId);
+        return screens.get(norm(screenId));
     }
 
     public void navigateTo(String screenId) {
@@ -44,13 +48,14 @@ public class NavigationController {
     }
 
     public void navigateTo(String screenId, Object args) {
-        if (currentScreenId != null && !currentScreenId.equals(screenId)) {
+        String nid = norm(screenId);
+        if (currentScreenId != null && !currentScreenId.equals(nid)) {
             backStack.push(currentScreenId);
         }
-        currentScreenId = screenId;
-        JPanel panel = screens.get(screenId);
+        currentScreenId = nid;
+        JPanel panel = screens.get(nid);
         if (listener != null && panel != null) {
-            listener.onScreenChanged(screenId, panel, args);
+            listener.onScreenChanged(nid, panel, args);
         }
     }
 

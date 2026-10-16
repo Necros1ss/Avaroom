@@ -1,0 +1,232 @@
+FRAME: Quản lý & Phản hồi Đánh giá - Chủ trọ
+  FRAME: Main
+    FRAME: Container
+      FRAME: Section - Key Metrics Overview Banner
+        FRAME: Background+Shadow
+          FRAME: Container
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "4.8" (size: 20)
+              FRAME: Container
+                TEXT: "/ 5.0" (size: 12)
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "42 LƯỢT ĐÁNH GIÁ" (size: 10)
+          FRAME: Rating Breakdown Bar Chart
+            RECTANGLE: Background
+            RECTANGLE: Background
+            RECTANGLE: Background
+          FRAME: Operational Quality Indicators
+            FRAME: Background
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "95.2%" (size: 18)
+                FRAME: Container
+                  TEXT: "Tỷ lệ phản hồi" (size: 10)
+            FRAME: Background
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "15 phút" (size: 18)
+                FRAME: Container
+                  TEXT: "Thời gian phản hồi TB" (size: 10)
+      FRAME: Section - Filter Rail Tabs:margin
+        FRAME: Section - Filter Rail Tabs
+          FRAME: Container
+            FRAME: Button
+              FRAME: Container
+                TEXT: "Tất cả" (size: 13)
+              FRAME: Overlay
+                TEXT: "42" (size: 11)
+            FRAME: Button
+              RECTANGLE: Background
+              FRAME: Container
+                TEXT: "Chưa phản hồi" (size: 13)
+              FRAME: Background
+                TEXT: "3" (size: 11)
+            FRAME: Button
+              FRAME: Container
+                TEXT: "5 sao" (size: 13)
+              FRAME: Container
+                TEXT: "(35)" (size: 11)
+            FRAME: Button
+              FRAME: Container
+                TEXT: "4 sao" (size: 13)
+              FRAME: Container
+                TEXT: "(5)" (size: 11)
+            FRAME: Button
+              FRAME: Container
+                TEXT: "Dưới 3 sao" (size: 13)
+              FRAME: Container
+                TEXT: "(2)" (size: 11)
+      FRAME: Section - Reviews Feed:margin
+        FRAME: Section - Reviews Feed
+          FRAME: Article - Card 1: Pending Immediate Action
+            FRAME: Container
+              FRAME: Container
+                FRAME: Background
+                  FRAME: AB6AXuASRhfhNjRu6oZD3_DAyof707E9hW5RqTWOIPlXG_WwFbQQJVG5fIfa-W8nfFlwa7JgsCR872NZ_vjR1WpQOS6feL0yrVfpSOar9FlwaYnTq024M4a1f3MCO6nnoAXucS4F9N5a-_ONoZKsWhHRnjINc9CovkWf1S5ivZm1g__Mu0mgRPpO5U44Vhn9AeBgbQu_3vFLmXAbncETG3TRV7BwWK0uA-5nKQPPCv7etCWW2pybfDrbqfU
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Nguyễn Văn Nam" (size: 13)
+                    FRAME: Container
+                      VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "Studio 402 • Đã ở 6 tháng" (size: 10)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Margin
+                  TEXT: "Hôm nay" (size: 10)
+            FRAME: Container
+              TEXT: "Phòng sạch sẽ, ban công thoáng mát đúng như\nảnh, mạng internet tốc độ cao. Bác chủ hỗ trợ\nnhiệt tình nhưng thi thoảng bãi xe tầng 1 hơi\nchật vào buổi tối muộn." (size: 14)
+            FRAME: Action Required Callout
+              RECTANGLE: Background
+              FRAME: Container
+                TEXT: "CẦN PHẢN HỒI" (size: 10)
+            FRAME: Quick AI Suggestion Pills
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Gợi ý phản hồi thông minh:" (size: 10)
+              FRAME: Container
+                FRAME: Button
+                  TEXT: "“Cảm ơn Nam, bác đang bố trí lại vạch để xe tầng 1...”" (size: 12)
+                FRAME: Button
+                  TEXT: "“Bác đã ghi nhận và nhắc bảo vệ sắp xếp gọn gàng hơn nhé!”" (size: 12)
+            FRAME: Inline Direct Reply Input Module:margin
+              FRAME: Inline Direct Reply Input Module
+                FRAME: Textarea
+                  FRAME: Container
+                    TEXT: "Phản hồi công khai cho đánh giá này..." (size: 12)
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Hiển thị công khai với khách thuê\nmới" (size: 10)
+                  FRAME: Button
+                    FRAME: Container
+                      TEXT: "Gửi phản\nhồi" (size: 13)
+                    FRAME: Container
+                      VECTOR: Icon
+          FRAME: Article - Card 2: Already Replied (5 Stars)
+            FRAME: Container
+              FRAME: Container
+                FRAME: Background
+                  FRAME: AB6AXuCruwt3k4gJENRuJnoyMRUcFxAMLefeQ1Hv1SWcMCH6ZYyFZxj2FkBjT2rCPebPeT7lWp2yhL0rirK2sqvqIKoMF8hCMsEYrtXqOu76QGMXhWvN1FwZu7CbQpRRcuup56GEAH3ZsTQ6S02JcGxXyk2ez-kaCU_njeA2INLXjoQzA3s-iXDtmyROlTAFx5jVN2ciMQOLVkIPDZRtzRgzxl8kBwp7iFPaSLa4mVhPusUYOhUEl9ssduM
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Lê Phương Thảo" (size: 13)
+                    FRAME: Container
+                      VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "Phòng 201 • Khảo sát xem phòng" (size: 10)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Margin
+                  TEXT: "2 ngày trước" (size: 10)
+            FRAME: Container
+              TEXT: "Chủ trọ đón tiếp đúng giờ, kiểm tra PCCC thang\nthoát hiểm rất kỹ nên rất yên tâm. Phòng ốc\nsạch sẽ thơm tho, ánh sáng tự nhiên ngập tràn." (size: 14)
+            FRAME: Owner Existing Reply Container:margin
+              FRAME: Owner Existing Reply Container
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      TEXT: "Phản hồi của Chủ nhà Avaroom" (size: 11)
+                  FRAME: Button
+                    TEXT: "Sửa phản hồi" (size: 10)
+                FRAME: Background
+                  TEXT: "Cảm ơn cháu nhiều nhé, chúc cháu học tập thật\ntốt tại Bách Khoa! Khi nào dọn vào cần hỗ trợ\nchuyển đồ cứ báo bác nhé." (size: 12)
+          FRAME: Article - Card 3: Issue Resolved Case (3 Stars)
+            FRAME: Container
+              FRAME: Container
+                FRAME: Background
+                  FRAME: AB6AXuCQRQkZN4L3bKe8cjWjuVB33O8dzft-_HcjysnxOWe8PcEMqmzdUFx4yjyHeHu8OiwL4W1UajK5VPlaj1kSWzd34nbg9N_jPArsOJZ2OJ9SGfDokiu9VtZzsD7Ud81Kv3YbBe2AFNInSBl_pNTsigV0icS1Kzu_jJQZqs5_Ds1p3n1FOpA5OqAfQePtqLLMc7cw08pruXYhfZvFeriGBY_H__ZEFQqJOStlgeDzfuaiZkR-Ty829Ss
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Trần Tuấn Anh" (size: 13)
+                    FRAME: Container
+                      VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "Phòng 301 • Hợp đồng Escrow 1\nnăm" (size: 10)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Margin
+                  TEXT: "5 ngày trước" (size: 10)
+            FRAME: Container
+              TEXT: "Điều hòa phòng 301 bị rò nước hôm thứ 7." (size: 14)
+            FRAME: Incident Resolved Badge
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Đã giải quyết sự cố trong 2h" (size: 10)
+            FRAME: Owner Reply Explaining Resolution:margin
+              FRAME: Owner Reply Explaining Resolution
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      TEXT: "Phản hồi của Chủ nhà Avaroom" (size: 11)
+                  FRAME: Container
+                    TEXT: "Đã phản hồi" (size: 10)
+                FRAME: Background
+                  TEXT: "Chào Tuấn Anh, thợ bảo dưỡng đã thay ống thoát\nnước phụ và vệ sinh cục lạnh ngay chiều thứ 7\nrồi nhé. Cảm ơn em đã phản hồi kịp thời để bác\nxử lý nhanh chóng." (size: 12)
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Button - Quay lại:margin
+          FRAME: Button - Quay lại
+            FRAME: Container
+              VECTOR: Icon
+        FRAME: Heading 1
+          TEXT: "Chi tiết đánh giá" (size: 18)
+      FRAME: Container
+        FRAME: Button - Tác vụ nhanh
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Background+Shadow
+          FRAME: Container
+            VECTOR: Icon

@@ -1,0 +1,156 @@
+FRAME: Tài khoản & Cài đặt sinh viên
+  FRAME: Main Content Area
+    FRAME: Quick Stats Cards
+      FRAME: Background+Border+Shadow
+        FRAME: Margin
+          FRAME: Background
+            FRAME: Container
+              VECTOR: Icon
+        TEXT: "04" (size: 20)
+        FRAME: Margin
+          FRAME: Container
+            TEXT: "Phòng đã lưu" (size: 11)
+      FRAME: Background+Border+Shadow
+        FRAME: Margin
+          FRAME: Background
+            FRAME: Container
+              VECTOR: Icon
+        TEXT: "01" (size: 20)
+        FRAME: Margin
+          FRAME: Container
+            TEXT: "Lịch xem phòng" (size: 11)
+      FRAME: Background+Border+Shadow
+        FRAME: Margin
+          FRAME: Background
+            FRAME: Container
+              VECTOR: Icon
+        TEXT: "01" (size: 20)
+        FRAME: Margin
+          FRAME: Container
+            TEXT: "Đang thuê" (size: 11)
+    FRAME: Section 1: Tiện ích & Quyền lợi Sinh viên:margin
+      FRAME: Section 1: Tiện ích & Quyền lợi Sinh viên
+        FRAME: Container
+          FRAME: Container
+            TEXT: "TIỆN ÍCH & QUYỀN LỢI SINH VIÊN" (size: 12)
+        FRAME: Background+Border+Shadow
+          FRAME: Link - eKYC Item
+            FRAME: Background+Border
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                FRAME: Heading 3
+                  TEXT: "Hồ sơ sinh viên" (size: 14)
+              FRAME: Container
+                TEXT: "CCCD gắn chip & Thẻ sinh viên xác thực" (size: 12)
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Link - Smart Notification Settings
+            FRAME: Background+Border
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Heading 3
+                TEXT: "Bộ lọc đẩy tin phòng tự động" (size: 14)
+              FRAME: Container
+                TEXT: "Bán kính < 2km ĐH Bách Khoa • Dưới 3.000.000đ" (size: 12)
+            FRAME: Container
+              VECTOR: Icon
+    FRAME: Minimalist Logout Button:margin
+      FRAME: Minimalist Logout Button
+        FRAME: Button
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Container
+            TEXT: "Đăng xuất tài khoản" (size: 14)
+    FRAME: Top Profile & Student Verification Card
+      FRAME: Container
+        FRAME: Container
+          FRAME: Nguyễn Thanh Tùng
+          FRAME: Background
+            RECTANGLE: Overlay+Shadow
+            FRAME: Container
+              VECTOR: Icon
+        FRAME: Container
+          FRAME: Container
+            FRAME: Heading 2
+              TEXT: "Nguyễn Thanh Tùng" (size: 16)
+          FRAME: Container
+            TEXT: "tung.nt@hust.edu.vn" (size: 12)
+          FRAME: Background+Border
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "ĐH Bách Khoa HN • K66" (size: 11)
+    FRAME: Section 3: Cài đặt hệ thống & Bảo mật:margin
+      FRAME: Section 3: Cài đặt hệ thống & Bảo mật
+        TEXT: "CÀI ĐẶT & BẢO MẬT" (size: 12)
+        FRAME: Background+Border+Shadow
+          FRAME: Link - Change Password
+            FRAME: Background+Border
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Heading 4
+                TEXT: "Đổi mật khẩu tài khoản" (size: 14)
+              FRAME: Container
+                TEXT: "Lần đổi gần nhất 45 ngày trước" (size: 12)
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Language Selector
+            FRAME: Container
+              FRAME: Background+Border
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Heading 4
+                  TEXT: "Ngôn ngữ ứng dụng" (size: 14)
+                FRAME: Container
+                  TEXT: "Tiếng Việt (Mặc định)" (size: 12)
+            FRAME: Background+Border
+              TEXT: "VIE" (size: 12)
+  FRAME: Fixed Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Background+Shadow
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Container
+          FRAME: Container
+            TEXT: "AVAROOM" (size: 10)
+          FRAME: Heading 1
+            TEXT: "Tài khoản" (size: 16)
+      FRAME: Container
+        FRAME: Button - Thông báo
+          FRAME: Container
+            VECTOR: Icon
+          RECTANGLE: Background
+        FRAME: Background+Shadow
+          FRAME: Container
+            VECTOR: Icon
+  FRAME: Nav
+    FRAME: Container
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Margin
+          TEXT: "Trang chủ" (size: 11)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Margin
+          TEXT: "Lân cận" (size: 11)
+      FRAME: Link
+        FRAME: Container
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Background
+            TEXT: "3" (size: 10)
+        FRAME: Margin
+          TEXT: "Tin nhắn" (size: 11)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Margin
+          TEXT: "Tài khoản" (size: 11)

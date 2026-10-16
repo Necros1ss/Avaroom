@@ -1,0 +1,155 @@
+FRAME: Tin nhắn & Chat với chủ trọ
+  FRAME: Main Content Area
+    FRAME: Container
+      FRAME: Main Active Conversation Pane:margin
+        FRAME: Main Active Conversation Pane
+          FRAME: Verified Landlord Identity Bar
+            FRAME: Container
+              FRAME: Container
+                FRAME: AB6AXuDowNk3YLrPF6vM0Pqg5qkM_o4eaJDSqW_H-yDHaXcT8IWYfNXpJtd6a2MFpOqj9d3MrrsHWMw_gtqr6S-174tClJ8VHuQlCu_0-2-OGheONxlf-BfJDNgVW1tBjvP9yL71fU34wBAWAQlQLv9VaZkzKVz0AT8tgYu1jjOOpg8SJSpl4XZ07Mz2hD3gHMKsidjIjLrAR1AqpV_yja0M8cqoDy22E5xazqDMj9eJ060qEgQ2m8kt-Bo
+                FRAME: Background
+                  RECTANGLE: Overlay+Shadow
+                  FRAME: Container
+                    VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Cô Hoàng Thị Ánh Tuyết" (size: 14)
+                  FRAME: Background+Border
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      TEXT: "Đã xác minh" (size: 10)
+                FRAME: Margin
+                  FRAME: Container
+                    RECTANGLE: Background
+                    FRAME: Container
+                      TEXT: "Trực tuyến • Phản hồi ~5 phút" (size: 11)
+            FRAME: Button - Gọi điện trực tiếp
+              FRAME: Container
+                VECTOR: Icon
+          FRAME: Pinned Listing Context Card (VERTICE Mockup Card Style)
+            FRAME: Container
+              FRAME: AB6AXuBQftuOLiC23h7MooaMdRpe2eZmKNPRaMQAZS86bL_JToH2JxC7RQiHponBRT3DwkgcNSMUHRZdJuvEmq-FGeXmmneaighuaGXTfuQLba4ssH2aZiBqhyiIdDpacgKJ0I3vynoPQhHoLrKkvYW2ZRy2qPAe6HRaJW2M-6fB-doisxIU6LZq0XG-YlH2GPhipROpRFccLewWWkPfArsvorZ7trmCgkYYdrXHurjPC1JETp_vuTLgAJk
+              FRAME: Overlay
+                TEXT: "ẢNH MẪU" (size: 8)
+            FRAME: Container
+              FRAME: Background+Border
+                TEXT: "AVR-90412 • Dữ liệu mẫu" (size: 10)
+              FRAME: Heading 4
+                TEXT: "Studio ban công Tạ Quang Bửu" (size: 13)
+              FRAME: Container
+                FRAME: Paragraph
+                  TEXT: "4.200.000đ" (size: 14)
+                  TEXT: "/tháng" (size: 11)
+                FRAME: Background+Border
+                  FRAME: Container
+                    TEXT: "Đã xác nhận" (size: 11)
+                  FRAME: Container
+                    VECTOR: Icon
+          FRAME: Message Bubble Stream
+            FRAME: Timestamp Divider:margin
+              FRAME: Timestamp Divider
+                FRAME: Overlay
+                  TEXT: "Hôm nay, 14:15" (size: 11)
+            FRAME: Landlord Message 1
+              FRAME: Img:margin
+                FRAME: AB6AXuBzQL4bLtiUmyn-KySk94PkDl4UnM9Bo_ismFp5Mhxc8kFmYTQPPybDcBQwD0yVcUb4eZfR6VsE4CRFiKO6pPB-2xagh7pZmyI9DPpWsQ9svzv9DlTnxKMevcCprI-MDtJrSsmxSVcEVgZ2D_bs5Q5u86GQlgPgkpBNx8ixoyz2Z3zBXlDyJF5LTF1Iex50qSG0d3w1zifhfv-CWsAct9x2oGed-RJt9l17mSidLMd8BBs1Tp4ZlPc
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Cô Tuyết" (size: 10)
+                FRAME: Background+Border+Shadow
+                  TEXT: "Chào cháu, phòng 402 ở Tạ Quang Bửu vẫn còn nhé. Giờ giấc tự do, khóa vân tay an ninh." (size: 13)
+                FRAME: Container
+                  TEXT: "14:16" (size: 10)
+            FRAME: Student Message 1:align-flex-end
+              FRAME: Student Message 1
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Bạn" (size: 10)
+                  FRAME: Background+Shadow
+                    TEXT: "Dạ cháu chào cô, tiền điện nước tính thế nào ạ? Cháu qua xem phòng lúc 16:30 ngày 14/10/2026 được không cô?" (size: 13)
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "14:18" (size: 10)
+                    FRAME: Container
+                      VECTOR: Icon
+                FRAME: Margin
+                  FRAME: Background+Shadow
+                    FRAME: Container
+                      TEXT: "BK" (size: 10)
+            FRAME: Interactive Widget: Room Viewing Appointment Card (Clean & Modern)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Background
+                    FRAME: Container
+                      VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "Lịch hẹn mẫu • Đã xác nhận" (size: 14)
+              FRAME: Background+Border
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "16:30 • Thứ Tư, 14/10/2026" (size: 13)
+                FRAME: Container
+                  FRAME: Margin
+                    VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "42 Ngõ 187 Tạ Quang Bửu, P. Bách Khoa, Hai Bà Trưng, Hà Nội" (size: 12)
+              FRAME: Container
+                FRAME: Button
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "Thêm vào Google Calendar" (size: 12)
+                FRAME: Button - Xem bản đồ chỉ đường
+                  FRAME: Container
+                    VECTOR: Icon
+            FRAME: Landlord Message 2
+              FRAME: Img:margin
+                FRAME: AB6AXuCyMEhtOsPueuEagGRSVk_elSXmcMPXShZIodqAWITODmicKRowtTv3OFqtCj7MQ0NYW_T-l0v9oy_GG93-8md0dlJ68aQyCjzgawAKcrE6DgMxTy_W5sIDtnAW6FdW6U723Q2_ZRMCvSDhyDJXwD7g0xr3-XlKUw8PHQ5COcg6r1oKO27fZb80fCDSPW7O1gSAF-inUE5G7ojzuOQUMqcmio4CQBY6nMaWlP-hLqcwpyaxVS44SSo
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Cô Tuyết" (size: 10)
+                FRAME: Background+Border+Shadow
+                  TEXT: "Điện 3.500đ/kWh, nước 100.000đ/người. Cô đã xác nhận lịch 16:30 ngày 14/10/2026 tại số 42 Ngõ 187 Tạ Quang Bửu nhé." (size: 13)
+                FRAME: Container
+                  TEXT: "14:20" (size: 10)
+          FRAME: Quick Action Shortcut: Escrow Deposit Offer (Subtle Dark / Coral Accent)
+  FRAME: Bottom Chat Bar
+    FRAME: Container
+      FRAME: Bottom Chat Input Bar
+        FRAME: Button - Đính kèm ảnh
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Button - Chia sẻ vị trí
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Input
+          FRAME: Container
+            TEXT: "Nhập tin nhắn cho cô Tuyết..." (size: 13)
+        FRAME: Button - Gửi tin nhắn
+          FRAME: Container
+            VECTOR: Icon
+  FRAME: Top Navigation Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Button - Quay lại
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Background+Shadow
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Container
+          FRAME: Container
+            TEXT: "AVAROOM" (size: 10)
+          FRAME: Container
+            TEXT: "Tin Nhắn" (size: 18)
+      FRAME: Container
+        FRAME: Button - Thông báo
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Background
+          FRAME: Container
+            VECTOR: Icon

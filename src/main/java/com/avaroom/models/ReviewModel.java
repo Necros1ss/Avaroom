@@ -18,10 +18,12 @@ public class ReviewModel {
     }
 
     public String getAuthorName() { return authorName; }
+    public String getStudentName() { return authorName; }
     public String getUniversity() { return university; }
     public int getStars() { return stars; }
     public String getDate() { return date; }
     public String getComment() { return comment; }
     public String getHostReply() { return hostReply; }
+    public boolean hasHostReply() { return hostReply != null && !hostReply.trim().isEmpty(); }
     public void setHostReply(String hostReply) { this.hostReply = hostReply; }
 }

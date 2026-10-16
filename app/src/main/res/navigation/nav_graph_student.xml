@@ -54,7 +54,10 @@
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.avaroom.app.ui.student.MapFragment"
-        android:label="Bản đồ" />
+        android:label="Bản đồ">
+        <action android:id="@+id/action_map_to_roomDetail" app:destination="@id/roomDetailFragment" />
+        <action android:id="@+id/action_map_to_filter" app:destination="@id/filterFragment" />
+    </fragment>
 
     <!-- Tin nhắn danh sách -->
     <fragment

@@ -1,0 +1,62 @@
+FRAME: Form nhập email lấy lại mật khẩu
+  FRAME: Main - Container cố định theo chuẩn thiết kế Mobile iOS 390px
+    FRAME: TopSection
+      FRAME: Header Titles & Descriptions:margin
+        FRAME: Header Titles & Descriptions
+          FRAME: Container
+            RECTANGLE: Background
+            FRAME: Container
+              TEXT: "KHÔI PHỤC TÀI KHOẢN" (size: 11)
+          FRAME: Heading 1
+            TEXT: "Đặt lại mật khẩu" (size: 32)
+          FRAME: Container
+            TEXT: "Nhập email trường (.edu.vn) hoặc số điện thoại đã đăng\nký để nhận mã xác thực đặt lại mật khẩu." (size: 13.5)
+      FRAME: Recovery Form Fields
+        FRAME: Label and Recovery Method selector
+          FRAME: Container
+            FRAME: Label
+              TEXT: "TÀI KHOẢN CẦN KHÔI PHỤC" (size: 11)
+          FRAME: White rounded pill input match style
+            FRAME: Icon thẻ định danh / phong th:margin
+              FRAME: Icon thẻ định danh / phong th → SVG
+                VECTOR: Vector
+                VECTOR: Vector
+                VECTOR: Vector
+            FRAME: Input
+              FRAME: Container
+                TEXT: "leminhanh@hust.edu.vn" (size: 14.5)
+            FRAME: Button - Xóa nội dung:margin
+              FRAME: Button - Xóa nội dung
+                FRAME: SVG
+                  VECTOR: Vector
+                  VECTOR: Vector
+        FRAME: Quick Method Tags
+          FRAME: Container
+            TEXT: "Gợi ý nhận mã:" (size: 11)
+          FRAME: Button
+            TEXT: "✉️ Email " (size: 11.5)
+          FRAME: Button
+            TEXT: "📱 SDT" (size: 11.5)
+        FRAME: Security Escrow Trust Badge
+          FRAME: Background+Border
+            FRAME: SVG - Shield Icon
+              VECTOR: Vector
+          FRAME: Container
+            TEXT: "Mã OTP gồm 6 chữ số có hiệu lực trong 5 phút. Vui lòng không chia sẻ mã này." (size: 12)
+        FRAME: Primary Action Button (Same high contrast pill styling from sample image) → Button
+          RECTANGLE: Button:shadow
+          FRAME: Container
+            TEXT: "GỬI MÃ XÁC THỰC" (size: 14)
+          FRAME: SVG
+            VECTOR: Vector
+            VECTOR: Vector
+    FRAME: FooterNavigation
+      TEXT: "Đã nhớ lại mật khẩu? " (size: 13.5)
+      FRAME: Button
+        TEXT: "Đăng nhập ngay" (size: 14)
+  FRAME: Header
+    FRAME: Container
+      FRAME: Button - Go back:margin
+        FRAME: Button - Go back
+          FRAME: Container
+            VECTOR: Icon

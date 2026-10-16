@@ -1,0 +1,248 @@
+FRAME: Lịch hẹn xem phòng & Khảo sát
+  FRAME: Main
+    FRAME: Container
+      FRAME: Section - Header & Filter Module
+        FRAME: Container
+          FRAME: Container
+            FRAME: Container
+              TEXT: "HỆ THỐNG LỊCH HẸN" (size: 10)
+            FRAME: Heading 1
+              TEXT: "Lịch hẹn & Khảo sát\nphòng" (size: 20)
+          FRAME: Background
+            FRAME: Button
+              TEXT: "Ngày" (size: 11)
+            FRAME: Button
+              TEXT: "Tuần" (size: 11)
+      FRAME: Section - Horizontal Architectural Date Picker
+        FRAME: Button
+          FRAME: Container
+            TEXT: "T4" (size: 11)
+          FRAME: Container
+            TEXT: "28" (size: 18)
+          FRAME: Margin
+            TEXT: "Hôm qua" (size: 10)
+        FRAME: Button
+          RECTANGLE: Button:shadow
+          FRAME: Container
+            TEXT: "T5" (size: 11)
+          FRAME: Container
+            TEXT: "29" (size: 18)
+          FRAME: Margin
+            TEXT: "Hôm nay" (size: 10)
+          FRAME: Background
+            TEXT: "3 lịch" (size: 9)
+        FRAME: Button
+          FRAME: Container
+            TEXT: "T6" (size: 11)
+          FRAME: Container
+            TEXT: "30" (size: 18)
+          FRAME: Margin
+            TEXT: "1 lịch" (size: 10)
+        FRAME: Button
+          FRAME: Container
+            TEXT: "T7" (size: 11)
+          FRAME: Container
+            TEXT: "01" (size: 18)
+          FRAME: Margin
+            TEXT: "Trống" (size: 10)
+        FRAME: Button
+          FRAME: Container
+            TEXT: "CN" (size: 11)
+          FRAME: Container
+            TEXT: "02" (size: 18)
+          FRAME: Margin
+            TEXT: "2 lịch" (size: 10)
+      FRAME: Section - Metric Quick Cards:margin
+        FRAME: Section - Metric Quick Cards
+          FRAME: Background+Shadow
+            FRAME: Margin
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                TEXT: "03" (size: 22)
+              FRAME: Container
+                TEXT: "Cuộc hẹn xem phòng" (size: 10)
+          FRAME: Background+Shadow
+            FRAME: Margin
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                TEXT: "01" (size: 22)
+              FRAME: Container
+                TEXT: "Đề xuất giữ chỗ " (size: 10)
+      FRAME: Section Title:margin
+        FRAME: Section Title
+          FRAME: Heading 2
+            TEXT: "Lịch hẹn sắp tới" (size: 18)
+          FRAME: Container
+            TEXT: "Thứ Năm, 29/09" (size: 11)
+      FRAME: Section - Appointments List
+        FRAME: Article - Card 1: Confirmed Appointment
+          FRAME: Container
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "16:00 - Chiều nay" (size: 16)
+            FRAME: Background
+              RECTANGLE: Background
+              TEXT: "Đã xác nhận" (size: 11)
+          FRAME: Lead Details
+            FRAME: Background
+              FRAME: AB6AXuB3-3W3LYdFyNBrML-E51PITzX3ubUvlauoqlepDOtP6NsTpJ9l7-JDDm8O-wxTQJ5v9eU3dsL_A_WRh_6iAum3IPL60j1saR2JwrmQAmpUXC42RyFhZjlYQ2gvmh_tgnJFkN6PAjB_Ao-W-yOSVwSoTDZHdoo8V26MNBwQci3Ce6MxKEWRmt0S77yAeysfPUq0WLjK2G58icHGLwgKAam2U1aW3gnQw8gw6VoBtW4ZhZSiz60DyFg
+            FRAME: Container
+              FRAME: Container
+                FRAME: Heading 3
+                  TEXT: "Nguyễn Thanh Tùng" (size: 15)
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                TEXT: "ĐH Bách Khoa HN • K66" (size: 12)
+              FRAME: Margin
+                FRAME: Container
+                  FRAME: Background
+                    TEXT: "eKYC CCCD" (size: 10)
+                  FRAME: Background
+                    TEXT: "Thẻ SV chính chủ" (size: 10)
+          FRAME: Room Tag & Note
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Studio Tạ Quang Bửu" (size: 13)
+              FRAME: Container
+                TEXT: "#AVR-90412" (size: 10)
+            FRAME: Overlay
+              TEXT: "“Em qua đi xe máy cùng bạn, cô gửi vị trí cổng\nngõ nhé”" (size: 12)
+          FRAME: Quick Actions Grid
+            FRAME: Link
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Margin
+                FRAME: Container
+                  TEXT: "Gọi điện" (size: 10)
+            FRAME: Button
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Margin
+                FRAME: Container
+                  TEXT: "Chat ngay" (size: 10)
+            FRAME: Button
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Margin
+                FRAME: Container
+                  TEXT: "Chỉ đường" (size: 10)
+            FRAME: Button
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Margin
+                FRAME: Container
+                  TEXT: "Đổi giờ" (size: 10)
+        FRAME: Article - Card 2: Awaiting Landlord Approval
+          FRAME: Container
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "18:30 - Tối nay" (size: 16)
+            FRAME: Background
+              RECTANGLE: Background
+              TEXT: "Chờ xác nhận" (size: 11)
+          FRAME: Lead Details
+            FRAME: Background
+              FRAME: AB6AXuAg2DDJ4_DJDYzdSxIvUgacV7R-RpWI9wsfwGxM3jyO1lLpl-g3DRSh3pgsBmACOfoqLIYPLcvh6uXWIjT5bp_csZCbnTRWXY9C2cUIYkyWAjx0RtOmXAs7ttwSNIG8N-FAErTO07nfEXx8eVuRG35BmLIp54MHVRvNvdVrwyRIcqXO1t0T8nBsvJb1DO-tPUp_iG6KhosjYIuylVc43hGx1KG4wVd2B1-3caWL1GL1TQX0W7Bgq7k
+            FRAME: Container
+              FRAME: Container
+                FRAME: Heading 3
+                  TEXT: "Trần Mai Chi" (size: 15)
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                TEXT: "ĐH Kinh Tế Quốc Dân • K67" (size: 12)
+              FRAME: Margin
+                FRAME: Container
+                  FRAME: Background
+                    TEXT: "CCCD Hợp lệ" (size: 10)
+          FRAME: Room Tag
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Căn hộ gác lửng" (size: 13)
+            FRAME: Container
+              TEXT: "#AVR-89210" (size: 10)
+          FRAME: Approve/Propose Actions
+            FRAME: Button
+              TEXT: "Xác nhận lịch" (size: 13)
+            FRAME: Button
+              TEXT: "Đề xuất giờ khác" (size: 13)
+        FRAME: Recent Survey History:margin
+          FRAME: Recent Survey History
+            FRAME: Heading 3
+              TEXT: "Lịch sử khảo sát phòng hôm nay" (size: 18)
+            FRAME: Background+Shadow
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Hoàng Nam" (size: 13)
+                    FRAME: Container
+                      TEXT: "14:00" (size: 10)
+                  FRAME: Container
+                    TEXT: "Đã xem • Đang duyệt cọc Escrow 3.200.000đ" (size: 12)
+              FRAME: Button
+                FRAME: Container
+                  VECTOR: Icon
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Container
+          TEXT: "AVAROOM" (size: 13)
+        FRAME: Background
+          TEXT: "CHỦ TRỌ" (size: 11)
+      FRAME: Container
+        FRAME: Button - Thông báo
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Background
+            RECTANGLE: Overlay+Shadow
+        FRAME: Link
+          FRAME: Background
+            FRAME: Container
+              VECTOR: Icon
+  FRAME: Nav
+    FRAME: Container
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Container
+          TEXT: "Tin đăng" (size: 10)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Container
+          TEXT: "Lịch hẹn" (size: 10)
+      FRAME: Link
+        FRAME: Container
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Background
+            TEXT: "3" (size: 10)
+        FRAME: Container
+          TEXT: "Tin nhắn" (size: 10)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Container
+          TEXT: "Hồ sơ" (size: 10)

@@ -1,0 +1,127 @@
+FRAME: Chi tiết lịch hẹn xem phòng - Góc nhìn Chủ trọ
+  FRAME: Main
+    FRAME: Container
+      FRAME: Top Urgent Action Banner & Status
+        FRAME: Background+Shadow
+          FRAME: Container
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "#AVR-TOUR-2024-912" (size: 11)
+            FRAME: Background
+              RECTANGLE: Background
+              TEXT: "Chờ xác nhận" (size: 11)
+          FRAME: Container
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Phản hồi trong: 01:58:42" (size: 13)
+            FRAME: Container
+      FRAME: Main Details Content:margin
+        FRAME: Main Details Content
+          FRAME: Appointment & Room Spec Card
+            FRAME: Time Highlight
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "THỜI GIAN XEM PHÒNG" (size: 11)
+                FRAME: Heading 2:margin
+                  FRAME: Heading 2
+                    TEXT: "16:30 • Chiều mai,\n13/10/2024" (size: 18)
+            FRAME: Room Overview Split Card
+              FRAME: AB6AXuANK-gaT4-WH_fjWR7AX-NBHoJS4UgOh8ixV9yOG6-3yOeaZRp_xMu8HInFEd5R2UkCBs7T7-SqQuI-nZ1R2X2RH6TjSErKGgH4Sam7B5uV3gJ3foY1kw0J96b1oj33NhUJyUFDBQJfTN1KtahfekaN4L575jtnOKApUh4QYCYl4F7-0qd342gWuNw_tsN5r7N-6xE6Z1iYD9-Sh0iNZjSR06BE7Xwwz4nz-Ndxif3wjxzIOzHx_so
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "MÃ PHÒNG: #AVR-90412" (size: 10)
+                FRAME: Heading 3:margin
+                  FRAME: Heading 3
+                    TEXT: "Studio ban công thoáng mát" (size: 13)
+                FRAME: Margin
+                  FRAME: Container
+                    FRAME: Background
+                      TEXT: "Tầng 4 • Phòng\n402" (size: 10)
+                    FRAME: Container
+                      TEXT: "4.2M/tháng" (size: 13)
+          FRAME: Student Profile & Verified Credentials
+            FRAME: Container
+              FRAME: Container
+                FRAME: Container
+                  FRAME: AB6AXuC4vDSs7x3RBGgNhZ5qDTaxiY_sRQccSUHBUSa68BAHcbL78uz7RX3TZDi_CWGI2tt1G7soxwmlcNth7z_bCPNaqXbFeXRgGUFiXSl5O3Iks3YBNUWwtCGyG-yT3vQ46c0xuSWcox1C8Ciw9Pb96gN8Ym5rSaqGhDI9pBNPaBXoSHl39RLJKibT6o4k3s5lOEhwsusl4G5xuABBhQooRdmZRNHLmn5v9Y1NhQKbjXShUibVMz2OP0E
+                  FRAME: Background
+                    FRAME: Container
+                      VECTOR: Icon
+                FRAME: Container
+                  FRAME: Heading 3
+                    TEXT: "Nguyễn Thanh Tùng" (size: 18)
+                  FRAME: Container
+                    TEXT: "K66 Viện CNTT - ĐH Bách Khoa HCM" (size: 12)
+                  FRAME: Container
+                    TEXT: "MSSV: 20210892" (size: 10)
+            FRAME: Trust Badges
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Đã xác thực Thẻ SV chính quy" (size: 13)
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Hồ sơ đã duyệt đầy đủ thông tin" (size: 10)
+                FRAME: Container
+            FRAME: Quick Contact Actions
+              FRAME: Button
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Gọi trực tiếp" (size: 13)
+              FRAME: Button
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Nhắn tin ngay" (size: 13)
+            FRAME: Student Message Quote
+              FRAME: Container
+                TEXT: "LỜI NHẮN GỬI CHỦ NHÀ" (size: 10)
+              FRAME: Container
+                TEXT: "“Cháu là Tùng K66 Bách Khoa, cháu đi cùng bạn\nqua xem lúc 16h30 để chốt thuê kỳ 1 ạ.”" (size: 12)
+              FRAME: Container
+                VECTOR: Icon
+      FRAME: Sticky Bottom Decision Action Bar
+        FRAME: Primary Confirmation Button
+          RECTANGLE: Primary Confirmation Button:shadow
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Container
+            TEXT: "Xác nhận lịch hẹn xem phòng ✓" (size: 13)
+        FRAME: Secondary Alternatives
+          FRAME: Button
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Đề xuất dời giờ" (size: 13)
+          FRAME: Button
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Từ chối lịch" (size: 13)
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Button - Quay lại
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Container
+          FRAME: Container
+            TEXT: "AVAROOM LANDLORD" (size: 10)
+          FRAME: Heading 1
+            TEXT: "Chi Tiết Lịch Hẹn " (size: 18)
+      FRAME: Container
+        FRAME: Button - Trợ giúp và hướng dẫn
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Background
+          FRAME: Container
+            VECTOR: Icon

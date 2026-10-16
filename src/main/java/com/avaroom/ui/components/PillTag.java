@@ -13,6 +13,10 @@ public class PillTag extends JLabel {
         this(text, Theme.BG_CHIP, Theme.TEXT_PRIMARY, null);
     }
 
+    public PillTag(String text, Color bg, Color textCol) {
+        this(text, bg, textCol, null);
+    }
+
     public PillTag(String text, Color bg, Color textCol, Color borderCol) {
         super(text);
         this.bgColor = bg;

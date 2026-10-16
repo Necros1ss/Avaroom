@@ -1,0 +1,221 @@
+FRAME: Hồ sơ chủ trọ & Cài đặt
+  FRAME: Main
+    FRAME: Top Ambient Glow
+      FRAME: Profile Hero Card
+        FRAME: Container
+          FRAME: Avatar with active verified status
+            FRAME: AB6AXuDvhcvS78HU0-KEV05BBc9XKGrt5dqw5preUBmBto3I6gbPDtx5OzBZb36Ilf5DwCjfT_I16u_-ESWjQl5e3g6nwhyhxxRka__bcDwr9ndK7IvCiLsoyEAQys17U_2XrZcYg29UqoCaLzSyrKMX_DbZ4OSkjhStucZgmcPlbn1Y9r6qHxJMCMgJI6XR9ePHU0t2PcL1Gr7fP2e4V2n1V4sBiQyOCzvwx4A55f9oY6LyRFjJLA_XfrU
+            FRAME: Background
+              RECTANGLE: Overlay+Shadow
+              FRAME: Container
+                VECTOR: Icon
+          FRAME: Name & Contact Details
+            FRAME: Container
+              FRAME: Heading 1
+                TEXT: "Cô Hoàng Thị Ánh Tuyết" (size: 18)
+            FRAME: Container
+              FRAME: Container
+                TEXT: "0913 ••• 882" (size: 12)
+              FRAME: Container
+                TEXT: "tuyet.hoang@gmail.com" (size: 12)
+              FRAME: Margin
+                TEXT: "•" (size: 12)
+              FRAME: Container
+                VECTOR: Icon
+        FRAME: Verified Badge
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Container
+            TEXT: "Chủ trọ đã xác minh chính chủ" (size: 11)
+      FRAME: Asset & Operational Overview (3 Columns)
+        FRAME: Container
+          FRAME: Heading 3
+            TEXT: "Chỉ số tài sản quản lý" (size: 18)
+          FRAME: Button
+            TEXT: "Thống kê" (size: 10)
+        FRAME: Container
+          FRAME: Stat 1
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              RECTANGLE: Background
+            FRAME: Margin
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "12" (size: 32)
+                FRAME: Container
+                  TEXT: "Tổng số phòng" (size: 10)
+          FRAME: Stat 2
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Background
+                TEXT: "Cao" (size: 10)
+            FRAME: Margin
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "91.6%" (size: 32)
+                FRAME: Container
+                  TEXT: "Tỷ lệ lấp đầy" (size: 10)
+          FRAME: Stat 3
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Margin
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "35.2" (size: 24)
+                  FRAME: Margin
+                    TEXT: "tr" (size: 10)
+                FRAME: Container
+                  TEXT: "Doanh\nthu/tháng" (size: 10)
+      FRAME: Management & Operational Services Section
+        FRAME: Heading 3
+          TEXT: "Quản lý vận hành & Dịch vụ" (size: 18)
+        FRAME: Background+Shadow
+          FRAME: Button - Service Item 1: Contracts & Escrow
+            FRAME: Container
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Lịch xem phòng & Cọc Phòng" (size: 13)
+                  FRAME: Background
+                    TEXT: "1 đang chờ" (size: 10)
+                FRAME: Margin
+                  FRAME: Container
+                    TEXT: "Phòng 302 - Khách: Nguyễn Văn An" (size: 10)
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Button - Service Item 2: Utility Invoices
+            FRAME: Container
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Quản lý phòng trọ hiện có" (size: 13)
+                FRAME: Margin
+                  FRAME: Container
+            FRAME: Container
+              VECTOR: Icon
+      FRAME: Architectural Property Showcase Snippet
+        FRAME: Container
+          FRAME: Container
+            TEXT: "KHÔNG GIAN TIÊU BIỂU QUẢN LÝ" (size: 11)
+          FRAME: Container
+            TEXT: "Tòa Nhà Ánh Tuyết 01" (size: 10)
+        FRAME: Container
+          FRAME: AB6AXuD9ZhBjQk-HZX0XLGljY9TszEVTWIzJb1QtSRxRGLQDugjo7xE9i2tp0U2619ex4sk8BsxdZ23jbErEYfbWqWWCslaKLBfrQPec7jEaS3z0QOVy1T7Q8zoM6jcX9PAKU7w0hU1RmWpOi6foYB_mfEWaAWtJUrt2Uy2BcuEQrA8nE2h43-X4UUuugnKRZTvDRb4SFNXwAEe6dAuDwE3wgoKNYhbMgveWTHV6bSwLbZ5Mz5ZsVvRhgV8
+          FRAME: Background
+            FRAME: Container
+              FRAME: Container
+                TEXT: "P.201 - Studio Ban công Panorama" (size: 13)
+              FRAME: Container
+                TEXT: "Đang cho thuê • Hạn hợp đồng: 12/2026" (size: 10)
+      FRAME: Settings, Security & Banking
+        FRAME: Heading 3
+          TEXT: "Cài đặt & Bảo mật" (size: 18)
+        FRAME: Background+Shadow
+          FRAME: Button - Bank Account for Escrow
+            FRAME: Container
+              FRAME: Background+Border
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Chỉnh sửa hồ sơ cá nhân" (size: 13)
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Push Notification Toggle
+            FRAME: Container
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Thông báo lịch hẹn & Tin nhắn" (size: 13)
+                FRAME: Margin
+                  FRAME: Container
+                    TEXT: "Nhận chuông khi khách đặt lịch xem phòng" (size: 10)
+            FRAME: Label - Tactile Switch Toggle
+              RECTANGLE: Background
+              RECTANGLE: Background
+          FRAME: Button - Bank Account for Escrow
+            FRAME: Container
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Tài khoản nhận tiền cọc Escrow" (size: 13)
+                FRAME: Margin
+                  FRAME: Container
+                    TEXT: "Vietcombank - STK: **** 4892 (HOANG THI ANH TUYET)" (size: 10)
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Button - Biometrics & Security
+            FRAME: Container
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Mật khẩu & Sinh trắc học" (size: 13)
+                FRAME: Margin
+                  FRAME: Container
+                    TEXT: "FaceID / Vân tay kích hoạt khi ký quỹ" (size: 10)
+            FRAME: Container
+              VECTOR: Icon
+      FRAME: Logout Action Button
+        FRAME: Button
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Container
+            TEXT: "Đăng xuất tài khoản" (size: 13)
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Container
+          TEXT: "AVAROOM" (size: 13)
+        FRAME: Background
+          TEXT: "CHỦ TRỌ" (size: 11)
+      FRAME: Container
+        FRAME: Button - Thông báo
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Background
+            RECTANGLE: Overlay+Shadow
+        FRAME: Link
+          FRAME: Background
+            FRAME: Container
+              VECTOR: Icon
+  FRAME: Nav
+    FRAME: Container
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Container
+          TEXT: "Tin đăng" (size: 10)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Container
+          TEXT: "Khảo sát" (size: 10)
+      FRAME: Link
+        FRAME: Container
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Background
+            TEXT: "3" (size: 10)
+        FRAME: Container
+          TEXT: "Tin nhắn" (size: 10)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Container
+          TEXT: "Hồ sơ" (size: 10)

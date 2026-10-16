@@ -238,6 +238,12 @@ public class DataService {
         studentChatMessages.add(new ChatMessage(fromMe ? currentUserName : "Cô Ánh Tuyết", text, "Vừa xong", fromMe));
     }
 
+    public List<ChatMessage> getLandlordChatMessages() { return landlordChatMessages; }
+
+    public void addLandlordChatMessage(String text, boolean fromMe) {
+        landlordChatMessages.add(new ChatMessage(fromMe ? landlordName : "Nguyễn Thanh Tùng", text, "Vừa xong", fromMe));
+    }
+
     public List<NotificationItem> getNotifications() { return notifications; }
 
     public int getUnreadNotificationCount() {
@@ -263,7 +269,7 @@ public class DataService {
     }
 
     public String getCurrentUserRole() { return currentUserRole; }
-    public void setCurrentUserRole(String role) { this.currentUserRole = role; }
+    public void setCurrentUserRole(String role) { this.currentUserRole = role != null ? role.toUpperCase() : "STUDENT"; }
     public String getCurrentUserName() { return currentUserName; }
     public void setCurrentUserName(String name) { this.currentUserName = name; }
     public String getCurrentUserPhone() { return currentUserPhone; }

@@ -1,0 +1,152 @@
+FRAME: Hồ sơ sinh viên & eKYC (Cọc 0đ)
+  FRAME: Main
+    FRAME: Container
+      FRAME: Top Ambient Banner
+        FRAME: Container
+          FRAME: Container
+            RECTANGLE: Background
+            TEXT: "Hồ sơ xác minh cấp cao" (size: 13)
+          FRAME: Container
+            TEXT: "Cập nhật 14 phút trước" (size: 10)
+      FRAME: Container
+        FRAME: SECTION 1: Student Verification Status Card
+          FRAME: Container
+            FRAME: Avatar with verified badge
+              FRAME: Background+Shadow
+                FRAME: AB6AXuDZScf1lHTMrzO8N_7Mgr8qIS4UJXCgEhpQbz-lhcNV1PEOeuN61dlQxFycSdFoQ8QipsQULyyY_UtBPX4BBzayBsoCa2MX-Jm0L6qZZrZdNfIpOzqo0sZuH57jwdmyhBG8Y2eUQ-oREMDTbOIkXHzNsBeQAYWmtVgLwtTBMyiK9C4iWLWihPzjqHrcf_ohR0WITajfrfNoZkiQjkNPhhr9ATEHBB3AmxUMwpsbww
+              FRAME: Background
+                RECTANGLE: Overlay+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+            FRAME: Student Basic Details
+              FRAME: Container
+                FRAME: Heading 2
+                  TEXT: "Nguyễn Thanh Tùng" (size: 18)
+              FRAME: Margin
+                FRAME: Container
+                  TEXT: "K66 Viện CNTT • ĐH Bách Khoa Hà Nội" (size: 12)
+              FRAME: Margin
+                FRAME: Container
+                  FRAME: Background
+                    TEXT: "MSSV: 20210892" (size: 10)
+                  FRAME: Background
+                    FRAME: Container
+                      VECTOR: Icon
+                    TEXT: "Cấp 3/3 • Cọc 0đ On" (size: 10)
+          FRAME: Financial Escrow Guarantee Chip:margin
+            FRAME: Financial Escrow Guarantee Chip
+              FRAME: Margin
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Avaroom Student Shield Guarantee" (size: 11)
+                FRAME: Paragraph
+                  TEXT: "Bảo lãnh tài chính Escrow tối đa " (size: 12)
+                  TEXT: "10.000.000đ" (size: 13)
+                  TEXT: "khi thuê phòng trọ đối tác Avaroom." (size: 12)
+        FRAME: SECTION 2: eKYC Level Breakdown (3-Step Progress)
+          FRAME: Container
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Heading 3
+                TEXT: "Tiến trình eKYC sinh\nviên" (size: 18)
+            FRAME: Background
+              TEXT: "Hoàn tất\n100%" (size: 10)
+          FRAME: Vertical Step List:margin
+            FRAME: Vertical Step List
+              FRAME: Step 1
+                FRAME: Container
+                  FRAME: Background+Shadow
+                    FRAME: Container
+                      VECTOR: Icon
+                  FRAME: Margin
+                    RECTANGLE: Vertical Divider
+                FRAME: Background
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Cấp 1: Liên hệ & Email trường" (size: 13)
+                    FRAME: Container
+                      TEXT: "Đã duyệt" (size: 10)
+                  FRAME: Container
+                    TEXT: "tung.nt210892@sis.hust.edu.vn • Xác thực\nOTP 10/2023" (size: 12)
+              FRAME: Step 2
+                FRAME: Container
+                  FRAME: Background+Shadow
+                    FRAME: Container
+                      VECTOR: Icon
+                  FRAME: Margin
+                    RECTANGLE: Vertical Divider
+                FRAME: Background
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Cấp 2: Xác thực thẻ SV" (size: 13)
+                    FRAME: Container
+                      TEXT: "Campus\nPartner" (size: 10)
+                  FRAME: Container
+                    TEXT: "Thẻ sinh viên K66 & Giấy xác nhận học tập\nkỳ 2023.2 được xác thực điện tử." (size: 12)
+        FRAME: SECTION 4: Extracted & Encrypted Data Card
+          FRAME: Container
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Heading 3
+                TEXT: "Thông tin cá nhân" (size: 18)
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Container
+            FRAME: Container
+              FRAME: Container
+                TEXT: "Họ và tên" (size: 10)
+              TEXT: "NGUYỄN THANH TÙNG" (size: 13)
+            FRAME: Container
+              FRAME: Container
+                TEXT: "MSSV" (size: 10)
+              TEXT: "001204******" (size: 14)
+            FRAME: Container
+              FRAME: Container
+                TEXT: "Ngày sinh" (size: 10)
+              TEXT: "15/08/2003" (size: 14)
+            FRAME: Container
+              FRAME: Container
+                TEXT: "Quê quán" (size: 10)
+              TEXT: "Hải Phòng" (size: 14)
+            FRAME: Container
+              FRAME: Container
+                TEXT: "Nơi thường trú" (size: 10)
+              TEXT: "Hai Bà Trưng, Hà Nội" (size: 14)
+        FRAME: SECTION 5: Action Buttons
+          FRAME: Button - Solid Primary Escrow Action
+            FRAME: Container
+              TEXT: "Xác nhận" (size: 13)
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Button - Outlined Secondary Action
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Cập nhật lại thẻ sinh viên kỳ mới" (size: 13)
+          FRAME: Reassurance Microcopy
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Xác thực duy trì có hiệu lực đến hết học kỳ 2024.1" (size: 10)
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Button - Go back:margin
+          FRAME: Button - Go back
+            FRAME: Container
+              VECTOR: Icon
+        FRAME: Heading 1
+          TEXT: "Account Credentials" (size: 18)
+      FRAME: Container
+        FRAME: Button - Account settings
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Margin
+          FRAME: Background
+            FRAME: Container
+              VECTOR: Icon

@@ -1,0 +1,111 @@
+FRAME: Đặt mật khẩu mới - Avaroom (Warm Cream)
+  FRAME: Main
+    FRAME: Container
+      FRAME: Step Tracker Indicator:margin
+        FRAME: Step Tracker Indicator
+          RECTANGLE: Background
+          FRAME: Container
+            TEXT: "MẬT KHẨU MỚI" (size: 11)
+      FRAME: Screen Headline & Reassuring Intro:margin
+        FRAME: Screen Headline & Reassuring Intro
+          FRAME: Heading 2
+            TEXT: "Tạo mật khẩu mới an toàn." (size: 28)
+      FRAME: Interactive Form Area
+        FRAME: Platform Verification Reference Preview
+          FRAME: Background
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Container
+            FRAME: Container
+              TEXT: "TÀI KHOẢN LIÊN KẾT" (size: 11)
+            FRAME: Container
+              TEXT: "nguyen.van.an@uit.edu.vn" (size: 14)
+            FRAME: Container
+        FRAME: Input Field: New Password
+          FRAME: Container
+            FRAME: Label
+              TEXT: "MẬT KHẨU MỚI" (size: 11)
+            FRAME: Container
+              TEXT: "Tối thiểu 8 ký tự" (size: 12)
+          FRAME: Background+Shadow
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Input
+              FRAME: Container
+                TEXT: "Avaroom@2024" (size: 15)
+            FRAME: Button - Ẩn hoặc hiện mật khẩu
+              FRAME: Container
+                VECTOR: Icon
+        FRAME: Password Strength Card
+          FRAME: Container
+            FRAME: Container
+              TEXT: "ĐỘ MẠNH MẬT KHẨU" (size: 11)
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              TEXT: "Mạnh (Strong)" (size: 12)
+          FRAME: Segmented Strength Meter Bar
+            RECTANGLE: Background
+            RECTANGLE: Background
+            RECTANGLE: Background
+            RECTANGLE: Background
+          FRAME: Criteria Checklist
+            FRAME: Container
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                TEXT: "Ít nhất 8 ký tự" (size: 12)
+            FRAME: Container
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                TEXT: "Bao gồm chữ hoa và chữ thường" (size: 12)
+            FRAME: Container
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                TEXT: "Có ít nhất 1 chữ số và ký tự đặc biệt (@, #, $...)" (size: 12)
+        FRAME: Input Field: Confirm Password:margin
+          FRAME: Input Field: Confirm Password
+            FRAME: Container
+              FRAME: Label
+                TEXT: "XÁC NHẬN MẬT KHẨU MỚI" (size: 11)
+              FRAME: Container
+                TEXT: "Khớp hoàn toàn" (size: 12)
+            FRAME: Background+Shadow
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Input
+                FRAME: Container
+                  TEXT: "Avaroom@2024" (size: 15)
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+        FRAME: Security Context / Student Guarantee Card:margin
+          FRAME: Security Context / Student Guarantee Card
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Container
+              FRAME: Container
+                TEXT: "Ghi nhớ phiên đăng nhập an toàn" (size: 14)
+              FRAME: Container
+                TEXT: "Sau khi cập nhật, bạn sẽ được tự động đăng\nnhập trên thiết bị này và nhận thông báo xác\nthực vào email sinh viên trường." (size: 12)
+        FRAME: Primary Action Button
+          FRAME: Button
+            RECTANGLE: Button:shadow
+            FRAME: Container
+              TEXT: "CẬP NHẬT MẬT KHẨU" (size: 14)
+            FRAME: Container
+              VECTOR: Icon
+  FRAME: Header
+  FRAME: Header
+    FRAME: Container
+      FRAME: Button - Go back:margin
+        FRAME: Button - Go back
+          FRAME: Container
+            VECTOR: Icon
+      FRAME: Heading 1

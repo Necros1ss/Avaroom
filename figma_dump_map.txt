@@ -1,0 +1,186 @@
+FRAME: Tìm trọ lân cận - Bản đồ
+  FRAME: Main
+    FRAME: VectorMapLayer
+      FRAME: Water Rivers & Bays:mask-group
+        FRAME: Water Rivers & Bays:mask
+          VECTOR: Vector
+        RECTANGLE: Water Rivers & Bays
+      FRAME: Mask Group
+        FRAME: Mask
+          VECTOR: Vector
+        RECTANGLE: Background
+      FRAME: Highway & Main Arteries SVG
+        GROUP: Group
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+        GROUP: Group
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+        GROUP: Group
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+        GROUP: Group
+          VECTOR: Vector
+          FRAME: Text
+            TEXT: "295" (size: 8)
+        FRAME: Text
+          TEXT: "ĐH BÁCH KHOA" (size: 9)
+        FRAME: Text
+          TEXT: "CAPITOL HILL" (size: 8)
+        FRAME: Text
+          TEXT: "SOUTHEAST" (size: 8)
+        FRAME: Text
+          TEXT: "FAIRLAWN" (size: 7.5)
+        FRAME: Text
+          TEXT: "SHIPLEY TER." (size: 7.5)
+      FRAME: Marker 1: Top Right Area → SVG
+        FRAME: SVG
+          VECTOR: Vector
+          VECTOR: Vector
+      FRAME: Marker 2: River Shore Center → SVG
+        FRAME: SVG
+          VECTOR: Vector
+          VECTOR: Vector
+      FRAME: Marker 3: Island / West Shore → SVG
+        FRAME: SVG
+          VECTOR: Vector
+          VECTOR: Vector
+      FRAME: Marker 4: Southeast Cluster → SVG
+        FRAME: SVG
+          VECTOR: Vector
+          VECTOR: Vector
+      FRAME: Marker 5: Far Right Campus Gate → SVG
+        FRAME: SVG
+          VECTOR: Vector
+          VECTOR: Vector
+      FRAME: ACTIVE Featured Location Marker: Red Pushpin on the selected Apartment (matching reference) → SVG
+        FRAME: SVG
+          RECTANGLE: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+    FRAME: Aside - Right side floating action buttons (Layer, GPS, Calendar Toggle)
+      FRAME: Button - Calendar Toggle Icon (matches the dark black calendar button in reference)
+        RECTANGLE: Button - Calendar Toggle Icon (matches the dark black calendar button in reference):shadow
+        FRAME: SVG
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+          VECTOR: Vector
+      FRAME: GPS / Current Location Button:margin
+        FRAME: GPS / Current Location Button
+          RECTANGLE: GPS / Current Location Button:shadow
+          FRAME: SVG
+            VECTOR: Vector
+            VECTOR: Vector
+      FRAME: Button - Layers / Map View toggle:margin
+        FRAME: Button - Layers / Map View toggle
+          RECTANGLE: Button - Layers / Map View toggle:shadow
+          FRAME: SVG
+            VECTOR: Vector
+            VECTOR: Vector
+            VECTOR: Vector
+  FRAME: BottomContentSection
+    FRAME: Date stamp indicator floating tag above card:align-center
+      FRAME: Date stamp indicator floating tag above card
+        FRAME: Container
+          RECTANGLE: Background
+          TEXT: "09/09/2026 - 13/09/2026 (5 ngày)" (size: 11)
+    FRAME: Article - Frosted Floating Apartment Card matching reference "VERTICE" popup:margin
+      FRAME: Article - Frosted Floating Apartment Card matching reference "VERTICE" popup
+        FRAME: Container
+          FRAME: Apartment Thumbnail with Badge
+            FRAME: Căn hộ Vertice Studio đầy đủ nội thất tiện nghi
+            FRAME: Background
+              RECTANGLE: Overlay+Shadow
+              TEXT: "Cách trường 350m" (size: 9)
+          FRAME: Room Information Column
+            FRAME: Title & Star Rating
+              FRAME: Container
+                FRAME: Heading 2
+                  TEXT: "VERTICE STUDIO" (size: 14)
+                FRAME: Button - Lưu tin
+                  FRAME: SVG
+                    VECTOR: Vector
+              FRAME: Rating & verification badges
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "★" (size: 12)
+                  FRAME: Container
+                    TEXT: "★" (size: 12)
+                  FRAME: Container
+                    TEXT: "★" (size: 12)
+                  FRAME: Container
+                    TEXT: "★" (size: 12)
+                  FRAME: Container
+                    TEXT: "★" (size: 12)
+                FRAME: Margin
+                  TEXT: "4.8" (size: 10)
+                FRAME: Margin
+                  TEXT: "(42 đánh giá)" (size: 10)
+              FRAME: Container
+                FRAME: Background+Border
+                  TEXT: "Chính chủ" (size: 9)
+                FRAME: Background+Border
+                  TEXT: "Hoàn cọc 100%" (size: 9)
+            FRAME: Price and Details Button:margin
+              FRAME: Price and Details Button
+                FRAME: Paragraph
+                  TEXT: "3.500.000₫" (size: 12)
+                  TEXT: "/tháng" (size: 9)
+                FRAME: Button
+                  FRAME: Container
+                    TEXT: "Xem đánh giá" (size: 11)
+                  FRAME: SVG:margin
+                    FRAME: SVG
+                      FRAME: SVG
+                        VECTOR: Vector
+  FRAME: Nav
+    FRAME: Container
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Margin
+          TEXT: "Trang chủ" (size: 11)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Margin
+          TEXT: "Lân cận" (size: 11)
+      FRAME: Link
+        FRAME: Container
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Background
+            TEXT: "3" (size: 10)
+        FRAME: Margin
+          TEXT: "Tin nhắn" (size: 11)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Margin
+          TEXT: "Tài khoản" (size: 11)
+  FRAME: Header - TopBarAndSearchBar
+    FRAME: Search Floating Capsule Input (matching reference UI):margin
+      FRAME: Search Floating Capsule Input (matching reference UI)
+        RECTANGLE: Overlay+Shadow
+        FRAME: Graduation Cap Icon (Student focus):margin
+          FRAME: Graduation Cap Icon (Student focus) → SVG
+            VECTOR: Vector
+        FRAME: Input
+          FRAME: Container
+            TEXT: "ĐH Bách Khoa HCM" (size: 14)
+        FRAME: Button - Tìm kiếm
+          FRAME: SVG
+            VECTOR: Vector
+            VECTOR: Vector

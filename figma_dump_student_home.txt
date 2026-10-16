@@ -1,0 +1,216 @@
+FRAME: Trang chủ - Tìm trọ sinh viên
+  FRAME: Main
+    FRAME: Container
+      FRAME: Top Greeting & Context Section
+        FRAME: Search Bar with Pill Filter:margin
+          FRAME: Search Bar with Pill Filter
+            FRAME: Background+Border+Shadow
+              FRAME: Margin
+                VECTOR: Icon
+              FRAME: Input
+                FRAME: Container
+                  TEXT: "Tìm phòng trọ, căn hộ gần trường..." (size: 13)
+            FRAME: Button - Bộ lọc nâng cao
+              FRAME: Container
+                VECTOR: Icon
+        FRAME: Container
+          FRAME: Container
+            FRAME: Container
+              FRAME: Container
+                TEXT: "Chào bạn sinh viên" (size: 18)
+              FRAME: Container
+                TEXT: "👋" (size: 16)
+            FRAME: Margin
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Gần ĐH Bách Khoa Hà Nội" (size: 13)
+                FRAME: Container
+                  VECTOR: Icon
+          FRAME: Button - Bộ lọc bảo vệ cọc
+            FRAME: Container
+              VECTOR: Icon
+            RECTANGLE: Background
+      FRAME: Section - Student Needs Quick Filter Chips
+        FRAME: Container
+          FRAME: Container
+            TEXT: "TIÊU CHÍ SINH VIÊN" (size: 11)
+        FRAME: Container
+          FRAME: Button
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Gần trường (< 1km)" (size: 12)
+          FRAME: Button
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Giá < 2.5 triệu" (size: 12)
+          FRAME: Button
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Không chung chủ" (size: 12)
+          FRAME: Button
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Có gác lửng" (size: 12)
+          FRAME: Button
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Giờ giấc tự do" (size: 12)
+          FRAME: Button
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Ghép phòng" (size: 12)
+      FRAME: Section - Feed Header: Bài đăng mới nhất
+        FRAME: Container
+          FRAME: Heading 3
+            TEXT: "Bài đăng mới nhất hôm nay" (size: 17)
+      FRAME: Section - Room Card List (VERTICE Mockup Card Style)
+        FRAME: Article - Card 1: Studio Ban Công
+          FRAME: Background
+            FRAME: Studio ban công lộng gió
+            FRAME: Container
+              FRAME: Overlay+Shadow+OverlayBlur
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Chính chủ - Sổ hồng" (size: 11)
+            FRAME: Button - Lưu tin
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Overlay+OverlayBlur
+              FRAME: Container
+                VECTOR: Icon
+              TEXT: "28m²" (size: 11)
+            FRAME: Overlay+OverlayBlur
+              FRAME: Container
+                VECTOR: Icon
+              TEXT: "4.8 (42)" (size: 11)
+          FRAME: Container
+            FRAME: Container
+              TEXT: "AVR-90412 • Mẫu" (size: 10)
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Cách trường 250m" (size: 11)
+            FRAME: Container
+              FRAME: Heading 4
+                TEXT: "Studio ban công Tạ Quang Bửu" (size: 15)
+              FRAME: Paragraph
+                TEXT: "4.2 tr" (size: 17)
+                TEXT: "/th" (size: 12)
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "42 Ngõ 187 Tạ Quang Bửu, Hà Nội" (size: 12)
+            FRAME: HorizontalBorder
+              FRAME: Container
+                FRAME: Background
+                  TEXT: "Có ban công" (size: 11)
+                FRAME: Background
+                  TEXT: "Máy giặt" (size: 11)
+                FRAME: Background
+                  TEXT: "Khóa vân tay" (size: 11)
+              FRAME: Button:margin
+                FRAME: Button
+                  TEXT: "Xem phòng" (size: 12)
+        FRAME: Article - Card 2: Phòng Gác Lửng
+          FRAME: Background
+            FRAME: Phòng gác lửng cao ráo
+            FRAME: Container
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Cam kết hoàn cọc" (size: 11)
+            FRAME: Button - Lưu tin
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Overlay+OverlayBlur
+              FRAME: Container
+                VECTOR: Icon
+              TEXT: "22m²" (size: 11)
+            FRAME: Overlay+OverlayBlur
+              FRAME: Container
+                VECTOR: Icon
+              TEXT: "4.9 (41)" (size: 11)
+          FRAME: Container
+            FRAME: Container
+              TEXT: "VERTICE MEZZANINE" (size: 10)
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Cách trường 700m" (size: 11)
+            FRAME: Container
+              FRAME: Heading 4
+                TEXT: "Phòng có gác lửng cao ráo,…" (size: 15)
+              FRAME: Paragraph
+                TEXT: "2.4 tr" (size: 17)
+                TEXT: "/th" (size: 12)
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "Gần ĐH Sư Phạm • Đường Xuân Thủy, Cầu Giấy" (size: 12)
+            FRAME: HorizontalBorder
+              FRAME: Container
+                FRAME: Background
+                  TEXT: "Gác đúc" (size: 11)
+                FRAME: Background
+                  TEXT: "Giờ tự do" (size: 11)
+                FRAME: Background
+                  TEXT: "Không chung chủ" (size: 11)
+              FRAME: Button:margin
+                FRAME: Button
+                  TEXT: "Xem phòng" (size: 12)
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Background+Shadow
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Container
+          FRAME: Container
+            TEXT: "AVAROOM" (size: 11)
+          FRAME: Margin
+            FRAME: Container
+              TEXT: "Trang Chủ" (size: 17)
+      FRAME: Container
+        FRAME: Button - Thông báo
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Background
+            RECTANGLE: Overlay+Shadow
+        FRAME: Background+Border
+          FRAME: Container
+            VECTOR: Icon
+  FRAME: Nav
+    FRAME: Container
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Margin
+          TEXT: "Trang chủ" (size: 11)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Margin
+          TEXT: "Lân cận" (size: 11)
+      FRAME: Link
+        FRAME: Container
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Background
+            TEXT: "3" (size: 10)
+        FRAME: Margin
+          TEXT: "Tin nhắn" (size: 11)
+      FRAME: Link
+        FRAME: Container
+          VECTOR: Icon
+        FRAME: Margin
+          TEXT: "Tài khoản" (size: 11)

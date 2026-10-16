@@ -1,0 +1,219 @@
+FRAME: Lịch hẹn xem phòng - Avaroom Sinh viên
+  FRAME: Main
+    FRAME: Container
+      FRAME: Sub-header Navigation Bar
+        FRAME: Container
+          FRAME: Button - Quay lại tài khoản
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Paragraph
+            TEXT: "AVAROOM STUDIO" (size: 10)
+            TEXT: "Lịch hẹn xem phòng" (size: 18)
+        FRAME: Container
+          FRAME: Button - Notifications
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Margin
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+      FRAME: Segment Filter Tabs:margin
+        FRAME: Segment Filter Tabs
+          FRAME: Button
+            FRAME: Container
+              TEXT: "Sắp tới" (size: 13)
+            FRAME: Background
+              TEXT: "01" (size: 10)
+            RECTANGLE: Background
+          FRAME: Button
+            FRAME: Container
+              TEXT: "Đã hoàn thành" (size: 13)
+            FRAME: Background
+              TEXT: "02" (size: 10)
+          FRAME: Button
+            FRAME: Container
+              TEXT: "Đã hủy" (size: 13)
+            FRAME: Background
+              TEXT: "01" (size: 10)
+      FRAME: Margin
+        FRAME: Container
+          FRAME: Highlight Countdown Alert Banner
+            RECTANGLE: Overlay+Blur
+            FRAME: Container
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  RECTANGLE: Background
+                  FRAME: Container
+                    TEXT: "LỊCH HẸN TRONG 24 GIỜ TỚI" (size: 11)
+                FRAME: Container
+                  TEXT: "Ngày mai, 13/10 • 16:30" (size: 18)
+                FRAME: Container
+                  FRAME: Container
+                    VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "Giờ tan trường ĐH Bách Khoa - Chủ nhà sẽ\nđợi tại sảnh" (size: 12)
+          FRAME: Active Tour Detail Card
+            RECTANGLE: Active Tour Detail Card:shadow
+            FRAME: Card Top: Code + Verification Badge
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Mã đặt\nhẹn:" (size: 10)
+                FRAME: Container
+                  TEXT: "#AVR-TOUR-2024-\n912" (size: 11)
+              FRAME: Background
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Chủ trọ đã xác\nnhận" (size: 11)
+            FRAME: Studio Snapshot and Meta
+              FRAME: Overlay+Shadow
+                FRAME: AB6AXuADmxkvgFa3ndWJuF-T82yexBBFbK57Oh6okQo8BufwnfNTIw79uUmxKWNMK5fJBiDzgUcyKlQYs3YbCaCATaltpbhGfD6T6eTcKma88lGKK47Yg9ypzupe9XDO6Ysu9PJZtcPazuPWoNIQl95GEs1jjJZdRiluer-w7zHSfqIyjk53RKdTFG8oGoo8t3KU6VT0SxvfH5gN39OO_wL4gvQG9gm1IyM08pTRMq2vIm1RNnVIJZrOCPk
+                FRAME: Overlay+OverlayBlur
+                  TEXT: "#AVR-90412" (size: 9)
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "STUDIO BAN CÔNG" (size: 10)
+                  FRAME: Container
+                    TEXT: "• 28m²" (size: 10)
+                FRAME: Heading 3
+                  TEXT: "Studio ban công thoáng…" (size: 18)
+                FRAME: Container
+                  TEXT: "Số 42 Ngõ 187 Tạ Quang Bửu, P. Bách\nKhoa, Q. Hai Bà Trưng, Hà Nội" (size: 12)
+            FRAME: Navigation & Mode Indicator
+              FRAME: Container
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Xem trực tiếp tại phòng" (size: 11)
+                  FRAME: Container
+                    TEXT: "Có lễ tân dẫn lên tận cửa" (size: 10)
+              FRAME: Button
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Chỉ đường" (size: 11)
+            FRAME: Landlord Quick Snapshot
+              FRAME: Container
+                FRAME: Background
+                  FRAME: AB6AXuAngAtvUSjZERbhfHjjplK1ePMwmhFNuCLHSC5XXSETnrvAd_kIFsVEqDcFJ23mB2Nt95PhrfjavU99ixgu42SbGJLsL122btBPSx97O-lRXcrfzONiXW9ymqZTrqS0C0Dr8-XTBIUFKef4DxEtsG-YuhnCebZVL4yca_mpqC26dQtZEBBxtEgHhKDGyEH3I093OoqkeIb4yOD1jzSBBI8xdZFXupmaMbCILqR_wa3ZTMoZukec-1U
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Cô Hoàng Thị Ánh Tuyết" (size: 13)
+                    FRAME: Container
+                      VECTOR: Icon
+                  FRAME: Container
+                    TEXT: "0912 ••• 882 • Xác thực CCCD" (size: 12)
+              FRAME: Container
+                FRAME: Button - Gọi điện cho chủ nhà
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Button - Chat với chủ trọ
+                  FRAME: Container
+                    VECTOR: Icon
+            FRAME: Student's Message
+              FRAME: Margin
+                VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "LỜI NHẮN CỦA BẠN:" (size: 10)
+                FRAME: Container
+                  TEXT: "\"Cháu là Tùng K66 Bách Khoa, cháu đi cùng\nbạn qua xem lúc 16h30 ạ.\"" (size: 12)
+            FRAME: Bottom Interactive Controls
+              FRAME: Container
+                FRAME: Button
+                  TEXT: "Đổi lịch\nhẹn" (size: 11)
+                FRAME: Button
+                  TEXT: "Hủy lịch\nhẹn" (size: 11)
+              FRAME: Button
+                FRAME: Container
+                  VECTOR: Icon
+                FRAME: Container
+                  TEXT: "Check-in xem\nphòng" (size: 13)
+          FRAME: Section: Past Completed Bookings:margin
+            FRAME: Section: Past Completed Bookings
+              FRAME: Container
+                FRAME: Heading 4
+                  TEXT: "LỊCH SỬ XEM PHÒNG GẦN ĐÂY" (size: 13)
+                FRAME: Container
+                  TEXT: "2 chuyến xem trước" (size: 10)
+              FRAME: Past Item 1
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: Container
+                      FRAME: AB6AXuAuef3sjAZ5PeW1mFsz3QBs2j_rdwKuRABbqd-LYsdlkkS2Hkcbsp-EAV-uFwDeyj32YPfGsvcQeq0CZcFLp8aHWBzD3OzHQ-JsyIsGnZ-PwD2mMGBgSxyVDugUGcCWiZempxMclcL98GhTZ_x4Tn467Zt7x3hDtZz0RY-6UBCBaqUV4-NeG14GX7kzjGsTM0gkNifzQFgXHcBGd8iraQOYrbzEe9KClALbNMGbI3w0NUWBrSfLouo
+                    FRAME: Container
+                      FRAME: Container
+                        FRAME: Container
+                          TEXT: "08/10/2024" (size: 10)
+                        RECTANGLE: Background
+                        FRAME: Container
+                          TEXT: "#AVR-89201" (size: 10)
+                      FRAME: Heading 5
+                        TEXT: "Studio gác lửng Trần" (size: 18)
+                      FRAME: Container
+                        FRAME: Container
+                          VECTOR: Icon
+                        FRAME: Container
+                          TEXT: "Đã xem phòng xong" (size: 11)
+                  FRAME: Background
+                    TEXT: "Hoàn\ntất" (size: 10)
+                FRAME: Post-Tour Actions
+                  FRAME: Button
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      TEXT: "Viết đánh giá" (size: 11)
+                  FRAME: Button
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      TEXT: "Cọc giữ phòng\nEscrow" (size: 11)
+              FRAME: Past Item 2
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: AB6AXuCXztN34I4ls4zC_OXHOzabRHWZyiUPcykJz92CcQabBA7yQZ9bw6c59ipbWv9d4KihM5qD8nWka_MChvYZ1aED-dhQU17Wn3p6lETDmUDLoNat12-DO6nm6alBqEU5fgXQzNjA_n_eMcTJSzziIF6VM9_4S4UT9MPJaUahLSxWMzMZ1IQpgw2iLGQMg1rA93fGRLwjPTpfmnRVnhL8YFjj7IGn-NZdYnKpe8VNLVN6yiirDu4s-NA
+                  FRAME: Container
+                    FRAME: Container
+                      FRAME: Container
+                        TEXT: "25/09/2024" (size: 10)
+                      RECTANGLE: Background
+                      FRAME: Container
+                        TEXT: "#AVR-81726" (size: 10)
+                    FRAME: Heading 5
+                      TEXT: "Căn hộ mini Lê Thanh Nghị" (size: 18)
+                    FRAME: Container
+                      TEXT: "Chủ trọ: Bác Nguyễn Văn Hùng" (size: 12)
+                FRAME: Container
+                  FRAME: Background
+                    TEXT: "Đã xem" (size: 10)
+                  FRAME: Button
+                    TEXT: "Xem lại" (size: 11)
+                    FRAME: Container
+                      VECTOR: Icon
+          FRAME: Assurance Banner: SafeTour Guarantee
+            FRAME: Container
+              FRAME: Background+Shadow
+                FRAME: Container
+                  VECTOR: Icon
+              FRAME: Container
+                FRAME: Container
+                  FRAME: Heading 4
+                    TEXT: "Cam kết Avaroom\nSafeTour™" (size: 18)
+                  FRAME: Background
+                    TEXT: "MIỄN PHÍ\n100%" (size: 10)
+                FRAME: Container
+                  TEXT: "Bảo vệ quyền lợi sinh viên toàn diện. Hẹn xem\nphòng không mất phí, đền bù chi phí di\nchuyển nếu chủ nhà tự ý hủy hoặc phòng thực\ntế sai lệch hình ảnh niêm yết." (size: 12)
+                FRAME: Container
+                  FRAME: Container
+                    FRAME: Container
+                      VECTOR: Icon
+                    FRAME: Container
+                      TEXT: "Hotline SOS: 1900\n8922" (size: 11)
+                  FRAME: Link
+                    TEXT: "Chính sách bảo vệ\n→" (size: 11)

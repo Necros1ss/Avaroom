@@ -1,0 +1,324 @@
+FRAME: Đăng tin - Bước 2: Tiện ích & Nội thất
+  FRAME: Main
+    FRAME: Container
+      FRAME: Section - Progress Header & Context Banner
+        FRAME: Stepper Indicator
+          FRAME: Container
+            FRAME: Container
+              FRAME: Background
+                TEXT: "2" (size: 11)
+              FRAME: Container
+                TEXT: "Tiện ích & Nội thất" (size: 13)
+            FRAME: Container
+              TEXT: "BƯỚC 2 / 4" (size: 10)
+          FRAME: Segmented Bar:margin
+            FRAME: Segmented Bar
+              RECTANGLE: Background
+              RECTANGLE: Background
+              RECTANGLE: Background
+              RECTANGLE: Background
+          FRAME: Margin
+            FRAME: Container
+              FRAME: Container
+                TEXT: "Bước kế: Ảnh 360° & Video" (size: 10)
+        FRAME: Delightful Booster Callout
+          FRAME: Background
+            FRAME: Container
+              VECTOR: Icon
+          FRAME: Container
+            FRAME: Container
+              TEXT: "Khuyến nghị tối ưu lượt thuê" (size: 13)
+            FRAME: Container
+              TEXT: "Phòng đủ tiện ích có tốc độ thuê nhanh hơn\n40% và đạt chỉ số quan tâm hàng đầu của sinh\nviên Bách - Kinh - Xây." (size: 12)
+      FRAME: Section 1: In-room Amenities:margin
+        FRAME: Section 1: In-room Amenities
+          FRAME: Container
+            FRAME: Container
+              FRAME: Heading 2
+                TEXT: "Tiện nghi trong phòng" (size: 18)
+              FRAME: Container
+                TEXT: "Chọn các vật dụng thực tế đang có sẵn" (size: 12)
+            FRAME: Background
+              TEXT: "6 đã chọn" (size: 11)
+          FRAME: Cards Grid
+            FRAME: Label - Item: Điều hòa
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Điều hòa nhiệt độ" (size: 13)
+                  FRAME: Container
+                    TEXT: "Inverter siêu tiết kiệm điện" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Tủ lạnh
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Tủ lạnh 2 cánh" (size: 13)
+                  FRAME: Container
+                    TEXT: "Dung tích 150L trở lên" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Item: Máy giặt (with sub-selector)
+              FRAME: Label
+                FRAME: Container
+                  FRAME: Background
+                    FRAME: Container
+                      VECTOR: Icon
+                  FRAME: Container
+                    FRAME: Container
+                      TEXT: "Máy giặt đồ" (size: 13)
+                    FRAME: Container
+                      TEXT: "Có sẵn máy giặt phục vụ" (size: 12)
+                FRAME: Input:margin
+                  RECTANGLE: Input
+              FRAME: Nested Pill Selector
+                FRAME: Button
+                  TEXT: "Riêng trong phòng" (size: 10)
+                FRAME: Button
+                  TEXT: "Chung sân thượng" (size: 10)
+            FRAME: Label - Item: Bình nóng lạnh
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Bình nóng lạnh" (size: 13)
+                  FRAME: Container
+                    TEXT: "Bình dung tích 20L - 30L" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Giường & Đệm
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Giường ngủ & Đệm" (size: 13)
+                  FRAME: Container
+                    TEXT: "Kích thước tiêu chuẩn 1m6 x 2m" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Bàn học công thái học
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Bàn học & Ghế xoay" (size: 13)
+                  FRAME: Container
+                    TEXT: "Bàn công thái học, ánh sáng tốt" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Tủ quần áo
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Tủ quần áo âm tường" (size: 13)
+                  FRAME: Container
+                    TEXT: "2 cánh gỗ công nghiệp chống ẩm" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Kệ bếp riêng
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Kệ bếp riêng & Bồn rửa" (size: 13)
+                  FRAME: Container
+                    TEXT: "Nấu ăn thoải mái, có hút mùi" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+      FRAME: Section 2: Building Amenities & Security:margin
+        FRAME: Section 2: Building Amenities & Security
+          FRAME: Container
+            FRAME: Heading 2
+              TEXT: "Tiện ích tòa nhà & An ninh" (size: 18)
+            FRAME: Container
+              TEXT: "Hạ tầng chung nâng tầm giá trị không gian sống" (size: 12)
+          FRAME: Container
+            FRAME: Label - Item: Giờ giấc tự do
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Giờ giấc tự do 24/7" (size: 13)
+                  FRAME: Container
+                    TEXT: "Không chung chủ, chìa khóa riêng" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Khóa vân tay / FaceID
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Khóa vân tay / FaceID" (size: 13)
+                  FRAME: Container
+                    TEXT: "Thẻ từ phân tầng thông minh" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Thang máy
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Thang máy tốc độ cao" (size: 13)
+                  FRAME: Container
+                    TEXT: "Bảo trì định kỳ mỗi tháng" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Khu sạc xe máy điện
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Khu sạc xe điện tự ngắt" (size: 13)
+                  FRAME: Container
+                    TEXT: "Trang bị bình bột & bình bọt Foam" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Camera an ninh
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Camera an ninh hành lang" (size: 13)
+                  FRAME: Container
+                    TEXT: "Lưu trữ 30 ngày, bảo mật cao" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Wifi
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Wifi băng thông rộng" (size: 13)
+                  FRAME: Container
+                    TEXT: "Miễn phí, tối ưu học tập trực tuyến" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+            FRAME: Label - Item: Chỗ phơi
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Khu phơi đồ riêng biệt" (size: 13)
+                  FRAME: Container
+                    TEXT: "Có mái kính lấy sáng chống mưa tạt" (size: 12)
+              FRAME: Input:margin
+                RECTANGLE: Input
+      FRAME: Section 3: Rules & Pets Policy:margin
+        FRAME: Section 3: Rules & Pets Policy
+          FRAME: Container
+            FRAME: Heading 2
+              TEXT: "Quy định sinh hoạt & Thú cưng" (size: 18)
+            FRAME: Container
+              TEXT: "Minh bạch điều khoản trước khi ký hợp đồng" (size: 12)
+          FRAME: Background+Shadow
+            FRAME: Pet Policy Toggle
+              FRAME: Container
+                FRAME: Background
+                  FRAME: Container
+                    VECTOR: Icon
+                FRAME: Container
+                  FRAME: Container
+                    TEXT: "Cho phép nuôi thú cưng" (size: 13)
+                  FRAME: Container
+                    TEXT: "Mèo, cún nhỏ & giữ vệ sinh" (size: 12)
+              FRAME: Label - Custom Switch
+                RECTANGLE: Background
+                RECTANGLE: Background
+            FRAME: Max Occupants Dropdown
+              FRAME: Label
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Số người ở tối đa" (size: 13)
+              FRAME: Container
+                FRAME: Options
+                  FRAME: Container
+                    TEXT: "2 người (Phù hợp bạn bè/cặp đôi)" (size: 14)
+                FRAME: Container
+                  VECTOR: Icon
+            FRAME: Guest Visiting Rule Dropdown
+              FRAME: Label
+                FRAME: Container
+                  VECTOR: Icon
+                TEXT: "Quy định tiếp bạn bè" (size: 13)
+              FRAME: Container
+                FRAME: Options
+                  FRAME: Container
+                    TEXT: "Tự do trước 23h00 hàng ngày" (size: 14)
+                FRAME: Container
+                  VECTOR: Icon
+      FRAME: Sticky Bottom Navigation Bar:margin
+        FRAME: Sticky Bottom Navigation Bar
+          FRAME: Back Button
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Container
+              TEXT: "Quay lại" (size: 13)
+          FRAME: Primary Continue Button
+            RECTANGLE: Primary Continue Button:shadow
+            FRAME: Container
+              TEXT: "Ảnh 360° & Không gian" (size: 13)
+            FRAME: Container
+              VECTOR: Icon
+    FRAME: Sticky Bottom Navigation Dock
+      FRAME: Container
+        FRAME: Button
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Container
+            TEXT: "Lưu nháp" (size: 13)
+        FRAME: Button
+          RECTANGLE: Button:shadow
+          FRAME: Container
+            TEXT: "Tiếp tục" (size: 13)
+          FRAME: Container
+            VECTOR: Icon
+  FRAME: Header
+    FRAME: Container
+      FRAME: Container
+        FRAME: Button - Quay lại
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Container
+          FRAME: Container
+            TEXT: "AVAROOM LANDLORD" (size: 10)
+          FRAME: Heading 1
+            TEXT: "Đăng Tin Phòng Trọ Mới" (size: 18)
+      FRAME: Container
+        FRAME: Button - Trợ giúp và hướng dẫn
+          FRAME: Container
+            VECTOR: Icon
+        FRAME: Background
+          FRAME: Container
+            VECTOR: Icon

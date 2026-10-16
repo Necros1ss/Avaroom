@@ -1,0 +1,1864 @@
+{
+  "map": {
+    "name": "Tìm trọ lân cận - Bản đồ",
+    "texts": [
+      {
+        "text": "295",
+        "name": "295"
+      },
+      {
+        "text": "ĐH BÁCH KHOA",
+        "name": "Text"
+      },
+      {
+        "text": "CAPITOL HILL",
+        "name": "Text"
+      },
+      {
+        "text": "SOUTHEAST",
+        "name": "Text"
+      },
+      {
+        "text": "FAIRLAWN",
+        "name": "Text"
+      },
+      {
+        "text": "SHIPLEY TER.",
+        "name": "Text"
+      },
+      {
+        "text": "09/09/2026 - 13/09/2026 (5 ngày)",
+        "name": "Text"
+      },
+      {
+        "text": "Cách trường 350m",
+        "name": "Text"
+      },
+      {
+        "text": "VERTICE STUDIO",
+        "name": "Text"
+      },
+      {
+        "text": "★",
+        "name": "★"
+      },
+      {
+        "text": "★",
+        "name": "★"
+      },
+      {
+        "text": "★",
+        "name": "★"
+      },
+      {
+        "text": "★",
+        "name": "★"
+      },
+      {
+        "text": "★",
+        "name": "★"
+      },
+      {
+        "text": "4.8",
+        "name": "Text"
+      },
+      {
+        "text": "(42 đánh giá)",
+        "name": "Text"
+      },
+      {
+        "text": "Chính chủ",
+        "name": "Text"
+      },
+      {
+        "text": "Hoàn cọc 100%",
+        "name": "Text"
+      },
+      {
+        "text": "3.500.000₫",
+        "name": "3.500.000₫"
+      },
+      {
+        "text": "/tháng",
+        "name": "/tháng"
+      },
+      {
+        "text": "Xem đánh giá",
+        "name": "Xem đánh giá"
+      },
+      {
+        "text": "Trang chủ",
+        "name": "Text"
+      },
+      {
+        "text": "Lân cận",
+        "name": "Text"
+      },
+      {
+        "text": "3",
+        "name": "Text"
+      },
+      {
+        "text": "Tin nhắn",
+        "name": "Text"
+      },
+      {
+        "text": "Tài khoản",
+        "name": "Text"
+      },
+      {
+        "text": "ĐH Bách Khoa HCM",
+        "name": "ĐH Bách Khoa HCM"
+      }
+    ]
+  },
+  "chat_list": {
+    "name": "Tin nhắn",
+    "texts": [
+      {
+        "text": "Tìm kiếm tin nhắn, chủ trọ, mã phòng...",
+        "name": "Tìm kiếm tin nhắn, chủ trọ, mã phòng..."
+      },
+      {
+        "text": "Đang trò chuyện",
+        "name": "Text"
+      },
+      {
+        "text": "3",
+        "name": "Text"
+      },
+      {
+        "text": "Lịch hẹn",
+        "name": "Text"
+      },
+      {
+        "text": "1",
+        "name": "Text"
+      },
+      {
+        "text": "HỘI THOẠI GẦN ĐÂY",
+        "name": "HỘI THOẠI GẦN ĐÂY"
+      },
+      {
+        "text": "Cô Ánh Tuyết",
+        "name": "Text"
+      },
+      {
+        "text": "14:20",
+        "name": "Text"
+      },
+      {
+        "text": "#AVR-90412 • ĐH Bách Khoa",
+        "name": "Text"
+      },
+      {
+        "text": "16:30 • 14/10/2026",
+        "name": "16:30 • 14/10/2026"
+      },
+      {
+        "text": "Đã xác nhận lịch mẫu: 16:30 ngày 14/10/2026, 42 Ngõ 187 Tạ Quang Bửu.",
+        "name": "Đã xác nhận lịch mẫu: 16:30 ngày 14/10/2026, 42 Ngõ 187 Tạ Quang Bửu."
+      },
+      {
+        "text": "Chú Nguyễn Hùng",
+        "name": "Text"
+      },
+      {
+        "text": "(KTX Khu A)",
+        "name": "Text"
+      },
+      {
+        "text": "11:05",
+        "name": "Text"
+      },
+      {
+        "text": "Gác lửng Linh Trung • 2.1tr/th",
+        "name": "Text"
+      },
+      {
+        "text": "Giữ cọc Escrow",
+        "name": "Text"
+      },
+      {
+        "text": "Hợp đồng điện tử đã được ký duyệt, mã cọc #ESC-89210 sẵn sàng...",
+        "name": "Text"
+      },
+      {
+        "text": "2",
+        "name": "Text"
+      },
+      {
+        "text": "Anh Quốc Bảo",
+        "name": "Text"
+      },
+      {
+        "text": "Hôm qua",
+        "name": "Text"
+      },
+      {
+        "text": "Studio Full đồ • 4.5tr/th",
+        "name": "Text"
+      },
+      {
+        "text": "Cầu Giấy",
+        "name": "Text"
+      },
+      {
+        "text": "Bạn: Dạ em vừa gửi yêu cầu khảo sát phòng qua app rồi ạ",
+        "name": "Text"
+      },
+      {
+        "text": "Cô Đặng Mai",
+        "name": "Text"
+      },
+      {
+        "text": "Thứ Ba",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng ghép 2 người • 1.5tr/th",
+        "name": "Text"
+      },
+      {
+        "text": "Đề xuất ghép",
+        "name": "Text"
+      },
+      {
+        "text": "Cô vừa nhận thêm 1 bạn sinh viên Ngoại Thương, cháu có muốn ghép cùng không?",
+        "name": "Cô vừa nhận thêm 1 bạn sinh viên Ngoại Thương, cháu có muốn ghép cùng không?"
+      },
+      {
+        "text": "Avaroom Escrow Bot",
+        "name": "Text"
+      },
+      {
+        "text": "HỆ THỐNG",
+        "name": "Text"
+      },
+      {
+        "text": "Thứ Hai",
+        "name": "Text"
+      },
+      {
+        "text": "Thông báo cọc tự động",
+        "name": "Text"
+      },
+      {
+        "text": "Đã bảo đảm 100%",
+        "name": "Text"
+      },
+      {
+        "text": "Ví dụ lịch sử cọc của phòng AVR-81726. Số tiền và chính sách cần xác nhận.",
+        "name": "Ví dụ lịch sử cọc của phòng AVR-81726. Số tiền và chính sách cần xác nhận."
+      },
+      {
+        "text": "AVAROOM",
+        "name": "Text"
+      },
+      {
+        "text": "Tin Nhắn",
+        "name": "Text"
+      },
+      {
+        "text": "Trang chủ",
+        "name": "Text"
+      },
+      {
+        "text": "Lân cận",
+        "name": "Text"
+      },
+      {
+        "text": "3",
+        "name": "Text"
+      },
+      {
+        "text": "Tin nhắn",
+        "name": "Text"
+      },
+      {
+        "text": "Tài khoản",
+        "name": "Text"
+      }
+    ]
+  },
+  "chat": {
+    "name": "Tin nhắn & Chat với chủ trọ",
+    "texts": [
+      {
+        "text": "Cô Hoàng Thị Ánh Tuyết",
+        "name": "Text"
+      },
+      {
+        "text": "Đã xác minh",
+        "name": "Text"
+      },
+      {
+        "text": "Trực tuyến • Phản hồi ~5 phút",
+        "name": "Text"
+      },
+      {
+        "text": "ẢNH MẪU",
+        "name": "ẢNH MẪU"
+      },
+      {
+        "text": "AVR-90412 • Dữ liệu mẫu",
+        "name": "AVR-90412 • Dữ liệu mẫu"
+      },
+      {
+        "text": "Studio ban công Tạ Quang Bửu",
+        "name": "Studio ban công Tạ Quang Bửu"
+      },
+      {
+        "text": "4.200.000đ",
+        "name": "4.200.000đ"
+      },
+      {
+        "text": "/tháng",
+        "name": "Text"
+      },
+      {
+        "text": "Đã xác nhận",
+        "name": "Text"
+      },
+      {
+        "text": "Hôm nay, 14:15",
+        "name": "Text"
+      },
+      {
+        "text": "Cô Tuyết",
+        "name": "Text"
+      },
+      {
+        "text": "Chào cháu, phòng 402 ở Tạ Quang Bửu vẫn còn nhé. Giờ giấc tự do, khóa vân tay an ninh.",
+        "name": "Chào cháu, phòng 402 ở Tạ Quang Bửu vẫn còn nhé. Giờ giấc tự do, khóa vân tay an ninh."
+      },
+      {
+        "text": "14:16",
+        "name": "Text"
+      },
+      {
+        "text": "Bạn",
+        "name": "Text"
+      },
+      {
+        "text": "Dạ cháu chào cô, tiền điện nước tính thế nào ạ? Cháu qua xem phòng lúc 16:30 ngày 14/10/2026 được không cô?",
+        "name": "Dạ cháu chào cô, tiền điện nước tính thế nào ạ? Cháu qua xem phòng lúc 16:30 ngày 14/10/2026 được không cô?"
+      },
+      {
+        "text": "14:18",
+        "name": "Text"
+      },
+      {
+        "text": "BK",
+        "name": "Text"
+      },
+      {
+        "text": "Lịch hẹn mẫu • Đã xác nhận",
+        "name": "Lịch hẹn mẫu • Đã xác nhận"
+      },
+      {
+        "text": "16:30 • Thứ Tư, 14/10/2026",
+        "name": "16:30 • Thứ Tư, 14/10/2026"
+      },
+      {
+        "text": "42 Ngõ 187 Tạ Quang Bửu, P. Bách Khoa, Hai Bà Trưng, Hà Nội",
+        "name": "42 Ngõ 187 Tạ Quang Bửu, P. Bách Khoa, Hai Bà Trưng, Hà Nội"
+      },
+      {
+        "text": "Thêm vào Google Calendar",
+        "name": "Text"
+      },
+      {
+        "text": "Cô Tuyết",
+        "name": "Text"
+      },
+      {
+        "text": "Điện 3.500đ/kWh, nước 100.000đ/người. Cô đã xác nhận lịch 16:30 ngày 14/10/2026 tại số 42 Ngõ 187 Tạ Quang Bửu nhé.",
+        "name": "Điện 3.500đ/kWh, nước 100.000đ/người. Cô đã xác nhận lịch 16:30 ngày 14/10/2026 tại số 42 Ngõ 187 Tạ Quang Bửu nhé."
+      },
+      {
+        "text": "14:20",
+        "name": "Text"
+      },
+      {
+        "text": "Nhập tin nhắn cho cô Tuyết...",
+        "name": "Nhập tin nhắn cho cô Tuyết..."
+      },
+      {
+        "text": "AVAROOM",
+        "name": "Text"
+      },
+      {
+        "text": "Tin Nhắn",
+        "name": "Text"
+      }
+    ]
+  },
+  "student_account": {
+    "name": "Tài khoản & Cài đặt sinh viên",
+    "texts": [
+      {
+        "text": "04",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng đã lưu",
+        "name": "Text"
+      },
+      {
+        "text": "01",
+        "name": "Text"
+      },
+      {
+        "text": "Lịch xem phòng",
+        "name": "Text"
+      },
+      {
+        "text": "01",
+        "name": "Text"
+      },
+      {
+        "text": "Đang thuê",
+        "name": "Text"
+      },
+      {
+        "text": "TIỆN ÍCH & QUYỀN LỢI SINH VIÊN",
+        "name": "Text"
+      },
+      {
+        "text": "Hồ sơ sinh viên",
+        "name": "Hồ sơ sinh viên"
+      },
+      {
+        "text": "CCCD gắn chip & Thẻ sinh viên xác thực",
+        "name": "CCCD gắn chip & Thẻ sinh viên xác thực"
+      },
+      {
+        "text": "Bộ lọc đẩy tin phòng tự động",
+        "name": "Bộ lọc đẩy tin phòng tự động"
+      },
+      {
+        "text": "Bán kính < 2km ĐH Bách Khoa • Dưới 3.000.000đ",
+        "name": "Bán kính < 2km ĐH Bách Khoa • Dưới 3.000.000đ"
+      },
+      {
+        "text": "Đăng xuất tài khoản",
+        "name": "Text"
+      },
+      {
+        "text": "Nguyễn Thanh Tùng",
+        "name": "Nguyễn Thanh Tùng"
+      },
+      {
+        "text": "tung.nt@hust.edu.vn",
+        "name": "tung.nt@hust.edu.vn"
+      },
+      {
+        "text": "ĐH Bách Khoa HN • K66",
+        "name": "Text"
+      },
+      {
+        "text": "CÀI ĐẶT & BẢO MẬT",
+        "name": "Text"
+      },
+      {
+        "text": "Đổi mật khẩu tài khoản",
+        "name": "Đổi mật khẩu tài khoản"
+      },
+      {
+        "text": "Lần đổi gần nhất 45 ngày trước",
+        "name": "Lần đổi gần nhất 45 ngày trước"
+      },
+      {
+        "text": "Ngôn ngữ ứng dụng",
+        "name": "Text"
+      },
+      {
+        "text": "Tiếng Việt (Mặc định)",
+        "name": "Text"
+      },
+      {
+        "text": "VIE",
+        "name": "Text"
+      },
+      {
+        "text": "AVAROOM",
+        "name": "Text"
+      },
+      {
+        "text": "Tài khoản",
+        "name": "Text"
+      },
+      {
+        "text": "Trang chủ",
+        "name": "Text"
+      },
+      {
+        "text": "Lân cận",
+        "name": "Text"
+      },
+      {
+        "text": "3",
+        "name": "Text"
+      },
+      {
+        "text": "Tin nhắn",
+        "name": "Text"
+      },
+      {
+        "text": "Tài khoản",
+        "name": "Text"
+      }
+    ]
+  },
+  "student_ekyc": {
+    "name": "Hồ sơ sinh viên & eKYC (Cọc 0đ)",
+    "texts": [
+      {
+        "text": "Hồ sơ xác minh cấp cao",
+        "name": "Text"
+      },
+      {
+        "text": "Cập nhật 14 phút trước",
+        "name": "Text"
+      },
+      {
+        "text": "Nguyễn Thanh Tùng",
+        "name": "Nguyễn Thanh Tùng"
+      },
+      {
+        "text": "K66 Viện CNTT • ĐH Bách Khoa Hà Nội",
+        "name": "K66 Viện CNTT • ĐH Bách Khoa Hà Nội"
+      },
+      {
+        "text": "MSSV: 20210892",
+        "name": "Text"
+      },
+      {
+        "text": "Cấp 3/3 • Cọc 0đ On",
+        "name": "Text"
+      },
+      {
+        "text": "Avaroom Student Shield Guarantee",
+        "name": "Text"
+      },
+      {
+        "text": "Bảo lãnh tài chính Escrow tối đa ",
+        "name": "Text"
+      },
+      {
+        "text": "10.000.000đ",
+        "name": "Strong → 10.000.000đ"
+      },
+      {
+        "text": "khi thuê phòng trọ đối tác Avaroom.",
+        "name": "Text"
+      },
+      {
+        "text": "Tiến trình eKYC sinh\nviên",
+        "name": "Text"
+      },
+      {
+        "text": "Hoàn tất\n100%",
+        "name": "Text"
+      },
+      {
+        "text": "Cấp 1: Liên hệ & Email trường",
+        "name": "Text"
+      },
+      {
+        "text": "Đã duyệt",
+        "name": "Text"
+      },
+      {
+        "text": "tung.nt210892@sis.hust.edu.vn • Xác thực\nOTP 10/2023",
+        "name": "tung.nt210892@sis.hust.edu.vn • Xác thực OTP 10/2023"
+      },
+      {
+        "text": "Cấp 2: Xác thực thẻ SV",
+        "name": "Cấp 2: Xác thực thẻ SV"
+      },
+      {
+        "text": "Campus\nPartner",
+        "name": "Text"
+      },
+      {
+        "text": "Thẻ sinh viên K66 & Giấy xác nhận học tập\nkỳ 2023.2 được xác thực điện tử.",
+        "name": "Thẻ sinh viên K66 & Giấy xác nhận học tập kỳ 2023.2 được xác thực điện tử."
+      },
+      {
+        "text": "Thông tin cá nhân",
+        "name": "Thông tin cá nhân"
+      },
+      {
+        "text": "Họ và tên",
+        "name": "Họ và tên"
+      },
+      {
+        "text": "NGUYỄN THANH TÙNG",
+        "name": "Text"
+      },
+      {
+        "text": "MSSV",
+        "name": "MSSV"
+      },
+      {
+        "text": "001204******",
+        "name": "001204******"
+      },
+      {
+        "text": "Ngày sinh",
+        "name": "Ngày sinh"
+      },
+      {
+        "text": "15/08/2003",
+        "name": "Text"
+      },
+      {
+        "text": "Quê quán",
+        "name": "Quê quán"
+      },
+      {
+        "text": "Hải Phòng",
+        "name": "Text"
+      },
+      {
+        "text": "Nơi thường trú",
+        "name": "Nơi thường trú"
+      },
+      {
+        "text": "Hai Bà Trưng, Hà Nội",
+        "name": "Text"
+      },
+      {
+        "text": "Xác nhận",
+        "name": "Xác nhận"
+      },
+      {
+        "text": "Cập nhật lại thẻ sinh viên kỳ mới",
+        "name": "Text"
+      },
+      {
+        "text": "Xác thực duy trì có hiệu lực đến hết học kỳ 2024.1",
+        "name": "Text"
+      },
+      {
+        "text": "Account Credentials",
+        "name": "Text"
+      }
+    ]
+  },
+  "saved_rooms": {
+    "name": "Phòng đã lưu - Avaroom Sinh viên",
+    "texts": [
+      {
+        "text": "Tìm phòng trọ, căn hộ...",
+        "name": "Tìm phòng trọ, căn hộ..."
+      },
+      {
+        "text": "Tất cả (4)",
+        "name": "Text"
+      },
+      {
+        "text": "Gần Bách Khoa (2)",
+        "name": "Text"
+      },
+      {
+        "text": "Dưới 3.5tr (2)",
+        "name": "Text"
+      },
+      {
+        "text": "Có gác lửng (3)",
+        "name": "Text"
+      },
+      {
+        "text": "Cọc 0đ / Escrow (4)",
+        "name": "Text"
+      },
+      {
+        "text": "04 phòng đang theo dõi",
+        "name": "Text"
+      },
+      {
+        "text": "01 phòng sắp hết hạn giữ chỗ hôm nay",
+        "name": "Text"
+      },
+      {
+        "text": "Chi tiết",
+        "name": "Text"
+      },
+      {
+        "text": "Mới lưu gần đây",
+        "name": "Text"
+      },
+      {
+        "text": "Còn 1 phòng duy nhất",
+        "name": "Text"
+      },
+      {
+        "text": "Cọc: cần xác nhận",
+        "name": "Cọc: cần xác nhận"
+      },
+      {
+        "text": "AVR-90412 • Mẫu",
+        "name": "AVR-90412 • Mẫu"
+      },
+      {
+        "text": "4.200.000đ",
+        "name": "Text"
+      },
+      {
+        "text": "/tháng",
+        "name": "Text"
+      },
+      {
+        "text": "28m² • Gác lửng\ncao",
+        "name": "Text"
+      },
+      {
+        "text": "Studio ban công Tạ Quang Bửu",
+        "name": "Studio ban công Tạ Quang Bửu"
+      },
+      {
+        "text": "42 Ngõ 187 Tạ Quang Bửu • ĐHBK 250m",
+        "name": "42 Ngõ 187 Tạ Quang Bửu • ĐHBK 250m"
+      },
+      {
+        "text": "\"Gần cổng Parabol, hợp với Tùng đi bộ sang\ngiảng đường D3.\"",
+        "name": "Text"
+      },
+      {
+        "text": "AT",
+        "name": "Text"
+      },
+      {
+        "text": "Cô Hoàng Thị Ánh Tuyết",
+        "name": "Text"
+      },
+      {
+        "text": "4.9",
+        "name": "Text"
+      },
+      {
+        "text": "(CCCD OK)",
+        "name": "Text"
+      },
+      {
+        "text": "Vừa giảm 200k",
+        "name": "Text"
+      },
+      {
+        "text": "Tự do 24/7",
+        "name": "Text"
+      },
+      {
+        "text": "#AVR-88310",
+        "name": "Text"
+      },
+      {
+        "text": "3.200.000đ",
+        "name": "Text"
+      },
+      {
+        "text": "/tháng",
+        "name": "Text"
+      },
+      {
+        "text": "22m² • Khép kín",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng Studio gác lửng ban công -…",
+        "name": "Text"
+      },
+      {
+        "text": "Ngõ 30 Trần Đại Nghĩa (Cách ĐHBK 600m)",
+        "name": "Text"
+      },
+      {
+        "text": "BT",
+        "name": "Text"
+      },
+      {
+        "text": "Bác Thành",
+        "name": "Text"
+      },
+      {
+        "text": "eKYC Đã duyệt",
+        "name": "Text"
+      },
+      {
+        "text": "Có sạc xe điện PCCC",
+        "name": "Text"
+      },
+      {
+        "text": "#AVR-75204",
+        "name": "Text"
+      },
+      {
+        "text": "3.600.000đ",
+        "name": "Text"
+      },
+      {
+        "text": "/tháng",
+        "name": "Text"
+      },
+      {
+        "text": "25m² • Có thang\nmáy",
+        "name": "Text"
+      },
+      {
+        "text": "Căn hộ mini khép kín có sạc xe điện",
+        "name": "Text"
+      },
+      {
+        "text": "55 Lê Thanh Nghị (Cách ĐHBK 450m)",
+        "name": "Text"
+      },
+      {
+        "text": "4.8",
+        "name": "Text"
+      },
+      {
+        "text": "(18 đánh giá sinh viên)",
+        "name": "Text"
+      },
+      {
+        "text": "An ninh vân tay",
+        "name": "Text"
+      },
+      {
+        "text": "Homestay 2 người",
+        "name": "Text"
+      },
+      {
+        "text": "#AVR-61092",
+        "name": "Text"
+      },
+      {
+        "text": "2.100.000đ",
+        "name": "Text"
+      },
+      {
+        "text": "/người",
+        "name": "Text"
+      },
+      {
+        "text": "Bao trọn dịch vụ",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng KTX cao cấp Homestay 2…",
+        "name": "Text"
+      },
+      {
+        "text": "Ký túc xá Bách Khoa K10 (Ngay trong khuôn viên)",
+        "name": "Text"
+      },
+      {
+        "text": "Đầy đủ máy giặt, bếp từ, tủ lạnh inverter riêng từng…",
+        "name": "Đầy đủ máy giặt, bếp từ, tủ lạnh inverter riêng từng…"
+      },
+      {
+        "text": "Tất cả phòng lưu trữ đều được Avaroom bảo vệ theo cơ\nchế Escrow sinh viên",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng đã lưu",
+        "name": "Phòng đã lưu"
+      }
+    ]
+  },
+  "appointments": {
+    "name": "Lịch hẹn xem phòng - Avaroom Sinh viên",
+    "texts": [
+      {
+        "text": "AVAROOM STUDIO",
+        "name": "Text"
+      },
+      {
+        "text": "Lịch hẹn xem phòng",
+        "name": "Heading 2 → Lịch hẹn xem phòng"
+      },
+      {
+        "text": "Sắp tới",
+        "name": "Text"
+      },
+      {
+        "text": "01",
+        "name": "Text"
+      },
+      {
+        "text": "Đã hoàn thành",
+        "name": "Text"
+      },
+      {
+        "text": "02",
+        "name": "Text"
+      },
+      {
+        "text": "Đã hủy",
+        "name": "Text"
+      },
+      {
+        "text": "01",
+        "name": "Text"
+      },
+      {
+        "text": "LỊCH HẸN TRONG 24 GIỜ TỚI",
+        "name": "Text"
+      },
+      {
+        "text": "Ngày mai, 13/10 • 16:30",
+        "name": "Ngày mai, 13/10 • 16:30"
+      },
+      {
+        "text": "Giờ tan trường ĐH Bách Khoa - Chủ nhà sẽ\nđợi tại sảnh",
+        "name": "Text"
+      },
+      {
+        "text": "Mã đặt\nhẹn:",
+        "name": "Text"
+      },
+      {
+        "text": "#AVR-TOUR-2024-\n912",
+        "name": "Text"
+      },
+      {
+        "text": "Chủ trọ đã xác\nnhận",
+        "name": "Text"
+      },
+      {
+        "text": "#AVR-90412",
+        "name": "Text"
+      },
+      {
+        "text": "STUDIO BAN CÔNG",
+        "name": "Text"
+      },
+      {
+        "text": "• 28m²",
+        "name": "Text"
+      },
+      {
+        "text": "Studio ban công thoáng…",
+        "name": "Studio ban công thoáng…"
+      },
+      {
+        "text": "Số 42 Ngõ 187 Tạ Quang Bửu, P. Bách\nKhoa, Q. Hai Bà Trưng, Hà Nội",
+        "name": "Số 42 Ngõ 187 Tạ Quang Bửu, P. Bách Khoa, Q. Hai Bà Trưng, Hà Nội"
+      },
+      {
+        "text": "Xem trực tiếp tại phòng",
+        "name": "Text"
+      },
+      {
+        "text": "Có lễ tân dẫn lên tận cửa",
+        "name": "Text"
+      },
+      {
+        "text": "Chỉ đường",
+        "name": "Text"
+      },
+      {
+        "text": "Cô Hoàng Thị Ánh Tuyết",
+        "name": "Text"
+      },
+      {
+        "text": "0912 ••• 882 • Xác thực CCCD",
+        "name": "Text"
+      },
+      {
+        "text": "LỜI NHẮN CỦA BẠN:",
+        "name": "LỜI NHẮN CỦA BẠN:"
+      },
+      {
+        "text": "\"Cháu là Tùng K66 Bách Khoa, cháu đi cùng\nbạn qua xem lúc 16h30 ạ.\"",
+        "name": "\"Cháu là Tùng K66 Bách Khoa, cháu đi cùng bạn qua xem lúc 16h30 ạ.\""
+      },
+      {
+        "text": "Đổi lịch\nhẹn",
+        "name": "Text"
+      },
+      {
+        "text": "Hủy lịch\nhẹn",
+        "name": "Text"
+      },
+      {
+        "text": "Check-in xem\nphòng",
+        "name": "Text"
+      },
+      {
+        "text": "LỊCH SỬ XEM PHÒNG GẦN ĐÂY",
+        "name": "Text"
+      },
+      {
+        "text": "2 chuyến xem trước",
+        "name": "Text"
+      },
+      {
+        "text": "08/10/2024",
+        "name": "Text"
+      },
+      {
+        "text": "#AVR-89201",
+        "name": "Text"
+      },
+      {
+        "text": "Studio gác lửng Trần",
+        "name": "Text"
+      },
+      {
+        "text": "Đã xem phòng xong",
+        "name": "Text"
+      },
+      {
+        "text": "Hoàn\ntất",
+        "name": "Text"
+      },
+      {
+        "text": "Viết đánh giá",
+        "name": "Text"
+      },
+      {
+        "text": "Cọc giữ phòng\nEscrow",
+        "name": "Text"
+      },
+      {
+        "text": "25/09/2024",
+        "name": "Text"
+      },
+      {
+        "text": "#AVR-81726",
+        "name": "Text"
+      },
+      {
+        "text": "Căn hộ mini Lê Thanh Nghị",
+        "name": "Text"
+      },
+      {
+        "text": "Chủ trọ: Bác Nguyễn Văn Hùng",
+        "name": "Text"
+      },
+      {
+        "text": "Đã xem",
+        "name": "Text"
+      },
+      {
+        "text": "Xem lại",
+        "name": "Text"
+      },
+      {
+        "text": "Cam kết Avaroom\nSafeTour™",
+        "name": "Text"
+      },
+      {
+        "text": "MIỄN PHÍ\n100%",
+        "name": "Text"
+      },
+      {
+        "text": "Bảo vệ quyền lợi sinh viên toàn diện. Hẹn xem\nphòng không mất phí, đền bù chi phí di\nchuyển nếu chủ nhà tự ý hủy hoặc phòng thực\ntế sai lệch hình ảnh niêm yết.",
+        "name": "Bảo vệ quyền lợi sinh viên toàn diện. Hẹn xem phòng không mất phí, đền bù chi phí di chuyển nếu chủ nhà tự ý hủy hoặc phòng thực tế sai lệch hình ảnh niêm yết."
+      },
+      {
+        "text": "Hotline SOS: 1900\n8922",
+        "name": "Text"
+      },
+      {
+        "text": "Chính sách bảo vệ\n→",
+        "name": "Text"
+      }
+    ]
+  },
+  "search_result": {
+    "name": "Search Result",
+    "texts": [
+      {
+        "text": "48 kết quả",
+        "name": "48 kết quả"
+      },
+      {
+        "text": "phù hợp",
+        "name": "Text"
+      },
+      {
+        "text": "≤ 1.5km",
+        "name": "Text"
+      },
+      {
+        "text": "Quanh ĐH Bách Khoa Hà Nội",
+        "name": "Quanh ĐH Bách Khoa Hà Nội"
+      },
+      {
+        "text": "•",
+        "name": "•"
+      },
+      {
+        "text": "Khu vực Hai Bà Trưng",
+        "name": "Text"
+      },
+      {
+        "text": "Bộ lọc",
+        "name": "Text"
+      },
+      {
+        "text": "5",
+        "name": "5"
+      },
+      {
+        "text": "Studio tiện nghi",
+        "name": "Text"
+      },
+      {
+        "text": "2.0M - 4.2M",
+        "name": "Text"
+      },
+      {
+        "text": "≤ 1.5km",
+        "name": "Text"
+      },
+      {
+        "text": "Giờ tự do 24/7",
+        "name": "Text"
+      },
+      {
+        "text": "Escrow bảo vệ",
+        "name": "Text"
+      },
+      {
+        "text": "Sắp xếp:",
+        "name": "Text"
+      },
+      {
+        "text": "Phù hợp nhất",
+        "name": "Text"
+      },
+      {
+        "text": "Parabol 350m",
+        "name": "Text"
+      },
+      {
+        "text": "Cọc 0đ Escrow",
+        "name": "Text"
+      },
+      {
+        "text": "3.5M",
+        "name": "Text"
+      },
+      {
+        "text": "25m² • Gác lửng",
+        "name": "Text"
+      },
+      {
+        "text": "Vertice Studio Bách…",
+        "name": "Vertice Studio Bách…"
+      },
+      {
+        "text": "350m đến ĐHBK (Tạ\nQuang Bửu)",
+        "name": "Text"
+      },
+      {
+        "text": "Cửa vân tay",
+        "name": "Text"
+      },
+      {
+        "text": "Sạc xe điện",
+        "name": "Text"
+      },
+      {
+        "text": "4.8",
+        "name": "Text"
+      },
+      {
+        "text": "(42)",
+        "name": "Text"
+      },
+      {
+        "text": "Chính chủ",
+        "name": "Text"
+      },
+      {
+        "text": "AVR-90412 • Mẫu",
+        "name": "AVR-90412 • Mẫu"
+      },
+      {
+        "text": "4.2M",
+        "name": "4.2M"
+      },
+      {
+        "text": "28m² • Gác lửng",
+        "name": "28m² • Gác lửng"
+      },
+      {
+        "text": "Studio ban công Tạ Quang Bửu",
+        "name": "Studio ban công Tạ Quang Bửu"
+      },
+      {
+        "text": "42 Ngõ 187 Tạ Quang Bửu • ĐHBK 250m",
+        "name": "42 Ngõ 187 Tạ Quang Bửu • ĐHBK 250m"
+      },
+      {
+        "text": "Ban công",
+        "name": "Text"
+      },
+      {
+        "text": "Không chung chủ",
+        "name": "Text"
+      },
+      {
+        "text": "4.8",
+        "name": "4.8"
+      },
+      {
+        "text": "(42)",
+        "name": "(42)"
+      },
+      {
+        "text": "Còn 1 phòng",
+        "name": "Còn 1 phòng"
+      },
+      {
+        "text": "Còn 1 phòng",
+        "name": "Text"
+      },
+      {
+        "text": "2.8M",
+        "name": "Text"
+      },
+      {
+        "text": "20m² • Khép kín",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng trọ sinh viên tiện",
+        "name": "Phòng trọ sinh viên tiện"
+      },
+      {
+        "text": "800m đến ĐHBK (Lê\nThanh Nghị)",
+        "name": "Text"
+      },
+      {
+        "text": "Máy giặt riêng",
+        "name": "Text"
+      },
+      {
+        "text": "Wifi 6",
+        "name": "Text"
+      },
+      {
+        "text": "4.7",
+        "name": "Text"
+      },
+      {
+        "text": "(31)",
+        "name": "Text"
+      },
+      {
+        "text": "Bao rác, wifi",
+        "name": "Text"
+      },
+      {
+        "text": "PCCC đạt chuẩn",
+        "name": "Text"
+      },
+      {
+        "text": "4.2M",
+        "name": "Text"
+      },
+      {
+        "text": "28m² • Gác lửng",
+        "name": "Text"
+      },
+      {
+        "text": "Studio cao cấp Tạ…",
+        "name": "Studio cao cấp Tạ…"
+      },
+      {
+        "text": "250m đến ĐHBK (Đường\nKTX)",
+        "name": "Text"
+      },
+      {
+        "text": "Full nội thất",
+        "name": "Text"
+      },
+      {
+        "text": "Bảo chứng Escrow",
+        "name": "Text"
+      },
+      {
+        "text": "5.0",
+        "name": "Text"
+      },
+      {
+        "text": "(14)",
+        "name": "Text"
+      },
+      {
+        "text": "Top tìm kiếm",
+        "name": "Text"
+      },
+      {
+        "text": "Cọc 0đ",
+        "name": "Text"
+      },
+      {
+        "text": "2.5M",
+        "name": "Text"
+      },
+      {
+        "text": "18m² • Khép kín",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng khép kín đón…",
+        "name": "Phòng khép kín đón…"
+      },
+      {
+        "text": "1.1km đến ĐHBK (Đại Cồ\nViệt)",
+        "name": "Text"
+      },
+      {
+        "text": "Khép kín",
+        "name": "Text"
+      },
+      {
+        "text": "Tự do 24/7",
+        "name": "Text"
+      },
+      {
+        "text": "4.6",
+        "name": "Text"
+      },
+      {
+        "text": "(25)",
+        "name": "Text"
+      },
+      {
+        "text": "Đi bộ 12p",
+        "name": "Text"
+      },
+      {
+        "text": "Mới tinh 100%",
+        "name": "Text"
+      },
+      {
+        "text": "3.8M",
+        "name": "Text"
+      },
+      {
+        "text": "26m² • 1N1K",
+        "name": "Text"
+      },
+      {
+        "text": "Căn hộ mini Studio K66",
+        "name": "Căn hộ mini Studio K66"
+      },
+      {
+        "text": "450m đến ĐHBK (Ngõ 187\nTạ Quang Bửu)",
+        "name": "Text"
+      },
+      {
+        "text": "Thang máy",
+        "name": "Text"
+      },
+      {
+        "text": "Bãi xe rộng",
+        "name": "Text"
+      },
+      {
+        "text": "4.9",
+        "name": "Text"
+      },
+      {
+        "text": "(38)",
+        "name": "Text"
+      },
+      {
+        "text": "Khu sinh viên",
+        "name": "Text"
+      },
+      {
+        "text": "Tìm phòng trọ, căn hộ gần trường...",
+        "name": "Text"
+      }
+    ]
+  },
+  "reviews": {
+    "name": "Đánh giá",
+    "texts": [
+      {
+        "text": "8",
+        "name": "Text"
+      },
+      {
+        "text": "Chính chủ",
+        "name": "Text"
+      },
+      {
+        "text": "Studio ban công Tạ Quang Bửu",
+        "name": "Studio ban công Tạ Quang Bửu"
+      },
+      {
+        "text": "4.200.000đ",
+        "name": "4.200.000đ"
+      },
+      {
+        "text": "/tháng",
+        "name": "Text"
+      },
+      {
+        "text": "AVR-90412 • Mẫu • ĐH Bách Khoa 250m",
+        "name": "AVR-90412 • Mẫu • ĐH Bách Khoa 250m"
+      },
+      {
+        "text": "ĐIỂM HÀI LÒNG SINH VIÊN",
+        "name": "Text"
+      },
+      {
+        "text": "4.8",
+        "name": "Text"
+      },
+      {
+        "text": "/5",
+        "name": "Text"
+      },
+      {
+        "text": "42",
+        "name": "Text"
+      },
+      {
+        "text": "Sinh viên xác\nthực",
+        "name": "Text"
+      },
+      {
+        "text": "5 sao",
+        "name": "Text"
+      },
+      {
+        "text": "85%\n(36)",
+        "name": "Text"
+      },
+      {
+        "text": "4 sao",
+        "name": "Text"
+      },
+      {
+        "text": "12% ",
+        "name": "Text"
+      },
+      {
+        "text": "(5)",
+        "name": "Text"
+      },
+      {
+        "text": "3 sao",
+        "name": "Text"
+      },
+      {
+        "text": "3% ",
+        "name": "Text"
+      },
+      {
+        "text": "(1)",
+        "name": "Text"
+      },
+      {
+        "text": "2 sao",
+        "name": "Text"
+      },
+      {
+        "text": "0%",
+        "name": "Text"
+      },
+      {
+        "text": "1 sao",
+        "name": "Text"
+      },
+      {
+        "text": "0%",
+        "name": "Text"
+      },
+      {
+        "text": "Tiêu chí giám định độc lập Avaroom",
+        "name": "Text"
+      },
+      {
+        "text": "An ninh & PCCC chuẩn hóa",
+        "name": "Text"
+      },
+      {
+        "text": "Cửa vân tay, camera hành lang,\nthang thoát hiểm",
+        "name": "Text"
+      },
+      {
+        "text": "4.9 ★",
+        "name": "Text"
+      },
+      {
+        "text": "Vệ sinh & Không gian sống",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng mới, ban công thoáng khí,\nphơi đồ riêng",
+        "name": "Text"
+      },
+      {
+        "text": "4.8 ★",
+        "name": "Text"
+      },
+      {
+        "text": "Thái độ & Hỗ trợ từ chủ trọ",
+        "name": "Text"
+      },
+      {
+        "text": "Nhiệt tình, khắc phục sự cố điện\nnước 24/7",
+        "name": "Text"
+      },
+      {
+        "text": "4.9 ★",
+        "name": "Text"
+      },
+      {
+        "text": "Minh bạch điện nước & Chi phí",
+        "name": "Text"
+      },
+      {
+        "text": "Công tơ điện tử riêng từng phòng,\nkhông phí ẩn",
+        "name": "Text"
+      },
+      {
+        "text": "4.7 ★",
+        "name": "Text"
+      },
+      {
+        "text": "Tốc độ mạng Mesh Wi-Fi 6",
+        "name": "Text"
+      },
+      {
+        "text": "Băng thông cao, ổn định lúc thi\nonline & làm đồ án",
+        "name": "Text"
+      },
+      {
+        "text": "4.8 ★",
+        "name": "Text"
+      },
+      {
+        "text": "100% Đánh giá từ người thuê thực tế",
+        "name": "Text"
+      },
+      {
+        "text": "Chỉ tài khoản sinh viên đã xác minh eKYC và có\nhợp đồng thuê phòng hoàn tất trên ứng dụng\nAvaroom mới có thể gửi đánh giá. Cam kết không\nđánh giá ảo.",
+        "name": "Text"
+      },
+      {
+        "text": "Lọc theo nhóm sinh viên",
+        "name": "Text"
+      },
+      {
+        "text": "42 phản hồi",
+        "name": "Text"
+      },
+      {
+        "text": "Tất cả (42)",
+        "name": "Text"
+      },
+      {
+        "text": "Có ảnh/video (28)",
+        "name": "Text"
+      },
+      {
+        "text": "Bách Khoa K65-K68 (18)",
+        "name": "Text"
+      },
+      {
+        "text": "Xây Dựng & NEU (15)",
+        "name": "Text"
+      },
+      {
+        "text": "Đã thuê > 6 tháng (24)",
+        "name": "Text"
+      },
+      {
+        "text": "Khen an ninh & PCCC (19)",
+        "name": "Text"
+      },
+      {
+        "text": "LQ",
+        "name": "Text"
+      },
+      {
+        "text": "Lê Minh Quân",
+        "name": "Text"
+      },
+      {
+        "text": "K66 Viện CNTT • ĐH Bách Khoa HN",
+        "name": "Text"
+      },
+      {
+        "text": "2 tuần trước",
+        "name": "Text"
+      },
+      {
+        "text": "Đã thuê 1 năm",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng 402 Ban công gió",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng cực kỳ ưng ý! Đi bộ ra cổng Parabol trường\nBách Khoa mất đúng 4 phút. Bác chủ nhiệt tình,\nbóng đèn hỏng báo cái là trưa chú qua thay liền.\nTiền điện nước thu đúng niêm yết trên app\nAvaroom, không bị độn giá như mấy phòng trọ\nngoài ngõ Tạ Quang Bửu trước mình từng ở.",
+        "name": "Phòng cực kỳ ưng ý! Đi bộ ra cổng Parabol trường Bách Khoa mất đúng 4 phút. Bác chủ nhiệt tình, bóng đèn hỏng báo cái là trưa chú qua thay liền. Tiền điện nước thu đúng niêm yết trên app Avaroom, không bị độn giá như mấy phòng trọ ngoài ngõ Tạ Quang Bửu trước mình từng ở."
+      },
+      {
+        "text": "Chủ",
+        "name": "Text"
+      },
+      {
+        "text": "VERTICE Host (Chú Thành)",
+        "name": "Text"
+      },
+      {
+        "text": "12 ngày trước",
+        "name": "Text"
+      },
+      {
+        "text": "Cảm ơn Quân nhé! Chúc em kỳ này đồ án\ntốt nghiệp bảo vệ đạt điểm A tuyệt đối.\nCần thêm bàn học rộng hơn cứ nhắn chú hỗ\ntrợ chuyển lên nhé.",
+        "name": "Text"
+      },
+      {
+        "text": "Hữu ích (24)",
+        "name": "Text"
+      },
+      {
+        "text": "Bình luận",
+        "name": "Text"
+      },
+      {
+        "text": "TV",
+        "name": "Text"
+      },
+      {
+        "text": "Nguyễn Hoàng Thảo Vy",
+        "name": "Text"
+      },
+      {
+        "text": "K67 Marketing • ĐH Kinh Tế Quốc Dân (NEU)",
+        "name": "Text"
+      },
+      {
+        "text": "1 tháng trước",
+        "name": "Text"
+      },
+      {
+        "text": "Đã ở 4 tháng",
+        "name": "Text"
+      },
+      {
+        "text": "Phòng tầng 3 ban công",
+        "name": "Text"
+      },
+      {
+        "text": "An ninh rất tốt vì có khóa vân tay 2 lớp và camera\n24/7 ở nhà để xe. Xe điện sạc có ổ cắm riêng\ntrang bị ngắt tự động an toàn PCCC nên bố mẹ\nmình dưới quê cực kỳ yên tâm. Wifi học Zoom hay\nlàm bài thi trắc nghiệm đều mượt, không hề bị rớt\nmạng giờ cao điểm.",
+        "name": "An ninh rất tốt vì có khóa vân tay 2 lớp và camera 24/7 ở nhà để xe. Xe điện sạc có ổ cắm riêng trang bị ngắt tự động an toàn PCCC nên bố mẹ mình dưới quê cực kỳ yên tâm. Wifi học Zoom hay làm bài thi trắc nghiệm đều mượt, không hề bị rớt mạng giờ cao điểm."
+      },
+      {
+        "text": "Hữu ích (15)",
+        "name": "Text"
+      },
+      {
+        "text": "Bình luận",
+        "name": "Text"
+      },
+      {
+        "text": "ĐT",
+        "name": "Text"
+      },
+      {
+        "text": "Trần Đức Trọng",
+        "name": "Text"
+      },
+      {
+        "text": "K65 Kiến Trúc • ĐH Xây Dựng Hà Nội (HUCE)",
+        "name": "Text"
+      },
+      {
+        "text": "2 tháng trước",
+        "name": "Text"
+      },
+      {
+        "text": "Đã thuê 8 tháng",
+        "name": "Text"
+      },
+      {
+        "text": "Căn gác lửng thông minh",
+        "name": "Text"
+      },
+      {
+        "text": "Gác lửng cao ráo, chiều cao 1m85 như mình đứng\nthẳng lưng không sợ cộc đầu. Khu vực gần Tạ\nQuang Bửu nên nhiều quán cơm sinh viên bình dân.\nTrừ 0.5 sao vì ngõ hơi hẹp chút lúc tan tầm sinh\nviên tan học, còn lại dịch vụ, phòng ốc và bác\nquản lý đều chấm 10/10.",
+        "name": "Gác lửng cao ráo, chiều cao 1m85 như mình đứng thẳng lưng không sợ cộc đầu. Khu vực gần Tạ Quang Bửu nên nhiều quán cơm sinh viên bình dân. Trừ 0.5 sao vì ngõ hơi hẹp chút lúc tan tầm sinh viên tan học, còn lại dịch vụ, phòng ốc và bác quản lý đều chấm 10/10."
+      },
+      {
+        "text": "Hữu ích (9)",
+        "name": "Text"
+      },
+      {
+        "text": "Bình luận",
+        "name": "Text"
+      },
+      {
+        "text": "Đánh Giá ",
+        "name": "Đánh Giá"
+      },
+      {
+        "text": "Viết đánh giá",
+        "name": "Text"
+      },
+      {
+        "text": "Đặt lịch xem phòng",
+        "name": "Text"
+      }
+    ]
+  },
+  "change_password": {
+    "name": "Đổi mật khẩu tài khoản - Avaroom",
+    "texts": [
+      {
+        "text": "Mật khẩu đã đổi 45 ngày trước",
+        "name": "Text"
+      },
+      {
+        "text": "Độ an toàn: Tốt",
+        "name": "Text"
+      },
+      {
+        "text": "Avaroom khuyến nghị đổi mật khẩu định kỳ 90\nngày để bảo vệ an toàn cho ví ký quỹ Escrow\nvà dữ liệu eKYC phòng trọ của bạn.",
+        "name": "Text"
+      },
+      {
+        "text": "THÔNG TIN MẬT KHẨU",
+        "name": "Text"
+      },
+      {
+        "text": "Bắt buộc nhập",
+        "name": "Text"
+      },
+      {
+        "text": "Mật khẩu hiện tại",
+        "name": "Text"
+      },
+      {
+        "text": "Quên mật khẩu?",
+        "name": "Text"
+      },
+      {
+        "text": "OldPassword123#",
+        "name": "OldPassword123#"
+      },
+      {
+        "text": "Mật khẩu mới",
+        "name": "Mật khẩu mới"
+      },
+      {
+        "text": "Avaroom@Secure2025",
+        "name": "Avaroom@Secure2025"
+      },
+      {
+        "text": "Độ bảo mật mật khẩu",
+        "name": "Text"
+      },
+      {
+        "text": "Rất mạnh",
+        "name": "Text"
+      },
+      {
+        "text": "Tối thiểu 8 ký tự",
+        "name": "Text"
+      },
+      {
+        "text": "Có ít nhất 1 chữ hoa và 1 chữ thường",
+        "name": "Text"
+      },
+      {
+        "text": "Có ít nhất 1 chữ số (0-9)",
+        "name": "Text"
+      },
+      {
+        "text": "Có ít nhất 1 ký tự đặc biệt (!@#$%^&*)",
+        "name": "Text"
+      },
+      {
+        "text": "Xác nhận mật khẩu mới",
+        "name": "Xác nhận mật khẩu mới"
+      },
+      {
+        "text": "Avaroom@Secure2025",
+        "name": "Avaroom@Secure2025"
+      },
+      {
+        "text": "Khớp hoàn toàn với mật khẩu mới",
+        "name": "Text"
+      },
+      {
+        "text": "CẤU HÌNH NÂNG CAO",
+        "name": "CẤU HÌNH NÂNG CAO"
+      },
+      {
+        "text": "Đăng xuất khỏi thiết bị khác",
+        "name": "Text"
+      },
+      {
+        "text": "Tự động hủy phiên trên trình duyệt và điện\nthoại khác sau khi lưu.",
+        "name": "Text"
+      },
+      {
+        "text": "Xác thực 2 lớp (OTP / Sinh trắc)",
+        "name": "Text"
+      },
+      {
+        "text": "Gửi mã xác nhận qua SMS hoặc FaceID trước\nkhi áp dụng thay đổi.",
+        "name": "Text"
+      },
+      {
+        "text": "PHIÊN ĐĂNG NHẬP",
+        "name": "Text"
+      },
+      {
+        "text": "Xem tất cả",
+        "name": "Text"
+      },
+      {
+        "text": "iPhone 14 Pro Max",
+        "name": "Text"
+      },
+      {
+        "text": "Thiết bị này",
+        "name": "Text"
+      },
+      {
+        "text": "Hà Nội, Việt Nam • Đang hoạt động",
+        "name": "Text"
+      },
+      {
+        "text": "Chrome trên MacOS",
+        "name": "Text"
+      },
+      {
+        "text": "Cổng Parabol Bách Khoa • 2 ngày trước",
+        "name": "Text"
+      },
+      {
+        "text": "Cập nhật mật khẩu mới",
+        "name": "Text"
+      },
+      {
+        "text": "Hủy / Quay lại",
+        "name": "Text"
+      },
+      {
+        "text": "Account Credentials",
+        "name": "Text"
+      }
+    ]
+  }
+}

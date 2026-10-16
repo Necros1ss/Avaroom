@@ -21,8 +21,11 @@ public final class Theme {
     public static final Color ACCENT_RED = new Color(0xE5, 0x3E, 0x3E);
     public static final Color ACCENT_RED_LIGHT = new Color(0xFF, 0xDA, 0xD7);
     public static final Color ACCENT_YELLOW = new Color(0xFB, 0xBF, 0x24);
+    public static final Color ACCENT_GOLD = new Color(0xF5, 0x9E, 0x0B);
     public static final Color ACCENT_GREEN = new Color(0x10, 0xB9, 0x81);
     public static final Color ACCENT_GREEN_LIGHT = new Color(0xDC, 0xFC, 0xE7);
+    public static final Color ACCENT_BLUE = new Color(0x3B, 0x82, 0xF6);
+    public static final Color SECONDARY_CREAM = new Color(0xF6, 0xEE, 0xDC);
 
     public static final Color TEXT_PRIMARY = new Color(0x1A, 0x20, 0x2C);
     public static final Color TEXT_SECONDARY = new Color(0x71, 0x80, 0x96);
@@ -46,13 +49,19 @@ public final class Theme {
     public static final Border PADDING_SCREEN = new EmptyBorder(16, 20, 20, 20);
     public static final Border PADDING_CARD = new EmptyBorder(14, 16, 14, 16);
 
+    public static final RenderingHints RENDERING_HINTS = new RenderingHints(
+            java.util.Map.of(
+                    RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON,
+                    RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON,
+                    RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY
+            )
+    );
+
     /**
      * Applies high quality rendering hints to graphics context
      */
     public static void applyRenderingHints(Graphics2D g2) {
-        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-        g2.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
+        g2.setRenderingHints(RENDERING_HINTS);
         g2.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
     }
 }

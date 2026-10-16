@@ -1,0 +1,62 @@
+FRAME: Xác thực OTP - Avaroom (Warm Cream)
+  FRAME: Main
+    FRAME: Container
+      FRAME: Status Bar Meta / Step Tracker & Badge
+        FRAME: Container
+          RECTANGLE: Background
+          FRAME: Margin
+            TEXT: "XÁC THỰC BẢO MẬT" (size: 11)
+      FRAME: Heading & Communication Context:margin
+        FRAME: Heading & Communication Context
+          FRAME: Heading 2
+            TEXT: "Nhập mã xác thực gồm 6\nchữ số." (size: 28)
+          FRAME: Background
+            FRAME: Container
+              TEXT: "Mã OTP đã được gửi đến email sinh viên\nleminhanh@uit.edu.vn. Vui lòng kiểm tra hộp thư đến\nhoặc thư rác." (size: 12)
+      FRAME: OTP Input Display Matrix:margin
+        FRAME: OTP Input Display Matrix
+          FRAME: Container
+            FRAME: Slot 1: Filled
+              FRAME: Container
+                TEXT: "4" (size: 22)
+            FRAME: Slot 2: Filled
+              FRAME: Container
+                TEXT: "8" (size: 22)
+            FRAME: Slot 3: Filled
+              FRAME: Container
+                TEXT: "2" (size: 22)
+            FRAME: Slot 4: Filled
+              FRAME: Container
+                TEXT: "9" (size: 22)
+            FRAME: Slot 5: Active Focused Cursor
+              RECTANGLE: Slot 5: Active Focused Cursor:shadow
+              RECTANGLE: Vertical Divider
+            FRAME: Slot 6: Empty Placeholder
+              RECTANGLE: Background
+          FRAME: Timer and Resend Actions
+            FRAME: Container
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Margin
+                TEXT: "Hiệu lực còn: 04:58s" (size: 12)
+            FRAME: Button
+              TEXT: "GỬI LẠI MÃ (SAU 45S)" (size: 11)
+      FRAME: Primary Confirmation Action:margin
+        FRAME: Primary Confirmation Action
+          FRAME: Button
+            RECTANGLE: Button:shadow
+            FRAME: Container
+              TEXT: "XÁC NHẬN MÃ OTP" (size: 14)
+            FRAME: Margin
+              FRAME: Container
+                VECTOR: Icon
+          FRAME: Container
+            FRAME: Button
+              TEXT: "Gửi lại mã xác thực qua tin nhắn SMS / Zalo ZNS" (size: 12)
+  FRAME: Header
+    FRAME: Container
+      FRAME: Button - Go back:margin
+        FRAME: Button - Go back
+          FRAME: Container
+            VECTOR: Icon
+      FRAME: Heading 1

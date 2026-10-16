@@ -49,19 +49,6 @@ public class StudentHomeFragment extends Fragment {
         binding.btnNotification.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_home_to_notifications);
         });
-
-        // Bottom Navigation Bar Connections from Figma
-        binding.navItemMap.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_home_to_map);
-        });
-
-        binding.navItemChat.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_home_to_chat);
-        });
-
-        binding.navItemAccount.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_home_to_account);
-        });
     }
 
     @Override

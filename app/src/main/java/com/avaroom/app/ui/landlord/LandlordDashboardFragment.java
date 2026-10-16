@@ -37,19 +37,6 @@ public class LandlordDashboardFragment extends Fragment {
         };
         binding.btnEditPost1.setOnClickListener(goToDetail);
         binding.cardLandlordPost1.setOnClickListener(goToDetail);
-
-        // Bottom Navigation Bar Connections for Landlord
-        binding.navLandlordAppointments.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_dashboard_to_appointments);
-        });
-
-        binding.navLandlordChat.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_dashboard_to_chat);
-        });
-
-        binding.navLandlordProfile.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_dashboard_to_profile);
-        });
     }
 
     @Override

@@ -1,0 +1,69 @@
+FRAME: Onboarding 3 - Đăng nhập & Đăng ký (Warm Cream)
+  FRAME: Container
+    FRAME: Editorial Typography Block:margin
+      FRAME: Editorial Typography Block
+        FRAME: Heading 1
+          TEXT: "Sẵn sàng tìm căn phòng mơ\nước?" (size: 28)
+        FRAME: Container
+          TEXT: "Tham gia cùng cộng đồng sinh viên văn minh. Tìm kiếm\nphòng trọ, căn hộ mini và bạn ở ghép an toàn, tiện nghi\nngay hôm nay." (size: 14)
+    FRAME: Editorial Hero Visual Frame:margin
+      FRAME: Editorial Hero Visual Frame
+        FRAME: Container
+          FRAME: AB6AXuCyDp3yvV0FSBkqTdlZWC49y85n4YBla7xtplgTvIjIxo-bYQPk2J85geXz2dFChXu2Q3I7EIG63DRTgbqLDLPiyIS1qFxMhzDRHO4GVIbhSHSD75NKlHSaezOpjn-WJWSyJz2JPWGO6ho92j6K0KS2A2MwAo27qm0R3Y1YnnzHZiS4L5mFcQzVQxP4KIaB3DOGYnWunBb6ShBA1G7chNzj-76pl4w0AuZDIVSUYHYKweRPBSUrfcTy
+          RECTANGLE: Gentle gradient scrim for smooth visual blending
+          FRAME: Overlaid Badge & Micro Community Trust Stat
+            FRAME: Container
+              VECTOR: Icon
+            FRAME: Margin
+              TEXT: "100% Phòng được xác thực" (size: 10)
+          FRAME: Container
+            FRAME: Container
+              FRAME: Stacked student mini avatars
+                FRAME: AB6AXuDPffF1-MoyuDbZr_7uen9M_P62WVmpYEMGSe_ZpawlMZFqIqfB26DJIeCH-jwVzLG5ALJyaDzdraErM-_r4_kS6IE9tiFxPsoqaX8YKaBmrorkDKKjdavcuj320KUDcgSKp9vpggEximZOvXkG5UTwTMvTM54r2UV7Vq88YYbw36YlURXBZ1b6HeD-1N5cY9ohT7_thF4YIweTQAViYFfFU6Izv14cBT8nMAzdThwwke1NC6-XmL84
+                FRAME: Img:margin
+                  FRAME: AB6AXuB9a5GPICvrfK10vScffXc3AG9e5olqMMrzTe_0UJKryn2LZMLQhMGsByfm-MlBQoNjt04GTKWGTQxlAtfjqe3Dy7nLtfxOQEplcFZgWVm1A1SnU9WMACcRWPa_wyw57smCeejea_MuqTvF8RsVdJowlrPNDArU8KeC6xE_WylD7Tb3YMZ5lZNQxV7EsVQni-VGqlwOaAtji6D5jecQGrnSdcU4GfnCLAg6EGp5bbsBHP_KQMbjgrYB
+                FRAME: Img:margin
+                  FRAME: AB6AXuCzX6OP6Kb474TsqcOMkeaha7RFBekYAPG5rIf7Fihe_Tm1kPVXBuGbD5s3xpciifDn-JLxHrQBzqqV9wpe1yaVnS0cOo_GgAPDoFsFXwyX6yhjRmRvx2UOZDFZSNZvwdFd9uCRqg00vBNxGE0qCM_kE94FQpknjH8y95ilRpwqSXjLZJrivQehL3xb5eqAReL5fj4JdEGWwbxlphrgzJVarRlSVzJRfEELJKkzoMwl-I37ifJc8UxF
+              FRAME: Margin
+                TEXT: "+24k sinh viên đã kết nối" (size: 10)
+            FRAME: Overlay+OverlayBlur
+              FRAME: Container
+                VECTOR: Icon
+              FRAME: Container
+                TEXT: "4.9/5" (size: 10)
+        FRAME: Micro Highlights Bento Bar below photo
+          FRAME: Background
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Margin
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Hợp đồng minh bạch" (size: 10)
+                FRAME: Container
+                  TEXT: "Không phí môi giới ẩn" (size: 10)
+          FRAME: Background
+            FRAME: Background
+              FRAME: Container
+                VECTOR: Icon
+            FRAME: Margin
+              FRAME: Container
+                FRAME: Container
+                  TEXT: "Gần trạm xe & trường" (size: 10)
+                FRAME: Container
+                  TEXT: "Bản đồ định vị chuẩn" (size: 10)
+    FRAME: Primary & Secondary Interactive Action CTAs:margin
+      FRAME: Primary & Secondary Interactive Action CTAs
+        FRAME: Button - Primary CTA: Register
+          RECTANGLE: Button - Primary CTA: Register:shadow
+          FRAME: Container
+            TEXT: "Đăng ký tài khoản mới" (size: 14)
+          FRAME: Margin
+            FRAME: Container
+              VECTOR: Icon
+        FRAME: Button - Secondary CTA: Sign In
+          FRAME: Container
+            VECTOR: Icon
+          FRAME: Margin
+            FRAME: Container
+              TEXT: "Tôi đã có tài khoản • Đăng nhập" (size: 14)

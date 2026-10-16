@@ -2,28 +2,45 @@
 <resources>
     <!-- Warm Cream Theme Palette from Figma -->
     <color name="bg_warm_cream">#FDF9F2</color>
+    <color name="bg_warm_cream_light">#FDF9F3</color>
+    <color name="bg_cream_alt">#F1EDE6</color>
     <color name="bg_white">#FFFFFF</color>
     <color name="bg_gray_light">#F7FAFC</color>
     <color name="bg_card">#FFFFFF</color>
 
-    <!-- Primary & Accent Colors -->
+    <!-- Primary & Accent Colors from Figma -->
+    <color name="primary_navy">#0D1C2E</color>
+    <color name="primary_blue">#0D1C2E</color>
     <color name="primary_dark">#040505</color>
     <color name="primary_black">#1A202C</color>
-    <color name="primary_blue">#0D1C2E</color>
-    <color name="accent_red">#E53E3E</color>
+    
+    <!-- Accent Red (Price Tags & Warnings) -->
+    <color name="accent_red">#B51822</color>
+    <color name="accent_red_bright">#E53E3E</color>
     <color name="accent_red_light">#FFDAD7</color>
-    <color name="accent_yellow">#FBBF24</color>
+    <color name="accent_yellow">#F59E0B</color>
 
     <!-- Neutral & Text Colors -->
-    <color name="text_primary">#1A202C</color>
-    <color name="text_secondary">#718096</color>
-    <color name="text_muted">#A0AEC0</color>
-    <color name="border_light">#EDF2F7</color>
+    <color name="text_primary">#040505</color>
+    <color name="text_title">#1A202C</color>
+    <color name="text_secondary">#45474C</color>
+    <color name="text_muted">#718096</color>
+    <color name="text_subtle">#76777C</color>
+    <color name="border_light">#E6E2DB</color>
     <color name="border_subtle">#E2E8F0</color>
+    <color name="divider_color">#E6E2DB</color>
     
     <!-- Role Switcher -->
     <color name="role_active_bg">#040505</color>
     <color name="role_active_text">#FFFFFF</color>
     <color name="role_inactive_bg">#EDF2F7</color>
     <color name="role_inactive_text">#718096</color>
+    
+    <!-- Badges & Accents -->
+    <color name="accent_green">#10B981</color>
+    <color name="accent_green_dark">#005944</color>
+    <color name="accent_green_light">#DCFCE7</color>
+    <color name="accent_blue">#0D1C2E</color>
+    <color name="accent_blue_tint">#EFF4FF</color>
+    <color name="accent_blue_light">#E5EEFF</color>
 </resources>
