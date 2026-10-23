@@ -14,6 +14,7 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import com.avaroom.app.R;
+import com.avaroom.app.data.model.request.RegisterRequest;
 import com.avaroom.app.databinding.FragmentRegisterBinding;
 
 public class RegisterFragment extends Fragment {
@@ -59,7 +60,6 @@ public class RegisterFragment extends Fragment {
             binding.etConfirmPassword.setSelection(binding.etConfirmPassword.getText().length());
         });
 
-        // Thanh đo độ an toàn mật khẩu (Password Strength Bar)
         binding.etPassword.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
@@ -75,11 +75,31 @@ public class RegisterFragment extends Fragment {
 
         // Figma Prototype Connection: Primary CTA Button ==> Xác thực OTP hoặc eKYC CCCD
         binding.btnRegisterSubmit.setOnClickListener(v -> {
-            if (isLandlordRole) {
-                Navigation.findNavController(v).navigate(R.id.action_register_to_ekycFragment);
-            } else {
-                Navigation.findNavController(v).navigate(R.id.action_register_to_otpFragment);
+            String role = isLandlordRole ? "LANDLORD" : "STUDENT";
+
+            String fullName = binding.etFullname.getText().toString().trim();
+            String phone = binding.etPhone.getText().toString().trim();
+            String email = binding.etEmail.getText().toString().trim();
+            String password = binding.etPassword.getText().toString();
+            String confirmPass = binding.etConfirmPassword.getText().toString();
+
+            if (fullName.isEmpty()) {
+                binding.etFullname.setError("Vui lòng nhập họ và tên");
+                return;
             }
+            if (email.isEmpty()) {
+                binding.etEmail.setError("Vui lòng nhập email");
+                return;
+            }
+            if (password.length() < 6) {
+                binding.etPassword.setError("Mật khẩu tối thiểu 6 ký tự");
+                return;
+            }
+            if (!password.equals(confirmPass)) {
+                binding.etConfirmPassword.setError("Mật khẩu xác nhận không khớp");
+                return;
+            }
+            RegisterRequest request = new RegisterRequest(fullName, email, password, phone, role);
         });
 
         // Figma Prototype Connection: Button - Go back & Đăng nhập ==> LoginFragment
