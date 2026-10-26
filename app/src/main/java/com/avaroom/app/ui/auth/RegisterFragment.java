@@ -15,7 +15,14 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import com.avaroom.app.R;
 import com.avaroom.app.data.model.request.RegisterRequest;
+import com.avaroom.app.data.model.response.ApiResponse;
+import com.avaroom.app.data.remote.RetrofitClient;
 import com.avaroom.app.databinding.FragmentRegisterBinding;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import android.widget.Toast;
+
 
 public class RegisterFragment extends Fragment {
 
@@ -100,6 +107,28 @@ public class RegisterFragment extends Fragment {
                 return;
             }
             RegisterRequest request = new RegisterRequest(fullName, email, password, phone, role);
+
+            RetrofitClient.getApiService().register(request).enqueue(new Callback<ApiResponse<Object>>() {
+                @Override
+                public void onResponse(@NonNull Call<ApiResponse<Object>> call, @NonNull Response<ApiResponse<Object>> response) {
+                    binding.btnRegisterSubmit.setEnabled(true);
+                    if (response.isSuccessful() && response.body() != null && response.body().isSuccess()) {
+                        Toast.makeText(requireContext(), "Mã OTP đã được gửi về email của bạn!", Toast.LENGTH_SHORT).show();
+                        // Đóng gói email truyền sang OtpFragment
+                        Bundle bundle = new Bundle();
+                        bundle.putString("EMAIL_KEY", email);
+                        Navigation.findNavController(v).navigate(R.id.action_register_to_otpFragment, bundle);
+                    } else {
+                        String errorMsg = response.body() != null ? response.body().getMessage() : "Đăng ký thất bại";
+                        Toast.makeText(requireContext(), errorMsg, Toast.LENGTH_SHORT).show();
+                    }
+                }
+                @Override
+                public void onFailure(@NonNull Call<ApiResponse<Object>> call, @NonNull Throwable t) {
+                    binding.btnRegisterSubmit.setEnabled(true);
+                    Toast.makeText(requireContext(), "Lỗi kết nối máy chủ: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            });
         });
 
         // Figma Prototype Connection: Button - Go back & Đăng nhập ==> LoginFragment

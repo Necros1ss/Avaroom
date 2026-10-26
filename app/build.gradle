@@ -2,6 +2,17 @@ plugins {
     id 'com.android.application'
 }
 
+def envFile = rootProject.file("scripts/.env")
+def envProps = new Properties()
+
+if (envFile.exists()) {
+    envFile.withReader('UTF-8') { reader ->
+        envProps.load(reader)
+    }
+}
+def vpsHost = envProps.getProperty("VPS_HOST", "card.nekos.work")
+def apiPort = envProps.getProperty("API_PORT", "3000")
+
 android {
     namespace 'com.avaroom.app'
     compileSdk 34
@@ -14,6 +25,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "BASE_URL", "\"http://${vpsHost}/\""
+
     }
 
     buildTypes {
@@ -28,6 +42,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
 
     sourceSets {
