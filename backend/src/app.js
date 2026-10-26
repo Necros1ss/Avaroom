@@ -9,6 +9,7 @@ const { errorHandler, notFound } = require('./middleware/errorHandler');
 
 // Routes
 const authRoutes = require('./routes/auth.routes');
+const roomRoutes = require('./routes/room.routes');
 
 const app = express();
 
@@ -38,6 +39,7 @@ app.get('/api/health', (req, res) => {
 
 // Mount Routes (Chỉ giữ Auth & JWT)
 app.use('/api/auth', authRoutes);
+app.use('/api/rooms', roomRoutes);
 
 // Error handlers
 app.use(notFound);
@@ -56,6 +58,8 @@ const startServer = async () => {
       console.log(`📍 URL: http://localhost:${PORT}`);
       console.log(`🔑 Auth Endpoint: http://localhost:${PORT}/api/auth`);
       console.log(`❤️  Health: http://localhost:${PORT}/api/health`);
+      console.log(`🏠 Room List: http://localhost:${PORT}/api/rooms`);
+      console.log(`🏠 Room Detail: http://localhost:${PORT}/api/rooms/:id`);
       console.log('🛡️  ═══════════════════════════════════════════════');
       console.log('');
     });
