@@ -34,10 +34,12 @@ const connectDB = async () => {
     await sequelize.authenticate();
     console.log(`✅ Kết nối PostgreSQL thành công tới [${env.DB_HOST}:${env.DB_PORT}/${env.DB_NAME}]`);
 
-    if (env.NODE_ENV === 'development') {
-      await sequelize.sync({ alter: true });
-      console.log('✅ Đã đồng bộ cấu trúc bảng PostgreSQL (Sequelize sync)');
-    }
+    // Nạp đầy đủ các models để Sequelize nhận diện toàn bộ bảng trước khi sync
+    require('../models');
+
+    // Tự động đồng bộ / tạo bảng nếu chưa có trên cả môi trường Dev lẫn Production
+    await sequelize.sync({ alter: env.NODE_ENV === 'development' });
+    console.log('✅ Đã đồng bộ cấu trúc bảng PostgreSQL (Sequelize sync)');
   } catch (error) {
     console.error('❌ Không thể kết nối cơ sở dữ liệu PostgreSQL:', error.message);
     process.exit(1);

@@ -8,6 +8,9 @@ const {
   getMe,
   registerValidation,
   loginValidation,
+  forgotPassword,  
+  verifyOtp,       
+  resetPassword,
 } = require('../controllers/auth.controller');
 const { auth } = require('../middleware/auth.middleware');
 const { loginLimiter, registerLimiter } = require('../middleware/rateLimiter');
@@ -20,5 +23,9 @@ router.post('/refresh-token', refreshToken);
 // Protected endpoints (yêu cầu JWT)
 router.get('/me', auth, getMe);
 router.post('/logout', auth, logout);
+
+router.post('/forgot-password', loginLimiter, forgotPassword);
+router.post('/verify-otp', verifyOtp);
+router.post('/reset-password', resetPassword);
 
 module.exports = router;

@@ -6,11 +6,14 @@ const env = require('../config/env');
 const { sequelize } = require('../config/database');
 const StudentUser = require('../models/StudentUser');
 const LandlordUser = require('../models/LandlordUser');
+const PasswordResetOtp = require('../models/PasswordResetOTP');
+const { sendOtpMail } = require('../services/mail.service');
 
 /**
  * Đăng ký tài khoản
  * POST /api/auth/register
  */
+
 const register = async (req, res, next) => {
   const transaction = await sequelize.transaction();
   try {
@@ -292,6 +295,115 @@ const loginValidation = [
   body('password').notEmpty().withMessage('Vui lòng nhập mật khẩu'),
 ];
 
+const forgotPassword = async (req, res, next) => {
+  try {
+    const { email } = req.body;
+    if (!email) {
+      return res.status(400).json({ success: false, message: 'Vui lòng cung cấp email' });
+    }
+    const user = await User.findOne({ where: { email } });
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'Email này chưa được đăng ký tài khoản' });
+    }
+    // Sinh mã OTP ngẫu nhiên 6 chữ số (100000 - 999999)
+    const otpCode = Math.floor(100000 + Math.random() * 900000).toString();
+    const expiresAt = new Date(Date.now() + 10 * 60 * 1000); // 10 phút
+    // Vô hiệu hoá các OTP cũ của email này nếu còn tồn tại
+    await PasswordResetOtp.update({ is_used: true }, { where: { email, is_used: false } });
+    // Lưu OTP mới
+    await PasswordResetOtp.create({
+      email,
+      otp_code: otpCode,
+      expires_at: expiresAt,
+      is_used: false,
+    });
+    // Gửi email
+    await sendOtpMail(email, otpCode);
+    res.json({
+      success: true,
+      message: 'Mã xác thực OTP đã được gửi đến email của bạn',
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+const verifyOtp = async (req, res, next) => {
+  try {
+    const { email, otp } = req.body;
+    if (!email || !otp) {
+      return res.status(400).json({ success: false, message: 'Vui lòng nhập đầy đủ email và mã OTP' });
+    }
+    const record = await PasswordResetOtp.findOne({
+      where: {
+        email,
+        otp_code: otp,
+        is_used: false,
+      },
+      order: [['created_at', 'DESC']],
+    });
+    if (!record || new Date() > new Date(record.expires_at)) {
+      return res.status(400).json({
+        success: false,
+        message: 'Mã OTP không chính xác hoặc đã hết hạn',
+      });
+    }
+    // Sinh reset_token ngẫu nhiên an toàn cho bước 3
+    const resetToken = crypto.randomBytes(32).toString('hex');
+    await record.update({ reset_token: resetToken });
+    res.json({
+      success: true,
+      message: 'Xác thực OTP thành công',
+      data: {
+        reset_token: resetToken,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+const resetPassword = async (req, res, next) => {
+  try {
+    const { reset_token, new_password } = req.body;
+    if (!reset_token || !new_password) {
+      return res.status(400).json({ success: false, message: 'Thiếu reset_token hoặc mật khẩu mới' });
+    }
+    if (new_password.length < 6) {
+      return res.status(400).json({ success: false, message: 'Mật khẩu mới tối thiểu phải có 6 ký tự' });
+    }
+    const record = await PasswordResetOtp.findOne({
+      where: {
+        reset_token,
+        is_used: false,
+      },
+    });
+    if (!record || new Date() > new Date(record.expires_at)) {
+      return res.status(400).json({
+        success: false,
+        message: 'Phiên đặt lại mật khẩu không hợp lệ hoặc đã hết hạn',
+      });
+    }
+    const user = await User.findOne({ where: { email: record.email } });
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'Không tìm thấy người dùng' });
+    }
+    // Cập nhật mật khẩu mới (hook beforeSave trong User.js sẽ tự động băm)
+    user.password_hash = new_password;
+    await user.save();
+    // Đánh dấu mã OTP đã sử dụng xong
+    await record.update({ is_used: true });
+    // Thu hồi toàn bộ Refresh Token cũ để ép đăng nhập lại trên mọi thiết bị
+    await RefreshToken.update({ is_revoked: true }, { where: { user_id: user.id } });
+    res.json({
+      success: true,
+      message: 'Đặt lại mật khẩu thành công. Vui lòng đăng nhập lại.',
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   register,
   login,
@@ -300,4 +412,7 @@ module.exports = {
   getMe,
   registerValidation,
   loginValidation,
+  forgotPassword, 
+  verifyOtp,      
+  resetPassword,
 };

@@ -18,4 +18,10 @@ module.exports = {
   JWT_SECRET: process.env.JWT_SECRET || 'avaroom-jwt-secret-key-32-chars-min',
   JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || '1d',
   REFRESH_TOKEN_EXPIRES_IN: process.env.REFRESH_TOKEN_EXPIRES_IN || '7d',
+
+  EMAIL_HOST: process.env.EMAIL_HOST || 'smtp.gmail.com',
+  EMAIL_PORT: parseInt(process.env.EMAIL_PORT, 10) || 587,
+  EMAIL_USER: process.env.EMAIL_USER || '',
+  EMAIL_PASS: process.env.EMAIL_PASS || '',
+  EMAIL_FROM: process.env.EMAIL_FROM || 'Avaroom Support <no-reply@avaroom.vn>',
 };

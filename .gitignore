@@ -48,6 +48,11 @@ Thumbs.db
 
 # Figma extraction temporary / dump files (optional/local scripts & dumps)
 figma_full.json
+
+# Environment variables
+.env
+*.env
+scripts/.env
 # Uncomment below if you also want to ignore other temporary JSON dumps:
 # analyzed_screens.json
 # all_screens.json
