@@ -88,6 +88,23 @@ const register = async (req, res, next) => {
       expires_at: expiresAt,
     }, { transaction });
 
+    const otpCode = Math.floor(100000 + Math.random() * 900000).toString();
+    const expiresAtOtp = new Date(Date.now() + 10 * 60 * 1000); // 10 phút
+
+    await PasswordResetOtp.update(
+       { is_used: true },
+       { where: { email, is_used: false }, transaction }
+    );
+
+    await PasswordResetOtp.create({
+      email,
+      otp_code: otpCode,
+      expires_at: expiresAtOtp,
+      is_used: false,
+    }, { transaction });
+    // Gửi email chứa OTP
+    await sendOtpMail(email, otpCode);
+
     await transaction.commit();
 
 

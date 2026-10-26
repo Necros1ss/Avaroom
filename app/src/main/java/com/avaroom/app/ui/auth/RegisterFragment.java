@@ -120,6 +120,13 @@ public class RegisterFragment extends Fragment {
                         Navigation.findNavController(v).navigate(R.id.action_register_to_otpFragment, bundle);
                     } else {
                         String errorMsg = response.body() != null ? response.body().getMessage() : "Đăng ký thất bại";
+                        try {
+                            if (response.errorBody() != null) {
+                                String errJson = response.errorBody().string();
+                                org.json.JSONObject obj = new org.json.JSONObject(errJson);
+                                if (obj.has("message")) errorMsg = obj.getString("message");
+                            }
+                        } catch (Exception ignored) {}
                         Toast.makeText(requireContext(), errorMsg, Toast.LENGTH_SHORT).show();
                     }
                 }
