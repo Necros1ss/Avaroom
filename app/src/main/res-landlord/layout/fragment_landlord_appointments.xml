@@ -56,125 +56,136 @@
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Calendar strip from Figma (T4 28, T5 29 Hôm nay, T6 30) -->
-    <LinearLayout
-        android:id="@+id/layout_calendar_strip"
+    <!-- Horizontal Scrolling Calendar Strip (Monday to Sunday) -->
+    <HorizontalScrollView
+        android:id="@+id/scroll_calendar_strip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="12dp"
-        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@id/layout_header">
 
-        <!-- Day 1 -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="6dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_chip_pill"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingVertical="10dp">
+            android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- T2 -->
+            <LinearLayout
+                android:id="@+id/day_t2"
+                android:layout_width="64dp"
                 android:layout_height="wrap_content"
-                android:text="T4"
-                android:textColor="@color/text_muted"
-                android:textSize="11sp" />
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_chip_pill"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="T2" android:textColor="@color/text_muted" android:textSize="11sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="26" android:textColor="@color/primary_black" android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 lịch" android:textColor="@color/text_muted" android:textSize="9sp"/>
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- T3 -->
+            <LinearLayout
+                android:id="@+id/day_t3"
+                android:layout_width="64dp"
                 android:layout_height="wrap_content"
-                android:text="28"
-                android:textColor="@color/primary_black"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_chip_pill"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="T3" android:textColor="@color/text_muted" android:textSize="11sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="27" android:textColor="@color/primary_black" android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 lịch" android:textColor="@color/text_muted" android:textSize="9sp"/>
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- T4 -->
+            <LinearLayout
+                android:id="@+id/day_t4"
+                android:layout_width="64dp"
                 android:layout_height="wrap_content"
-                android:text="Hôm qua"
-                android:textColor="@color/text_muted"
-                android:textSize="9sp" />
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_chip_pill"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="T4" android:textColor="@color/text_muted" android:textSize="11sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="28" android:textColor="@color/primary_black" android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 lịch" android:textColor="@color/text_muted" android:textSize="9sp"/>
+            </LinearLayout>
+
+            <!-- T5 (Active Today) -->
+            <LinearLayout
+                android:id="@+id/day_t5"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_button_primary"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="T5" android:textColor="#CBD5E1" android:textSize="11sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="29" android:textColor="@color/bg_white" android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hôm nay" android:textColor="@color/accent_yellow" android:textSize="9sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- T6 -->
+            <LinearLayout
+                android:id="@+id/day_t6"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_chip_pill"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="T6" android:textColor="@color/text_muted" android:textSize="11sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" android:textColor="@color/primary_black" android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 lịch" android:textColor="@color/text_muted" android:textSize="9sp"/>
+            </LinearLayout>
+
+            <!-- T7 -->
+            <LinearLayout
+                android:id="@+id/day_t7"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_chip_pill"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="T7" android:textColor="@color/text_muted" android:textSize="11sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="31" android:textColor="@color/primary_black" android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 lịch" android:textColor="@color/text_muted" android:textSize="9sp"/>
+            </LinearLayout>
+
+            <!-- CN -->
+            <LinearLayout
+                android:id="@+id/day_cn"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_chip_pill"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="10dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CN" android:textColor="@color/text_muted" android:textSize="11sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01" android:textColor="@color/primary_black" android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 lịch" android:textColor="@color/text_muted" android:textSize="9sp"/>
+            </LinearLayout>
+
         </LinearLayout>
+    </HorizontalScrollView>
 
-        <!-- Day 2 (Active Today) -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="6dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_button_primary"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingVertical="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="T5"
-                android:textColor="#CBD5E1"
-                android:textSize="11sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="29"
-                android:textColor="@color/bg_white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3 lịch hẹn"
-                android:textColor="@color/accent_yellow"
-                android:textSize="9sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Day 3 -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/bg_chip_pill"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingVertical="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="T6"
-                android:textColor="@color/text_muted"
-                android:textSize="11sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="30"
-                android:textColor="@color/primary_black"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1 lịch"
-                android:textColor="@color/text_muted"
-                android:textSize="9sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <ScrollView
+    <!-- Vertical Scrolling Booked Calendar / Appointments List -->
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layout_calendar_strip">
+        app:layout_constraintTop_toBottomOf="@id/scroll_calendar_strip">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -183,7 +194,7 @@
             android:paddingHorizontal="16dp"
             android:paddingBottom="24dp">
 
-            <!-- Appointment Card from Figma -->
+            <!-- Appointment Card -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_landlord_appt_1"
                 android:layout_width="match_parent"
@@ -221,6 +232,7 @@
                             android:layout_weight="1" />
 
                         <TextView
+                            android:id="@+id/tv_appt_status"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Chờ xác nhận (còn 01:58:42)"
@@ -233,7 +245,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="16:30 • Chiều mai, 13/10/2026"
+                        android:text="16:30 • Chiều nay, 29/10/2026"
                         android:textColor="@color/primary_black"
                         android:textSize="17sp"
                         android:textStyle="bold" />
@@ -325,7 +337,40 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Free Space / Empty State View (shown when no appointments on selected day) -->
+            <LinearLayout
+                android:id="@+id/layout_empty_appointments"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📭"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Không có lịch hẹn nào vào ngày này"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Vui lòng chọn ngày khác trên thanh lịch phía trên"
+                    android:textColor="@color/text_muted"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

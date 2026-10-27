@@ -14,9 +14,9 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Avaroom">
 
-        <!-- Entry Point: Onboarding & Auth Activity -->
+        <!-- Landlord Flow Main Activity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.landlord.LandlordMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,15 +24,18 @@
             </intent-filter>
         </activity>
 
+
+        <!-- Entry Point: Onboarding & Auth Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+
         <!-- Student Flow Main Activity -->
         <activity
             android:name=".ui.student.StudentMainActivity"
             android:exported="true" />
 
-        <!-- Landlord Flow Main Activity -->
-        <activity
-            android:name=".ui.landlord.LandlordMainActivity"
-            android:exported="true" />
 
 
     </application>

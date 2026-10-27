@@ -8,11 +8,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import com.avaroom.app.databinding.FragmentInvoicePreviewBinding;
 
-/**
- * Figma Frame: 188:1761 - Xem trước Hóa đơn PDF & VietQR
- */
 public class InvoicePreviewFragment extends Fragment {
 
     private FragmentInvoicePreviewBinding binding;
@@ -28,17 +26,11 @@ public class InvoicePreviewFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnBack.setOnClickListener(v -> {
-            if (getActivity() != null) {
-                getActivity().onBackPressed();
-            }
-        });
+        binding.btnBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
 
         binding.btnSendBill.setOnClickListener(v -> {
             Toast.makeText(getContext(), "Đã gửi Hóa đơn kèm VietQR thành công đến khách thuê!", Toast.LENGTH_LONG).show();
-            if (getActivity() != null) {
-                getActivity().onBackPressed();
-            }
+            Navigation.findNavController(v).navigateUp();
         });
     }
 

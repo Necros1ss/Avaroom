@@ -12,9 +12,6 @@ import androidx.navigation.Navigation;
 import com.avaroom.app.R;
 import com.avaroom.app.databinding.FragmentEscrowContractBinding;
 
-/**
- * Figma Frame: 184:1901 - Quản lý Hợp đồng & Tiền cọc Escrow - Chủ trọ
- */
 public class EscrowContractFragment extends Fragment {
 
     private FragmentEscrowContractBinding binding;
@@ -30,11 +27,7 @@ public class EscrowContractFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnBack.setOnClickListener(v -> {
-            if (getActivity() != null) {
-                getActivity().onBackPressed();
-            }
-        });
+        binding.btnBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
 
         binding.btnViewPdfContract.setOnClickListener(v -> {
             Toast.makeText(getContext(), "Đang mở Hợp đồng điện tử bảo chứng BIDV...", Toast.LENGTH_SHORT).show();

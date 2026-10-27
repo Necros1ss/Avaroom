@@ -212,7 +212,7 @@
                 android:textColorHint="@color/text_muted"
                 android:textSize="13sp" />
 
-            <!-- Filter tabs -->
+            <!-- Filter tabs (Switchable & Horizontally Scrollable) -->
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -225,17 +225,19 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/tab_tat_ca"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_button_primary"
                         android:paddingHorizontal="14dp"
                         android:paddingVertical="7dp"
-                        android:text="Tất cả (12)"
+                        android:text="Tất cả (3)"
                         android:textColor="@color/bg_white"
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tab_con_trong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -247,232 +249,434 @@
                         android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/tab_da_coc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:background="@drawable/bg_chip_pill"
                         android:paddingHorizontal="14dp"
                         android:paddingVertical="7dp"
-                        android:text="Đã cọc (1)"
+                        android:text="Đã cọc (0)"
                         android:textColor="@color/text_primary"
                         android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/tab_cho_duyet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:background="@drawable/bg_chip_pill"
                         android:paddingHorizontal="14dp"
                         android:paddingVertical="7dp"
-                        android:text="Chờ duyệt (1)"
+                        android:text="Chờ duyệt (0)"
                         android:textColor="@color/text_primary"
                         android:textSize="12sp" />
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <!-- Room Item 1: AVR-90412 -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_landlord_post_1"
+            <!-- Vertical Scrolling Room List -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="1dp"
-                app:cardBackgroundColor="@color/bg_white">
+                android:orientation="vertical">
 
-                <LinearLayout
+                <!-- Room Item 1: AVR-90412 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_landlord_post_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="@color/bg_white"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="1dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#AVR-90412"
+                                android:textColor="@color/text_primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/bg_chip_pill"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="2dp"
+                                android:text="Đang hiển thị • Còn trống"
+                                android:textColor="@color/accent_red"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="28m²"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="12sp" />
+                        </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="#AVR-90412"
+                            android:layout_marginTop="8dp"
+                            android:text="Studio ban công thoáng mát gần ĐH Bách Khoa"
                             android:textColor="@color/text_primary"
-                            android:textSize="13sp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:background="@drawable/bg_chip_pill"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="2dp"
-                            android:text="Đang hiển thị • Còn trống"
-                            android:textColor="@color/accent_red"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="1dp"
-                            android:layout_weight="1" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="28m²"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="12sp" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Studio ban công thoáng mát gần ĐH Bách Khoa"
-                        android:textColor="@color/text_primary"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="📍 Ngõ 30 Tạ Quang Bửu, Hai Bà Trưng"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="12sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="3.200.000₫"
-                            android:textColor="@color/accent_red"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text=" / tháng"
+                            android:layout_marginTop="4dp"
+                            android:text="📍 Ngõ 30 Tạ Quang Bửu, Hai Bà Trưng"
                             android:textColor="@color/text_secondary"
                             android:textSize="12sp" />
 
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="1dp"
-                            android:layout_weight="1" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
 
-                        <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/btn_edit_post_1"
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3.200.000₫"
+                                android:textColor="@color/accent_red"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" / tháng"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_delete_post_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:layout_marginEnd="6dp"
+                                android:background="@drawable/bg_chip_pill"
+                                android:minWidth="0dp"
+                                android:minHeight="0dp"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="0dp"
+                                android:text="✕ Xóa"
+                                android:textAllCaps="false"
+                                android:textColor="@color/accent_red"
+                                android:textSize="11sp" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_edit_post_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="36dp"
+                                android:background="@drawable/bg_button_primary"
+                                android:paddingHorizontal="14dp"
+                                android:text="Chi tiết / Sửa tin"
+                                android:textAllCaps="false"
+                                android:textColor="@color/bg_white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="36dp"
-                            android:background="@drawable/bg_button_primary"
-                            android:paddingHorizontal="14dp"
-                            android:text="Chi tiết / Sửa tin"
-                            android:textAllCaps="false"
-                            android:textColor="@color/bg_white"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="🔔 3 khách hẹn xem phòng mới hôm nay"
+                            android:textColor="@color/primary_dark"
                             android:textSize="12sp"
                             android:textStyle="bold" />
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="🔔 3 khách hẹn xem phòng mới hôm nay"
-                        android:textColor="@color/primary_dark"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Room Item 2: AVR-89210 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="20dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="1dp"
-                app:cardBackgroundColor="@color/bg_white">
-
-                <LinearLayout
+                <!-- Room Item 2: AVR-89210 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_landlord_post_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="@color/bg_white"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="1dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#AVR-89210"
+                                android:textColor="@color/text_primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/bg_chip_pill"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="2dp"
+                                android:text="Đã có khách thuê"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="22m²"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="12sp" />
+                        </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="#AVR-89210"
+                            android:layout_marginTop="8dp"
+                            android:text="Phòng gác lửng cao ráo ban công riêng"
                             android:textColor="@color/text_primary"
-                            android:textSize="13sp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:background="@drawable/bg_chip_pill"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="2dp"
-                            android:text="Đã có khách thuê"
+                            android:layout_marginTop="4dp"
+                            android:text="Sinh viên ĐH Bách Khoa thuê • 2.800.000₫/tháng"
                             android:textColor="@color/text_secondary"
-                            android:textSize="10sp" />
+                            android:textSize="12sp" />
 
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="1dp"
-                            android:layout_weight="1" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="⏳ Hạn hợp đồng: 15/09/2026 (Còn 18 tháng)"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="11sp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_delete_post_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:background="@drawable/bg_chip_pill"
+                                android:minWidth="0dp"
+                                android:minHeight="0dp"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="0dp"
+                                android:text="✕ Xóa"
+                                android:textAllCaps="false"
+                                android:textColor="@color/accent_red"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Room Item 3 (Newly Uploaded News / Post from Step 4) -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_landlord_post_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/bg_white"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="#AVR-99924"
+                                android:textColor="@color/text_primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/bg_chip_pill"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="2dp"
+                                android:text="Mới đăng • Còn trống"
+                                android:textColor="@color/accent_green"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="25m²"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="12sp" />
+                        </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="22m²"
+                            android:layout_marginTop="8dp"
+                            android:text="Phòng trọ cao cấp Full nội thất Cầu Giấy"
+                            android:textColor="@color/text_primary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="📍 Số 125 Đường Xuân Thủy, Cầu Giấy, Hà Nội"
                             android:textColor="@color/text_secondary"
                             android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3.500.000₫"
+                                android:textColor="@color/accent_red"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" / tháng"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="12sp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_delete_post_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:background="@drawable/bg_chip_pill"
+                                android:minWidth="0dp"
+                                android:minHeight="0dp"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="0dp"
+                                android:text="✕ Xóa"
+                                android:textAllCaps="false"
+                                android:textColor="@color/accent_red"
+                                android:textSize="11sp" />
+                        </LinearLayout>
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Free Space / Empty State View (shown when tab has no posts) -->
+                <LinearLayout
+                    android:id="@+id/layout_empty_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📭"
+                        android:textSize="36sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Phòng gác lửng cao ráo ban công riêng"
-                        android:textColor="@color/text_primary"
-                        android:textSize="16sp"
+                        android:text="Không có phòng nào trong danh mục này"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Sinh viên ĐH Bách Khoa thuê • 2.800.000₫/tháng"
-                        android:textColor="@color/text_secondary"
+                        android:text="Chọn danh mục khác hoặc bấm '+ Đăng tin' để thêm phòng"
+                        android:textColor="@color/text_muted"
                         android:textSize="12sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:text="⏳ Hạn hợp đồng: 15/09/2026 (Còn 18 tháng)"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="11sp" />
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
