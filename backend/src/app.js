@@ -10,6 +10,7 @@ const { errorHandler, notFound } = require('./middleware/errorHandler');
 // Routes
 const authRoutes = require('./routes/auth.routes');
 const roomRoutes = require('./routes/room.routes');
+const studentRoutes = require('./routes/student.routes');
 
 const app = express();
 
@@ -40,6 +41,7 @@ app.get('/api/health', (req, res) => {
 // Mount Routes (Chỉ giữ Auth & JWT)
 app.use('/api/auth', authRoutes);
 app.use('/api/rooms', roomRoutes);
+app.use('/api/student', studentRoutes);
 
 // Error handlers
 app.use(notFound);
@@ -60,6 +62,9 @@ const startServer = async () => {
       console.log(`❤️  Health: http://localhost:${PORT}/api/health`);
       console.log(`🏠 Room List: http://localhost:${PORT}/api/rooms`);
       console.log(`🏠 Room Detail: http://localhost:${PORT}/api/rooms/:id`);
+      console.log(`❤️ Saved Rooms: http://localhost:${PORT}/api/student/saved-rooms`);
+      console.log(`❤️ Save Room: POST http://localhost:${PORT}/api/student/saved-rooms/:roomId`);
+      console.log(`❤️ Remove Saved Room: DELETE http://localhost:${PORT}/api/student/saved-rooms/:roomId`);
       console.log('🛡️  ═══════════════════════════════════════════════');
       console.log('');
     });
