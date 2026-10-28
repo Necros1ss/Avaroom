@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Screen paddings & margins -->
+    <dimen name="screen_padding_horizontal">24dp</dimen>
+    <dimen name="screen_padding_vertical">20dp</dimen>
+    <dimen name="screen_padding_bottom_nav">60dp</dimen>
+    <dimen name="screen_padding_bottom_fab">80dp</dimen>
+
+    <!-- Card & Component Corners -->
+    <dimen name="card_corner_radius_lg">24dp</dimen>
+    <dimen name="card_corner_radius_md">16dp</dimen>
+    <dimen name="card_corner_radius_sm">12dp</dimen>
+    <dimen name="chip_corner_radius">100dp</dimen>
+
+    <!-- Component Dimensions -->
+    <dimen name="button_height_primary">54dp</dimen>
+    <dimen name="button_height_sm">40dp</dimen>
+    <dimen name="input_field_height">52dp</dimen>
+    <dimen name="avatar_size_lg">56dp</dimen>
+    <dimen name="avatar_size_md">40dp</dimen>
+    <dimen name="icon_size_standard">24dp</dimen>
+</resources>

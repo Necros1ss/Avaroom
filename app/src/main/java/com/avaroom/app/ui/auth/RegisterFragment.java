@@ -23,7 +23,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import android.widget.Toast;
 
-
 public class RegisterFragment extends Fragment {
 
     private FragmentRegisterBinding binding;
@@ -42,7 +41,7 @@ public class RegisterFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Figma Prototype Connection: Role switcher giữa 2 Card Sinh viên & Chủ trọ
+        // Role switcher giữa 2 Card Sinh viên & Chủ trọ
         binding.btnRoleStudent.setOnClickListener(v -> setRole(false));
         binding.btnRoleLandlord.setOnClickListener(v -> setRole(true));
 
@@ -80,7 +79,6 @@ public class RegisterFragment extends Fragment {
             public void afterTextChanged(Editable s) {}
         });
 
-        // Figma Prototype Connection: Primary CTA Button ==> Xác thực OTP hoặc eKYC CCCD
         binding.btnRegisterSubmit.setOnClickListener(v -> {
             String role = isLandlordRole ? "LANDLORD" : "STUDENT";
 
@@ -106,6 +104,7 @@ public class RegisterFragment extends Fragment {
                 binding.etConfirmPassword.setError("Mật khẩu xác nhận không khớp");
                 return;
             }
+            binding.btnRegisterSubmit.setEnabled(false);
             RegisterRequest request = new RegisterRequest(fullName, email, password, phone, role);
 
             RetrofitClient.getApiService().register(request).enqueue(new Callback<ApiResponse<Object>>() {
@@ -114,9 +113,11 @@ public class RegisterFragment extends Fragment {
                     binding.btnRegisterSubmit.setEnabled(true);
                     if (response.isSuccessful() && response.body() != null && response.body().isSuccess()) {
                         Toast.makeText(requireContext(), "Mã OTP đã được gửi về email của bạn!", Toast.LENGTH_SHORT).show();
-                        // Đóng gói email truyền sang OtpFragment
+                        // Đóng gói email, role và flow type truyền sang OtpFragment
                         Bundle bundle = new Bundle();
                         bundle.putString("EMAIL_KEY", email);
+                        bundle.putString("OTP_FLOW", "REGISTER");
+                        bundle.putString("ROLE_KEY", role);
                         Navigation.findNavController(v).navigate(R.id.action_register_to_otpFragment, bundle);
                     } else {
                         String errorMsg = response.body() != null ? response.body().getMessage() : "Đăng ký thất bại";
@@ -138,7 +139,7 @@ public class RegisterFragment extends Fragment {
             });
         });
 
-        // Figma Prototype Connection: Button - Go back & Đăng nhập ==> LoginFragment
+        // Go back & Đăng nhập ==> LoginFragment
         binding.btnBackRegister.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
         binding.btnGoLogin.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_register_to_loginFragment);

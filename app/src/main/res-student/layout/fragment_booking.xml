@@ -251,7 +251,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/bg_button_primary"
                     android:gravity="center"
-                    android:text="16:30 🔥"
+                    android:text="16:30"
                     android:textColor="@color/bg_white"
                     android:textSize="14sp"
                     android:textStyle="bold" />

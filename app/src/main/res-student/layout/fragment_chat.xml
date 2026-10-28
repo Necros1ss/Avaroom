@@ -55,17 +55,21 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <TextView
+        <FrameLayout
             android:id="@+id/btn_call_landlord"
             android:layout_width="38dp"
             android:layout_height="38dp"
             android:background="@drawable/bg_chip_pill"
-            android:gravity="center"
-            android:text="📞"
-            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_phone_call" />
+        </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Verified Landlord Identity Bar -->
@@ -80,13 +84,10 @@
         android:paddingBottom="12dp"
         app:layout_constraintTop_toBottomOf="@id/layout_header">
 
-        <TextView
+        <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/bg_chip_pill"
-            android:gravity="center"
-            android:text="👩‍💼"
-            android:textSize="20sp" />
+            android:src="@drawable/ic_user_avatar_circle" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -521,21 +522,19 @@
         android:paddingHorizontal="12dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <TextView
+        <ImageView
             android:id="@+id/btn_attach_image"
             android:layout_width="38dp"
             android:layout_height="38dp"
-            android:gravity="center"
-            android:text="📷"
-            android:textSize="18sp" />
+            android:padding="8dp"
+            android:src="@drawable/ic_camera" />
 
-        <TextView
+        <ImageView
             android:id="@+id/btn_share_location"
             android:layout_width="38dp"
             android:layout_height="38dp"
-            android:gravity="center"
-            android:text="📍"
-            android:textSize="18sp" />
+            android:padding="8dp"
+            android:src="@drawable/ic_attachment" />
 
         <EditText
             android:id="@+id/et_chat_input"
@@ -550,16 +549,18 @@
             android:textColorHint="@color/text_muted"
             android:textSize="13sp" />
 
-        <TextView
+        <FrameLayout
             android:id="@+id/btn_send_chat"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/bg_button_primary"
-            android:gravity="center"
-            android:text="➔"
-            android:textColor="@color/bg_white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:background="@drawable/bg_button_primary">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_send_message" />
+        </FrameLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

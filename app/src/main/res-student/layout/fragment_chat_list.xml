@@ -34,7 +34,7 @@
             android:background="@drawable/bg_chip_pill"
             android:paddingHorizontal="10dp"
             android:paddingVertical="5dp"
-            android:text="🛡️ Escrow Bảo vệ"
+            android:text="Escrow Bảo vệ"
             android:textColor="@color/accent_green"
             android:textSize="11sp"
             android:textStyle="bold"
@@ -62,11 +62,10 @@
             android:orientation="horizontal"
             android:paddingHorizontal="12dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="🔍"
-                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_search" />
 
             <EditText
                 android:id="@+id/et_search_chat"
@@ -153,13 +152,10 @@
                     android:padding="14dp">
 
                     <!-- Avatar -->
-                    <TextView
+                    <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/bg_chip_pill"
-                        android:gravity="center"
-                        android:text="👩‍💼"
-                        android:textSize="22sp" />
+                        android:src="@drawable/ic_user_avatar_circle" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -242,13 +238,10 @@
                     android:padding="14dp">
 
                     <!-- Avatar -->
-                    <TextView
+                    <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/bg_chip_pill"
-                        android:gravity="center"
-                        android:text="👨‍💼"
-                        android:textSize="22sp" />
+                        android:src="@drawable/ic_user_avatar_circle" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -319,13 +312,13 @@
                     android:orientation="horizontal"
                     android:padding="14dp">
 
-                    <TextView
+                    <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
+                        android:padding="10dp"
                         android:background="@drawable/bg_chip_pill"
-                        android:gravity="center"
-                        android:text="🛡️"
-                        android:textSize="22sp" />
+                        android:src="@drawable/ic_shield"
+                        app:tint="@color/primary_dark" />
 
                     <LinearLayout
                         android:layout_width="0dp"

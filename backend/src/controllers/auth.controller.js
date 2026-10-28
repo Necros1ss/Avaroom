@@ -365,14 +365,48 @@ const verifyOtp = async (req, res, next) => {
         message: 'Mã OTP không chính xác hoặc đã hết hạn',
       });
     }
-    // Sinh reset_token ngẫu nhiên an toàn cho bước 3
+    // Sinh reset_token ngẫu nhiên an toàn cho luồng Quên mật khẩu
     const resetToken = crypto.randomBytes(32).toString('hex');
     await record.update({ reset_token: resetToken });
+
+    // Lấy thông tin user và cấp token nếu là xác thực sau Đăng ký
+    const user = await User.findOne({ where: { email } });
+    let tokens = null;
+    if (user) {
+      if (user.status !== 'ACTIVE') {
+        user.status = 'ACTIVE';
+        await user.save();
+      }
+      const accessToken = user.generateAccessToken();
+      const refreshTokenString = crypto.randomBytes(40).toString('hex');
+      const expiresAt = new Date();
+      expiresAt.setDate(expiresAt.getDate() + 7);
+      await RefreshToken.create({
+        user_id: user.id,
+        token: refreshTokenString,
+        device_info: req.headers['user-agent'] || 'Mobile App',
+        expires_at: expiresAt,
+      });
+      tokens = {
+        access_token: accessToken,
+        refresh_token: refreshTokenString,
+        token_type: 'Bearer',
+        expires_in: env.JWT_EXPIRES_IN,
+      };
+    }
+
     res.json({
       success: true,
       message: 'Xác thực OTP thành công',
       data: {
         reset_token: resetToken,
+        user: user ? {
+          id: user.id,
+          email: user.email,
+          full_name: user.full_name,
+          role: user.role,
+        } : null,
+        tokens,
       },
     });
   } catch (error) {
