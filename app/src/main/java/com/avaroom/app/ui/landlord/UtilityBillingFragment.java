@@ -10,12 +10,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
+import com.avaroom.app.R;
 import com.avaroom.app.databinding.FragmentUtilityBillingBinding;
 import java.text.DecimalFormat;
 
-/**
- * Figma Frame: 184:2077 - Chốt điện nước & Hóa đơn tháng - Chủ trọ
- */
 public class UtilityBillingFragment extends Fragment {
 
     private FragmentUtilityBillingBinding binding;
@@ -32,13 +31,8 @@ public class UtilityBillingFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnBack.setOnClickListener(v -> {
-            if (getActivity() != null) {
-                getActivity().onBackPressed();
-            }
-        });
+        binding.btnBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
 
-        // Recalculate totals on change
         binding.etElectricNew.addTextChangedListener(new SimpleTextWatcher() {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
@@ -55,6 +49,7 @@ public class UtilityBillingFragment extends Fragment {
 
         binding.btnGenerateInvoice.setOnClickListener(v -> {
             Toast.makeText(getContext(), "Chuyển sang Xem trước Hóa đơn PDF & VietQR", Toast.LENGTH_SHORT).show();
+            Navigation.findNavController(v).navigate(R.id.action_billing_to_invoice);
         });
     }
 

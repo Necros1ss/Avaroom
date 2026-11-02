@@ -116,6 +116,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/tv_detail_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -158,6 +159,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:id="@+id/tv_detail_price"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
@@ -291,6 +293,19 @@
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+            <!-- Edit / Update Action Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_edit_post_action"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="✏️ Cập nhật / Sửa thông tin phòng"
+                android:textAllCaps="false"
+                android:textColor="@color/bg_white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>

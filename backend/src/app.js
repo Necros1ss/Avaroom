@@ -9,6 +9,7 @@ const { errorHandler, notFound } = require('./middleware/errorHandler');
 
 // Routes
 const authRoutes = require('./routes/auth.routes');
+const landlordRoutes = require('./routes/landlord.routes');
 
 const app = express();
 
@@ -36,8 +37,9 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Mount Routes (Chỉ giữ Auth & JWT)
+// Mount Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/landlord', landlordRoutes);
 
 // Error handlers
 app.use(notFound);

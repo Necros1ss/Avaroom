@@ -16,11 +16,12 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
             android:id="@+id/iv_landlord_posts"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:src="@drawable/ic_checklist" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_landlord_posts"
@@ -41,11 +42,12 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
             android:id="@+id/iv_landlord_appointments"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:src="@drawable/ic_calendar" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_landlord_appointments"
@@ -65,11 +67,12 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
             android:id="@+id/iv_landlord_chat"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:src="@drawable/ic_nav_chat" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💬"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_landlord_chat"
@@ -89,11 +92,12 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
             android:id="@+id/iv_landlord_profile"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:src="@drawable/ic_nav_user" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👤"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_landlord_profile"
