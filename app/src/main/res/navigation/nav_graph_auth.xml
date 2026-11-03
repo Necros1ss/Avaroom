@@ -77,6 +77,14 @@
         <action
             android:id="@+id/action_otpFragment_to_resetPasswordFragment"
             app:destination="@id/resetPasswordFragment" />
+        <action
+            android:id="@+id/action_otpFragment_to_ekycFragment"
+            app:destination="@id/ekycFragment" />
+        <action
+            android:id="@+id/action_otpFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
@@ -90,3 +98,4 @@
         android:label="Xác thực CCCD" />
 
 </navigation>
+

@@ -27,10 +27,22 @@ public class ChatFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Back button ==> Navigate up
-        if (binding.btnBackChat != null) {
-            binding.btnBackChat.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
-        }
+        // Click Back
+        binding.btnBackChat.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+
+        // Click Call
+        binding.btnCallLandlord.setOnClickListener(v -> {
+            Toast.makeText(requireContext(), "Đang kết nối cuộc gọi tới Cô Hoàng Thị Ánh Tuyết...", Toast.LENGTH_SHORT).show();
+        });
+
+        // Click Send message
+        binding.btnSendChat.setOnClickListener(v -> {
+            String msg = binding.etChatInput.getText() != null ? binding.etChatInput.getText().toString().trim() : "";
+            if (!msg.isEmpty()) {
+                binding.etChatInput.setText("");
+                Toast.makeText(requireContext(), "Đã gửi tin nhắn!", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

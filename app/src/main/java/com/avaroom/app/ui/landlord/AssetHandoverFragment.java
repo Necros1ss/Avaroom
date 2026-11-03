@@ -8,11 +8,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import com.avaroom.app.databinding.FragmentAssetHandoverBinding;
 
-/**
- * Figma Frame: 188:2041 - Biên bản bàn giao tài sản 360°
- */
 public class AssetHandoverFragment extends Fragment {
 
     private FragmentAssetHandoverBinding binding;
@@ -28,17 +26,11 @@ public class AssetHandoverFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnBack.setOnClickListener(v -> {
-            if (getActivity() != null) {
-                getActivity().onBackPressed();
-            }
-        });
+        binding.btnBack.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
 
         binding.btnConfirmHandover.setOnClickListener(v -> {
             Toast.makeText(getContext(), "Biên bản bàn giao 360° đã được lưu và ký điện tử thành công!", Toast.LENGTH_LONG).show();
-            if (getActivity() != null) {
-                getActivity().onBackPressed();
-            }
+            Navigation.findNavController(v).navigateUp();
         });
     }
 

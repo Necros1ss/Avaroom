@@ -16,12 +16,11 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
+        <ImageView
             android:id="@+id/iv_nav_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🏠"
-            android:textSize="18sp" />
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_nav_home" />
 
         <TextView
             android:id="@+id/tv_nav_home"
@@ -42,12 +41,11 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
+        <ImageView
             android:id="@+id/iv_nav_map"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🗺️"
-            android:textSize="18sp" />
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_nav_map" />
 
         <TextView
             android:id="@+id/tv_nav_map"
@@ -67,12 +65,11 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
+        <ImageView
             android:id="@+id/iv_nav_chat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="💬"
-            android:textSize="18sp" />
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_nav_chat" />
 
         <TextView
             android:id="@+id/tv_nav_chat"
@@ -92,12 +89,11 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
+        <ImageView
             android:id="@+id/iv_nav_account"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="👤"
-            android:textSize="18sp" />
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_nav_user" />
 
         <TextView
             android:id="@+id/tv_nav_account"

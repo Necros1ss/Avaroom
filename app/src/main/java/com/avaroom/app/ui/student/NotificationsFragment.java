@@ -26,10 +26,8 @@ public class NotificationsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Back button ==> Navigate up
-        if (binding.btnBackNotif != null) {
-            binding.btnBackNotif.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
-        }
+        // Click Back
+        binding.btnBackNotif.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
     }
 
     @Override

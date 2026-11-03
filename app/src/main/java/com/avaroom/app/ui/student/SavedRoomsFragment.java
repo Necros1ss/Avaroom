@@ -42,5 +42,5 @@ public class SavedRoomsFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
-    }
+    }    
 }
