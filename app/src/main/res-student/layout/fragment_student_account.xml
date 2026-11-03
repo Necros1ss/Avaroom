@@ -194,6 +194,7 @@
                                 android:text="🎓 "
                                 android:textSize="10sp" />
                             <TextView
+                                android:id="@+id/tv_university_info"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="ĐH Bách Khoa HN • K66"

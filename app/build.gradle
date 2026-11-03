@@ -10,8 +10,8 @@ if (envFile.exists()) {
         envProps.load(reader)
     }
 }
-def vpsHost = envProps.getProperty("VPS_HOST", "card.nekos.work")
-def apiPort = envProps.getProperty("API_PORT", "3000")
+def vpsHost = envProps.getProperty("VPS_HOST", "20.205.111.212")
+def apiPort = envProps.getProperty("API_PORT", "80")
 
 android {
     namespace 'com.avaroom.app'

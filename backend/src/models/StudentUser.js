@@ -52,6 +52,7 @@ StudentUser.init(
     sequelize,
     modelName: 'Students',
     tableName: 'student_profiles',
+    timestamps: false,
   }
 );
 

@@ -9,23 +9,79 @@ import com.avaroom.app.data.model.response.ApiResponse;
 import com.avaroom.app.data.model.response.AuthResponse;
 import com.avaroom.app.data.model.response.VerifyOtpResponse;
 
+import java.util.List;
+import java.util.Map;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
+import retrofit2.http.GET;
+import retrofit2.http.Header;
+import retrofit2.http.PATCH;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
+import retrofit2.http.Path;
 
 public interface ApiService {
+
+    // ==================== AUTH ENDPOINTS (from main) ====================
     @POST("api/auth/register")
     Call<ApiResponse<Object>> register(@Body RegisterRequest request);
-    // 1. Gửi yêu cầu quên mật khẩu (nhận mã OTP qua email)
-    @POST("api/auth/forgot-password")
-    Call<ApiResponse<Object>> forgotPassword(@Body ForgotPasswordRequest request);
-    // 2. Xác thực OTP (nhận về reset_token)
-    @POST("api/auth/verify-otp")
-    Call<ApiResponse<VerifyOtpResponse>> verifyOtp(@Body VerifyOtpRequest request);
-    // 3. Đặt lại mật khẩu mới
-    @POST("api/auth/reset-password")
-    Call<ApiResponse<Object>> resetPassword(@Body ResetPasswordRequest request);
 
     @POST("api/auth/login")
     Call<ApiResponse<AuthResponse>> login(@Body LoginRequest request);
+
+    // Overload login hỗ trợ Map request nếu có màn hình nào cần
+    @POST("api/auth/login")
+    Call<ApiResponse<Map<String, Object>>> loginWithMap(@Body Map<String, String> request);
+
+    @POST("api/auth/forgot-password")
+    Call<ApiResponse<Object>> forgotPassword(@Body ForgotPasswordRequest request);
+
+    @POST("api/auth/verify-otp")
+    Call<ApiResponse<VerifyOtpResponse>> verifyOtp(@Body VerifyOtpRequest request);
+
+    @POST("api/auth/reset-password")
+    Call<ApiResponse<Object>> resetPassword(@Body ResetPasswordRequest request);
+
+    @GET("api/auth/me")
+    Call<ApiResponse<Map<String, Object>>> getMe(@Header("Authorization") String token);
+
+    // ==================== LANDLORD ENDPOINTS (from PuuUpdate) ====================
+    // Landlord Posts
+    @GET("api/landlord/posts")
+    Call<ApiResponse<List<Map<String, Object>>>> getLandlordPosts(@Header("Authorization") String token);
+
+    @POST("api/landlord/posts")
+    Call<ApiResponse<Map<String, Object>>> createLandlordPost(@Header("Authorization") String token, @Body Map<String, Object> request);
+
+    @PUT("api/landlord/posts/{id}")
+    Call<ApiResponse<Map<String, Object>>> updateLandlordPost(@Header("Authorization") String token, @Path("id") long id, @Body Map<String, Object> request);
+
+    @DELETE("api/landlord/posts/{id}")
+    Call<ApiResponse<Object>> deleteLandlordPost(@Header("Authorization") String token, @Path("id") long id);
+
+    // Landlord Appointments
+    @GET("api/landlord/appointments")
+    Call<ApiResponse<List<Map<String, Object>>>> getLandlordAppointments(@Header("Authorization") String token);
+
+    @PATCH("api/landlord/appointments/{id}/status")
+    Call<ApiResponse<Map<String, Object>>> updateAppointmentStatus(@Header("Authorization") String token, @Path("id") long id, @Body Map<String, String> body);
+
+    // Invoices & Billing
+    @GET("api/landlord/invoices")
+    Call<ApiResponse<List<Map<String, Object>>>> getLandlordInvoices(@Header("Authorization") String token);
+
+    @POST("api/landlord/invoices")
+    Call<ApiResponse<Map<String, Object>>> generateInvoice(@Header("Authorization") String token, @Body Map<String, Object> body);
+
+    // Escrow Contracts & Handover
+    @GET("api/landlord/contracts")
+    Call<ApiResponse<List<Map<String, Object>>>> getLandlordContracts(@Header("Authorization") String token);
+
+    @POST("api/landlord/contracts")
+    Call<ApiResponse<Map<String, Object>>> createContract(@Header("Authorization") String token, @Body Map<String, Object> body);
+
+    @PATCH("api/landlord/handover")
+    Call<ApiResponse<Map<String, Object>>> updateAssetHandover(@Header("Authorization") String token, @Body Map<String, Object> body);
 }
