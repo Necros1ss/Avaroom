@@ -1,10 +1,13 @@
 package com.avaroom.app.ui.student;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -42,17 +45,38 @@ public class StudentAccountFragment extends Fragment {
             });
         }
 
-        // Click eKYC Banner / Menu
-        View.OnClickListener ekycClick = v -> {
-            Navigation.findNavController(v).navigate(R.id.action_account_to_ekyc);
-        };
-        if (binding.btnEkycStatus != null) binding.btnEkycStatus.setOnClickListener(ekycClick);
-        if (binding.menuEkyc != null) binding.menuEkyc.setOnClickListener(ekycClick);
+        // Click eKYC Menu
+        if (binding.menuEkyc != null) {
+            binding.menuEkyc.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.action_account_to_ekyc);
+            });
+        }
 
         // Click Đổi mật khẩu
         if (binding.menuChangePassword != null) {
             binding.menuChangePassword.setOnClickListener(v -> {
                 Navigation.findNavController(v).navigate(R.id.action_account_to_changePassword);
+            });
+        }
+
+        // Click Ngôn ngữ ứng dụng
+        if (binding.menuLanguage != null) {
+            binding.menuLanguage.setOnClickListener(v -> {
+                String[] languages = {"🇻🇳 Tiếng Việt (Vietnamese)", "🇬🇧 English (English)"};
+                new AlertDialog.Builder(requireContext())
+                        .setTitle("Chọn ngôn ngữ / Select Language")
+                        .setItems(languages, (dialog, which) -> {
+                            if (which == 0) {
+                                if (binding.tvLanguageSubtitle != null) binding.tvLanguageSubtitle.setText("Tiếng Việt (Mặc định)");
+                                if (binding.tvLanguageCode != null) binding.tvLanguageCode.setText("VIE");
+                                Toast.makeText(requireContext(), "Đã chuyển sang Tiếng Việt", Toast.LENGTH_SHORT).show();
+                            } else {
+                                if (binding.tvLanguageSubtitle != null) binding.tvLanguageSubtitle.setText("English (Default)");
+                                if (binding.tvLanguageCode != null) binding.tvLanguageCode.setText("ENG");
+                                Toast.makeText(requireContext(), "Switched to English", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .show();
             });
         }
 
@@ -62,6 +86,20 @@ public class StudentAccountFragment extends Fragment {
                 Intent intent = new Intent(requireActivity(), MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
+            });
+        }
+
+        // Notification bell ==> Notifications Fragment
+        if (binding.btnNotificationAccount != null) {
+            binding.btnNotificationAccount.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.action_account_to_notifications);
+            });
+        }
+
+        // Profile icon ==> Student EKYC / Profile Fragment
+        if (binding.btnProfileAccount != null) {
+            binding.btnProfileAccount.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.action_account_to_ekyc);
             });
         }
     }

@@ -38,6 +38,20 @@ public class ChatListFragment extends Fragment {
                 Navigation.findNavController(v).navigate(R.id.action_chatList_to_chat);
             });
         }
+
+        // Notification bell ==> Notifications Fragment
+        if (binding.btnNotificationChatList != null) {
+            binding.btnNotificationChatList.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.action_chatList_to_notifications);
+            });
+        }
+
+        // Profile icon ==> Student EKYC / Profile Fragment
+        if (binding.btnProfileChatList != null) {
+            binding.btnProfileChatList.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.action_chatList_to_ekyc);
+            });
+        }
     }
 
     @Override

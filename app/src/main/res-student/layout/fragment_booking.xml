@@ -2,43 +2,47 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_warm_cream">
+    android:background="@color/student_booking_bg_main">
 
-    <!-- Top App Bar -->
+    <!-- Top Header Bar -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_booking_header"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@color/bg_white"
-        android:paddingHorizontal="16dp"
+        android:layout_height="64dp"
+        android:background="#D9F8F9FF"
+        android:paddingHorizontal="20dp"
+        android:elevation="4dp"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
+        <FrameLayout
             android:id="@+id/btn_back_booking"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="←"
-            android:textColor="@color/primary_dark"
-            android:textSize="22sp"
-            android:textStyle="bold"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="←"
+                android:textColor="@color/student_booking_text_dark"
+                android:textSize="22sp" />
+        </FrameLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đặt lịch xem phòng"
-            android:textColor="@color/text_primary"
-            android:textSize="16sp"
+            android:textColor="@color/student_booking_text_dark"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_back_booking"
             app:layout_constraintTop_toTopOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Scrollable Booking Content -->
@@ -46,250 +50,608 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
-        app:layout_constraintBottom_toTopOf="@id/layout_submit_booking"
-        app:layout_constraintTop_toBottomOf="@id/layout_booking_header">
+        android:paddingBottom="90dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:orientation="vertical">
 
-            <!-- Room Mini Summary Card -->
-            <androidx.cardview.widget.CardView
+            <!-- Top Padding for floating header -->
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="1dp"
-                app:cardBackgroundColor="@color/bg_white">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="AVR-90412 • Studio ban công Tạ Quang Bửu"
-                        android:textColor="@color/text_primary"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="4.2 tr/tháng • Chủ trọ: Cô Ánh Tuyết"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="13sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Step 1: Chọn ngày xem phòng -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="1. Chọn ngày xem phòng"
-                android:textColor="@color/text_primary"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:scrollbars="none">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <!-- Day 1 (Selected) -->
-                    <LinearLayout
-                        android:layout_width="72dp"
-                        android:layout_height="80dp"
-                        android:background="@drawable/bg_button_primary"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Hôm nay"
-                            android:textColor="@color/bg_white"
-                            android:textSize="11sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="14"
-                            android:textColor="@color/bg_white"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Th 4"
-                            android:textColor="@color/bg_white"
-                            android:textSize="11sp" />
-                    </LinearLayout>
-
-                    <!-- Day 2 -->
-                    <LinearLayout
-                        android:layout_width="72dp"
-                        android:layout_height="80dp"
-                        android:layout_marginStart="8dp"
-                        android:background="@drawable/bg_card_rounded"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Ngày mai"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="11sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="15"
-                            android:textColor="@color/text_primary"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Th 5"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="11sp" />
-                    </LinearLayout>
-
-                    <!-- Day 3 -->
-                    <LinearLayout
-                        android:layout_width="72dp"
-                        android:layout_height="80dp"
-                        android:layout_marginStart="8dp"
-                        android:background="@drawable/bg_card_rounded"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Thứ Sáu"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="11sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="16"
-                            android:textColor="@color/text_primary"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Th 6"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="11sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </HorizontalScrollView>
-
-            <!-- Step 2: Chọn khung giờ rảnh -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="2. Chọn khung giờ rảnh (Đã chọn: 16:30)"
-                android:textColor="@color/text_primary"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:layout_height="64dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="16dp">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="44dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_card_rounded"
-                    android:gravity="center"
-                    android:text="09:00"
-                    android:textColor="@color/text_primary"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                <!-- Room Mini Summary Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/student_white">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="44dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_card_rounded"
-                    android:gravity="center"
-                    android:text="14:00"
-                    android:textColor="@color/text_primary"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="44dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_button_primary"
-                    android:gravity="center"
-                    android:text="16:30 🔥"
-                    android:textColor="@color/bg_white"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                        <!-- Thumbnail -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            app:cardCornerRadius="12dp">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/student_img_room_1" />
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/student_bg_overlay_chip"
+                                    android:alpha="0.2" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:background="@drawable/student_bg_overlay_chip"
+                                    android:paddingHorizontal="6dp"
+                                    android:paddingVertical="2dp"
+                                    android:text="AVR-90412 • Mẫu"
+                                    android:textColor="@color/student_white"
+                                    android:textSize="9sp" />
+                            </FrameLayout>
+                        </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="44dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_card_rounded"
-                    android:gravity="center"
-                    android:text="18:00"
-                    android:textColor="@color/text_primary"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.2 tr"
+                                    android:textColor="@color/student_booking_accent_red"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="/tháng"
+                                    android:textColor="@color/student_booking_text_muted"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Studio ban công Tạ Quang Bửu"
+                                android:textColor="@color/student_booking_text_dark"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/student_booking_bg_card_highlight"
+                                android:padding="6dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <FrameLayout
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:background="@drawable/student_bg_chip_dark"
+                                    android:backgroundTint="#FFDBCA">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👩‍💼" android:textSize="12sp" android:layout_gravity="center" />
+                                </FrameLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="6dp"
+                                    android:text="Chủ trọ: "
+                                    android:textColor="@color/student_booking_text_dark"
+                                    android:textSize="11sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cô Ánh Tuyết"
+                                    android:textColor="@color/student_booking_accent_dark"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:text="🛡️"
+                                    android:textSize="11sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Step 1: Chọn ngày xem phòng -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/student_bg_chip_dark"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/student_white"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="6dp"
+                        android:text="Chọn ngày xem phòng"
+                        android:textColor="@color/student_booking_text_dark"
+                        android:textSize="16sp" />
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/student_booking_bg_calendar_icon">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📅" android:textSize="16sp" android:layout_gravity="center" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none"
+                    android:clipToPadding="false"
+                    android:paddingBottom="4dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- Day 1 -->
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/student_booking_bg_date_unselected"
+                            android:elevation="1dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingVertical="10dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hôm nay" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="13" android:textColor="@color/student_booking_text_dark" android:textSize="20sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Th 3" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <!-- Day 2 (Selected) -->
+                        <LinearLayout
+                            android:layout_width="78dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/student_booking_bg_date_selected"
+                            android:elevation="2dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingVertical="10dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ngày mai" android:textColor="#CCFFFFFF" android:textSize="10sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="14" android:textColor="@color/student_white" android:textSize="20sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Th 4" android:textColor="#CCFFFFFF" android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <!-- Day 3 -->
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/student_booking_bg_date_unselected"
+                            android:elevation="1dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingVertical="10dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thứ Năm" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="15" android:textColor="@color/student_booking_text_dark" android:textSize="20sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Th 5" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <!-- Day 4 -->
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/student_booking_bg_date_unselected"
+                            android:elevation="1dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingVertical="10dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thứ Sáu" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="16" android:textColor="@color/student_booking_text_dark" android:textSize="20sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Th 6" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <!-- Day 5 -->
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/student_booking_bg_date_unselected"
+                            android:elevation="1dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingVertical="10dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thứ Bảy" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="17" android:textColor="@color/student_booking_text_dark" android:textSize="20sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Th 7" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <!-- Step 2: Chọn khung giờ rảnh -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/student_bg_chip_dark"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/student_white"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="6dp"
+                        android:text="Chọn khung giờ rảnh"
+                        android:textColor="@color/student_booking_text_dark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16:30 • 14/10/2026"
+                        android:textColor="@color/student_booking_accent_red"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/student_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- SÁNG -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌅" android:textSize="12sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="SÁNG" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/student_booking_bg_card_highlight"
+                                android:gravity="center"
+                                android:paddingVertical="10dp"
+                                android:text="09:00"
+                                android:textColor="@color/student_booking_text_dark"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/student_booking_bg_card_highlight"
+                                android:gravity="center"
+                                android:paddingVertical="10dp"
+                                android:text="10:30"
+                                android:textColor="@color/student_booking_text_dark"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/student_booking_bg_time_disabled"
+                                android:gravity="center"
+                                android:paddingVertical="10dp"
+                                android:text="Kín lịch"
+                                android:textColor="@color/student_booking_disabled"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <!-- CHIỀU -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="☀️" android:textSize="12sp" />
+                            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="CHIỀU" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Giờ tan trường" android:textColor="@color/student_booking_accent_red" android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/student_booking_bg_card_highlight"
+                                android:gravity="center"
+                                android:paddingVertical="10dp"
+                                android:text="14:00"
+                                android:textColor="@color/student_booking_text_dark"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/student_booking_bg_card_highlight"
+                                android:gravity="center"
+                                android:paddingVertical="10dp"
+                                android:text="15:30"
+                                android:textColor="@color/student_booking_text_dark"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:clipChildren="false">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/student_booking_bg_date_selected"
+                                    android:elevation="2dp"
+                                    android:gravity="center"
+                                    android:paddingVertical="10dp"
+                                    android:text="16:30"
+                                    android:textColor="@color/student_white"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+                                <View
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:layout_gravity="bottom|center_horizontal"
+                                    android:layout_marginBottom="-3dp"
+                                    android:background="@drawable/student_bg_chip_red"
+                                    android:elevation="3dp" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <!-- TỐI -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌙" android:textSize="12sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:text="TỐI" android:textColor="@color/student_booking_text_muted" android:textSize="10sp" android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/student_booking_bg_card_highlight"
+                                android:gravity="center"
+                                android:paddingVertical="10dp"
+                                android:text="18:00"
+                                android:textColor="@color/student_booking_text_dark"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/student_booking_bg_card_highlight"
+                                android:gravity="center"
+                                android:paddingVertical="10dp"
+                                android:text="19:30"
+                                android:textColor="@color/student_booking_text_dark"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/student_booking_bg_time_disabled"
+                                android:gravity="center"
+                                android:paddingVertical="10dp"
+                                android:text="--:--"
+                                android:textColor="@color/student_booking_disabled"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Step 3: Thông tin sinh viên & Lời nhắn -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/student_bg_chip_dark"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/student_white"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="6dp"
+                        android:text="Thông tin sinh viên &amp; Lời nhắn"
+                        android:textColor="@color/student_booking_text_dark"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="1dp"
+                    app:cardBackgroundColor="@color/student_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/student_bg_chip_dark"
+                                android:gravity="center"
+                                android:text="NT"
+                                android:textColor="@color/student_white"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nguyễn Thanh Tùng"
+                                    android:textColor="@color/student_booking_text_dark"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ĐH Bách Khoa • K66 • Hồ sơ mẫu"
+                                    android:textColor="@color/student_booking_text_muted"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/student_detail_bg_chip_blue"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="4dp"
+                                android:text="Tự điền"
+                                android:textColor="@color/student_booking_text_dark"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Lời nhắn gửi cô Tuyết (Tùy chọn):"
+                            android:textColor="@color/student_booking_text_muted"
+                            android:textSize="10sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/student_booking_bg_textarea"
+                            android:gravity="top|start"
+                            android:padding="12dp"
+                            android:text="Cháu là Tùng K66 Bách Khoa, cháu đi cùng bạn qua xem lúc 16:30 ngày 14/10/2026 ạ."
+                            android:textColor="#76777C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
             </LinearLayout>
-
-            <!-- Step 3: Thông tin sinh viên & Lời nhắn -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="3. Thông tin sinh viên &amp; Lời nhắn"
-                android:textColor="@color/text_primary"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/bg_input_field"
-                android:gravity="top|start"
-                android:padding="14dp"
-                android:text="Cháu là Tùng K66 Bách Khoa, cháu đi cùng bạn qua xem lúc 16:30 ngày 14/10/2026 ạ."
-                android:textColor="@color/text_primary"
-                android:textSize="13sp" />
-
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
@@ -297,23 +659,22 @@
     <LinearLayout
         android:id="@+id/layout_submit_booking"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:background="@color/bg_white"
-        android:elevation="8dp"
+        android:layout_height="wrap_content"
+        android:background="#E6FFFFFF"
         android:gravity="center"
-        android:paddingHorizontal="20dp"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_send_booking"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:background="@drawable/bg_button_primary"
-            android:text="GỬI YÊU CẦU ĐẶT LỊCH NGAY"
+            android:layout_height="56dp"
+            android:background="@drawable/student_booking_btn_submit"
+            android:elevation="4dp"
+            android:text="GỬI YÊU CẦU ĐẶT LỊCH NGAY →"
             android:textAllCaps="true"
-            android:textColor="@color/bg_white"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textColor="@color/student_white"
+            android:textSize="14sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
