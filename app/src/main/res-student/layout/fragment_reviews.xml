@@ -4,46 +4,64 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_warm_cream">
+    android:background="@color/student_bg_main">
 
     <!-- Top App Bar -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_header"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/bg_white"
-        android:paddingHorizontal="16dp"
+        android:layout_height="64dp"
+        android:background="#E6F8F9FF"
+        android:paddingHorizontal="20dp"
+        android:elevation="4dp"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/btn_back_reviews"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:gravity="center"
-            android:text="←"
-            android:textColor="@color/primary_black"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="Đánh giá sinh viên"
-            android:textColor="@color/primary_black"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/btn_back_reviews"
-            app:layout_constraintTop_toTopOf="parent" />
+            <FrameLayout
+                android:id="@+id/btn_back_reviews"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/student_detail_bg_card_highlight"
+                android:backgroundTint="#E5EEFF">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="←"
+                    android:textColor="@color/student_text_primary"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Đánh giá"
+                android:textColor="@color/student_text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ScrollView
+    <!-- Main Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_header">
 
@@ -51,252 +69,427 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="12dp">
+            android:padding="16dp">
 
-            <!-- Pinned Room Brief Card -->
+            <!-- Top Property Overview Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/bg_white"
-                app:cardCornerRadius="14dp"
-                app:cardElevation="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="14dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="AVR-90412 • Mẫu • ĐH Bách Khoa 250m"
-                        android:textColor="@color/text_muted"
-                        android:textSize="11sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="Studio ban công Tạ Quang Bửu"
-                        android:textColor="@color/primary_black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="4.200.000đ / tháng"
-                        android:textColor="@color/accent_red"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Rating Breakdown Card -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                app:cardBackgroundColor="@color/bg_white"
+                app:cardBackgroundColor="@color/student_white"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="2dp">
+                app:cardElevation="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="16dp">
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
 
-                    <!-- Score -->
+                    <FrameLayout
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:background="@drawable/student_detail_bg_card_highlight">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/student_img_room_1" />
+                    </FrameLayout>
+
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:paddingEnd="16dp">
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/student_bg_chip_outline"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="2dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="✓"
+                                android:textColor="@color/student_landlord_accent_green"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="Chính chủ"
+                                android:textColor="@color/student_landlord_accent_green"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="4.8"
-                            android:textColor="@color/primary_black"
-                            android:textSize="36sp"
+                            android:layout_marginTop="4dp"
+                            android:text="Studio ban công Tạ Quang Bửu"
+                            android:textColor="@color/student_text_primary"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="★★★★★"
-                            android:textColor="@color/accent_yellow"
-                            android:textSize="14sp" />
-
-                        <TextView
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="42 đánh giá"
-                            android:textColor="@color/text_muted"
-                            android:textSize="11sp" />
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/divider_color" />
-
-                    <!-- Bars -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="5 sao • 85% (36)"
-                            android:textColor="@color/text_primary"
-                            android:textSize="11sp" />
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.200.000đ"
+                                android:textColor="@color/student_landlord_accent_green"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:text="/tháng"
+                                android:textColor="@color/student_text_secondary"
+                                android:textSize="12sp" />
+                        </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="4 sao • 12% (5)"
-                            android:textColor="@color/text_primary"
-                            android:textSize="11sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="3 sao • 3% (1)"
-                            android:textColor="@color/text_primary"
+                            android:text="📍 AVR-90412 • Mẫu • ĐH Bách Khoa 250m"
+                            android:textColor="@color/student_text_secondary"
                             android:textSize="11sp" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Review Items -->
+            <!-- Overall Score & Rating Breakdown -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@color/student_white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ĐIỂM HÀI LÒNG SINH VIÊN"
+                                android:textColor="@color/student_text_secondary"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.05" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:gravity="bottom"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.8"
+                                    android:textColor="@color/student_text_primary"
+                                    android:textSize="32sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="/5"
+                                    android:textColor="@color/student_text_secondary"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:text="★★★★★"
+                                    android:textColor="#F59E0B"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/student_detail_bg_card_highlight"
+                            android:paddingHorizontal="12dp"
+                            android:paddingVertical="8dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="42"
+                                android:textColor="@color/student_landlord_accent_green"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sinh viên xác thực"
+                                android:textColor="@color/student_text_secondary"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Star distribution bars -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView android:layout_width="40dp" android:layout_height="wrap_content" android:text="5 sao" android:textColor="@color/student_text_secondary" android:textSize="12sp" />
+                            <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:layout_marginHorizontal="8dp" android:progress="85" android:progressTint="@color/student_landlord_accent_green" android:background="#E5EEFF" />
+                            <TextView android:layout_width="60dp" android:layout_height="wrap_content" android:text="85% (36)" android:textColor="@color/student_text_secondary" android:textSize="11sp" android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView android:layout_width="40dp" android:layout_height="wrap_content" android:text="4 sao" android:textColor="@color/student_text_secondary" android:textSize="12sp" />
+                            <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:layout_marginHorizontal="8dp" android:progress="12" android:progressTint="@color/student_landlord_accent_green" android:background="#E5EEFF" />
+                            <TextView android:layout_width="60dp" android:layout_height="wrap_content" android:text="12% (5)" android:textColor="@color/student_text_secondary" android:textSize="11sp" android:gravity="end" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView android:layout_width="40dp" android:layout_height="wrap_content" android:text="3 sao" android:textColor="@color/student_text_secondary" android:textSize="12sp" />
+                            <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:layout_marginHorizontal="8dp" android:progress="3" android:progressTint="@color/student_landlord_accent_green" android:background="#E5EEFF" />
+                            <TextView android:layout_width="60dp" android:layout_height="wrap_content" android:text="3% (1)" android:textColor="@color/student_text_secondary" android:textSize="11sp" android:gravity="end" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Trust Notice -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#E6F8F9FF"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"/>
+
+            <!-- Reviews List Section -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:letterSpacing="0.05"
-                android:text="ĐÁNH GIÁ TỪ SINH VIÊN XÁC THỰC"
-                android:textColor="@color/text_muted"
-                android:textSize="11sp"
+                android:layout_marginBottom="8dp"
+                android:text="Đánh giá từ sinh viên"
+                android:textColor="@color/student_text_primary"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <!-- Review 1 -->
+            <!-- Review Card 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:cardBackgroundColor="@color/bg_white"
-                app:cardCornerRadius="14dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="@color/student_white"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nguyễn Hoàng Nam • ĐH Bách Khoa"
-                            android:textColor="@color/primary_black"
-                            android:textSize="13sp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/student_bg_chip_dark"
+                            android:backgroundTint="#82F5C1"
+                            android:gravity="center"
+                            android:text="LQ"
+                            android:textColor="#00714E"
+                            android:textSize="14sp"
                             android:textStyle="bold" />
 
-                        <View
+                        <LinearLayout
                             android:layout_width="0dp"
-                            android:layout_height="1dp"
-                            android:layout_weight="1" />
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
 
-                        <TextView
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lê Minh Quân"
+                                    android:textColor="@color/student_text_primary"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:text="✓"
+                                    android:textColor="@color/student_landlord_accent_green"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="K66 Viện CNTT • ĐH Bách Khoa HN"
+                                android:textColor="@color/student_text_secondary"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="★ 5.0"
-                            android:textColor="@color/accent_yellow"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:orientation="vertical"
+                            android:gravity="end">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="★★★★★"
+                                android:textColor="#F59E0B"
+                                android:textSize="12sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2 tuần trước"
+                                android:textColor="@color/student_text_secondary"
+                                android:textSize="10sp" />
+                        </LinearLayout>
                     </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="Phòng rất mới, y như ảnh 360 trên app. Cô Tuyết chủ nhà nhiệt tình, giờ giấc tự do khóa vân tay nên đi học về muộn thoải mái."
-                        android:textColor="@color/text_primary"
-                        android:textSize="12sp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Review 2 -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:cardBackgroundColor="@color/bg_white"
-                app:cardCornerRadius="14dp"
-                app:cardElevation="1dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="14dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:orientation="horizontal">
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Trần Thu Hà • ĐH Kinh Tế Quốc Dân"
-                            android:textColor="@color/primary_black"
-                            android:textSize="13sp"
-                            android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="1dp"
-                            android:layout_weight="1" />
-
+                            android:background="@drawable/student_bg_chip_outline"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="2dp"
+                            android:text="Đã thuê 1 năm"
+                            android:textColor="@color/student_text_secondary"
+                            android:textSize="10sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="★ 5.0"
-                            android:textColor="@color/accent_yellow"
-                            android:textSize="12sp"
+                            android:layout_marginStart="6dp"
+                            android:background="@drawable/student_bg_chip_outline"
+                            android:backgroundTint="#85F8C4"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="2dp"
+                            android:text="Phòng 402 Ban công gió"
+                            android:textColor="#005137"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="Thích nhất là cọc qua Escrow của Avaroom nên cực kỳ yên tâm, không sợ bị mất cọc vô lý."
-                        android:textColor="@color/text_primary"
-                        android:textSize="12sp" />
+                        android:layout_marginTop="8dp"
+                        android:text="Phòng cực kỳ ưng ý! Đi bộ ra cổng Parabol trường Bách Khoa mất đúng 4 phút. Bác chủ nhiệt tình, bóng đèn hỏng báo cái là trưa chú qua thay liền. Tiền điện nước thu đúng niêm yết trên app Avaroom, không bị độn giá như mấy phòng trọ ngoài ngõ Tạ Quang Bửu trước mình từng ở."
+                        android:textColor="@color/student_text_primary"
+                        android:textSize="13sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Sticky Bottom Floating Action Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6F8F9FF"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_write_review"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/student_bg_gradient_secondary"
+            android:text="✍️ Viết đánh giá"
+            android:textColor="#047857"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_book_from_reviews"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/student_bg_gradient_primary"
+            android:text="📅 Đặt lịch xem phòng"
+            android:textColor="@color/student_white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

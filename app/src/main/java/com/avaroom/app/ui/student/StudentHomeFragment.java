@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -36,19 +37,51 @@ public class StudentHomeFragment extends Fragment {
             Navigation.findNavController(v).navigate(R.id.action_home_to_search);
         });
 
-        // Figma Prototype Connection: Card Button -> Chi tiết phòng trọ
+        // Figma Prototype Connection: Xem phòng button -> Chi tiết phòng trọ
         View.OnClickListener goToDetail = v -> {
             Navigation.findNavController(v).navigate(R.id.action_home_to_roomDetail);
         };
-        binding.btnViewRoom1.setOnClickListener(goToDetail);
-        binding.cardRoom1.setOnClickListener(goToDetail);
-        binding.btnViewRoom2.setOnClickListener(goToDetail);
-        binding.cardRoom2.setOnClickListener(goToDetail);
+
+        if (binding.btnViewRoom1 != null) {
+            binding.btnViewRoom1.setOnClickListener(goToDetail);
+        }
+        if (binding.btnViewRoom2 != null) {
+            binding.btnViewRoom2.setOnClickListener(goToDetail);
+        }
 
         // Notification Bell ==> Notifications Fragment
         binding.btnNotification.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_home_to_notifications);
         });
+
+        // Profile icon ==> Student EKYC / Profile Fragment
+        if (binding.btnProfileHome != null) {
+            binding.btnProfileHome.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.action_home_to_ekyc);
+            });
+        }
+
+        // Handle save room logic
+        View.OnClickListener toggleSaveRoom = v -> {
+            TextView iconView = (TextView) ((ViewGroup) v).getChildAt(0);
+            if (iconView.getText().toString().equals("🤍")) {
+                iconView.setText("❤️"); // Saved state
+            } else {
+                iconView.setText("🤍"); // Unsaved state
+            }
+        };
+        if (binding.btnSaveRoom1 != null) {
+            binding.btnSaveRoom1.setOnClickListener(v -> {
+                toggleSaveRoom.onClick(v);
+                v.setPressed(false);
+            });
+        }
+        if (binding.btnSaveRoom2 != null) {
+            binding.btnSaveRoom2.setOnClickListener(v -> {
+                toggleSaveRoom.onClick(v);
+                v.setPressed(false);
+            });
+        }
     }
 
     @Override

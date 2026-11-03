@@ -4,12 +4,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
-
 import com.avaroom.app.R;
 import com.avaroom.app.databinding.FragmentSavedRoomsBinding;
 
@@ -28,14 +26,15 @@ public class SavedRoomsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Click Back
-        binding.btnBackSaved.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        // Back button ==> Navigate up
+        if (binding.btnBackSaved != null) {
+            binding.btnBackSaved.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        }
 
-        // Click Room Card 1 -> Room detail
+        // Saved room card click ==> Navigate to RoomDetailFragment
+        View.OnClickListener goToDetail = v -> Navigation.findNavController(v).navigate(R.id.action_saved_to_roomDetail);
         if (binding.cardSaved1 != null) {
-            binding.cardSaved1.setOnClickListener(v -> {
-                Navigation.findNavController(v).navigate(R.id.roomDetailFragment);
-            });
+            binding.cardSaved1.setOnClickListener(goToDetail);
         }
     }
 

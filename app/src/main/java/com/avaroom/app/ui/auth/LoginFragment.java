@@ -32,6 +32,11 @@ public class LoginFragment extends Fragment {
 
     private FragmentLoginBinding binding;
 
+    private String getAuthToken() {
+        SharedPreferences pref = requireContext().getSharedPreferences("AvaroomAuth", Context.MODE_PRIVATE);
+        return "Bearer " + pref.getString("ACCESS_TOKEN", "");
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

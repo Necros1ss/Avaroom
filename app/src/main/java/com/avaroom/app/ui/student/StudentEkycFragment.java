@@ -4,13 +4,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
-
+import com.avaroom.app.R;
 import com.avaroom.app.databinding.FragmentStudentEkycBinding;
 
 public class StudentEkycFragment extends Fragment {
@@ -28,21 +26,18 @@ public class StudentEkycFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Click Back
-        binding.btnBackEkyc.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigateUp();
-        });
+        // Back button ==> Navigate up
+        if (binding.btnBackEkyc != null) {
+            binding.btnBackEkyc.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        }
 
-        // Click Confirm
-        binding.btnConfirmEkyc.setOnClickListener(v -> {
-            Toast.makeText(requireContext(), "Hồ sơ eKYC sinh viên đã được xác nhận!", Toast.LENGTH_SHORT).show();
-            Navigation.findNavController(v).navigateUp();
-        });
-
-        // Click Update student card
-        binding.btnUpdateCard.setOnClickListener(v -> {
-            Toast.makeText(requireContext(), "Vui lòng chụp lại ảnh thẻ sinh viên để cập nhật kỳ mới", Toast.LENGTH_SHORT).show();
-        });
+        // Click personal info card ==> Navigate to Edit Profile
+        View cardPersonalInfo = view.findViewById(R.id.card_personal_info);
+        if (cardPersonalInfo != null) {
+            cardPersonalInfo.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.action_studentEkyc_to_editProfile);
+            });
+        }
     }
 
     @Override

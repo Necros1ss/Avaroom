@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
-
+import com.avaroom.app.R;
 import com.avaroom.app.databinding.FragmentReviewsBinding;
 
 public class ReviewsFragment extends Fragment {
@@ -27,8 +27,24 @@ public class ReviewsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Click Back
-        binding.btnBackReviews.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        // Back button ==> Navigate up
+        if (binding.btnBackReviews != null) {
+            binding.btnBackReviews.setOnClickListener(v -> Navigation.findNavController(v).navigateUp());
+        }
+
+        // Write review button ==> Navigate to WriteReviewFragment
+        if (binding.btnWriteReview != null) {
+            binding.btnWriteReview.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.action_reviews_to_writeReview);
+            });
+        }
+
+        // Book schedule button ==> Navigate to BookingFragment
+        if (binding.btnBookFromReviews != null) {
+            binding.btnBookFromReviews.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.action_reviews_to_booking);
+            });
+        }
     }
 
     @Override

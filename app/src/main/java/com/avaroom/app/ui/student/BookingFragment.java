@@ -32,8 +32,7 @@ public class BookingFragment extends Fragment {
 
         // Send booking action
         binding.btnSendBooking.setOnClickListener(v -> {
-            Toast.makeText(requireContext(), "Đặt lịch hẹn thành công!", Toast.LENGTH_SHORT).show();
-            Navigation.findNavController(v).navigateUp();
+            Navigation.findNavController(v).navigate(R.id.action_booking_to_bookingSuccess);
         });
     }
 

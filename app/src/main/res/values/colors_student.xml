@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Student Home -->
+    <color name="student_bg_main">#F7FAFC</color>
+    <color name="student_text_primary">#1A202C</color>
+    <color name="student_text_secondary">#718096</color>
+    <color name="student_text_muted">#A0AEC0</color>
+    <color name="student_accent_red">#E53E3E</color>
+    <color name="student_bg_chip">#EDF2F7</color>
+    <color name="student_border_light">#E2E8F0</color>
+    <color name="student_white">#FFFFFF</color>
+    <color name="student_overlay_dark">#99000000</color>
+
+    <!-- Student Detail -->
+    <color name="student_detail_bg_main">#F8F9FF</color>
+    <color name="student_detail_bg_section">#E5EEFF</color>
+    <color name="student_detail_text_dark">#0D1C2E</color>
+    <color name="student_detail_text_muted">#45474C</color>
+    <color name="student_detail_accent_red">#B51822</color>
+    <color name="student_detail_accent_blue">#030813</color>
+    <color name="student_detail_chip_light_blue">#DCE9FF</color>
+    <color name="student_detail_chip_light_red">#FFDAD7</color>
+    <color name="student_detail_bg_card_blue">#EFF4FF</color>
+    <color name="student_detail_divider">#E2E8F0</color>
+
+    <!-- Student Booking -->
+    <color name="student_booking_bg_main">#F8F9FF</color>
+    <color name="student_booking_text_dark">#0D1C2E</color>
+    <color name="student_booking_text_muted">#45474C</color>
+    <color name="student_booking_accent_red">#B51822</color>
+    <color name="student_booking_accent_dark">#030813</color>
+    <color name="student_booking_card_highlight">#EFF4FF</color>
+    <color name="student_booking_disabled">#4D45474C</color>
+
+    <!-- Student Landlord -->
+    <color name="student_landlord_bg_main">#F8F9FF</color>
+    <color name="student_landlord_bg_cover">#DCE9FF</color>
+    <color name="student_landlord_text_dark">#0D1C2E</color>
+    <color name="student_landlord_text_muted">#45474C</color>
+    <color name="student_landlord_accent_green">#047857</color>
+    <color name="student_landlord_accent_green_light">#ECFDF5</color>
+    <color name="student_landlord_accent_orange">#D8671C</color>
+    <color name="student_landlord_badge_bg">#EFF4FF</color>
+    <color name="student_landlord_btn_primary">#030813</color>
+    <color name="student_landlord_status_online">#10B981</color>
+    <color name="student_landlord_accent_red">#B51822</color>
+
+    <!-- Student Booking Success -->
+    <color name="student_success_bg_main">#F8F9FF</color>
+    <color name="student_success_text_dark">#0D1C2E</color>
+    <color name="student_success_text_muted">#45474C</color>
+    <color name="student_success_accent_green">#10B981</color>
+    <color name="student_success_accent_green_dark">#059669</color>
+    <color name="student_success_accent_yellow">#F59E0B</color>
+    <color name="student_success_badge_bg">#EFF4FF</color>
+    <color name="student_success_badge_bg_yellow">#FFFBEB</color>
+    <color name="student_success_btn_primary">#030813</color>
+    <color name="student_success_progress_bg">#E5EEFF</color>
+
+    <!-- Student Filter -->
+    <color name="student_filter_bg_main">#F8F9FF</color>
+    <color name="student_filter_text_dark">#0D1C2E</color>
+    <color name="student_filter_text_muted">#45474C</color>
+    <color name="student_filter_accent_red">#B51822</color>
+    <color name="student_filter_btn_primary">#030813</color>
+    <color name="student_filter_bg_highlight">#EFF4FF</color>
+    <color name="student_filter_bg_blue_light">#DCE9FF</color>
+</resources>

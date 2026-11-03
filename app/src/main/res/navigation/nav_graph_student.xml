@@ -16,6 +16,7 @@
         <action android:id="@+id/action_home_to_account" app:destination="@id/studentAccountFragment" />
         <action android:id="@+id/action_home_to_notifications" app:destination="@id/notificationsFragment" />
         <action android:id="@+id/action_home_to_search" app:destination="@id/searchResultFragment" />
+        <action android:id="@+id/action_home_to_ekyc" app:destination="@id/studentEkycFragment" />
     </fragment>
 
     <!-- Chi tiết phòng trọ -->
@@ -26,13 +27,25 @@
         <action android:id="@+id/action_roomDetail_to_booking" app:destination="@id/bookingFragment" />
         <action android:id="@+id/action_roomDetail_to_chat" app:destination="@id/chatFragment" />
         <action android:id="@+id/action_roomDetail_to_reviews" app:destination="@id/reviewsFragment" />
+        <action android:id="@+id/action_roomDetail_to_landlordProfile" app:destination="@id/landlordProfileFragment" />
     </fragment>
 
     <!-- Đặt lịch xem phòng -->
     <fragment
         android:id="@+id/bookingFragment"
         android:name="com.avaroom.app.ui.student.BookingFragment"
-        android:label="Đặt lịch xem phòng" />
+        android:label="Đặt lịch xem phòng">
+        <action android:id="@+id/action_booking_to_bookingSuccess" app:destination="@id/bookingSuccessFragment" />
+    </fragment>
+
+    <!-- Màn hình thông báo đặt lịch thành công -->
+    <fragment
+        android:id="@+id/bookingSuccessFragment"
+        android:name="com.avaroom.app.ui.student.BookingSuccessFragment"
+        android:label="Booking Confirmation">
+        <action android:id="@+id/action_bookingSuccess_to_home" app:destination="@id/studentHomeFragment" app:popUpTo="@id/studentHomeFragment" app:popUpToInclusive="true"/>
+        <action android:id="@+id/action_bookingSuccess_to_appointments" app:destination="@id/appointmentsFragment" app:popUpTo="@id/studentHomeFragment" />
+    </fragment>
 
     <!-- Bộ lọc tìm kiếm nâng cao -->
     <fragment
@@ -65,6 +78,8 @@
         android:name="com.avaroom.app.ui.student.ChatListFragment"
         android:label="Tin nhắn">
         <action android:id="@+id/action_chatList_to_chat" app:destination="@id/chatFragment" />
+        <action android:id="@+id/action_chatList_to_notifications" app:destination="@id/notificationsFragment" />
+        <action android:id="@+id/action_chatList_to_ekyc" app:destination="@id/studentEkycFragment" />
     </fragment>
 
     <!-- Chat chi tiết -->
@@ -72,6 +87,14 @@
         android:id="@+id/chatFragment"
         android:name="com.avaroom.app.ui.student.ChatFragment"
         android:label="Chat" />
+
+    <!-- Thông Tin Chủ Trọ (Landlord Profile) -->
+    <fragment
+        android:id="@+id/landlordProfileFragment"
+        android:name="com.avaroom.app.ui.student.LandlordProfileFragment"
+        android:label="Thông Tin Chủ Trọ">
+        <action android:id="@+id/action_landlordProfile_to_chat" app:destination="@id/chatFragment" />
+    </fragment>
 
     <!-- Tài khoản & Cài đặt sinh viên -->
     <fragment
@@ -82,6 +105,7 @@
         <action android:id="@+id/action_account_to_appointments" app:destination="@id/appointmentsFragment" />
         <action android:id="@+id/action_account_to_ekyc" app:destination="@id/studentEkycFragment" />
         <action android:id="@+id/action_account_to_changePassword" app:destination="@id/changePasswordFragment" />
+        <action android:id="@+id/action_account_to_notifications" app:destination="@id/notificationsFragment" />
     </fragment>
 
     <!-- Phòng đã lưu -->
@@ -96,13 +120,42 @@
     <fragment
         android:id="@+id/appointmentsFragment"
         android:name="com.avaroom.app.ui.student.AppointmentsFragment"
-        android:label="Lịch hẹn xem phòng" />
+        android:label="Lịch hẹn xem phòng">
+        <action android:id="@+id/action_appointments_to_reviews" app:destination="@id/reviewsFragment" />
+        <action android:id="@+id/action_appointments_to_roomDetail" app:destination="@id/roomDetailFragment" />
+        <action android:id="@+id/action_appointments_to_appointmentDetail" app:destination="@id/appointmentDetailFragment" />
+        <action android:id="@+id/action_appointments_to_changeAppointment" app:destination="@id/changeAppointmentFragment" />
+    </fragment>
+
+    <!-- Chi tiết lịch hẹn -->
+    <fragment
+        android:id="@+id/appointmentDetailFragment"
+        android:name="com.avaroom.app.ui.student.AppointmentDetailFragment"
+        android:label="Chi tiết lịch hẹn">
+        <action android:id="@+id/action_appointmentDetail_to_roomDetail" app:destination="@id/roomDetailFragment" />
+        <action android:id="@+id/action_appointmentDetail_to_map" app:destination="@id/mapFragment" />
+        <action android:id="@+id/action_appointmentDetail_to_chat" app:destination="@id/chatFragment" />
+    </fragment>
+
+    <!-- Yêu cầu đổi lịch hẹn -->
+    <fragment
+        android:id="@+id/changeAppointmentFragment"
+        android:name="com.avaroom.app.ui.student.ChangeAppointmentFragment"
+        android:label="Yêu cầu đổi lịch hẹn" />
 
     <!-- Hồ sơ sinh viên & eKYC -->
     <fragment
         android:id="@+id/studentEkycFragment"
         android:name="com.avaroom.app.ui.student.StudentEkycFragment"
-        android:label="Hồ sơ eKYC" />
+        android:label="Hồ sơ eKYC">
+        <action android:id="@+id/action_studentEkyc_to_editProfile" app:destination="@id/studentEditProfileFragment" />
+    </fragment>
+
+    <!-- Chỉnh sửa hồ sơ sinh viên -->
+    <fragment
+        android:id="@+id/studentEditProfileFragment"
+        android:name="com.avaroom.app.ui.student.StudentEditProfileFragment"
+        android:label="Chỉnh sửa hồ sơ" />
 
     <!-- Đổi mật khẩu -->
     <fragment
@@ -114,7 +167,16 @@
     <fragment
         android:id="@+id/reviewsFragment"
         android:name="com.avaroom.app.ui.student.ReviewsFragment"
-        android:label="Đánh giá" />
+        android:label="Đánh giá">
+        <action android:id="@+id/action_reviews_to_booking" app:destination="@id/bookingFragment" />
+        <action android:id="@+id/action_reviews_to_writeReview" app:destination="@id/writeReviewFragment" />
+    </fragment>
+
+    <!-- Viết đánh giá -->
+    <fragment
+        android:id="@+id/writeReviewFragment"
+        android:name="com.avaroom.app.ui.student.WriteReviewFragment"
+        android:label="Viết đánh giá" />
 
     <!-- Thông báo -->
     <fragment

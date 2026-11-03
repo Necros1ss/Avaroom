@@ -4,321 +4,374 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_warm_cream">
+    android:background="@color/student_bg_main">
 
     <!-- Top Navigation Header -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_header"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/bg_white"
+        android:layout_height="64dp"
+        android:background="#E6FFFFFF"
         android:paddingHorizontal="16dp"
+        android:elevation="4dp"
         app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/btn_back_chat"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:gravity="center"
-            android:text="←"
-            android:textColor="@color/primary_black"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/btn_back_chat"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:letterSpacing="0.08"
-                android:text="AVAROOM"
-                android:textColor="@color/text_muted"
-                android:textSize="10sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tin Nhắn"
-                android:textColor="@color/primary_black"
-                android:textSize="17sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <FrameLayout
-            android:id="@+id/btn_call_landlord"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:background="@drawable/bg_chip_pill"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_phone_call" />
-        </FrameLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- Verified Landlord Identity Bar -->
-    <LinearLayout
-        android:id="@+id/layout_landlord_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/bg_white"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingHorizontal="16dp"
-        android:paddingBottom="12dp"
-        app:layout_constraintTop_toBottomOf="@id/layout_header">
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_user_avatar_circle" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Cô Hoàng Thị Ánh Tuyết"
-                    android:textColor="@color/primary_black"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
-                    android:background="@drawable/bg_chip_pill"
-                    android:paddingHorizontal="6dp"
-                    android:paddingVertical="2dp"
-                    android:text="✓ Đã xác minh"
-                    android:textColor="@color/accent_green"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="● Trực tuyến • Phản hồi ~5 phút"
-                android:textColor="@color/text_secondary"
-                android:textSize="11sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <!-- Pinned Listing Context Card (VERTICE Mockup Card Style) -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_pinned_listing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="10dp"
-        app:cardBackgroundColor="@color/bg_white"
-        app:cardCornerRadius="14dp"
-        app:cardElevation="2dp"
-        app:layout_constraintTop_toBottomOf="@id/layout_landlord_bar">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="12dp">
-
-            <FrameLayout
-                android:layout_width="54dp"
-                android:layout_height="54dp"
-                android:background="#2D3748">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="🏠"
-                    android:textSize="22sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center_horizontal"
-                    android:layout_marginBottom="2dp"
-                    android:text="ẢNH MẪU"
-                    android:textColor="@color/bg_white"
-                    android:textSize="8sp" />
-            </FrameLayout>
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <FrameLayout
+                    android:id="@+id/btn_back_chat"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/student_detail_bg_card_highlight"
+                    android:backgroundTint="#E5EEFF">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="←"
+                        android:textColor="@color/student_text_primary"
+                        android:textSize="20sp" />
+                </FrameLayout>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="AVR-90412 • Dữ liệu mẫu"
-                    android:textColor="@color/text_muted"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:text="Studio ban công Tạ Quang Bửu"
-                    android:textColor="@color/primary_black"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/student_bg_chip_dark"
+                    android:gravity="center"
+                    android:text="🏢"
+                    android:textSize="16sp" />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="4.200.000đ"
-                        android:textColor="@color/accent_red"
-                        android:textSize="13sp"
+                        android:text="AVAROOM"
+                        android:textColor="@color/student_accent_red"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tin Nhắn"
+                        android:textColor="@color/student_text_primary"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="2dp"
-                        android:text="/tháng"
-                        android:textColor="@color/text_muted"
-                        android:textSize="11sp" />
                 </LinearLayout>
             </LinearLayout>
 
-            <TextView
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_chip_pill"
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="4dp"
-                android:text="Đã xác nhận ✓"
-                android:textColor="@color/accent_green"
-                android:textSize="11sp"
-                android:textStyle="bold" />
+                android:orientation="horizontal"
+                android:gravity="center_vertical"/>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Message Stream -->
-    <ScrollView
+    <!-- Scrollable Chat Body -->
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/scroll_messages"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="90dp"
         app:layout_constraintBottom_toTopOf="@id/layout_bottom_input"
-        app:layout_constraintTop_toBottomOf="@id/card_pinned_listing">
+        app:layout_constraintTop_toBottomOf="@id/layout_header">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="8dp">
+            android:padding="16dp">
+
+            <!-- Verified Landlord Identity Bar -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/student_white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <FrameLayout
+                        android:layout_width="44dp"
+                        android:layout_height="44dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/student_bg_chip_dark"
+                            android:gravity="center"
+                            android:text="👩‍💼"
+                            android:textSize="20sp" />
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="bottom|end"
+                            android:background="@drawable/student_success_bg_icon_circle"
+                            android:backgroundTint="#10B981" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cô Hoàng Thị Ánh Tuyết"
+                                android:textColor="@color/student_text_primary"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:background="@drawable/student_bg_chip_outline"
+                                android:paddingHorizontal="6dp"
+                                android:paddingVertical="2dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ " android:textColor="@color/student_landlord_accent_green" android:textSize="10sp" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đã xác minh" android:textColor="@color/student_text_secondary" android:textSize="10sp" android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <View
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:background="@drawable/student_success_bg_icon_circle"
+                                android:backgroundTint="#10B981" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:text="Trực tuyến • Phản hồi ~5 phút"
+                                android:textColor="@color/student_text_secondary"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_call_landlord"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/student_detail_bg_card_highlight"
+                        android:backgroundTint="#F1F5F9">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="📞"
+                            android:textSize="14sp" />
+                    </FrameLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Pinned Listing Context Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_pinned_listing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/student_white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <FrameLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/student_detail_bg_card_highlight">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/student_img_room_1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|start"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/student_search_bg_overlay_dark"
+                            android:paddingHorizontal="4dp"
+                            android:paddingVertical="1dp"
+                            android:text="ẢNH MẪU"
+                            android:textColor="@color/student_white"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/student_bg_chip_outline"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp"
+                            android:text="AVR-90412 • Dữ liệu mẫu"
+                            android:textColor="@color/student_text_secondary"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Studio ban công Tạ Quang Bửu"
+                            android:textColor="@color/student_text_primary"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.200.000đ"
+                                android:textColor="@color/student_accent_red"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:text="/tháng"
+                                android:textColor="@color/student_text_secondary"
+                                android:textSize="11sp" />
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/student_landlord_bg_commit_card"
+                                android:backgroundTint="#ECFDF5"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="2dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đã xác nhận " android:textColor="@color/student_landlord_accent_green" android:textSize="10sp" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓" android:textColor="@color/student_landlord_accent_green" android:textSize="10sp" android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
             <!-- Timestamp Divider -->
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginVertical="8dp"
-                android:background="@drawable/bg_chip_pill"
-                android:paddingHorizontal="10dp"
-                android:paddingVertical="3dp"
-                android:text="Hôm nay, 14:15"
-                android:textColor="@color/text_muted"
-                android:textSize="11sp" />
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/student_bg_chip_outline"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="3dp"
+                    android:text="Hôm nay, 14:15"
+                    android:textColor="@color/student_text_secondary"
+                    android:textSize="11sp" />
+            </LinearLayout>
 
             <!-- Landlord Message 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:gravity="top|start"
-                android:orientation="horizontal">
-
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
                 <TextView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:background="@drawable/bg_chip_pill"
+                    android:background="@drawable/student_bg_chip_dark"
                     android:gravity="center"
                     android:text="👩‍💼"
-                    android:textSize="16sp" />
-
+                    android:textSize="14sp" />
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
+                    android:layout_weight="1"
                     android:orientation="vertical">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cô Tuyết"
-                        android:textColor="@color/text_muted"
+                        android:textColor="@color/student_text_secondary"
                         android:textSize="10sp" />
-
-                    <androidx.cardview.widget.CardView
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        app:cardBackgroundColor="@color/bg_white"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="1dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:maxWidth="260dp"
-                            android:paddingHorizontal="14dp"
-                            android:paddingVertical="10dp"
-                            android:text="Chào cháu, phòng 402 ở Tạ Quang Bửu vẫn còn nhé. Giờ giấc tự do, khóa vân tay an ninh."
-                            android:textColor="@color/text_primary"
-                            android:textSize="13sp" />
-                    </androidx.cardview.widget.CardView>
-
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/student_bg_room_card"
+                        android:backgroundTint="@color/student_white"
+                        android:padding="12dp"
+                        android:text="Chào cháu, phòng 402 ở Tạ Quang Bửu vẫn còn nhé. Giờ giấc tự do, khóa vân tay an ninh."
+                        android:textColor="@color/student_text_primary"
+                        android:textSize="13sp" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:text="14:16"
-                        android:textColor="@color/text_muted"
+                        android:textColor="@color/student_text_muted"
                         android:textSize="10sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -327,71 +380,108 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:gravity="top|end"
-                android:orientation="horizontal">
-
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="top|end">
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
                     android:gravity="end"
                     android:orientation="vertical">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Bạn"
-                        android:textColor="@color/text_muted"
+                        android:textColor="@color/student_text_secondary"
                         android:textSize="10sp" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        app:cardBackgroundColor="@color/primary_black"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="1dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:maxWidth="260dp"
-                            android:paddingHorizontal="14dp"
-                            android:paddingVertical="10dp"
-                            android:text="Dạ cháu chào cô, tiền điện nước tính thế nào ạ? Cháu qua xem phòng lúc 16:30 ngày 14/10/2026 được không cô?"
-                            android:textColor="@color/bg_white"
-                            android:textSize="13sp" />
-                    </androidx.cardview.widget.CardView>
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="14:18 ✓✓"
-                        android:textColor="@color/text_muted"
-                        android:textSize="10sp" />
+                        android:background="@drawable/student_bg_room_card"
+                        android:backgroundTint="#0F172A"
+                        android:padding="12dp"
+                        android:text="Dạ cháu chào cô, tiền điện nước tính thế nào ạ? Cháu qua xem phòng lúc 16:30 ngày 14/10/2026 được không cô?"
+                        android:textColor="@color/student_white"
+                        android:textSize="13sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14:18 " android:textColor="@color/student_text_muted" android:textSize="10sp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓✓" android:textColor="@color/student_text_muted" android:textSize="10sp" />
+                    </LinearLayout>
                 </LinearLayout>
-
                 <TextView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:background="@drawable/bg_chip_pill"
+                    android:background="@drawable/student_bg_chip_dark"
+                    android:backgroundTint="#0F172A"
                     android:gravity="center"
                     android:text="BK"
-                    android:textColor="@color/accent_blue"
+                    android:textColor="@color/student_white"
                     android:textSize="11sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Appointment Card from Figma -->
+            <!-- Landlord Message 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="top">
+                <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/student_bg_chip_dark"
+                    android:gravity="center"
+                    android:text="👩‍💼"
+                    android:textSize="14sp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cô Tuyết"
+                        android:textColor="@color/student_text_secondary"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/student_bg_room_card"
+                        android:backgroundTint="@color/student_white"
+                        android:padding="12dp"
+                        android:text="Điện 3.500đ/kWh, nước 100.000đ/người. Cô đã xác nhận lịch 16:30 ngày 14/10/2026 tại số 42 Ngõ 187 Tạ Quang Bửu nhé."
+                        android:textColor="@color/student_text_primary"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="14:20"
+                        android:textColor="@color/student_text_muted"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Appointment Card Widget -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="8dp"
-                app:cardBackgroundColor="@color/bg_white"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@color/student_white"
                 app:cardCornerRadius="16dp"
-                app:cardElevation="2dp">
+                app:cardElevation="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -404,163 +494,145 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
-
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/student_bg_chip_dark"
+                            android:backgroundTint="#F1F5F9"
+                            android:gravity="center"
+                            android:text="📅"
+                            android:textSize="14sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="📅 Lịch hẹn xem phòng • Đã xác nhận"
-                            android:textColor="@color/accent_green"
-                            android:textSize="13sp"
+                            android:layout_marginStart="8dp"
+                            android:text="Lịch hẹn mẫu • Đã xác nhận"
+                            android:textColor="@color/student_text_primary"
+                            android:textSize="14sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:background="@drawable/bg_chip_pill"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/student_bg_chip_outline"
+                        android:backgroundTint="#F8FAFC"
                         android:orientation="vertical"
-                        android:padding="10dp">
+                        android:padding="12dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="🕒 16:30 • Thứ Tư, 14/10/2026"
-                            android:textColor="@color/primary_black"
-                            android:textSize="13sp"
-                            android:textStyle="bold" />
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⏰ " android:textSize="12sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16:30 • Thứ Tư, 14/10/2026"
+                                android:textColor="@color/student_text_primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="📍 42 Ngõ 187 Tạ Quang Bửu, P. Bách Khoa, Hai Bà Trưng, Hà Nội"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="12sp" />
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📍 " android:textSize="12sp" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="42 Ngõ 187 Tạ Quang Bửu, P. Bách Khoa, Hai Bà Trưng, Hà Nội"
+                                android:textColor="@color/student_text_secondary"
+                                android:textSize="12sp" />
+                        </LinearLayout>
                     </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Thêm vào Google Calendar"
-                        android:textColor="@color/accent_blue"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Landlord Message 2 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:gravity="top|start"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:background="@drawable/bg_chip_pill"
-                    android:gravity="center"
-                    android:text="👩‍💼"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cô Tuyết"
-                        android:textColor="@color/text_muted"
-                        android:textSize="10sp" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        app:cardBackgroundColor="@color/bg_white"
-                        app:cardCornerRadius="14dp"
-                        app:cardElevation="1dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:maxWidth="260dp"
-                            android:paddingHorizontal="14dp"
-                            android:paddingVertical="10dp"
-                            android:text="Điện 3.500đ/kWh, nước 100.000đ/người. Cô đã xác nhận lịch 16:30 ngày 14/10/2026 tại số 42 Ngõ 187 Tạ Quang Bửu nhé."
-                            android:textColor="@color/text_primary"
-                            android:textSize="13sp" />
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="14:20"
-                        android:textColor="@color/text_muted"
-                        android:textSize="10sp" />
-                </LinearLayout>
-            </LinearLayout>
-
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <!-- Bottom Chat Input Bar -->
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_bottom_input"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:background="@color/bg_white"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingHorizontal="12dp"
+        android:layout_height="wrap_content"
+        android:background="#E6FFFFFF"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <ImageView
-            android:id="@+id/btn_attach_image"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/student_bg_room_card"
+            android:backgroundTint="@color/student_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
             android:padding="8dp"
-            android:src="@drawable/ic_camera" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/btn_share_location"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:padding="8dp"
-            android:src="@drawable/ic_attachment" />
+            <FrameLayout
+                android:id="@+id/btn_attach_image"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?attr/selectableItemBackgroundBorderless">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="🖼️"
+                    android:textSize="16sp" />
+            </FrameLayout>
 
-        <EditText
-            android:id="@+id/et_chat_input"
-            android:layout_width="0dp"
-            android:layout_height="42dp"
-            android:layout_marginHorizontal="6dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_input_field"
-            android:hint="Nhập tin nhắn cho cô Tuyết..."
-            android:paddingHorizontal="14dp"
-            android:textColor="@color/text_primary"
-            android:textColorHint="@color/text_muted"
-            android:textSize="13sp" />
+            <FrameLayout
+                android:id="@+id/btn_share_location"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?attr/selectableItemBackgroundBorderless">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="📍"
+                    android:textSize="16sp" />
+            </FrameLayout>
 
-        <FrameLayout
-            android:id="@+id/btn_send_chat"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/bg_button_primary">
+            <EditText
+                android:id="@+id/et_chat_input"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/student_bg_chip_outline"
+                android:backgroundTint="#F1F5F9"
+                android:hint="Nhập tin nhắn cho cô Tuyết..."
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/student_text_primary"
+                android:textColorHint="@color/student_text_muted"
+                android:textSize="13sp" />
 
-            <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_send_message" />
-        </FrameLayout>
-    </LinearLayout>
+            <FrameLayout
+                android:id="@+id/btn_send_chat"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/student_landlord_btn_primary"
+                android:backgroundTint="#0F172A">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="➤"
+                    android:textColor="@color/student_white"
+                    android:textSize="14sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

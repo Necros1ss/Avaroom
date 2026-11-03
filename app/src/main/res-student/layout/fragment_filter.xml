@@ -2,50 +2,72 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6F8FA">
+    android:background="@color/student_filter_bg_main">
 
-    <!-- Top App Bar -->
+    <!-- Top Sticky Header -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_filter_header"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#FFFFFF"
-        android:paddingHorizontal="16dp"
+        android:layout_height="64dp"
+        android:background="#E6F8F9FF"
+        android:paddingHorizontal="20dp"
+        android:elevation="4dp"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
+        <FrameLayout
             android:id="@+id/btn_back_filter"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:gravity="center"
-            android:text="✕"
-            android:textColor="#0F172A"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/student_filter_bg_header_close"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="✕"
+                android:textColor="@color/student_filter_text_dark"
+                android:textSize="18sp" />
+        </FrameLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bộ lọc tìm kiếm nâng cao"
-            android:textColor="#0F172A"
-            android:textSize="16sp"
-            android:textStyle="bold"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@id/btn_back_filter"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bộ lọc tìm kiếm"
+                android:textColor="@color/student_filter_text_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tối ưu cho lối sống sinh viên"
+                android:textColor="@color/student_filter_text_muted"
+                android:textSize="10sp" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/btn_reset_filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/student_filter_bg_reset_btn"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="6dp"
             android:text="Đặt lại"
-            android:textColor="#DC2626"
+            android:textColor="@color/student_filter_accent_red"
             android:textSize="13sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -59,286 +81,624 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
-        app:layout_constraintBottom_toTopOf="@id/layout_apply_filter"
-        app:layout_constraintTop_toBottomOf="@id/layout_filter_header">
+        android:paddingBottom="90dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
-
-            <!-- Target University -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TRỌNG TÂM VỊ TRÍ"
-                android:textColor="#64748B"
-                android:textSize="11sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/bg_input_field"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingHorizontal="14dp">
-
-                <ImageView
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/ic_map_pin" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ĐH Bách Khoa Hà Nội (Hai Bà Trưng)"
-                    android:textColor="#0F172A"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-            <!-- Radius to School -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Bán kính đến trường (Hiện tại: &lt; 1.5 km)"
-                android:textColor="#0F172A"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+            android:paddingTop="64dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="24dp">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_chip_pill"
-                    android:gravity="center"
-                    android:text="&lt; 500m"
-                    android:textColor="#334155"
-                    android:textSize="12sp" />
+                <!-- Target University (Trọng tâm vị trí) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_button_primary"
-                    android:gravity="center"
-                    android:text="&lt; 1km"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_chip_pill"
-                    android:gravity="center"
-                    android:text="&lt; 2km"
-                    android:textColor="#334155"
-                    android:textSize="12sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🏫"
+                            android:textSize="14sp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_weight="1"
+                            android:text="Trường Đại học mục tiêu"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TRỌNG TÂM VỊ TRÍ"
+                            android:textColor="@color/student_filter_text_muted"
+                            android:textSize="10sp" />
+                    </LinearLayout>
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_chip_pill"
-                    android:gravity="center"
-                    android:text="&lt; 3km"
-                    android:textColor="#334155"
-                    android:textSize="12sp" />
+
+                    <FrameLayout
+                        android:id="@+id/layout_target_university"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/student_filter_bg_card_white"
+                        android:elevation="1dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingHorizontal="14dp"
+                        android:paddingVertical="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📍"
+                            android:textSize="14sp"
+                            android:layout_gravity="center_vertical|start" />
+
+                        <TextView
+                            android:id="@+id/tv_target_university"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="24dp"
+                            android:text="Chọn trường đại học"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⌄"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical|end" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- Bán kính đến trường -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/student_filter_bg_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎯" android:textSize="14sp" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:layout_weight="1" android:text="Bán kính đến trường" android:textColor="@color/student_filter_text_dark" android:textSize="13sp" android:textStyle="bold" />
+                        <TextView android:id="@+id/text_radius_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/student_filter_bg_pill_white" android:elevation="1dp" android:paddingHorizontal="8dp" android:paddingVertical="2dp" android:text="1.5 km" android:textColor="@color/student_filter_accent_red" android:textSize="11sp" android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/radius_500m"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/student_filter_bg_card_white"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="8dp"
+                            android:text="&lt; 500m (Đi bộ) 🚶"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/radius_1km"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/student_filter_bg_card_white"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="8dp"
+                            android:text="&lt; 1km (Xe đạp) 🚲"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/radius_2km"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/student_filter_bg_card_white"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="8dp"
+                            android:text="&lt; 2km (5-7 phút) 🛵"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/radius_3km"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/student_filter_bg_card_white"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="8dp"
+                            android:text="&lt; 3km (Tối đa) 🚀"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- Slider Mockup -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="300m"
+                                android:textColor="@color/student_filter_text_muted"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bán kính tùy chỉnh linh hoạt"
+                                android:textColor="@color/student_filter_text_muted"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="5km"
+                                android:textColor="@color/student_filter_text_muted"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <SeekBar
+                            android:id="@+id/seek_radius"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:max="4700"
+                            android:progress="1200"
+                            android:progressTint="@color/student_filter_accent_red"
+                            android:thumbTint="@color/student_filter_accent_red"
+                            android:progressBackgroundTint="@color/student_filter_bg_blue_light" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Khoảng giá thuê -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/student_filter_bg_card_white"
+                    android:elevation="1dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/student_filter_bg_card_white" android:backgroundTint="#FEE2E2" android:paddingHorizontal="4dp" android:text="💵" android:textSize="12sp" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:layout_weight="1" android:text="Khoảng ngân sách / tháng" android:textColor="@color/student_filter_text_dark" android:textSize="13sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/student_filter_bg_pill_highlight" android:paddingHorizontal="8dp" android:paddingVertical="2dp" android:text="Bao gồm phụ phí cơ bản" android:textColor="@color/student_filter_text_dark" android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <!-- Price Input Mockup -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/student_filter_bg_card"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thấp nhất" android:textColor="@color/student_filter_text_muted" android:textSize="10sp" />
+                            <TextView
+                                android:id="@+id/text_price_min"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2.000.000đ"
+                                android:textColor="@color/student_filter_text_dark"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View android:layout_width="24dp" android:layout_height="2dp" android:background="#C6C6CC" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cao nhất" android:textColor="@color/student_filter_text_muted" android:textSize="10sp" />
+                            <TextView
+                                android:id="@+id/text_price_max"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.200.000đ"
+                                android:textColor="@color/student_filter_accent_red"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Slider Mockup -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+                        <FrameLayout
+                            android:id="@+id/layout_price_track"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="@drawable/student_filter_bg_pill_highlight"
+                            android:backgroundTint="@color/student_filter_bg_blue_light">
+
+                            <View
+                                android:id="@+id/view_price_progress"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/student_filter_bg_pill_dark" />
+
+                        </FrameLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+                            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="1.5 Tr" android:textColor="@color/student_filter_text_muted" android:textSize="10sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phổ thông SV: 2.5 - 3.8 Tr" android:textColor="@color/student_filter_text_muted" android:textSize="10sp" />
+                            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="end" android:text="8.0 Tr+" android:textColor="@color/student_filter_text_muted" android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Quick Price Chips -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/price_under_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/student_filter_bg_pill_highlight"
+                                android:paddingHorizontal="12dp"
+                                android:paddingVertical="6dp"
+                                android:text="Dưới 2.5 triệu"
+                                android:textColor="@color/student_filter_text_dark"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/price25_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/student_filter_bg_pill_highlight"
+                                android:paddingHorizontal="12dp"
+                                android:paddingVertical="6dp"
+                                android:text="2.5 - 4 triệu 🔥"
+                                android:textColor="@color/student_filter_text_dark"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/price_over_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/student_filter_bg_pill_highlight"
+                                android:paddingHorizontal="12dp"
+                                android:paddingVertical="6dp"
+                                android:text="Trên 4 triệu"
+                                android:textColor="@color/student_filter_text_dark"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <!-- Loại hình phòng ở -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏠" android:textSize="14sp" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:layout_weight="1" android:text="Loại hình phòng ở" android:textColor="@color/student_filter_text_dark" android:textSize="13sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chọn nhiều loại" android:textColor="@color/student_filter_text_muted" android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+                        <!-- Phòng khép kín -->
+                        <LinearLayout android:id="@+id/btn_filter_room_private" android:layout_width="0dp" android:layout_height="80dp" android:layout_marginEnd="4dp" android:layout_weight="1" android:background="@drawable/student_filter_bg_card_white" android:elevation="1dp" android:orientation="vertical" android:padding="12dp" android:clickable="true" android:focusable="true">
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="🚪" android:textSize="16sp" />
+                            </LinearLayout>
+                            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+                            <TextView android:id="@+id/text_room_private" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phòng khép kín" android:textColor="@color/student_filter_text_dark" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <!-- Chung cư mini (Selected) -->
+                        <LinearLayout android:id="@+id/btn_filter_room_mini" android:layout_width="0dp" android:layout_height="80dp" android:layout_marginStart="4dp" android:layout_weight="1" android:background="@drawable/student_filter_bg_card_white" android:elevation="1dp" android:orientation="vertical" android:padding="12dp" android:clickable="true" android:focusable="true">
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="🏢" android:textSize="16sp" />
+                            </LinearLayout>
+                            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+                            <TextView android:id="@+id/text_room_mini" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chung cư mini" android:textColor="@color/student_filter_text_dark" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+                        <!-- KTX Tư nhân -->
+                        <LinearLayout android:id="@+id/btn_filter_room_dorm" android:layout_width="0dp" android:layout_height="80dp" android:layout_marginEnd="4dp" android:layout_weight="1" android:background="@drawable/student_filter_bg_card_white" android:elevation="1dp" android:orientation="vertical" android:padding="12dp" android:clickable="true" android:focusable="true">
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="🛏️" android:textSize="16sp" />
+                            </LinearLayout>
+                            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+                            <TextView android:id="@+id/text_room_dorm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KTX Tư nhân" android:textColor="@color/student_filter_text_dark" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <!-- Căn hộ mini -->
+                        <LinearLayout android:id="@+id/btn_filter_room_apt" android:layout_width="0dp" android:layout_height="80dp" android:layout_marginStart="4dp" android:layout_weight="1" android:background="@drawable/student_filter_bg_card_white" android:elevation="1dp" android:orientation="vertical" android:padding="12dp" android:clickable="true" android:focusable="true">
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="🏘️" android:textSize="16sp" />
+
+                            </LinearLayout>
+                            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+                            <TextView android:id="@+id/text_room_apt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Căn hộ mini" android:textColor="@color/student_filter_text_dark" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Phòng ghép -->
+                    <LinearLayout android:id="@+id/btn_filter_room_shared" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginTop="8dp" android:background="@drawable/student_filter_bg_card_white" android:elevation="1dp" android:orientation="vertical" android:padding="12dp" android:clickable="true" android:focusable="true">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👥" android:textSize="16sp" />
+                            <TextView android:id="@+id/text_room_shared" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_weight="1" android:text="Phòng ghép" android:textColor="@color/student_filter_text_dark" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+                        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+                        <TextView android:id="@+id/text_desc_room_shared" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phù hợp tân sinh viên muốn tiết kiệm sinh hoạt phí" android:textColor="@color/student_filter_text_muted" android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✔️" android:textSize="14sp" />
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:layout_weight="1" android:text="Tiện ích sinh viên" android:textColor="@color/student_filter_text_dark" android:textSize="13sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nhấn để chọn" android:textColor="@color/student_filter_text_muted" android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/amenity_247"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/student_filter_bg_card_white"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="12dp"
+                            android:paddingVertical="8dp"
+                            android:text="🔑 Giờ giấc tự do 24/7 (Vân tay)"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/amenity_no_owner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/student_filter_bg_card_white"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="12dp"
+                            android:paddingVertical="8dp"
+                            android:text="🚶 Không chung chủ"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="12sp" />
+                        <TextView
+                            android:id="@+id/amenity_ev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/student_filter_bg_card_white"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="12dp"
+                            android:paddingVertical="8dp"
+                            android:text="🔌 Sạc xe điện an toàn (PCCC)"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/amenity_cooking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/student_filter_bg_card_white"
+                                android:elevation="1dp"
+                                android:paddingHorizontal="12dp"
+                                android:paddingVertical="8dp"
+                                android:text="🍳 Nấu ăn thoải mái"
+                                android:textColor="@color/student_filter_text_dark"
+                                android:textSize="12sp" />
+                            <TextView
+                                android:id="@+id/amenity_fridge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/student_filter_bg_card_white"
+                                android:elevation="1dp"
+                                android:paddingHorizontal="12dp"
+                                android:paddingVertical="8dp"
+                                android:text="🧊 Tủ lạnh &amp; Máy giặt"
+                                android:textColor="@color/student_filter_text_dark"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/amenity_balcony"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/student_filter_bg_card_white"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="12dp"
+                            android:paddingVertical="8dp"
+                            android:text="🌿 Ban công / Cửa sổ thoáng"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/amenity_wifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/student_filter_bg_card_white"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="12dp"
+                            android:paddingVertical="8dp"
+                            android:text="📶 Wifi tốc độ cao học online"
+                            android:textColor="@color/student_filter_text_dark"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
             </LinearLayout>
-
-            <!-- Budget Range / Khoảng ngân sách -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Khoảng ngân sách / tháng"
-                android:textColor="#0F172A"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_chip_pill"
-                    android:gravity="center"
-                    android:text="&lt; 2.5 triệu"
-                    android:textColor="#334155"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_button_primary"
-                    android:gravity="center"
-                    android:text="2.5 - 4.0 triệu"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_chip_pill"
-                    android:gravity="center"
-                    android:text="Trên 4 triệu"
-                    android:textColor="#334155"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- Room Type / Loại hình phòng ở -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Loại hình phòng ở"
-                android:textColor="#0F172A"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_button_primary"
-                    android:paddingHorizontal="14dp"
-                    android:paddingVertical="8dp"
-                    android:text="✓ Phòng khép kín"
-                    android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:background="@drawable/bg_chip_pill"
-                    android:paddingHorizontal="14dp"
-                    android:paddingVertical="8dp"
-                    android:text="Chung cư mini"
-                    android:textColor="#334155"
-                    android:textSize="12sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:background="@drawable/bg_chip_pill"
-                    android:paddingHorizontal="14dp"
-                    android:paddingVertical="8dp"
-                    android:text="Căn hộ mini"
-                    android:textColor="#334155"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- Essential Student Amenities -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Tiện ích sinh viên quan trọng"
-                android:textColor="#0F172A"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:orientation="vertical">
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="Giờ giấc tự do 24/7 (Vân tay)"
-                    android:textColor="#1E293B"
-                    android:textSize="13sp" />
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="Không chung chủ"
-                    android:textColor="#1E293B"
-                    android:textSize="13sp" />
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sạc xe điện an toàn (PCCC)"
-                    android:textColor="#1E293B"
-                    android:textSize="13sp" />
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="Nấu ăn thoải mái"
-                    android:textColor="#1E293B"
-                    android:textSize="13sp" />
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ban công / Cửa sổ thoáng"
-                    android:textColor="#1E293B"
-                    android:textSize="13sp" />
-            </LinearLayout>
-
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
     <!-- Bottom Apply Filter Action -->
     <LinearLayout
-        android:id="@+id/layout_apply_filter"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:background="#FFFFFF"
-        android:elevation="8dp"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="#E6F8F9FF"
         android:paddingHorizontal="20dp"
+        android:paddingVertical="16dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <FrameLayout
             android:id="@+id/btn_apply_filter"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/bg_button_primary"
-            android:text="Áp dụng bộ lọc (48 phòng)"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:layout_height="56dp"
+            android:background="@drawable/student_filter_bg_pill_dark"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Áp dụng bộ lọc"
+                    android:textColor="@color/student_white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="→"
+                    android:textColor="@color/student_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
