@@ -11,6 +11,7 @@ const { errorHandler, notFound } = require('./middleware/errorHandler');
 const authRoutes = require('./routes/auth.routes');
 const roomRoutes = require('./routes/room.routes');
 const studentRoutes = require('./routes/student.routes');
+const landlordRoutes = require('./routes/landlord.routes');
 
 const app = express();
 
@@ -38,10 +39,11 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Mount Routes (Chỉ giữ Auth & JWT)
+// Mount Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/rooms', roomRoutes);
 app.use('/api/student', studentRoutes);
+app.use('/api/landlord', landlordRoutes);
 
 // Error handlers
 app.use(notFound);
@@ -59,6 +61,7 @@ const startServer = async () => {
       console.log(`🚀 Avaroom Auth Service (PostgreSQL) đang chạy!`);
       console.log(`📍 URL: http://localhost:${PORT}`);
       console.log(`🔑 Auth Endpoint: http://localhost:${PORT}/api/auth`);
+      console.log(`🏠 Landlord EKYC: http://localhost:${PORT}/api/landlord/ekyc`);
       console.log(`❤️  Health: http://localhost:${PORT}/api/health`);
       console.log(`🏠 Room List: http://localhost:${PORT}/api/rooms`);
       console.log(`🏠 Room Detail: http://localhost:${PORT}/api/rooms/:id`);

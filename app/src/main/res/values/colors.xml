@@ -43,4 +43,16 @@
     <color name="accent_blue">#0D1C2E</color>
     <color name="accent_blue_tint">#EFF4FF</color>
     <color name="accent_blue_light">#E5EEFF</color>
+
+    <!-- Colors from Prototype Views -->
+    <color name="ink">#101C31</color>
+    <color name="muted">#657083</color>
+    <color name="canvas">#F7F8FD</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="soft_blue">#EEF3FF</color>
+    <color name="line">#E7EAF1</color>
+    <color name="red">#E52C41</color>
+    <color name="green">#00A47A</color>
+    <color name="orange">#FFAB16</color>
+    <color name="black_button">#020A18</color>
 </resources>

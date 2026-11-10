@@ -1,6 +1,11 @@
-// STUB: Tạm thời để backend không crash khi require('./routes/landlord.routes') trong app.js
-// Sẽ được implement đầy đủ các routes tương ứng trong Phase 7
 const express = require('express');
 const router = express.Router();
+const { authForEkyc } = require('../middleware/auth.middleware');
+const { uploadCccdFiles, submitLandlordEkyc } = require('../controllers/ekyc.controller');
+
+// ==================== LANDLORD EKYC ROUTE ====================
+// Dùng authForEkyc thay vì auth + authorize('LANDLORD')
+// vì tài khoản chủ trọ ở bước này vẫn đang INACTIVE (chờ eKYC xong mới ACTIVE)
+router.post('/ekyc', authForEkyc, uploadCccdFiles, submitLandlordEkyc);
 
 module.exports = router;

@@ -88,6 +88,15 @@ public class RegisterFragment extends Fragment {
             String password = binding.etPassword.getText().toString();
             String confirmPass = binding.etConfirmPassword.getText().toString();
 
+            String address = null;
+            if (isLandlordRole) {
+                address = binding.etAddress.getText().toString().trim();
+                if (address.isEmpty()) {
+                    binding.etAddress.setError("Vui lòng nhập địa chỉ khu trọ");
+                    return;
+                }
+            }
+
             if (fullName.isEmpty()) {
                 binding.etFullname.setError("Vui lòng nhập họ và tên");
                 return;
@@ -105,7 +114,7 @@ public class RegisterFragment extends Fragment {
                 return;
             }
             binding.btnRegisterSubmit.setEnabled(false);
-            RegisterRequest request = new RegisterRequest(fullName, email, password, phone, role);
+            RegisterRequest request = new RegisterRequest(fullName, email, password, phone, role, address);
 
             RetrofitClient.getApiService().register(request).enqueue(new Callback<ApiResponse<Object>>() {
                 @Override
@@ -149,13 +158,29 @@ public class RegisterFragment extends Fragment {
     private void setRole(boolean landlord) {
         isLandlordRole = landlord;
         if (landlord) {
+            binding.layoutLandlordFields.setVisibility(View.VISIBLE);
             binding.btnRoleLandlord.setCardBackgroundColor(ContextCompat.getColor(requireContext(), R.color.primary_black));
             binding.btnRoleStudent.setCardBackgroundColor(ContextCompat.getColor(requireContext(), R.color.bg_white));
             binding.tvTitleReg.setText("Tạo tài khoản\nchủ trọ.");
+            binding.tvSubtitleReg.setText("Quản lý phòng trọ chuyên nghiệp, tiếp cận hàng nghìn sinh viên tìm phòng uy tín.");
+            binding.tvLabelFullname.setText("Họ và tên chủ trọ *");
+            binding.etFullname.setHint("Nguyễn Văn A");
+
+            binding.tvLabelEmail.setText("Email liên hệ / quản lý *");
+            binding.etEmail.setHint("chutro@gmail.com");
         } else {
+            binding.layoutLandlordFields.setVisibility(View.GONE);
             binding.btnRoleStudent.setCardBackgroundColor(ContextCompat.getColor(requireContext(), R.color.primary_black));
             binding.btnRoleLandlord.setCardBackgroundColor(ContextCompat.getColor(requireContext(), R.color.bg_white));
             binding.tvTitleReg.setText("Tạo tài khoản\nsinh viên.");
+            binding.tvSubtitleReg.setText("Nhận ngay gói hỗ trợ bảo vệ cọc 100% và ưu đãi giảm cọc khi xác thực thẻ sinh viên.");
+
+            // Cập nhật nhãn và gợi ý form cho Sinh viên
+            binding.tvLabelFullname.setText("Họ và tên sinh viên *");
+            binding.etFullname.setHint("Nguyễn Văn A");
+
+            binding.tvLabelEmail.setText("Email sinh viên *");
+            binding.etEmail.setHint("example@gmail.edu.vn");
         }
     }
 

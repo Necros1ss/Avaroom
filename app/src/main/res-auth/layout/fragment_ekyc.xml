@@ -2,6 +2,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
@@ -49,11 +50,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_title_ekyc" />
 
-        <!-- Front Side Card -->
+        <!-- ================= FRONT SIDE CARD ================= -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card_cccd_front"
             android:layout_width="0dp"
-            android:layout_height="160dp"
+            android:layout_height="200dp"
             android:layout_marginTop="24dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
@@ -62,36 +63,68 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_sub_ekyc">
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:layout_height="match_parent">
 
+                <!-- Placeholder khi chưa chụp ảnh -->
+                <LinearLayout
+                    android:id="@+id/layout_placeholder_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📷 CHỤP MẶT TRƯỚC CCCD"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Rõ nét, đủ 4 góc, không chói sáng"
+                        android:textColor="@color/text_muted"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- ImageView hiển thị ảnh mặt trước sau khi chụp -->
+                <ImageView
+                    android:id="@+id/iv_preview_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:contentDescription="Ảnh mặt trước CCCD"
+                    tools:visibility="visible" />
+
+                <!-- Nhãn báo chụp lại góc dưới phải -->
                 <TextView
+                    android:id="@+id/tv_retake_front"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="📷 CHỤP MẶT TRƯỚC CCCD"
-                    android:textColor="@color/primary_dark"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Rõ nét, đủ 4 góc, không chói sáng"
-                    android:textColor="@color/text_muted"
-                    android:textSize="12sp" />
-            </LinearLayout>
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="12dp"
+                    android:background="#99000000"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:text="🔄 Chụp lại"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </FrameLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Back Side Card -->
+        <!-- ================= BACK SIDE CARD ================= -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card_cccd_back"
             android:layout_width="0dp"
-            android:layout_height="160dp"
+            android:layout_height="200dp"
             android:layout_marginTop="16dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="2dp"
@@ -100,46 +133,265 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_cccd_front">
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Placeholder khi chưa chụp ảnh -->
+                <LinearLayout
+                    android:id="@+id/layout_placeholder_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📷 CHỤP MẶT SAU CCCD"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Rõ mã QR/Chip và thông tin đặc điểm nhận dạng"
+                        android:textColor="@color/text_muted"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- ImageView hiển thị ảnh mặt sau sau khi chụp -->
+                <ImageView
+                    android:id="@+id/iv_preview_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:contentDescription="Ảnh mặt sau CCCD"
+                    tools:visibility="visible" />
+
+                <!-- Nhãn báo chụp lại góc dưới phải -->
+                <TextView
+                    android:id="@+id/tv_retake_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="12dp"
+                    android:background="#99000000"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:text="🔄 Chụp lại"
+                    android:textColor="@color/bg_white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ================= LOADING KHI ĐANG QUÉT OCR ================= -->
+        <LinearLayout
+            android:id="@+id/layout_ocr_loading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_cccd_back"
+            tools:visibility="visible">
+
+            <ProgressBar
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:indeterminate="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Đang tải ảnh và phân tích OCR CCCD..."
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- ================= KẾT QUẢ OCR (HIỂN THỊ SAU KHI QUÉT) ================= -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_ocr_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/bg_white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_ocr_loading"
+            tools:visibility="visible">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="📷 CHỤP MẶT SAU CCCD"
-                    android:textColor="@color/primary_dark"
-                    android:textSize="15sp"
+                    android:text="✅ Thông tin nhận diện từ CCCD"
+                    android:textColor="@color/accent_green"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:text="Rõ mã QR/Chip và thông tin đặc điểm nhận dạng"
+                    android:layout_marginTop="4dp"
+                    android:text="Vui lòng kiểm tra lại thông tin trước khi xác nhận"
                     android:textColor="@color/text_muted"
                     android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="12dp"
+                    android:background="@color/border_subtle" />
+
+                <!-- Số CCCD -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Số CCCD:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/tv_result_id_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="001202001234" />
+                </LinearLayout>
+
+                <!-- Họ và tên -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Họ và tên:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/tv_result_fullname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="NGUYỄN VĂN A" />
+                </LinearLayout>
+
+                <!-- Ngày sinh -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày sinh:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/tv_result_dob"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        tools:text="15/08/1990" />
+                </LinearLayout>
+
+                <!-- Giới tính -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Giới tính:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/tv_result_gender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        tools:text="Nam" />
+                </LinearLayout>
+
+                <!-- Nơi thường trú -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nơi thường trú:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/tv_result_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        tools:text="Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh" />
+                </LinearLayout>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Action Continue Button -->
+        <!-- ================= ACTION CONTINUE BUTTON ================= -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_continue_ekyc"
             android:layout_width="0dp"
             android:layout_height="54dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/bg_button_primary"
-            android:text="HOÀN TẤT XÁC THỰC"
+            android:text="QUÉT VÀ XÁC THỰC CCCD"
             android:textAllCaps="true"
             android:textColor="@color/bg_white"
             android:textSize="15sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card_cccd_back" />
-
+            app:layout_constraintTop_toBottomOf="@id/card_ocr_result" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

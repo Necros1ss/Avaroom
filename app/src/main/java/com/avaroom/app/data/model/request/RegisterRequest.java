@@ -7,12 +7,15 @@ public class RegisterRequest {
     private String phone_number;
     private String role;
 
-    public RegisterRequest(String full_name, String email, String password, String phone_number, String role) {
+    private String address;
+
+    public RegisterRequest(String full_name, String email, String password, String phone_number, String role, String address) {
         this.full_name = full_name;
         this.email = email;
         this.password = password;
         this.phone_number = phone_number;
         this.role = role;
+        this.address = address;
     }
 
     public String getFullName() {
@@ -53,5 +56,13 @@ public class RegisterRequest {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

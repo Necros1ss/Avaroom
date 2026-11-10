@@ -18,6 +18,7 @@ import com.avaroom.app.data.model.response.ApiResponse;
 import com.avaroom.app.data.model.response.VerifyOtpResponse;
 import com.avaroom.app.data.remote.RetrofitClient;
 import com.avaroom.app.databinding.FragmentOtpBinding;
+import com.avaroom.app.ui.ekyc.EkycFragment;
 import com.avaroom.app.ui.landlord.LandlordMainActivity;
 import com.avaroom.app.ui.student.StudentMainActivity;
 import retrofit2.Call;
@@ -85,12 +86,14 @@ public class OtpFragment extends Fragment {
                             // Điều hướng vào màn hình chính phù hợp theo Role
                             Intent intent;
                             if ("LANDLORD".equalsIgnoreCase(role)) {
-                                intent = new Intent(requireActivity(), LandlordMainActivity.class);
+                                Bundle bundle = new Bundle();
+                                bundle.putString("USER_ROLE", role);
+                                Navigation.findNavController(v).navigate(R.id.action_otpFragment_to_ekycFragment, bundle);
                             } else {
                                 intent = new Intent(requireActivity(), StudentMainActivity.class);
+                                startActivity(intent);
+                                requireActivity().finish();
                             }
-                            startActivity(intent);
-                            requireActivity().finish();
 
                         } else {
                             // LUỒNG 2: QUÊN MẬT KHẨU

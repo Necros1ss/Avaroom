@@ -65,6 +65,7 @@
 
         <!-- Subtitle description -->
         <TextView
+            android:id="@+id/tv_subtitle_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -182,6 +183,7 @@
 
         <!-- Field 1: Họ và tên sinh viên * -->
         <TextView
+            android:id="@+id/tv_label_fullname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -258,6 +260,7 @@
 
         <!-- Field 3: Email sinh viên * -->
         <TextView
+            android:id="@+id/tv_label_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -292,6 +295,49 @@
                 android:textColor="@color/text_primary"
                 android:textColorHint="@color/text_muted"
                 android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_landlord_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <!-- Label: Địa chỉ quản lý trọ * -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Địa chỉ khu trọ / liên hệ *"
+                android:textColor="@color/primary_black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <!-- Input Địa chỉ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_field"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="14dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📍"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="Số nhà, ngõ/phố, Phường, Quận..."
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted"
+                    android:textSize="14sp" />
+            </LinearLayout>
         </LinearLayout>
 
         <!-- Field 4: Mật khẩu mới * -->
@@ -514,6 +560,8 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
+
 
     </LinearLayout>
 </ScrollView>

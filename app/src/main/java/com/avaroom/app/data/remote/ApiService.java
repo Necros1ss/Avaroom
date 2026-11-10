@@ -7,19 +7,23 @@ import com.avaroom.app.data.model.request.ResetPasswordRequest;
 import com.avaroom.app.data.model.request.VerifyOtpRequest;
 import com.avaroom.app.data.model.response.ApiResponse;
 import com.avaroom.app.data.model.response.AuthResponse;
+import com.avaroom.app.data.model.response.EkycResponse;
 import com.avaroom.app.data.model.response.VerifyOtpResponse;
 
 import java.util.List;
 import java.util.Map;
 
+import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.Multipart;
 import retrofit2.http.PATCH;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
+import retrofit2.http.Part;
 import retrofit2.http.Path;
 
 public interface ApiService {
@@ -84,4 +88,12 @@ public interface ApiService {
 
     @PATCH("api/landlord/handover")
     Call<ApiResponse<Map<String, Object>>> updateAssetHandover(@Header("Authorization") String token, @Body Map<String, Object> body);
+
+    @Multipart
+    @POST("api/landlord/ekyc")
+    Call<ApiResponse<EkycResponse>> uploadLandlordEkyc(
+            @Header("Authorization") String token,
+            @Part MultipartBody.Part frontImage,
+            @Part MultipartBody.Part backImage
+    );
 }
