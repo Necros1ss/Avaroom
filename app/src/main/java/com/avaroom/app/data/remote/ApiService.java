@@ -26,6 +26,8 @@ import retrofit2.http.PUT;
 import retrofit2.http.Part;
 import retrofit2.http.Path;
 
+import com.avaroom.app.data.model.response.RoomResponse;
+
 public interface ApiService {
 
     // ==================== AUTH ENDPOINTS (from main) ====================
@@ -96,4 +98,46 @@ public interface ApiService {
             @Part MultipartBody.Part frontImage,
             @Part MultipartBody.Part backImage
     );
+
+    // ==================== ROOM ENDPOINTS ====================
+
+    /**
+     * Lấy danh sách phòng trọ AVAILABLE (public, không cần token)
+     * Query: page, limit, district, min_price, max_price, room_type, keyword
+     * has_wifi, has_ac, has_parking, has_private_bathroom, has_kitchen, has_security
+     */
+    @GET("api/rooms")
+    Call<ApiResponse<RoomResponse.RoomsData>> getRooms(
+            @retrofit2.http.QueryMap Map<String, String> filters
+    );
+
+    /** Chi tiết một phòng trọ theo ID */
+    @GET("api/rooms/{id}")
+    Call<ApiResponse<RoomResponse>> getRoomById(@Path("id") long id);
+
+    /** Chủ trọ tạo bài đăng phòng mới */
+    @POST("api/rooms")
+    Call<ApiResponse<RoomResponse>> createRoom(
+            @Header("Authorization") String token,
+            @Body Map<String, Object> body
+    );
+
+    /** Chủ trọ cập nhật bài đăng phòng */
+    @PUT("api/rooms/{id}")
+    Call<ApiResponse<RoomResponse>> updateRoom(
+            @Header("Authorization") String token,
+            @Path("id") long id,
+            @Body Map<String, Object> body
+    );
+
+    /** Chủ trọ xóa bài đăng phòng */
+    @DELETE("api/rooms/{id}")
+    Call<ApiResponse<Object>> deleteRoom(
+            @Header("Authorization") String token,
+            @Path("id") long id
+    );
+
+    /** Chủ trọ lấy danh sách phòng của mình */
+    @GET("api/rooms/landlord/my-rooms")
+    Call<ApiResponse<List<RoomResponse>>> getMyRooms(@Header("Authorization") String token);
 }

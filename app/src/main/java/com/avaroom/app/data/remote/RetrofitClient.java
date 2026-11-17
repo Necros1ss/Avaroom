@@ -1,5 +1,6 @@
 package com.avaroom.app.data.remote;
 
+import java.util.concurrent.TimeUnit;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
@@ -7,7 +8,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import com.avaroom.app.BuildConfig;
 
 public class RetrofitClient {
-    // 10.0.2.2 là localhost trên máy host dành cho Android Emulator
     private static final String BASE_URL = BuildConfig.BASE_URL;
     private static Retrofit retrofit = null;
 
@@ -17,6 +17,9 @@ public class RetrofitClient {
             logging.setLevel(HttpLoggingInterceptor.Level.BODY);
 
             OkHttpClient client = new OkHttpClient.Builder()
+                    .connectTimeout(60, TimeUnit.SECONDS)
+                    .readTimeout(60, TimeUnit.SECONDS)
+                    .writeTimeout(60, TimeUnit.SECONDS)
                     .addInterceptor(logging)
                     .build();
 

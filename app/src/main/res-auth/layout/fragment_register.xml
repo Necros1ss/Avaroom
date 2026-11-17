@@ -110,6 +110,7 @@
                     android:padding="16dp">
 
                     <TextView
+                        android:id="@+id/iv_role_student_icon"
                         android:layout_width="36dp"
                         android:layout_height="36dp"
                         android:background="#2D3748"
@@ -118,6 +119,7 @@
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/tv_role_student_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
@@ -127,6 +129,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tv_role_student_subtitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -154,6 +157,7 @@
                     android:padding="16dp">
 
                     <TextView
+                        android:id="@+id/iv_role_landlord_icon"
                         android:layout_width="36dp"
                         android:layout_height="36dp"
                         android:background="@color/bg_warm_cream"
@@ -162,6 +166,7 @@
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/tv_role_landlord_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
@@ -171,6 +176,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tv_role_landlord_subtitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -509,8 +515,7 @@
                 android:id="@+id/cb_agree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/primary_black"
-                android:checked="true" />
+                android:buttonTint="@color/primary_black" />
 
             <TextView
                 android:layout_width="0dp"

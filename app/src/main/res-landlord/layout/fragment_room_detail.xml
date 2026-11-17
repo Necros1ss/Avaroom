@@ -374,6 +374,7 @@
                             android:orientation="horizontal">
 
                             <TextView
+                                android:id="@+id/tv_detail_type"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/student_detail_bg_chip_blue"
@@ -385,19 +386,21 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:id="@+id/tv_detail_status_chip"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="8dp"
                                 android:background="@drawable/student_detail_bg_chip_red"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="2dp"
-                                android:text="Còn 1 phòng"
+                                android:text="Còn phòng"
                                 android:textColor="#410004"
                                 android:textSize="11sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
 
                         <TextView
+                            android:id="@+id/tv_detail_title"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
@@ -420,6 +423,7 @@
                                 android:textSize="13sp" />
 
                             <TextView
+                                android:id="@+id/tv_detail_address"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="4dp"
@@ -438,6 +442,7 @@
                             android:padding="14dp">
 
                             <TextView
+                                android:id="@+id/tv_detail_price"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="4.200.000"
@@ -479,7 +484,7 @@
                             android:orientation="vertical"
                             android:paddingVertical="24dp">
                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📐" android:textSize="14sp" />
-                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="28 m²" android:textColor="@color/student_detail_text_dark" android:textStyle="bold" android:textSize="11sp" />
+                            <TextView android:id="@+id/tv_detail_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="28 m²" android:textColor="@color/student_detail_text_dark" android:textStyle="bold" android:textSize="11sp" />
                             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Diện tích" android:textColor="@color/student_detail_text_muted" android:textSize="10sp" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -615,7 +620,7 @@
 
                                 <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:text="Tiền điện" android:textColor="@color/student_detail_text_dark" android:textSize="14sp" />
 
-                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.500 đ " android:textColor="@color/student_detail_text_dark" android:textStyle="bold" android:textSize="13sp" />
+                                <TextView android:id="@+id/tv_detail_electricity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.500 đ " android:textColor="@color/student_detail_text_dark" android:textStyle="bold" android:textSize="13sp" />
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/ kWh" android:textColor="@color/student_detail_text_muted" android:textSize="10sp" />
                             </LinearLayout>
 
@@ -638,7 +643,7 @@
 
                                 <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:text="Tiền nước" android:textColor="@color/student_detail_text_dark" android:textSize="14sp" />
 
-                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100.000 đ " android:textColor="@color/student_detail_text_dark" android:textStyle="bold" android:textSize="13sp" />
+                                <TextView android:id="@+id/tv_detail_water" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100.000 đ " android:textColor="@color/student_detail_text_dark" android:textStyle="bold" android:textSize="13sp" />
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/ người" android:textColor="@color/student_detail_text_muted" android:textSize="10sp" />
                             </LinearLayout>
 
@@ -661,7 +666,7 @@
 
                                 <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:text="Internet Wifi Mesh" android:textColor="@color/student_detail_text_dark" android:textSize="14sp" />
 
-                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100.000 đ " android:textColor="@color/student_detail_text_dark" android:textStyle="bold" android:textSize="13sp" />
+                                <TextView android:id="@+id/tv_detail_internet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100.000 đ " android:textColor="@color/student_detail_text_dark" android:textStyle="bold" android:textSize="13sp" />
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/ phòng" android:textColor="@color/student_detail_text_muted" android:textSize="10sp" />
                             </LinearLayout>
 
@@ -684,7 +689,7 @@
 
                                 <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:text="Gửi xe &amp; sạc điện" android:textColor="@color/student_detail_text_dark" android:textSize="14sp" />
 
-                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120.000 đ " android:textColor="@color/student_detail_text_dark" android:textStyle="bold" android:textSize="13sp" />
+                                <TextView android:id="@+id/tv_detail_parking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120.000 đ " android:textColor="@color/student_detail_text_dark" android:textStyle="bold" android:textSize="13sp" />
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/ xe" android:textColor="@color/student_detail_text_muted" android:textSize="10sp" />
                             </LinearLayout>
 
@@ -1170,6 +1175,7 @@
                                     android:orientation="horizontal">
 
                                     <TextView
+                                        android:id="@+id/tv_landlord_name"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Cô Hoàng Thị Ánh Tuyết"

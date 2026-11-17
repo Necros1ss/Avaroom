@@ -1,5 +1,6 @@
 package com.avaroom.app.ui.auth;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
@@ -21,6 +23,8 @@ import com.avaroom.app.databinding.FragmentRegisterBinding;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegisterFragment extends Fragment {
@@ -155,8 +159,35 @@ public class RegisterFragment extends Fragment {
         });
     }
 
+    private void updateRoleCardState(CardView card, TextView icon, TextView title, TextView subtitle, boolean isSelected) {
+        if (isSelected) {
+            card.setCardBackgroundColor(Color.parseColor("#1A202C"));
+            title.setTextColor(Color.parseColor("#FFFFFF"));
+            subtitle.setTextColor(Color.parseColor("#D1D5DB"));
+            icon.setBackgroundColor(Color.parseColor("#FFFFFF"));
+        } else {
+            card.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
+            title.setTextColor(Color.parseColor("#1A202C"));
+            subtitle.setTextColor(Color.parseColor("#718096"));
+            icon.setBackgroundColor(Color.parseColor("#F3F4F6"));
+        }
+    }
     private void setRole(boolean landlord) {
         isLandlordRole = landlord;
+        updateRoleCardState(
+                binding.btnRoleLandlord,
+                binding.ivRoleLandlordIcon,
+                binding.tvRoleLandlordTitle,
+                binding.tvRoleLandlordSubtitle,
+                landlord
+        );
+        updateRoleCardState(
+                binding.btnRoleStudent,
+                binding.ivRoleStudentIcon,
+                binding.tvRoleStudentTitle,
+                binding.tvRoleStudentSubtitle,
+                !landlord
+        );
         if (landlord) {
             binding.layoutLandlordFields.setVisibility(View.VISIBLE);
             binding.btnRoleLandlord.setCardBackgroundColor(ContextCompat.getColor(requireContext(), R.color.primary_black));

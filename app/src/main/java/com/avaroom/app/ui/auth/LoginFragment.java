@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +33,8 @@ import retrofit2.Response;
 public class LoginFragment extends Fragment {
 
     private FragmentLoginBinding binding;
+
+    private boolean isPasswordVisible = false;
 
     private String getAuthToken() {
         SharedPreferences pref = requireContext().getSharedPreferences("AvaroomAuth", Context.MODE_PRIVATE);
@@ -59,6 +63,16 @@ public class LoginFragment extends Fragment {
         // Figma Prototype Connection 3: Button ==> Đăng ký - Avaroom (Warm Cream)
         binding.btnGoRegister.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_registerFragment);
+        });
+
+        binding.btnTogglePass.setOnClickListener(v -> {
+            isPasswordVisible = !isPasswordVisible;
+            if (isPasswordVisible) {
+                binding.etPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+            } else {
+                binding.etPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+            }
+            binding.etPassword.setSelection(binding.etPassword.getText().length());
         });
     }
 
@@ -97,22 +111,49 @@ public class LoginFragment extends Fragment {
                     AuthResponse authData = response.body().getData();
 
                     if (authData != null && authData.getTokens() != null) {
-                        // 4. Lưu Token và Role vào SharedPreferences
                         saveSession(
                                 authData.getTokens().getAccessToken(),
                                 authData.getTokens().getRefreshToken(),
                                 authData.getUser().getRole()
                         );
+                        if (authData.getUser() != null) {
+                            com.avaroom.app.utils.TokenManager.saveSession(
+                                    requireContext(),
+                                    authData.getTokens().getAccessToken(),
+                                    authData.getTokens().getRefreshToken(),
+                                    authData.getUser().getRole(),
+                                    authData.getUser().getFullName(),
+                                    authData.getUser().getEmail()
+                            );
+                        }
                         Toast.makeText(requireContext(), "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
                         // 5. Phân luồng giao diện theo Vai trò (STUDENT vs LANDLORD)
                         navigateByRole(authData.getUser().getRole());
                     }
                 } else {
-                    String errorMsg = "Email hoặc mật khẩu không chính xác";
-                    if (response.code() == 429) {
+                    String errorMsg;
+                    int statusCode = response.code();
+                    // 1. Kiểm tra nếu backend/proxy bị sập hoặc lỗi nội bộ
+                    if (statusCode == 502 || statusCode == 503 || statusCode == 504) {
+                        errorMsg = "Không thể kết nối tới máy chủ. Vui lòng thử lại sau!";
+                    } else if (statusCode == 500) {
+                        errorMsg = "Lỗi hệ thống máy chủ (500). Vui lòng thử lại sau!";
+                    } else if (statusCode == 429) {
                         errorMsg = "Bạn đã thử đăng nhập quá nhiều lần. Vui lòng thử lại sau 15 phút!";
-                    } else if (response.body() != null && response.body().getMessage() != null) {
-                        errorMsg = response.body().getMessage();
+                    } else {
+                        // 2. Với các mã lỗi 400, 401, 403: đọc message từ errorBody()
+                        errorMsg = "Email hoặc mật khẩu không chính xác";
+                        try {
+                            if (response.errorBody() != null) {
+                                String errJson = response.errorBody().string();
+                                org.json.JSONObject obj = new org.json.JSONObject(errJson);
+                                if (obj.has("message")) {
+                                    errorMsg = obj.getString("message");
+                                }
+                            }
+                        } catch (Exception ignored) {
+                            // Trường hợp không parse được JSON
+                        }
                     }
                     Toast.makeText(requireContext(), errorMsg, Toast.LENGTH_LONG).show();
                 }

@@ -70,7 +70,7 @@
             android:layout_height="52dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/bg_input_field"
-            android:hint="0912... hoặc ten@hust.edu.vn"
+            android:hint="0912... hoặc ten@uit.edu.vn"
             android:inputType="textEmailAddress"
             android:paddingHorizontal="16dp"
             android:textColor="@color/text_primary"
@@ -93,21 +93,41 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_account" />
 
-        <EditText
-            android:id="@+id/et_password"
+        <LinearLayout
+            android:id="@+id/layout_password"
             android:layout_width="0dp"
             android:layout_height="52dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/bg_input_field"
-            android:hint="Nhập mật khẩu an toàn"
-            android:inputType="textPassword"
-            android:paddingHorizontal="16dp"
-            android:textColor="@color/text_primary"
-            android:textColorHint="@color/text_muted"
-            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_label_password" />
+            app:layout_constraintTop_toBottomOf="@id/tv_label_password">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Nhập mật khẩu an toàn"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_muted"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btn_toggle_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="👁️"
+                android:textSize="16sp" />
+        </LinearLayout>
 
         <!-- Checkbox Remember & Forgot Password -->
         <CheckBox
@@ -119,7 +139,7 @@
             android:textColor="@color/text_secondary"
             android:textSize="13sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_password" />
+            app:layout_constraintTop_toBottomOf="@id/layout_password" />
 
         <TextView
             android:id="@+id/btn_forgot_password"

@@ -283,7 +283,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="Số 18, Ngõ 40 Tạ Quang Bửu, Hai Bà Trưng, Hà Nội"
+                android:text="Số 18 Tạ Quang Bửu, Đông Hòa, Dĩ An"
                 android:textColor="@color/text_secondary"
                 android:textSize="12sp" />
 
