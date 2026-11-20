@@ -114,6 +114,7 @@
                 </FrameLayout>
 
                 <TextView
+                    android:id="@+id/tv_success_status_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -123,11 +124,12 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_success_landlord_waiting"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="Đang chờ Cô Ánh Tuyết xác nhận lịch hẹn của bạn"
+                    android:text="Đang chờ chủ trọ xác nhận lịch hẹn của bạn"
                     android:textColor="@color/student_success_text_muted"
                     android:textSize="14sp" />
 
@@ -192,6 +194,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:id="@+id/tv_success_appointment_code"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="6dp"
@@ -202,6 +205,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:id="@+id/tv_success_appointment_status"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/student_success_bg_badge_yellow"
@@ -228,6 +232,7 @@
                                 android:layout_height="64dp"
                                 app:cardCornerRadius="8dp">
                                 <ImageView
+                                    android:id="@+id/iv_success_room_thumb"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:scaleType="centerCrop"
@@ -241,6 +246,7 @@
                                 android:layout_weight="1"
                                 android:orientation="vertical">
                                 <TextView
+                                    android:id="@+id/tv_success_room_title"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:text="Studio ban công Tạ Quang Bửu"
@@ -248,6 +254,7 @@
                                     android:textSize="13sp"
                                     android:textStyle="bold" />
                                 <TextView
+                                    android:id="@+id/tv_success_room_price"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="2dp"
@@ -256,6 +263,7 @@
                                     android:textSize="12sp"
                                     android:textStyle="bold" />
                                 <TextView
+                                    android:id="@+id/tv_success_room_address"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="4dp"
@@ -298,6 +306,7 @@
                                     android:textSize="10sp"
                                     android:textStyle="bold" />
                                 <TextView
+                                    android:id="@+id/tv_success_time"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="16:30 • Thứ Tư, 14/10/2026"
@@ -321,6 +330,7 @@
                                 app:cardCornerRadius="18dp"
                                 app:cardBackgroundColor="@color/student_success_progress_bg">
                                 <ImageView
+                                    android:id="@+id/iv_success_landlord_avatar"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:scaleType="centerCrop"
@@ -338,6 +348,7 @@
                                     android:layout_height="wrap_content"
                                     android:orientation="horizontal">
                                     <TextView
+                                        android:id="@+id/tv_success_landlord_name"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Cô Ánh Tuyết"
@@ -352,6 +363,7 @@
                                         android:textSize="12sp" />
                                 </LinearLayout>
                                 <TextView
+                                    android:id="@+id/tv_success_landlord_phone"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Chủ trọ • 0912 345 678"
@@ -441,7 +453,13 @@
                                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓" android:textColor="@color/student_white" android:textSize="16sp" android:layout_gravity="center" android:textStyle="bold" />
                                     </FrameLayout>
                                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Đã gửi" android:textColor="@color/student_success_text_dark" android:textSize="11sp" android:textStyle="bold" />
-                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14:02 hôm nay" android:textColor="@color/student_success_accent_green_dark" android:textSize="10sp" />
+                                    <TextView
+                                        android:id="@+id/tv_step1_time"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Vừa xong"
+                                        android:textColor="@color/student_success_accent_green_dark"
+                                        android:textSize="10sp" />
                                 </LinearLayout>
 
                                 <!-- Step 2 -->
@@ -475,7 +493,13 @@
                                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔑" android:textSize="12sp" android:layout_gravity="center" />
                                     </FrameLayout>
                                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Xem phòng" android:textColor="#76777C" android:textSize="11sp" />
-                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16:30 Thứ 4" android:textColor="#76777C" android:textSize="10sp" />
+                                    <TextView
+                                        android:id="@+id/tv_step3_time"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="16:30 Thứ 4"
+                                        android:textColor="#76777C"
+                                        android:textSize="10sp" />
                                 </LinearLayout>
 
                             </LinearLayout>

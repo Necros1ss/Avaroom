@@ -16,8 +16,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import com.avaroom.app.R;
 import com.avaroom.app.data.model.response.ApiResponse;
 import com.avaroom.app.data.model.response.RoomResponse;
+import com.avaroom.app.data.remote.ApiService;
 import com.avaroom.app.data.remote.RetrofitClient;
 import com.avaroom.app.databinding.FragmentStudentHomeBinding;
+import com.avaroom.app.utils.TokenManager;
 
 import java.util.HashMap;
 import java.util.List;
@@ -73,8 +75,7 @@ public class StudentHomeFragment extends Fragment {
             @Override
             public void onSaveToggle(RoomResponse room, boolean isSaved) {
                 // TODO: Gọi API lưu/bỏ lưu phòng khi feature saved rooms được xây dựng
-                String msg = isSaved ? "Đã lưu \"" + room.getTitle() + "\"" : "Đã bỏ lưu phòng";
-                Toast.makeText(requireContext(), msg, Toast.LENGTH_SHORT).show();
+                toggleSaveRoom(room.getId(), isSaved);
             }
         });
 
@@ -203,6 +204,34 @@ public class StudentHomeFragment extends Fragment {
             binding.btnProfileHome.setOnClickListener(v ->
                     Navigation.findNavController(v).navigate(R.id.action_home_to_ekyc));
         }
+    }
+
+    private void toggleSaveRoom(long roomId, boolean willSave)
+    {
+        String token = TokenManager.getToken(requireContext());
+        if (token == null || token.isEmpty()) {
+            Toast.makeText(requireContext(), "Vui lòng đăng nhập để lưu phòng", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        ApiService api = RetrofitClient.getApiService();
+        Call<ApiResponse<Object>> call = willSave
+                ? api.saveRoom(token, roomId)
+                : api.removeSavedRoom(token, roomId);
+        call.enqueue(new Callback<ApiResponse<Object>>() {
+            @Override
+            public void onResponse(Call<ApiResponse<Object>> call, Response<ApiResponse<Object>> response) {
+                if (response.isSuccessful()) {
+                    String msg = willSave ? "Đã lưu phòng thành công!" : "Đã bỏ lưu phòng!";
+                    Toast.makeText(requireContext(), msg, Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(requireContext(), "Thao tác không thành công", Toast.LENGTH_SHORT).show();
+                }
+            }
+            @Override
+            public void onFailure(Call<ApiResponse<Object>> call, Throwable t) {
+                Toast.makeText(requireContext(), "Lỗi kết nối mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

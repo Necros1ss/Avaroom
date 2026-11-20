@@ -11,7 +11,10 @@ if (envFile.exists()) {
     }
 }
 def vpsHost = envProps.getProperty("VPS_HOST", "20.205.111.212")
-def apiPort = envProps.getProperty("API_PORT", "80")
+def apiPort = envProps.getProperty("API_PORT", "3000")
+// 10.0.2.2 là địa chỉ IP của máy tính host khi chạy trên Android Emulator
+def devHost = envProps.getProperty("DEV_HOST", "10.0.2.2")
+def devPort = envProps.getProperty("DEV_PORT", "3000")
 
 android {
     namespace 'com.avaroom.app'
@@ -25,15 +28,18 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        buildConfigField "String", "BASE_URL", "\"http://${vpsHost}:${apiPort}/\""
-
     }
 
     buildTypes {
+        debug {
+            // Môi trường phát triển: tự động trỏ về backend local (máy ảo: 10.0.2.2:3000)
+            buildConfigField "String", "BASE_URL", "\"http://${devHost}:${devPort}/\""
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // Môi trường production: trỏ vào VPS
+            buildConfigField "String", "BASE_URL", "\"http://${vpsHost}:${apiPort}/\""
         }
     }
     compileOptions {

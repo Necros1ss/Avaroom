@@ -25,6 +25,7 @@ import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Part;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 import com.avaroom.app.data.model.response.RoomResponse;
 
@@ -52,6 +53,78 @@ public interface ApiService {
 
     @GET("api/auth/me")
     Call<ApiResponse<Map<String, Object>>> getMe(@Header("Authorization") String token);
+
+    @GET("api/student/saved-rooms")
+    Call<ApiResponse<List<RoomResponse>>> getSavedRooms(
+            @Header("Authorization") String token,
+            @Query("page") int page,
+            @Query("limit") int limit
+    );
+
+    @GET("api/student/saved-rooms/check/{roomId}")
+    Call<Map<String, Object>> checkRoomSaved(
+            @Header("Authorization") String token,
+            @Path("roomId") long roomId
+    );
+    /** Lưu phòng trọ */
+    @POST("api/student/saved-rooms/{roomId}")
+    Call<ApiResponse<Object>> saveRoom(
+            @Header("Authorization") String token,
+            @Path("roomId") long roomId
+    );
+    /** Bỏ lưu phòng trọ */
+    @DELETE("api/student/saved-rooms/{roomId}")
+    Call<ApiResponse<Object>> removeSavedRoom(
+            @Header("Authorization") String token,
+            @Path("roomId") long roomId
+    );
+
+    // ==================== STUDENT APPOINTMENTS ====================
+    /** Kiểm tra xem sinh viên đã đặt lịch xem phòng này chưa */
+    @GET("api/student/appointments/check/{roomId}")
+    Call<Map<String, Object>> checkStudentRoomAppointment(
+            @Header("Authorization") String token,
+            @Path("roomId") long roomId
+    );
+
+    /** Lấy danh sách khung giờ đã có người đặt trong ngày */
+    @GET("api/student/appointments/occupied-slots")
+    Call<com.avaroom.app.data.model.response.AppointmentResponse.OccupiedSlotsData> getOccupiedSlots(
+            @Header("Authorization") String token,
+            @Query("roomId") long roomId,
+            @Query("date") String date
+    );
+
+    /** Sinh viên tạo lịch hẹn xem phòng */
+    @POST("api/student/appointments")
+    Call<ApiResponse<com.avaroom.app.data.model.response.AppointmentResponse>> createAppointment(
+            @Header("Authorization") String token,
+            @Body com.avaroom.app.data.model.request.CreateAppointmentRequest request
+    );
+
+    /** Sinh viên lấy danh sách lịch hẹn của mình */
+    @GET("api/student/appointments")
+    Call<com.avaroom.app.data.model.response.AppointmentResponse.AppointmentsListData> getStudentAppointments(
+            @Header("Authorization") String token,
+            @Query("status") String status,
+            @Query("page") int page,
+            @Query("limit") int limit
+    );
+
+    /** Chi tiết lịch hẹn */
+    @GET("api/student/appointments/{id}")
+    Call<ApiResponse<com.avaroom.app.data.model.response.AppointmentResponse>> getStudentAppointmentDetail(
+            @Header("Authorization") String token,
+            @Path("id") long id
+    );
+
+    /** Hủy lịch hẹn */
+    @PATCH("api/student/appointments/{id}/cancel")
+    Call<ApiResponse<Object>> cancelStudentAppointment(
+            @Header("Authorization") String token,
+            @Path("id") long id,
+            @Body Map<String, String> body
+    );
 
     // ==================== LANDLORD ENDPOINTS (from PuuUpdate) ====================
     // Landlord Posts

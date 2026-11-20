@@ -6,6 +6,7 @@
     <color name="student_text_secondary">#718096</color>
     <color name="student_text_muted">#A0AEC0</color>
     <color name="student_accent_red">#E53E3E</color>
+    <color name="student_accent_blue">#2196F3</color>
     <color name="student_bg_chip">#EDF2F7</color>
     <color name="student_border_light">#E2E8F0</color>
     <color name="student_white">#FFFFFF</color>

@@ -716,8 +716,16 @@
         android:layout_height="wrap_content"
         android:background="#E6FFFFFF"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progress_loading_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_send_booking"

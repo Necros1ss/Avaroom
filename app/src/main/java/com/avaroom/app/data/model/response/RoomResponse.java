@@ -1,12 +1,13 @@
 package com.avaroom.app.data.model.response;
 
 import com.google.gson.annotations.SerializedName;
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Model dữ liệu một phòng trọ trả về từ API GET /api/rooms
  */
-public class RoomResponse {
+public class RoomResponse implements Serializable {
 
     @SerializedName("id")
     private long id;
@@ -134,7 +135,7 @@ public class RoomResponse {
 
     // ── Nested class: Thông tin chủ trọ ───────────────────────────────────────
 
-    public static class LandlordInfo {
+    public static class LandlordInfo implements Serializable {
         @SerializedName("id")
         private long id;
 
@@ -155,7 +156,7 @@ public class RoomResponse {
 
     // ── Nested class: Phân trang ──────────────────────────────────────────────
 
-    public static class PaginationInfo {
+    public static class PaginationInfo implements Serializable {
         @SerializedName("total")
         private int total;
 
@@ -176,7 +177,7 @@ public class RoomResponse {
 
     // ── Wrapper response (data chứa rooms + pagination) ───────────────────────
 
-    public static class RoomsData {
+    public static class RoomsData implements Serializable {
         @SerializedName("rooms")
         private List<RoomResponse> rooms;
 

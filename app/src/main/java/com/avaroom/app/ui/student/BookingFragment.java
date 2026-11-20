@@ -17,20 +17,24 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
 import com.avaroom.app.R;
+import com.avaroom.app.data.model.request.CreateAppointmentRequest;
 import com.avaroom.app.data.model.response.ApiResponse;
+import com.avaroom.app.data.model.response.AppointmentResponse;
 import com.avaroom.app.data.model.response.RoomResponse;
 import com.avaroom.app.data.remote.RetrofitClient;
 import com.avaroom.app.databinding.FragmentBookingBinding;
 import com.avaroom.app.utils.TokenManager;
 import com.bumptech.glide.Glide;
 
-import java.text.NumberFormat;
+import org.json.JSONObject;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -55,6 +59,10 @@ public class BookingFragment extends Fragment {
     // Các button giờ
     private TextView[] timeButtons;
     private final String[] timeValues = {"09:00", "10:30", "14:00", "15:30", "16:30", "18:00", "19:30"};
+
+    // Tập hợp các giờ đã bị chiếm/kín lịch
+    private final Set<String> occupiedTimes = new HashSet<>();
+    private boolean isSubmitting = false;
 
     @Nullable
     @Override
@@ -82,6 +90,7 @@ public class BookingFragment extends Fragment {
         // 4. Load thông tin phòng từ API
         if (roomId > 0) {
             loadRoomInfo(roomId);
+            loadOccupiedSlots();
         }
 
         // 5. Setup các listener (Click ngày, click icon lịch, click giờ, nút gửi)
@@ -165,7 +174,13 @@ public class BookingFragment extends Fragment {
 
         for (int i = 0; i < timeButtons.length; i++) {
             final int index = i;
-            timeButtons[i].setOnClickListener(v -> selectTime(timeValues[index]));
+            timeButtons[i].setOnClickListener(v -> {
+                if (occupiedTimes.contains(timeValues[index])) {
+                    Toast.makeText(requireContext(), "Khung giờ " + timeValues[index] + " đã có người đặt!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                selectTime(timeValues[index]);
+            });
         }
 
         // Mặc định chọn 16:30
@@ -176,13 +191,23 @@ public class BookingFragment extends Fragment {
         selectedTime = time;
 
         for (int i = 0; i < timeButtons.length; i++) {
-            boolean isMatch = timeValues[i].equals(time);
-            if (isMatch) {
-                timeButtons[i].setBackgroundResource(R.drawable.student_booking_bg_date_selected);
-                timeButtons[i].setTextColor(0xFFFFFFFF);
+            String slotTime = timeValues[i];
+            boolean isOccupied = occupiedTimes.contains(slotTime);
+
+            if (isOccupied) {
+                timeButtons[i].setBackgroundResource(R.drawable.student_booking_bg_time_disabled);
+                timeButtons[i].setTextColor(ContextCompat.getColor(requireContext(), R.color.student_booking_disabled));
+                timeButtons[i].setEnabled(false);
             } else {
-                timeButtons[i].setBackgroundResource(R.drawable.student_booking_bg_card_highlight);
-                timeButtons[i].setTextColor(ContextCompat.getColor(requireContext(), R.color.student_booking_text_dark));
+                timeButtons[i].setEnabled(true);
+                boolean isMatch = slotTime.equals(time);
+                if (isMatch) {
+                    timeButtons[i].setBackgroundResource(R.drawable.student_booking_bg_date_selected);
+                    timeButtons[i].setTextColor(0xFFFFFFFF);
+                } else {
+                    timeButtons[i].setBackgroundResource(R.drawable.student_booking_bg_card_highlight);
+                    timeButtons[i].setTextColor(ContextCompat.getColor(requireContext(), R.color.student_booking_text_dark));
+                }
             }
         }
 
@@ -226,6 +251,7 @@ public class BookingFragment extends Fragment {
 
             updateDateTabsUI();
             updateSelectedDateTimePreview();
+            loadOccupiedSlots();
 
             SimpleDateFormat fmt = new SimpleDateFormat("EEEE, dd/MM/yyyy", new Locale("vi", "VN"));
             Toast.makeText(requireContext(), "Đã chọn: " + fmt.format(selectedCalendar.getTime()), Toast.LENGTH_SHORT).show();
@@ -234,6 +260,46 @@ public class BookingFragment extends Fragment {
         // Giới hạn chỉ chọn từ hôm nay trở đi
         dialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
         dialog.show();
+    }
+
+    // ── Lấy các khung giờ đã có người đặt ────────────────────────────────────────
+    private void loadOccupiedSlots() {
+        if (roomId <= 0) return;
+
+        SimpleDateFormat apiDateFmt = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        String formattedDate = apiDateFmt.format(selectedCalendar.getTime());
+        String token = TokenManager.getToken(requireContext());
+
+        RetrofitClient.getApiService().getOccupiedSlots(token, roomId, formattedDate)
+                .enqueue(new Callback<AppointmentResponse.OccupiedSlotsData>() {
+                    @Override
+                    public void onResponse(@NonNull Call<AppointmentResponse.OccupiedSlotsData> call, @NonNull Response<AppointmentResponse.OccupiedSlotsData> response) {
+                        occupiedTimes.clear();
+                        if (response.isSuccessful() && response.body() != null && response.body().getOccupiedSlots() != null) {
+                            for (AppointmentResponse.OccupiedSlotResponse slot : response.body().getOccupiedSlots()) {
+                                if (slot.getStartTime() != null) {
+                                    occupiedTimes.add(slot.getStartTime());
+                                }
+                            }
+                        }
+
+                        // Nếu giờ đang chọn bị trùng, tự động chuyển sang giờ khả dụng đầu tiên
+                        if (occupiedTimes.contains(selectedTime)) {
+                            for (String val : timeValues) {
+                                if (!occupiedTimes.contains(val)) {
+                                    selectedTime = val;
+                                    break;
+                                }
+                            }
+                        }
+                        selectTime(selectedTime);
+                    }
+
+                    @Override
+                    public void onFailure(@NonNull Call<AppointmentResponse.OccupiedSlotsData> call, @NonNull Throwable t) {
+                        Log.e(TAG, "Lỗi lấy danh sách khung giờ bận: " + t.getMessage());
+                    }
+                });
     }
 
     // ── Load thông tin phòng từ API ─────────────────────────────────────────────
@@ -264,7 +330,7 @@ public class BookingFragment extends Fragment {
         // Mã phòng
         binding.tvBookingRoomCode.setText("#AVR-" + room.getId());
 
-        // Giá phòng: ví dụ 4.2 tr hoặc 4.200.000 đ
+        // Giá phòng
         if (room.getPrice() > 0) {
             double priceInMillion = room.getPrice() / 1_000_000.0;
             if (priceInMillion == (long) priceInMillion) {
@@ -303,7 +369,7 @@ public class BookingFragment extends Fragment {
 
         binding.tvStudentName.setText(studentName);
 
-        // Chữ cái đại diện avatar (Ví dụ "Nguyễn Văn A" -> "NA")
+        // Chữ cái đại diện avatar
         String initials = getInitials(studentName);
         binding.tvStudentAvatarLetter.setText(initials);
 
@@ -355,6 +421,7 @@ public class BookingFragment extends Fragment {
                 selectedCalendar.setTime(upcomingDates.get(index).getTime());
                 updateDateTabsUI();
                 updateSelectedDateTimePreview();
+                loadOccupiedSlots();
             });
         }
 
@@ -369,13 +436,95 @@ public class BookingFragment extends Fragment {
         });
 
         // Nút gửi yêu cầu đặt lịch
-        binding.btnSendBooking.setOnClickListener(v -> {
-            SimpleDateFormat fmt = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-            String dateStr = fmt.format(selectedCalendar.getTime());
-            Toast.makeText(requireContext(), "Đã gửi yêu cầu đặt lịch xem phòng lúc " + selectedTime + " ngày " + dateStr + "!", Toast.LENGTH_LONG).show();
+        binding.btnSendBooking.setOnClickListener(v -> submitBooking(v));
+    }
 
-            Navigation.findNavController(v).navigate(R.id.action_booking_to_bookingSuccess);
-        });
+    private void submitBooking(View v) {
+        if (isSubmitting) return;
+
+        if (roomId <= 0) {
+            Toast.makeText(requireContext(), "Thông tin phòng không hợp lệ", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (occupiedTimes.contains(selectedTime)) {
+            Toast.makeText(requireContext(), "Khung giờ " + selectedTime + " đã có người đặt lịch. Vui lòng chọn giờ khác!", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        String token = TokenManager.getToken(requireContext());
+        if (token == null || token.isEmpty()) {
+            Toast.makeText(requireContext(), "Vui lòng đăng nhập tài khoản sinh viên để đặt lịch", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        SimpleDateFormat apiDateFmt = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        String appointmentDate = apiDateFmt.format(selectedCalendar.getTime());
+        String studentNote = binding.etBookingMessage.getText().toString().trim();
+
+        CreateAppointmentRequest request = new CreateAppointmentRequest(
+                roomId,
+                appointmentDate,
+                selectedTime,
+                null,
+                studentNote
+        );
+
+        setSubmittingState(true);
+
+        RetrofitClient.getApiService().createAppointment(token, request)
+                .enqueue(new Callback<ApiResponse<AppointmentResponse>>() {
+                    @Override
+                    public void onResponse(@NonNull Call<ApiResponse<AppointmentResponse>> call, @NonNull Response<ApiResponse<AppointmentResponse>> response) {
+                        setSubmittingState(false);
+                        if (response.isSuccessful() && response.body() != null && response.body().isSuccess()) {
+                            Toast.makeText(requireContext(), "Đặt lịch xem phòng thành công!", Toast.LENGTH_SHORT).show();
+                            
+                            Bundle args = new Bundle();
+                            if (response.body().getData() != null) {
+                                args.putSerializable("appointment_data", response.body().getData());
+                            }
+                            if (roomData != null) {
+                                args.putSerializable("room_data", roomData);
+                            }
+                            args.putString("selected_date", appointmentDate);
+                            args.putString("selected_time", selectedTime);
+                            
+                            Navigation.findNavController(v).navigate(R.id.action_booking_to_bookingSuccess, args);
+                        } else {
+                            String errorMsg = "Đặt lịch thất bại";
+                            try {
+                                if (response.errorBody() != null) {
+                                    JSONObject obj = new JSONObject(response.errorBody().string());
+                                    if (obj.has("message")) {
+                                        errorMsg = obj.getString("message");
+                                    }
+                                }
+                            } catch (Exception e) {
+                                Log.e(TAG, "Error parsing error body: " + e.getMessage());
+                            }
+                            Toast.makeText(requireContext(), errorMsg, Toast.LENGTH_LONG).show();
+                            // Refresh lại occupied slots nếu bị conflict
+                            loadOccupiedSlots();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(@NonNull Call<ApiResponse<AppointmentResponse>> call, @NonNull Throwable t) {
+                        setSubmittingState(false);
+                        Toast.makeText(requireContext(), "Lỗi kết nối mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+    private void setSubmittingState(boolean submitting) {
+        isSubmitting = submitting;
+        if (binding == null) return;
+        binding.btnSendBooking.setEnabled(!submitting);
+        if (binding.progressLoadingBooking != null) {
+            binding.progressLoadingBooking.setVisibility(submitting ? View.VISIBLE : View.GONE);
+        }
+        binding.btnSendBooking.setText(submitting ? "ĐANG GỬI YÊU CẦU..." : "GỬI YÊU CẦU ĐẶT LỊCH NGAY →");
     }
 
     @Override

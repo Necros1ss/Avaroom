@@ -125,6 +125,7 @@
         <action android:id="@+id/action_appointments_to_roomDetail" app:destination="@id/roomDetailFragment" />
         <action android:id="@+id/action_appointments_to_appointmentDetail" app:destination="@id/appointmentDetailFragment" />
         <action android:id="@+id/action_appointments_to_changeAppointment" app:destination="@id/changeAppointmentFragment" />
+        <action android:id="@+id/action_appointments_to_chat" app:destination="@id/chatFragment" />
     </fragment>
 
     <!-- Chi tiết lịch hẹn -->
