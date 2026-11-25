@@ -11,6 +11,7 @@ public class TokenManager {
     private static final String KEY_USER_ROLE = "USER_ROLE";
     private static final String KEY_USER_NAME = "USER_NAME";
     private static final String KEY_USER_EMAIL = "USER_EMAIL";
+    private static final String KEY_USER_ID = "USER_ID";
 
     private static SharedPreferences getPrefs(Context context) {
         return context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
@@ -46,19 +47,30 @@ public class TokenManager {
         return getPrefs(context).getString(KEY_USER_EMAIL, null);
     }
 
+    public static long getUserId(Context context) {
+        return getPrefs(context).getLong(KEY_USER_ID, -1L);
+    }
+
     /**
      * Lưu session sau khi đăng nhập thành công.
      * Dùng cùng key với LoginFragment trên origin/main.
      */
     public static void saveSession(Context context, String accessToken,
                                    String refreshToken, String role) {
-        saveSession(context, accessToken, refreshToken, role, null, null);
+        saveSession(context, -1L, accessToken, refreshToken, role, null, null);
     }
 
     public static void saveSession(Context context, String accessToken,
                                    String refreshToken, String role,
                                    String fullName, String email) {
+        saveSession(context, -1L, accessToken, refreshToken, role, fullName, email);
+    }
+
+    public static void saveSession(Context context, long userId,
+                                   String accessToken, String refreshToken,
+                                   String role, String fullName, String email) {
         SharedPreferences.Editor editor = getPrefs(context).edit()
+                .putLong(KEY_USER_ID, userId)
                 .putString(KEY_ACCESS_TOKEN, accessToken)
                 .putString(KEY_REFRESH_TOKEN, refreshToken)
                 .putString(KEY_USER_ROLE, role);

@@ -94,6 +94,8 @@ public class StudentAccountFragment extends Fragment {
         // Click Đăng xuất
         if (binding.menuLogout != null) {
             binding.menuLogout.setOnClickListener(v -> {
+                com.avaroom.app.data.remote.ChatSocketManager.getInstance().disconnect();
+                com.avaroom.app.utils.TokenManager.clearSession(requireContext());
                 Intent intent = new Intent(requireActivity(), MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);

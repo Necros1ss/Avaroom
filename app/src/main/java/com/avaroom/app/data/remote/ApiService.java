@@ -28,6 +28,14 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 import com.avaroom.app.data.model.response.RoomResponse;
+import com.avaroom.app.data.model.request.CreateConversationRequest;
+import com.avaroom.app.data.model.request.SendMessageRequest;
+import com.avaroom.app.data.model.response.ConversationListResponse;
+import com.avaroom.app.data.model.response.ConversationResponse;
+import com.avaroom.app.data.model.response.MessageListResponse;
+import com.avaroom.app.data.model.response.MessageResponse;
+import com.avaroom.app.data.model.response.ReadResponse;
+import com.avaroom.app.data.model.response.UnreadCountResponse;
 
 public interface ApiService {
 
@@ -213,4 +221,58 @@ public interface ApiService {
     /** Chủ trọ lấy danh sách phòng của mình */
     @GET("api/rooms/landlord/my-rooms")
     Call<ApiResponse<List<RoomResponse>>> getMyRooms(@Header("Authorization") String token);
+
+    // ==================== CHAT ENDPOINTS ====================
+
+    /** Khởi tạo hoặc lấy cuộc trò chuyện với chủ trọ (Chỉ STUDENT) */
+    @POST("api/chat/conversations")
+    Call<ApiResponse<ConversationResponse>> createOrGetConversation(
+            @Header("Authorization") String token,
+            @Body CreateConversationRequest request
+    );
+
+    /** Lấy danh sách cuộc trò chuyện của người dùng hiện tại (Phân trang) */
+    @GET("api/chat/conversations")
+    Call<ApiResponse<ConversationListResponse>> getConversations(
+            @Header("Authorization") String token,
+            @Query("page") int page,
+            @Query("limit") int limit
+    );
+
+    /** Lấy chi tiết một cuộc trò chuyện */
+    @GET("api/chat/conversations/{conversationId}")
+    Call<ApiResponse<ConversationResponse>> getConversationDetail(
+            @Header("Authorization") String token,
+            @Path("conversationId") long conversationId
+    );
+
+    /** Gửi tin nhắn mới vào cuộc trò chuyện */
+    @POST("api/chat/conversations/{conversationId}/messages")
+    Call<ApiResponse<MessageResponse>> sendMessage(
+            @Header("Authorization") String token,
+            @Path("conversationId") long conversationId,
+            @Body SendMessageRequest request
+    );
+
+    /** Lấy lịch sử tin nhắn trong cuộc trò chuyện (Phân trang) */
+    @GET("api/chat/conversations/{conversationId}/messages")
+    Call<ApiResponse<MessageListResponse>> getMessages(
+            @Header("Authorization") String token,
+            @Path("conversationId") long conversationId,
+            @Query("page") int page,
+            @Query("limit") int limit
+    );
+
+    /** Đánh dấu tin nhắn trong cuộc trò chuyện là đã đọc */
+    @PATCH("api/chat/conversations/{conversationId}/read")
+    Call<ApiResponse<ReadResponse>> markMessagesAsRead(
+            @Header("Authorization") String token,
+            @Path("conversationId") long conversationId
+    );
+
+    /** Lấy tổng số lượng tin nhắn chưa đọc của người dùng */
+    @GET("api/chat/unread-count")
+    Call<ApiResponse<UnreadCountResponse>> getUnreadCount(
+            @Header("Authorization") String token
+    );
 }

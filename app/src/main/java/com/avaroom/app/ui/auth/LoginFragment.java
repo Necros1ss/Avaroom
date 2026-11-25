@@ -111,14 +111,18 @@ public class LoginFragment extends Fragment {
                     AuthResponse authData = response.body().getData();
 
                     if (authData != null && authData.getTokens() != null) {
+                        long userId = authData.getUser() != null ? authData.getUser().getId() : -1L;
+                        String role = authData.getUser() != null ? authData.getUser().getRole() : null;
                         saveSession(
+                                userId,
                                 authData.getTokens().getAccessToken(),
                                 authData.getTokens().getRefreshToken(),
-                                authData.getUser().getRole()
+                                role
                         );
                         if (authData.getUser() != null) {
                             com.avaroom.app.utils.TokenManager.saveSession(
                                     requireContext(),
+                                    authData.getUser().getId(),
                                     authData.getTokens().getAccessToken(),
                                     authData.getTokens().getRefreshToken(),
                                     authData.getUser().getRole(),
@@ -167,9 +171,10 @@ public class LoginFragment extends Fragment {
             }
         });
     }
-    private void saveSession(String accessToken, String refreshToken, String role) {
+    private void saveSession(long userId, String accessToken, String refreshToken, String role) {
         SharedPreferences pref = requireContext().getSharedPreferences("AvaroomAuth", Context.MODE_PRIVATE);
         pref.edit()
+                .putLong("USER_ID", userId)
                 .putString("ACCESS_TOKEN", accessToken)
                 .putString("REFRESH_TOKEN", refreshToken)
                 .putString("USER_ROLE", role)

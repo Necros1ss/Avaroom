@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:gravity="start"
+    android:orientation="horizontal"
+    android:paddingStart="0dp"
+    android:paddingEnd="48dp">
+
+    <!-- Avatar chủ trọ -->
+    <FrameLayout
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="top"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/tv_sender_avatar_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/student_bg_chip_dark"
+            android:gravity="center"
+            android:text="👩‍💼"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_sender_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tên người gửi -->
+        <TextView
+            android:id="@+id/tv_sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/student_text_secondary"
+            android:textSize="10sp"
+            tools:text="Cô Tuyết" />
+
+        <!-- Bubble tin nhắn của Chủ trọ (Incoming) -->
+        <TextView
+            android:id="@+id/tv_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/student_bg_room_card"
+            android:backgroundTint="@color/student_white"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/student_text_primary"
+            android:textSize="13sp"
+            tools:text="Chào cháu, phòng 402 ở Tạ Quang Bửu vẫn còn nhé." />
+
+        <!-- Thời gian gửi -->
+        <TextView
+            android:id="@+id/tv_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/student_text_muted"
+            android:textSize="10sp"
+            tools:text="14:16" />
+    </LinearLayout>
+
+</LinearLayout>

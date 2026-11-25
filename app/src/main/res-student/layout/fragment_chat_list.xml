@@ -129,325 +129,132 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:background="@null"
-                android:hint="Tìm kiếm tin nhắn, chủ trọ, mã phòng..."
+                android:hint="Tìm kiếm tin nhắn, chủ trọ, phòng..."
                 android:textColor="@color/student_text_primary"
                 android:textColorHint="@color/student_text_muted"
                 android:textSize="13sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Scrollable Conversations -->
-    <androidx.core.widget.NestedScrollView
+    <!-- Dynamic Conversations with Pull-to-Refresh -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_chat_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:fillViewport="true"
-        android:clipToPadding="false"
-        android:paddingBottom="80dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card_search">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingHorizontal="20dp"
-            android:paddingTop="12dp">
+            android:layout_height="match_parent">
 
-            <TextView
+            <!-- RecyclerView danh sách cuộc hội thoại thực tế -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_conversations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="80dp" />
+
+            <!-- Loading Indicator -->
+            <ProgressBar
+                android:id="@+id/progress_loading_chat_list"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:letterSpacing="0.05"
-                android:text="HỘI THOẠI GẦN ĐÂY"
-                android:textColor="@color/student_text_secondary"
-                android:textSize="12sp"
-                android:textStyle="bold" />
+                android:indeterminateTint="@color/student_accent_red"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <!-- Conversation Card 1: Cô Ánh Tuyết -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_conv_1"
+            <!-- Empty State View -->
+            <LinearLayout
+                android:id="@+id/layout_empty_state"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                app:cardBackgroundColor="@color/student_white"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="1dp">
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="32dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="12dp"
-                    android:gravity="top">
+                    android:text="💬"
+                    android:textSize="48sp" />
 
-                    <FrameLayout
-                        android:layout_width="48dp"
-                        android:layout_height="48dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/student_bg_chip_dark"
-                            android:gravity="center"
-                            android:text="👩‍💼"
-                            android:textSize="22sp" />
-                        <View
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            android:layout_gravity="bottom|end"
-                            android:background="@drawable/student_success_bg_icon_circle"
-                            android:backgroundTint="#10B981" />
-                    </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Chưa có cuộc trò chuyện nào"
+                    android:textColor="@color/student_text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="Khi bạn liên hệ với chủ trọ để hỏi phòng hoặc đặt lịch hẹn, các tin nhắn sẽ xuất hiện tại đây."
+                    android:textColor="@color/student_text_secondary"
+                    android:textSize="13sp" />
+            </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Cô Ánh Tuyết"
-                                android:textColor="@color/student_text_primary"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:text="✓"
-                                android:textColor="@color/student_landlord_accent_green"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_height="1dp"
-                                android:layout_weight="1" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="14:20"
-                                android:textColor="@color/student_text_secondary"
-                                android:textSize="11sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:background="@drawable/student_bg_chip_outline"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="2dp">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="#AVR-90412 • ĐH Bách Khoa"
-                                android:textColor="@color/student_text_primary"
-                                android:textSize="11sp"
-                                android:textStyle="normal" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:background="@drawable/student_landlord_bg_commit_card"
-                            android:backgroundTint="#ECFDF5"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="2dp"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="📅 "
-                                android:textSize="10sp" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="16:30 • 14/10/2026"
-                                android:textColor="@color/student_landlord_accent_green"
-                                android:textSize="11sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:ellipsize="end"
-                                android:maxLines="1"
-                                android:text="Đã xác nhận lịch mẫu: 16:30 ngày 14/10/2026, 42 Ngõ 187 Tạ Quang Bửu."
-                                android:textColor="@color/student_text_secondary"
-                                android:textSize="12sp" />
-                            <View
-                                android:layout_width="8dp"
-                                android:layout_height="8dp"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/student_success_bg_icon_circle"
-                                android:backgroundTint="@color/student_accent_red" />
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Conversation Card 2: Chú Nguyễn Hùng -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_conv_2"
+            <!-- Error State View -->
+            <LinearLayout
+                android:id="@+id/layout_error_state"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                app:cardBackgroundColor="@color/student_white"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="1dp">
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="32dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="12dp"
-                    android:gravity="top">
+                    android:text="⚠️"
+                    android:textSize="48sp" />
 
-                    <FrameLayout
-                        android:layout_width="48dp"
-                        android:layout_height="48dp">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/student_bg_chip_dark"
-                            android:gravity="center"
-                            android:text="👨‍💼"
-                            android:textSize="22sp" />
-                        <View
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            android:layout_gravity="bottom|end"
-                            android:background="@drawable/student_success_bg_icon_circle"
-                            android:backgroundTint="#CBD5E1" />
-                    </FrameLayout>
+                <TextView
+                    android:id="@+id/tv_error_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Không thể tải danh sách cuộc trò chuyện"
+                    android:textColor="@color/student_text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                <TextView
+                    android:id="@+id/btn_retry_chat_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/student_detail_bg_card_highlight"
+                    android:backgroundTint="@color/student_accent_red"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="10dp"
+                    android:text="Thử lại"
+                    android:textColor="@color/student_white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Chú Nguyễn Hùng"
-                                android:textColor="@color/student_text_primary"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="4dp"
-                                android:text="(KTX Khu A)"
-                                android:textColor="@color/student_text_secondary"
-                                android:textSize="11sp" />
-                            <View
-                                android:layout_width="0dp"
-                                android:layout_height="1dp"
-                                android:layout_weight="1" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="11:05"
-                                android:textColor="@color/student_text_secondary"
-                                android:textSize="11sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:background="@drawable/student_bg_chip_outline"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="2dp">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Gác lửng Linh Trung • 2.1tr/th"
-                                android:textColor="@color/student_text_primary"
-                                android:textSize="11sp"
-                                android:textStyle="normal" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:background="@drawable/student_landlord_bg_commit_card"
-                            android:backgroundTint="#ECFEFF"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="2dp"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="🔒 "
-                                android:textSize="10sp" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Giữ cọc Escrow"
-                                android:textColor="#155E75"
-                                android:textSize="11sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:ellipsize="end"
-                                android:maxLines="1"
-                                android:text="Hợp đồng điện tử đã được ký duyệt, mã cọc #ESC-89210 sẵn sàng..."
-                                android:textColor="@color/student_text_secondary"
-                                android:textSize="12sp" />
-                            <TextView
-                                android:layout_width="18dp"
-                                android:layout_height="18dp"
-                                android:layout_marginStart="8dp"
-                                android:background="@drawable/student_success_bg_icon_circle"
-                                android:backgroundTint="@color/student_accent_red"
-                                android:gravity="center"
-                                android:text="2"
-                                android:textColor="@color/student_white"
-                                android:textSize="10sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
