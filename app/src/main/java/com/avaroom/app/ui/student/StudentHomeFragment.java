@@ -208,30 +208,7 @@ public class StudentHomeFragment extends Fragment {
 
     private void toggleSaveRoom(long roomId, boolean willSave)
     {
-        String token = TokenManager.getToken(requireContext());
-        if (token == null || token.isEmpty()) {
-            Toast.makeText(requireContext(), "Vui lòng đăng nhập để lưu phòng", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        ApiService api = RetrofitClient.getApiService();
-        Call<ApiResponse<Object>> call = willSave
-                ? api.saveRoom(token, roomId)
-                : api.removeSavedRoom(token, roomId);
-        call.enqueue(new Callback<ApiResponse<Object>>() {
-            @Override
-            public void onResponse(Call<ApiResponse<Object>> call, Response<ApiResponse<Object>> response) {
-                if (response.isSuccessful()) {
-                    String msg = willSave ? "Đã lưu phòng thành công!" : "Đã bỏ lưu phòng!";
-                    Toast.makeText(requireContext(), msg, Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(requireContext(), "Thao tác không thành công", Toast.LENGTH_SHORT).show();
-                }
-            }
-            @Override
-            public void onFailure(Call<ApiResponse<Object>> call, Throwable t) {
-                Toast.makeText(requireContext(), "Lỗi kết nối mạng: " + t.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
+        com.avaroom.app.utils.RoomActionHelper.toggleSaveRoom(this, roomId, willSave, null);
     }
 
     @Override

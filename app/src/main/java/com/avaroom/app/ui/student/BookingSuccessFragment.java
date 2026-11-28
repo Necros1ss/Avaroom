@@ -61,12 +61,7 @@ public class BookingSuccessFragment extends Fragment {
         // 2. Hiển thị dữ liệu lên giao diện
         bindData();
 
-        // 3. Nếu appointmentData thiếu thông tin chi tiết room/landlord, gọi API fetch chi tiết
-        if (appointmentData != null && (appointmentData.getRoom() == null || appointmentData.getLandlord() == null)) {
-            fetchAppointmentDetail(appointmentData.getId());
-        }
-
-        // 4. Setup navigation
+        // 3. Setup navigation
         binding.btnCloseSuccess.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_bookingSuccess_to_home);
         });
@@ -225,27 +220,6 @@ public class BookingSuccessFragment extends Fragment {
             Log.e(TAG, "formatDateShort error: " + e.getMessage());
         }
         return dateYmd;
-    }
-
-    private void fetchAppointmentDetail(long id) {
-        String token = TokenManager.getToken(requireContext());
-        if (token == null || token.isEmpty()) return;
-
-        RetrofitClient.getApiService().getStudentAppointmentDetail(token, id)
-                .enqueue(new Callback<ApiResponse<AppointmentResponse>>() {
-                    @Override
-                    public void onResponse(@NonNull Call<ApiResponse<AppointmentResponse>> call, @NonNull Response<ApiResponse<AppointmentResponse>> response) {
-                        if (response.isSuccessful() && response.body() != null && response.body().getData() != null) {
-                            appointmentData = response.body().getData();
-                            bindData();
-                        }
-                    }
-
-                    @Override
-                    public void onFailure(@NonNull Call<ApiResponse<AppointmentResponse>> call, @NonNull Throwable t) {
-                        Log.e(TAG, "Lỗi lấy chi tiết lịch hẹn: " + t.getMessage());
-                    }
-                });
     }
 
     @Override

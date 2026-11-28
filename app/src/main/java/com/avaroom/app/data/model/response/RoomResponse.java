@@ -69,6 +69,12 @@ public class RoomResponse implements Serializable {
     @SerializedName("status")
     private String status;
 
+    @SerializedName("latitude")
+    private double latitude;
+
+    @SerializedName("longitude")
+    private double longitude;
+
     @SerializedName("average_rating")
     private Float averageRating;
 
@@ -103,6 +109,8 @@ public class RoomResponse implements Serializable {
     public String getThumbnailUrl() { return thumbnailUrl; }
     public List<String> getImageUrls() { return imageUrls; }
     public String getStatus() { return status; }
+    public double getLatitude() { return latitude; }
+    public double getLongitude() { return longitude; }
     public Float getAverageRating() { return averageRating; }
     public int getReviewCount() { return reviewCount; }
     public LandlordInfo getLandlord() { return landlord; }

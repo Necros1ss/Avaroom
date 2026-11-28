@@ -178,12 +178,11 @@ public class AppointmentsFragment extends Fragment implements AppointmentAdapter
         List<AppointmentResponse> filtered = new ArrayList<>();
 
         for (AppointmentResponse item : allAppointments) {
-            String status = item.getStatus();
-            if (currentTab == 0 && ("PENDING".equalsIgnoreCase(status) || "CONFIRMED".equalsIgnoreCase(status))) {
-                filtered.add(item);
-            } else if (currentTab == 1 && "COMPLETED".equalsIgnoreCase(status)) {
-                filtered.add(item);
-            } else if (currentTab == 2 && ("CANCELLED".equalsIgnoreCase(status) || "REJECTED".equalsIgnoreCase(status))) {
+            String s = item.getStatus();
+            boolean match = (currentTab == 0 && ("PENDING".equalsIgnoreCase(s) || "CONFIRMED".equalsIgnoreCase(s)))
+                    || (currentTab == 1 && "COMPLETED".equalsIgnoreCase(s))
+                    || (currentTab == 2 && ("CANCELLED".equalsIgnoreCase(s) || "REJECTED".equalsIgnoreCase(s)));
+            if (match) {
                 filtered.add(item);
             }
         }

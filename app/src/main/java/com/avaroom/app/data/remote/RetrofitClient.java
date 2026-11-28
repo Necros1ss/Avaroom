@@ -10,22 +10,28 @@ import com.avaroom.app.BuildConfig;
 public class RetrofitClient {
     private static final String BASE_URL = BuildConfig.BASE_URL;
     private static Retrofit retrofit = null;
+    private static OkHttpClient httpClient = null;
 
-    public static ApiService getApiService() {
-        if (retrofit == null) {
+    public static OkHttpClient getHttpClient() {
+        if (httpClient == null) {
             HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
             logging.setLevel(HttpLoggingInterceptor.Level.BODY);
 
-            OkHttpClient client = new OkHttpClient.Builder()
+            httpClient = new OkHttpClient.Builder()
                     .connectTimeout(60, TimeUnit.SECONDS)
                     .readTimeout(60, TimeUnit.SECONDS)
                     .writeTimeout(60, TimeUnit.SECONDS)
                     .addInterceptor(logging)
                     .build();
+        }
+        return httpClient;
+    }
 
+    public static ApiService getApiService() {
+        if (retrofit == null) {
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
-                    .client(client)
+                    .client(getHttpClient())
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }

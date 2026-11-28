@@ -160,33 +160,16 @@ public class SavedRoomsFragment extends Fragment {
     }
 
     private void removeSavedRoom(RoomResponse room) {
-        String token = TokenManager.getToken(requireContext());
-        if (token == null || token.isEmpty()) return;
-
-        RetrofitClient.getApiService().removeSavedRoom(token, room.getId())
-                .enqueue(new Callback<ApiResponse<Object>>() {
-                    @Override
-                    public void onResponse(@NonNull Call<ApiResponse<Object>> call, @NonNull Response<ApiResponse<Object>> response) {
-                        if (response.isSuccessful()) {
-                            savedRoomsList.remove(room);
-                            roomAdapter.setRooms(savedRoomsList);
-                            if (binding != null && binding.tvTagAll != null) {
-                                binding.tvTagAll.setText("Tất cả (" + savedRoomsList.size() + ")");
-                            }
-                            if (savedRoomsList.isEmpty()) {
-                                showEmptyState(true, "Chưa có phòng nào được lưu");
-                            }
-                            Toast.makeText(requireContext(), "Đã bỏ lưu phòng", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(requireContext(), "Thao tác bỏ lưu thất bại", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-
-                    @Override
-                    public void onFailure(@NonNull Call<ApiResponse<Object>> call, @NonNull Throwable t) {
-                        Toast.makeText(requireContext(), "Lỗi kết nối khi bỏ lưu phòng", Toast.LENGTH_SHORT).show();
-                    }
-                });
+        com.avaroom.app.utils.RoomActionHelper.toggleSaveRoom(this, room.getId(), false, () -> {
+            savedRoomsList.remove(room);
+            roomAdapter.setRooms(savedRoomsList);
+            if (binding != null && binding.tvTagAll != null) {
+                binding.tvTagAll.setText("Tất cả (" + savedRoomsList.size() + ")");
+            }
+            if (savedRoomsList.isEmpty()) {
+                showEmptyState(true, "Chưa có phòng nào được lưu");
+            }
+        });
     }
 
     private void showEmptyState(boolean show, @Nullable String message) {
